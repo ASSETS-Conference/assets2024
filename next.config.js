@@ -16,9 +16,9 @@ const nextConfig = {
     /*
         Needed for static builds on gh-pages and the eventual public server.
     */    
-   
-    assetPrefix: _IN_GH_ACTIONS ? `${_REPO}` : '',
-    basePath: _IN_GH_ACTIONS ? `${_REPO}` : '/',
+
+    assetPrefix: _IN_GH_ACTIONS ? `/${_REPO}` : '',
+    basePath: _IN_GH_ACTIONS ? `/${_REPO}` : '/',
     
     output: 'export',
     trailingSlash: true,
