@@ -10,7 +10,7 @@
 
 const _IN_GH_ACTIONS = process.env.GITHUB_ACTIONS || false;
 console.log('GITHUB ACTION DETECTED?: ', _IN_GH_ACTIONS);
-const _REPO = 'assets2024';
+const _REPO = 'out';
 
 /** @type {import('next').NextConfig} */
 const nextConfig = { 
