@@ -19,7 +19,7 @@ const nextConfig = {
     */    
 
     assetPrefix: _IN_GH_ACTIONS !== false ? `/${_REPO}` : '',
-    basePath: _IN_GH_ACTIONS !== false ? `/${_REPO}` : '/',
+    basePath: _IN_GH_ACTIONS !== false ? `/${_REPO}` : '',
     
     output: 'export',
     trailingSlash: true,
