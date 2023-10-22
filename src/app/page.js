@@ -1,4 +1,5 @@
 import Container  from './lib/primitives/Container'
+import Footer from './lib/primitives/Footer';
 import Section from "./lib/primitives/Section";
 import HeadingOne from './lib/primitives/headings/HeadingOne';
 import HeadingThree from './lib/primitives/headings/HeadingThree';
@@ -6,6 +7,7 @@ import HeadingTwo from './lib/primitives/headings/HeadingTwo';
 
 export default function Home() {
   return (
+    <>
     <main id="content">
       <Container>
         <Section title="ASSETS at a Glance">
@@ -19,5 +21,7 @@ export default function Home() {
         </Section>
       </Container>
     </main>
+    <Footer/>
+    </>
   );
 }
