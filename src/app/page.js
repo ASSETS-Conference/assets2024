@@ -1,9 +1,6 @@
 import Hero from "./lib/components/Hero";
 import Container from "./lib/components/primitives/Container";
 import Section from "./lib/components/primitives/Section";
-import HeadingOne from "./lib/components/primitives/headings/HeadingOne";
-import HeadingThree from "./lib/components/primitives/headings/HeadingThree";
-import HeadingTwo from "./lib/components/primitives/headings/HeadingTwo";
 
 export default function Home() {
   return (
@@ -20,9 +17,9 @@ export default function Home() {
         </div>
       </Section>
         <Section title="Important Dates" spacing={'bottom-only'}>
-          <HeadingOne>h1</HeadingOne>
-          <HeadingTwo>h2</HeadingTwo>
-          <HeadingThree>h3</HeadingThree>
+          <h1>h1</h1>
+          <h2>h2</h2>
+          <h3>h3</h3>
           <p>hello primitives</p>
         </Section>
       </Container>
