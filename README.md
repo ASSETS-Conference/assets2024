@@ -2,7 +2,7 @@
 
 This repository hosts the ASSETS 2024 website:
 
-- Test server: `Coming soon.`
+- Test server: [https://assets-conference.github.io/assets2024/](https://assets-conference.github.io/assets2024/)
 - Production server: `Coming soon.`
 
 ## Technologies Used:
