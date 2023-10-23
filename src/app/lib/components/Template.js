@@ -2,6 +2,7 @@ import { Inter } from 'next/font/google'
 import React from 'react'
 import SkipToMainContent from './SkipToMainContent'
 import Footer from './primitives/Footer'
+import Nav from './primitives/Nav'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,6 +17,7 @@ export default function Template({className, children }) {
     <html lang="en">
       <body className={inter.className}>
         <SkipToMainContent/>
+        <Nav/>
         {children}
         <Footer/>
       </body>
