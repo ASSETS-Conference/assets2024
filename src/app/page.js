@@ -1,9 +1,9 @@
 import Hero from "./lib/components/Hero";
-import Container from "./lib/primitives/Container";
-import Section from "./lib/primitives/Section";
-import HeadingOne from "./lib/primitives/headings/HeadingOne";
-import HeadingThree from "./lib/primitives/headings/HeadingThree";
-import HeadingTwo from "./lib/primitives/headings/HeadingTwo";
+import Container from "./lib/components/primitives/Container";
+import Section from "./lib/components/primitives/Section";
+import HeadingOne from "./lib/components/primitives/headings/HeadingOne";
+import HeadingThree from "./lib/components/primitives/headings/HeadingThree";
+import HeadingTwo from "./lib/components/primitives/headings/HeadingTwo";
 
 export default function Home() {
   return (
