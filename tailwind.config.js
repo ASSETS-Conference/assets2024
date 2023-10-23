@@ -14,6 +14,7 @@ module.exports = {
                 "theme-red": "#592321",
                 "primary-text-light": "var(--primary-light)",
                 "primary-text-dark": "var(--primary-dark)",
+                "link-underline-red": "#a62929"
             },
             backgroundImage: {
                 "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
