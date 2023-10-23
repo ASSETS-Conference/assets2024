@@ -5,7 +5,7 @@ import Link from "./Link";
 export default function Footer() {
   return (
     <footer className="min-w-full bg-theme-dark text-theme-off-white">
-      <Container className={"py-20"}>
+      <Container className={"py-16 md:py-20"}>
         <div className="flex flex-col xl:justify-between md:justify-normal xl:flex-row">
           <div className="">
             <p className="text-xl font-bold xl:text-2xl">
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="text-2xl font-bold hidden xl:block">All rights reserved</p>
-            <img className="mt-12 invert w-[200px] md:w-[40%] xl:w-auto " src="./assets/full-a24-logo.svg" alt="Assets 2024 Logo, displaying a lighthouse to the left and the words 'assets' in the middle."/>
+            <img className="mt-12 w-[200px] md:w-[40%] xl:w-auto " src="/assets/logos/a24-full-logo-grey.svg" alt="Assets 2024 Logo, displaying a lighthouse to the left and the words 'assets' in the middle."/>
           </div>
         </div>
       </Container>

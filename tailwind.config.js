@@ -10,7 +10,7 @@ module.exports = {
         extend: {
             colors: {
                 "theme-dark": "#2B2B2B",
-                "theme-off-white": "#D9D2CD",
+                "theme-off-white": "#D4D4D4",
                 "theme-red": "#592321",
                 "primary-text-light": "var(--primary-light)",
                 "primary-text-dark": "var(--primary-dark)",

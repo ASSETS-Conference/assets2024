@@ -8,7 +8,7 @@ export default function HeroCard() {
             <div className="text-theme-off-white flex flex-col gap-8">
                 <img
                     className="w-[300px]"
-                    src="./assets/simples-a24-logo-light.svg"
+                    src="./assets/logos/a24-simplified-logo-grey.svg"
                     alt="Assets 2024 Logo, displaying a lighthouse to the left and the words 'assets' in the middle."
                 />
                 <p>

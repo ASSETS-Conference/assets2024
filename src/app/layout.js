@@ -1,5 +1,5 @@
 import './globals.css'
-import Template from '@/app/lib/Template'
+import Template from '@/app/lib/components/Template'
 
 /** @type {import('next').Metadata} */
 export const metadata = {
