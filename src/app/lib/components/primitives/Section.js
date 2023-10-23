@@ -9,13 +9,13 @@ export default function Section({ title, children, className, spacing }) {
 
     switch (spacing) {
       case 'standard':
-        setSpacing = 'py-20'
+        setSpacing = 'py-16 md:py-20'
         break;
       case 'top-only':
-        setSpacing = 'pt-20'
+        setSpacing = 'pt-16 md:pt-20'
         break;
       case 'bottom-only':
-        setSpacing = 'pb-20'
+        setSpacing = 'pb-16 md:pb-20'
         break;
       default:
         break;
@@ -25,9 +25,9 @@ export default function Section({ title, children, className, spacing }) {
 
   return (
     <section className={`${evalSpacing()} ${className}`}>
-      <div className='flex flex-row justify-flex-start content-center gap-3 mt-7 font-bold text-2xl md:text-3xl xl:text-5xl border-b-[2px] border-black'>
-        <FaArrowRight className='mt-[.1rem]'/>
-        <h1 className='mb-6'>{title}</h1>
+      <div className='mt-7 border-b-[2px] border-black'>
+
+        <h1 className='flex flex-row justify-flex-start content-center gap-3 mb-6'><FaArrowRight aria-hidden className='mt-[.1rem]'/>{title}</h1>
       </div>
       <div className='mt-7'>
         {children}

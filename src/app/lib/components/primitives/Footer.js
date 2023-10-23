@@ -5,7 +5,7 @@ import Link from "./Link";
 export default function Footer() {
   return (
     <footer className="min-w-full bg-theme-dark text-theme-off-white">
-      <Container className={"py-20"}>
+      <Container className={"py-16 md:py-20"}>
         <div className="flex flex-col xl:justify-between md:justify-normal xl:flex-row">
           <div className="">
             <p className="text-xl font-bold xl:text-2xl">
