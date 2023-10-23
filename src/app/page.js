@@ -1,6 +1,5 @@
 import Hero from "./lib/components/Hero";
 import Container from "./lib/primitives/Container";
-import Footer from "./lib/primitives/Footer";
 import Section from "./lib/primitives/Section";
 import HeadingOne from "./lib/primitives/headings/HeadingOne";
 import HeadingThree from "./lib/primitives/headings/HeadingThree";
@@ -10,6 +9,7 @@ export default function Home() {
     return (
         <>
             <main id="content">
+                <Hero />
                 <Container>
                     <Section title="ASSETS at a Glance">
                         <p>hello primitives</p>
