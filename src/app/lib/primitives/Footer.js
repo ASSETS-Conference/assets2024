@@ -8,7 +8,7 @@ export default function Footer() {
       <Container className={"py-20"}>
         <div className="flex flex-col xl:justify-between md:justify-normal xl:flex-row">
           <div className="">
-            <p className="text-2xl font-bold">
+            <p className="text-xl font-bold xl:text-2xl">
               &copy; 2024 ASSETS 2024 Organizing Committee
             </p>
             <div className="mt-8 max-w-[100%] xl:max-w-[60%]">
@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
           <div>
             <p className="text-2xl font-bold hidden xl:block">All rights reserved</p>
-            <img className="mt-12 invert w-[100%] md:w-[50%] xl:w-auto " src="./assets/full-a24-logo.svg" alt="Assets 2024 Logo, displaying a lighthouse to the left and the words 'assets' in the middle."/>
+            <img className="mt-12 invert w-[200px] md:w-[40%] xl:w-auto " src="./assets/full-a24-logo.svg" alt="Assets 2024 Logo, displaying a lighthouse to the left and the words 'assets' in the middle."/>
           </div>
         </div>
       </Container>
