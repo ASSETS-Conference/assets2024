@@ -1,5 +1,5 @@
 import React from "react";
-import Container from "../primitives/Container";
+import Container from "./primitives/Container";
 import HeroCard from "./HeroCard";
 
 export default function Hero() {
