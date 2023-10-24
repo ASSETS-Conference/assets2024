@@ -13,7 +13,7 @@ export default function WorkshopProposals() {
         subheading="Deadline: Thursday, July 6th, 2024"
       />
       <Container className={"pt-16 md:pt-20"}>
-        <div className="flex flex-col md:flex-row-reverse gap-8 m-auto ">
+        <div className="flex flex-col lg:flex-row-reverse gap-8 m-auto ">
           <OnThisPage className="flex-1"/>
           <div className="flex-2 mr-4">
             <div className="">
