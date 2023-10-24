@@ -41,8 +41,9 @@ export default function Nav() {
         >
             <div
                 onClick={() => setMobileViewVisible(!mobileViewVisible)}
-                className="sm:hidden w-full flex justify-end items-center"
+                className="sm:hidden w-full flex justify-between items-center"
             >
+                <img aria-hidden="true" className={`self-start w-5 ${ backgroundVisible || mobileViewVisible ? 'visible' : 'invisible'}`} src="/assets/logos/a24-lighthouse-grey.svg"/>
                 {mobileViewVisible ? (
                     <MdOutlineClose className="text-2xl cursor-pointer" />
                 ) : (
