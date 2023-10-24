@@ -27,7 +27,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <p className="text-2xl font-bold hidden xl:block">All rights reserved</p>
+            <p className="text-2xl font-bold hidden xl:block text-right">All rights reserved</p>
             <img className="mt-12 w-[200px] md:w-[40%] xl:w-auto " src="/assets/logos/a24-full-logo-grey.svg" alt="Assets 2024 Logo, displaying a lighthouse to the left and the words 'assets' in the middle."/>
           </div>
         </div>
