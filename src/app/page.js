@@ -1,3 +1,4 @@
+import DateList from "./lib/components/DateList";
 import Hero from "./lib/components/Hero";
 import Container from "./lib/components/primitives/Container";
 import Link from "./lib/components/primitives/Link";
@@ -18,10 +19,8 @@ export default function Home() {
         </div>
       </Section>
         <Section title="Important Dates" spacing={'bottom-only'}>
-          <h1>h1</h1>
-          <h2>h2</h2>
-          <h3>h3</h3>
-          <p>hello primitives</p>
+          <p><strong>All deadlines</strong> are 11:59 P.M. Anywhere on Earth (UTC -12:00).</p>
+          <DateList/>
         </Section>
       </Container>
     </main>
