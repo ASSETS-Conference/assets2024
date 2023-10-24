@@ -11,6 +11,8 @@ export default function Nav() {
 
     const _MENU_DATA = [
         { title: "Home", href: "/" },
+        // here for easy access, remove later
+        { title: "Workshop Proposals", href: "/authors/workshops" },
         { title: "Code of Conduct", href: "/code-of-conduct/" },
         {
             title: "Organizing Committee",
