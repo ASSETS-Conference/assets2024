@@ -19,10 +19,7 @@ export default function Nav() {
     ];
 
     useEffect(() => {
-        console.log(mobileViewVisible);
-    }, [mobileViewVisible]);
-
-    useEffect(() => {
+        // adds background to navbar when user scrolls
         const toggleBackground = () => {
             if (window.scrollY > 100) {
                 setBackgroundVisible(true);
@@ -37,8 +34,8 @@ export default function Nav() {
     return (
         <nav
             className={`min-w-full p-8 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
-                backgroundVisible ? "bg-theme-dark" : ""
-            } ${mobileViewVisible ? "bg-theme-dark" : ""}`}
+                backgroundVisible || mobileViewVisible ? "bg-theme-dark" : ""
+            }`}
         >
             <div
                 onClick={() => setMobileViewVisible(!mobileViewVisible)}
