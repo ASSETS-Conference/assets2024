@@ -35,7 +35,7 @@ export default function Nav() {
 
     return (
         <nav
-            className={`min-w-full p-8 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
+            className={`min-w-full p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
                 backgroundVisible || mobileViewVisible ? "bg-theme-dark" : ""
             }`}
         >
