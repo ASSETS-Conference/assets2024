@@ -3,10 +3,10 @@ import Container from "./primitives/Container";
 
 export default function Banner({ heading, subheading }) {
     return (
-        <div className="h-[35vh] w-full relative overflow-hidden bg-hero-img bg-center bg-cover text-theme-off-white">
-            <Container className="z-[50] relative h-full flex flex-col gap-3 justify-end py-6">
-                <h1 className="text-6xl">{heading}</h1>
-                <p>{subheading}</p>
+        <div className="h-[45vh] w-full relative overflow-hidden bg-hero-img bg-center bg-cover text-theme-off-white">
+            <Container className="z-[50] relative h-full flex flex-col gap-3 justify-end py-0 mt-4">
+                <h1 className="text-4xl md:text-6xl">{heading}</h1>
+                <p className="pb-12">{subheading}</p>
             </Container>
             <div
                 aria-hidden="true"
