@@ -20,9 +20,9 @@ export function DateList({ dates }) {
       {/* <div className="flex-1">
         <p className="h3">{' '}</p>
       </div> */}
-      <div className="flex-1 opacity-40">
-        <p className="font-light h3 my-2">
-          {"Dates aren't out just yet! "}&mdash; check back later!
+      <div className="flex-1">
+        <p className="font-light h3 mt-12 md:mt-24">
+          {"Dates aren't out just yet "}&mdash; check back later!
         </p>
       </div>
     </div>

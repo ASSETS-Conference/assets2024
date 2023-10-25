@@ -23,7 +23,7 @@ export default function HeroCard() {
                 </p>
                 <p className="md:w-[50%] w-full font-bold flex md:flex-col flex-row md:gap-1 gap-2">
                     <AiFillCalendar className="text-xl" />
-                    October 25th - 27th
+                    coming soon.
                 </p>
             </div>
         </div>

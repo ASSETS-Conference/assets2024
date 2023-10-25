@@ -2,16 +2,13 @@ import React from 'react'
 
 import { FaArrowRight } from 'react-icons/fa';
 
-
-
-//TODO: add this into jsdoc
 export default function Section({ title, children, className, spacing, id }) {
 
   const generateID = () => {
     return title.replace(/\s/g, '-').toLowerCase();
   }
   const evalSpacing = () => {
-    let setSpacing = '';
+    let setSpacing = 'py-16 md:py-20';
 
     switch (spacing) {
       case 'standard':
@@ -24,8 +21,10 @@ export default function Section({ title, children, className, spacing, id }) {
         setSpacing = 'pb-16 md:pb-20'
         break;
       default:
+        setSpacing = 'py-16 md:py-20'
         break;
     }
+    
     return setSpacing;
   }
 

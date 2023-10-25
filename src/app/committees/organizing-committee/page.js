@@ -1,18 +1,14 @@
-import Container from "@/app/lib/components/primitives/Container";
 import Section from "@/app/lib/components/primitives/Section";
+import Subpage from "@/app/lib/components/templates/Subpage";
 
 
 
 export default function CodeOfConduct() {
   return (
-    <>
-    <main id="">
-      <Container id="content">
-      <Section title="Organizing Committee" spacing={'standard'}>
-       {'s'}
-       </Section>
-      </Container>
-    </main>
-    </>
+    <Subpage noTOC={true} title={'Organizing Committee'} subheading={'Behind the Scenes'}>
+     <Section title={'General Chair'}>
+      's'
+     </Section>
+    </Subpage>
   );
 }
