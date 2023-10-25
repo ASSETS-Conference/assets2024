@@ -4,7 +4,9 @@ import Container from "./lib/components/primitives/Container";
 import Link from "./lib/components/primitives/Link";
 import Section from "./lib/components/primitives/Section";
 import { CONFERENCE_DATES } from "./lib/config/homepage.config";
+import { createMetadata } from "./lib/utils/createMetadata";
 
+export const metadata = createMetadata({title: 'Home'})
 export default function Home() {
   return (
     <>
