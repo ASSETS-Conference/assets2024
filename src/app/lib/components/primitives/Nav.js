@@ -43,7 +43,7 @@ export default function Nav() {
                 onClick={() => setMobileViewVisible(!mobileViewVisible)}
                 className="sm:hidden w-full flex justify-between items-center"
             >
-                <img aria-hidden="true" className={`self-start w-5 ${ backgroundVisible || mobileViewVisible ? 'visible' : 'invisible'}`} src="/assets/logos/a24-lighthouse-grey.svg"/>
+                <img aria-hidden="true" className={`self-start w-5 ${ backgroundVisible || mobileViewVisible ? 'visible' : 'invisible'}`} src="/assets/logos/a24-lighthouse-grey.svg" alt="An image of a lighthouse used as the ASSETS 2024 Logo"/>
                 {mobileViewVisible ? (
                     <MdOutlineClose className="text-2xl cursor-pointer" />
                 ) : (
