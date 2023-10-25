@@ -11,6 +11,8 @@ export default function Nav() {
 
     const _MENU_DATA = [
         { title: "Home", href: "/" },
+        // here for easy access, remove later
+        { title: "Workshop Proposals", href: "/authors/workshops" },
         { title: "Code of Conduct", href: "/code-of-conduct/" },
         {
             title: "Organizing Committee",
@@ -33,14 +35,15 @@ export default function Nav() {
 
     return (
         <nav
-            className={`min-w-full p-8 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
+            className={`min-w-full p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
                 backgroundVisible || mobileViewVisible ? "bg-theme-dark" : ""
             }`}
         >
             <div
                 onClick={() => setMobileViewVisible(!mobileViewVisible)}
-                className="sm:hidden w-full flex justify-end items-center"
+                className="sm:hidden w-full flex justify-between items-center"
             >
+                <img aria-hidden="true" className={`self-start w-5 ${ backgroundVisible || mobileViewVisible ? 'visible' : 'invisible'}`} src="/assets/logos/a24-lighthouse-grey.svg" alt="An image of a lighthouse used as the ASSETS 2024 Logo"/>
                 {mobileViewVisible ? (
                     <MdOutlineClose className="text-2xl cursor-pointer" />
                 ) : (
