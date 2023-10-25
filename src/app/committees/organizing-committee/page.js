@@ -8,7 +8,6 @@ export default function OrganizingCommittee() {
   return (
     <Subpage noTOC={true} title={'Organizing Committee'} subheading={'Behind the Scenes'}>
      <Section title={'General Chair'}>
-      's'
      </Section>
     </Subpage>
   );

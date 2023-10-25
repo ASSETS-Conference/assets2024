@@ -1,15 +1,14 @@
 import React from "react";
-import Banner from "@/app/lib/components/Banner";
-import Container from "@/app/lib/components/primitives/Container";
 import Section from "@/app/lib/components/primitives/Section";
 import Link from "@/app/lib/components/primitives/Link";
-import OnThisPage from "@/app/lib/components/OnThisPage";
 import Subpage from "@/app/lib/components/templates/Subpage";
+import { createMetadata } from "@/app/lib/utils/createMetadata";
 
 
+export const metadata = createMetadata({title: 'Workshop Proposals'})
 export default function WorkshopProposals() {
   return (
-    <Subpage>
+    <Subpage title={'Workshop Proposals'} subheading={'Due Date: June 07, 2024'}>
       <div className="">
         <p>
           We invite you to submit a proposal for workshops at ASSETS 2023.
