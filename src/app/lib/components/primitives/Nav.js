@@ -5,69 +5,15 @@ import { MdOutlineClose } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaAngleDown } from "react-icons/fa6";
 import NavDropdown from "./NavDropdown";
+import { MENU_DATA } from "../../config/navigation.config";
 
 export default function Nav() {
     const pathname = usePathname();
     const [backgroundVisible, setBackgroundVisible] = useState(false);
     const [mobileViewVisible, setMobileViewVisible] = useState(false);
-
-    const _MENU_DATA = [
-        { title: "Home", href: "/" },
-        {
-            title: "Authors",
-            href: null,
-            children: [
-                { title: "Call for Papers", href: "/authors/call-for-papers/" },
-                { title: "Workshop Proposals", href: "/authors/workshops/" },
-            ],
-        },
-        {
-            title: "Attending",
-            href: null,
-            children: [
-                { title: "Overview", href: "/attending/overview/" },
-                { title: "Registration", href: "/attending/registration/" },
-            ],
-        },
-        {
-            title: "Program",
-            href: null,
-            children: [
-                { title: "Program", href: "/program/overview/" },
-                { title: "Keynote", href: "/program/keynote/" },
-            ],
-        },
-        {
-            title: "Committees",
-            href: null,
-            children: [
-                {
-                    title: "Organizing Committee",
-                    href: "/committees/organizing/",
-                },
-                { title: "Program Committee", href: "/committees/program/" },
-                {
-                    title: "Policy on Program Committee",
-                    href: "/committees/policy/",
-                },
-            ],
-        },
-        {
-            title: "Sponsors",
-            href: null,
-            children: [
-                {
-                    title: "Sponsors",
-                    href: "/sponsors/",
-                },
-                {
-                    title: "Become a Sponsor",
-                    href: "/sponsors/become-a-sponsor/",
-                },
-            ],
-        },
-        { title: "Code of Conduct", href: "/code-of-conduct/" },
-    ];
+    const [dropdownsVisible, setDropdownsVisible] = useState(
+        Array(MENU_DATA.length).fill(false)
+    );
 
     useEffect(() => {
         // adds background to navbar when user scrolls
@@ -82,9 +28,19 @@ export default function Nav() {
         window.addEventListener("scroll", toggleBackground);
     }, []);
 
+    const handleMouseEnter = (i) => {
+        setDropdownsVisible(
+            dropdownsVisible.map((_, idx) => (idx === i ? true : false))
+        );
+    };
+
+    const handleMouseLeave = () => {
+        setDropdownsVisible(Array(MENU_DATA.length).fill(false));
+    };
+
     return (
         <nav
-            className={`min-w-full p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
+            className={`min-w-full px-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
                 backgroundVisible || mobileViewVisible ? "bg-theme-dark" : ""
             }`}
         >
@@ -109,18 +65,24 @@ export default function Nav() {
                 )}
             </div>
             <ul
-                className={`min-h-full min-w-full sm:flex sm:flex-row flex-col justify-center items-center sm:opacity-100 gap-16 font-medium sm:opacity-100 ${
+                className={`min-h-full min-w-full sm:flex sm:flex-row flex-col justify-center items-center gap-16 font-medium sm:opacity-100 ${
                     mobileViewVisible ? "opacity-100 flex" : "opacity-0 hidden"
                 }`}
             >
-                {_MENU_DATA.map((data, i) => {
+                {MENU_DATA.map((data, i) => {
                     if (data.children) {
                         return (
-                            <div>
+                            <div
+                                className="relative py-6"
+                                onMouseEnter={() => handleMouseEnter(i)}
+                                onMouseLeave={handleMouseLeave}
+                            >
                                 <div className="flex gap-2 items-center">
                                     <p
-                                        className={`hoctive:decoration-4 ${
-                                            pathname === data.href
+                                        className={`underline hoctive:decoration-4 cursor-pointer ${
+                                            pathname.includes(
+                                                data.title.toLowerCase()
+                                            )
                                                 ? "decoration-4"
                                                 : ""
                                         }`}
@@ -129,14 +91,17 @@ export default function Nav() {
                                     </p>
                                     <FaAngleDown />
                                 </div>
-                                <NavDropdown items={data.children} />
+                                <NavDropdown
+                                    items={data.children}
+                                    visible={dropdownsVisible[i]}
+                                />
                             </div>
                         );
                     } else {
                         return (
                             <li key={`menu_item-${i}`}>
                                 <a
-                                    className={`underline hoctive:decoration-4 ${
+                                    className={`underline hoctive:decoration-4 py-6 ${
                                         pathname === data.href
                                             ? "decoration-4"
                                             : ""
