@@ -28,25 +28,40 @@ export default function Nav() {
         window.addEventListener("scroll", toggleBackground);
     }, []);
 
-    const handleMouseEnter = (i) => {
+    const handleNavMouseEnter = (i) => {
+        if (window.innerWidth < 768) return;
+
         setDropdownsVisible(
             dropdownsVisible.map((_, idx) => (idx === i ? true : false))
         );
     };
 
-    const handleMouseLeave = () => {
+    const handleNavMouseLeave = () => {
+        if (window.innerWidth < 768) return;
         setDropdownsVisible(Array(MENU_DATA.length).fill(false));
+    };
+
+    const handleNavClick = (i) => {
+        if (window.innerWidth >= 768) return;
+
+        if (dropdownsVisible[i] === true) {
+            setDropdownsVisible(Array(MENU_DATA.length).fill(false));
+        } else {
+            setDropdownsVisible(
+                dropdownsVisible.map((_, idx) => (idx === i ? true : false))
+            );
+        }
     };
 
     return (
         <nav
-            className={`min-w-full px-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
+            className={`min-w-full md:px-6 p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
                 backgroundVisible || mobileViewVisible ? "bg-theme-dark" : ""
             }`}
         >
             <div
                 onClick={() => setMobileViewVisible(!mobileViewVisible)}
-                className="sm:hidden w-full flex justify-between items-center"
+                className="md:hidden w-full flex justify-between items-center"
             >
                 <img
                     aria-hidden="true"
@@ -65,7 +80,7 @@ export default function Nav() {
                 )}
             </div>
             <ul
-                className={`min-h-full min-w-full sm:flex sm:flex-row flex-col justify-center items-center gap-16 font-medium sm:opacity-100 ${
+                className={`min-h-full min-w-full md:flex md:flex-row flex-col justify-center items-center lg:gap-16 gap-6 lg:text-md text-sm md:opacity-100 ${
                     mobileViewVisible ? "opacity-100 flex" : "opacity-0 hidden"
                 }`}
             >
@@ -73,9 +88,10 @@ export default function Nav() {
                     if (data.children) {
                         return (
                             <div
-                                className="relative py-6"
-                                onMouseEnter={() => handleMouseEnter(i)}
-                                onMouseLeave={handleMouseLeave}
+                                className="relative md:py-6"
+                                onMouseEnter={() => handleNavMouseEnter(i)}
+                                onMouseLeave={handleNavMouseLeave}
+                                onClick={() => handleNavClick(i)}
                             >
                                 <div className="flex gap-2 items-center">
                                     <p
@@ -101,7 +117,7 @@ export default function Nav() {
                         return (
                             <li key={`menu_item-${i}`}>
                                 <a
-                                    className={`underline hoctive:decoration-4 py-6 ${
+                                    className={`underline hoctive:decoration-4 md:py-6 ${
                                         pathname === data.href
                                             ? "decoration-4"
                                             : ""

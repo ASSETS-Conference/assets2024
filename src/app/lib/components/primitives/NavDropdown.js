@@ -7,7 +7,7 @@ const NavDropdown = ({ items, visible }) => {
 
     return (
         visible && (
-            <ul className="bg-theme-dark py-4 px-8 absolute top-16 left-0 min-w-[250px] flex flex-col gap-2">
+            <ul className="bg-theme-dark py-4 px-8 md:absolute md:top-16 md:left-0 md:min-w-[220px] flex flex-col gap-2">
                 {items.map((item) => (
                     <li>
                         <a
