@@ -29,6 +29,7 @@ export default function Nav() {
     }, []);
 
     const handleNavMouseEnter = (i) => {
+        // hover events only applicable when window width is >= 768px
         if (window.innerWidth < 768) return;
 
         setDropdownsVisible(
@@ -37,11 +38,13 @@ export default function Nav() {
     };
 
     const handleNavMouseLeave = () => {
+        // hover events only applicable when window width is >= 768px
         if (window.innerWidth < 768) return;
         setDropdownsVisible(Array(MENU_DATA.length).fill(false));
     };
 
     const handleNavClick = (i) => {
+        // click events only applicable when window width is < 768px
         if (window.innerWidth >= 768) return;
 
         if (dropdownsVisible[i] === true) {
@@ -55,9 +58,9 @@ export default function Nav() {
 
     return (
         <nav
-            className={`min-w-full md:px-6 p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
+            className={`min-w-full md:px-6 md:py-2 p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
                 backgroundVisible || mobileViewVisible ? "bg-theme-dark" : ""
-            }`}
+            } ${mobileViewVisible ? "h-screen" : ""}`}
         >
             <div
                 onClick={() => setMobileViewVisible(!mobileViewVisible)}
@@ -80,7 +83,7 @@ export default function Nav() {
                 )}
             </div>
             <ul
-                className={`min-h-full min-w-full md:flex md:flex-row flex-col justify-center items-center lg:gap-16 gap-6 lg:text-md text-sm md:opacity-100 ${
+                className={`min-h-full min-w-full md:flex md:flex-row flex-col md:justify-center md:items-center lg:gap-16 md:gap-6 lg:text-md md:text-sm sm:text-xl text-lg md:opacity-100 md:mt-0 mt-6 md:[&>*]:border-none [&>*]:border-b-[1px] [&>*]:border-white/25 ${
                     mobileViewVisible ? "opacity-100 flex" : "opacity-0 hidden"
                 }`}
             >
@@ -88,7 +91,7 @@ export default function Nav() {
                     if (data.children) {
                         return (
                             <div
-                                className="relative md:py-6"
+                                className="relative md:py-6 py-6"
                                 onMouseEnter={() => handleNavMouseEnter(i)}
                                 onMouseLeave={handleNavMouseLeave}
                                 onClick={() => handleNavClick(i)}
@@ -115,9 +118,9 @@ export default function Nav() {
                         );
                     } else {
                         return (
-                            <li key={`menu_item-${i}`}>
+                            <li key={`menu_item-${i}`} className="md:py-6 py-6">
                                 <a
-                                    className={`underline hoctive:decoration-4 md:py-6 ${
+                                    className={`underline hoctive:decoration-4 ${
                                         pathname === data.href
                                             ? "decoration-4"
                                             : ""
