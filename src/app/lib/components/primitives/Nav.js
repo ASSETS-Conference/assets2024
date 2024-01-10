@@ -29,7 +29,7 @@ export default function Nav() {
     }, []);
 
     const handleNavMouseEnter = (i) => {
-        // hover events only applicable when window width is >= 768px
+        // hover events only applicable for desktop menu (window width is >= 768px)
         if (window.innerWidth < 768) return;
 
         setDropdownsVisible(
@@ -38,13 +38,13 @@ export default function Nav() {
     };
 
     const handleNavMouseLeave = () => {
-        // hover events only applicable when window width is >= 768px
+        // hover events only applicable for desktop menu (window width is >= 768px)
         if (window.innerWidth < 768) return;
         setDropdownsVisible(Array(MENU_DATA.length).fill(false));
     };
 
     const handleNavClick = (i) => {
-        // click events only applicable when window width is < 768px
+        // click events only applicable for mobile menu (window width is < 768px)
         if (window.innerWidth >= 768) return;
 
         if (dropdownsVisible[i] === true) {
@@ -54,6 +54,14 @@ export default function Nav() {
                 dropdownsVisible.map((_, idx) => (idx === i ? true : false))
             );
         }
+    };
+
+    const handleTabKey = (e, i) => {
+        if (e.key !== "Tab") return;
+
+        setDropdownsVisible(
+            dropdownsVisible.map((_, idx) => (idx === i ? true : false))
+        );
     };
 
     return (
@@ -90,31 +98,33 @@ export default function Nav() {
                 {MENU_DATA.map((data, i) => {
                     if (data.children) {
                         return (
-                            <div
+                            <ul
                                 className="relative md:py-6 py-6"
                                 onMouseEnter={() => handleNavMouseEnter(i)}
                                 onMouseLeave={handleNavMouseLeave}
                                 onClick={() => handleNavClick(i)}
+                                onKeyDown={(e) => handleTabKey(e, i)}
                             >
-                                <div className="flex gap-2 items-center">
-                                    <p
-                                        className={`underline hoctive:decoration-4 cursor-pointer ${
-                                            pathname.includes(
-                                                data.title.toLowerCase()
-                                            )
-                                                ? "decoration-4"
-                                                : ""
-                                        }`}
-                                    >
-                                        {data.title}
-                                    </p>
+                                <li
+                                    tabindex="0"
+                                    className={`flex gap-2 items-center underline hoctive:decoration-4 cursor-pointer ${
+                                        pathname.includes(
+                                            data.title.toLowerCase()
+                                        )
+                                            ? "decoration-4"
+                                            : ""
+                                    }`}
+                                >
+                                    <a>{data.title}</a>
+
                                     <FaAngleDown />
-                                </div>
+                                </li>
                                 <NavDropdown
+                                    tabindex="0"
                                     items={data.children}
                                     visible={dropdownsVisible[i]}
                                 />
-                            </div>
+                            </ul>
                         );
                     } else {
                         return (

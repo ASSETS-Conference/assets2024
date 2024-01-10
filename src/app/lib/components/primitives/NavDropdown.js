@@ -15,6 +15,7 @@ const NavDropdown = ({ items, visible }) => {
                                 pathname === item.href ? "decoration-4" : ""
                             }`}
                             href={item.href}
+                            tabIndex="0"
                         >
                             {item.title}
                         </a>
