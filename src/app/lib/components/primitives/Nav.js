@@ -56,16 +56,43 @@ export default function Nav() {
         }
     };
 
+    /**
+     * Handles key input within the Menu, used for keyboard navigation. 
+     * 
+     * TODO: Make these behave more like toggle buttons. -suraj
+     * For a11y guidance used here:
+     * @see https://www.accede-web.com/en/guidelines/rich-interface-components/drop-down-menu/
+     * @param {KeyboardEvent} e The event propagating from the DOM
+     * @param {Number} i The current nav item's number
+     */
     const handleTabKey = (e, i) => {
-        if (e.key !== "Tab") return;
+        switch (e.key) {
+            case "Enter":
+                e.preventDefault()
+                setDropdownsVisible(
+                    dropdownsVisible.map((_, idx) => (idx === i ? true : false))
+                );
+                break;
+            case " ":
+                e.preventDefault()
+                setDropdownsVisible(
+                    dropdownsVisible.map((_, idx) => (idx === i ? true : false))
+                );
+                break;
+            case "Escape":
+                e.preventDefault()
+                setDropdownsVisible(
+                    dropdownsVisible.map((_, idx) => (idx === i ? false : false))
 
-        setDropdownsVisible(
-            dropdownsVisible.map((_, idx) => (idx === i ? true : false))
-        );
+                );
+            default:
+                break;
+        }
     };
 
     return (
         <nav
+            aria-description="Menu"
             className={`min-w-full md:px-6 md:py-2 p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
                 backgroundVisible || mobileViewVisible ? "bg-theme-dark" : ""
             } ${mobileViewVisible ? "h-screen" : ""}`}
@@ -99,14 +126,17 @@ export default function Nav() {
                     if (data.children) {
                         return (
                             <ul
+                                key={`nav-top-${i}`}
                                 className="relative md:py-6 py-6"
+                                role="button"
                                 onMouseEnter={() => handleNavMouseEnter(i)}
                                 onMouseLeave={handleNavMouseLeave}
                                 onClick={() => handleNavClick(i)}
                                 onKeyDown={(e) => handleTabKey(e, i)}
+                                aria-expanded={dropdownsVisible[i]} //ARIA expanded property. This is required to make this work with SRs.
                             >
                                 <li
-                                    tabindex="0"
+                                    tabIndex="0"
                                     className={`flex gap-2 items-center underline hoctive:decoration-4 cursor-pointer ${
                                         pathname.includes(
                                             data.title.toLowerCase()
@@ -120,7 +150,7 @@ export default function Nav() {
                                     <FaAngleDown />
                                 </li>
                                 <NavDropdown
-                                    tabindex="0"
+                                    tabIndex="0"
                                     items={data.children}
                                     visible={dropdownsVisible[i]}
                                 />
