@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { usePathname } from "next/navigation";
 
 const NavDropdown = ({ items, visible }) => {

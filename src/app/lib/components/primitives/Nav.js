@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import { MdOutlineClose } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaAngleDown } from "react-icons/fa6";
-import NavDropdown from "./NavDropdown";
 import { MENU_DATA } from "../../config/navigation.config";
+import NavDropdown from "./NavDropdown";
 
 export default function Nav() {
     const pathname = usePathname();
@@ -28,6 +28,9 @@ export default function Nav() {
         window.addEventListener("scroll", toggleBackground);
     }, []);
 
+    /**
+     * @param {Number} i The current nav item's number
+     */
     const handleNavMouseEnter = (i) => {
         // hover events only applicable for desktop menu (window width is >= 768px)
         if (window.innerWidth < 768) return;
@@ -43,6 +46,9 @@ export default function Nav() {
         setDropdownsVisible(Array(MENU_DATA.length).fill(false));
     };
 
+    /**
+     * @param {Number} i The current nav item's number
+     */
     const handleNavClick = (i) => {
         // click events only applicable for mobile menu (window width is < 768px)
         if (window.innerWidth >= 768) return;
@@ -57,36 +63,44 @@ export default function Nav() {
     };
 
     /**
-     * Handles key input within the Menu, used for keyboard navigation. 
-     * 
-     * TODO: Make these behave more like toggle buttons. -suraj
-     * For a11y guidance used here:
-     * @see https://www.accede-web.com/en/guidelines/rich-interface-components/drop-down-menu/
+     * Handles key input within the Menu, used for keyboard navigation.
+     *
      * @param {KeyboardEvent} e The event propagating from the DOM
      * @param {Number} i The current nav item's number
      */
-    const handleTabKey = (e, i) => {
+    const handleKeyEvents = (e, i) => {
         switch (e.key) {
             case "Enter":
-                e.preventDefault()
                 setDropdownsVisible(
                     dropdownsVisible.map((_, idx) => (idx === i ? true : false))
                 );
                 break;
             case " ":
-                e.preventDefault()
+                e.preventDefault();
                 setDropdownsVisible(
                     dropdownsVisible.map((_, idx) => (idx === i ? true : false))
                 );
                 break;
             case "Escape":
-                e.preventDefault()
+                e.preventDefault();
                 setDropdownsVisible(
-                    dropdownsVisible.map((_, idx) => (idx === i ? false : false))
-
+                    dropdownsVisible.map((_, idx) =>
+                        idx === i ? false : false
+                    )
                 );
             default:
                 break;
+        }
+    };
+
+    /**
+     * Handles dropdown menu state based on focused item.
+     *
+     * @param {KeyboardEvent} e The event propagating from the DOM
+     */
+    const handleFocus = (e) => {
+        if (!e.currentTarget.contains(e.relatedTarget)) {
+            setDropdownsVisible(Array(MENU_DATA.length).fill(false));
         }
     };
 
@@ -132,7 +146,8 @@ export default function Nav() {
                                 onMouseEnter={() => handleNavMouseEnter(i)}
                                 onMouseLeave={handleNavMouseLeave}
                                 onClick={() => handleNavClick(i)}
-                                onKeyDown={(e) => handleTabKey(e, i)}
+                                onKeyDown={(e) => handleKeyEvents(e, i)}
+                                onBlur={(e) => handleFocus(e)}
                                 aria-expanded={dropdownsVisible[i]} //ARIA expanded property. This is required to make this work with SRs.
                             >
                                 <li
