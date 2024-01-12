@@ -4,8 +4,8 @@ import { usePathname } from "next/navigation";
 import { MdOutlineClose } from "react-icons/md";
 import { AiOutlineMenu } from "react-icons/ai";
 import { FaAngleDown } from "react-icons/fa6";
-import NavDropdown from "./NavDropdown";
 import { MENU_DATA } from "../../config/navigation.config";
+import NavDropdown from "./NavDropdown";
 
 export default function Nav() {
     const pathname = usePathname();
@@ -28,8 +28,11 @@ export default function Nav() {
         window.addEventListener("scroll", toggleBackground);
     }, []);
 
+    /**
+     * @param {Number} i The current nav item's number
+     */
     const handleNavMouseEnter = (i) => {
-        // hover events only applicable when window width is >= 768px
+        // hover events only applicable for desktop menu (window width is >= 768px)
         if (window.innerWidth < 768) return;
 
         setDropdownsVisible(
@@ -38,13 +41,16 @@ export default function Nav() {
     };
 
     const handleNavMouseLeave = () => {
-        // hover events only applicable when window width is >= 768px
+        // hover events only applicable for desktop menu (window width is >= 768px)
         if (window.innerWidth < 768) return;
         setDropdownsVisible(Array(MENU_DATA.length).fill(false));
     };
 
+    /**
+     * @param {Number} i The current nav item's number
+     */
     const handleNavClick = (i) => {
-        // click events only applicable when window width is < 768px
+        // click events only applicable for mobile menu (window width is < 768px)
         if (window.innerWidth >= 768) return;
 
         if (dropdownsVisible[i] === true) {
@@ -56,8 +62,51 @@ export default function Nav() {
         }
     };
 
+    /**
+     * Handles key input within the Menu, used for keyboard navigation.
+     *
+     * @param {KeyboardEvent} e The event propagating from the DOM
+     * @param {Number} i The current nav item's number
+     */
+    const handleKeyEvents = (e, i) => {
+        switch (e.key) {
+            case "Enter":
+                setDropdownsVisible(
+                    dropdownsVisible.map((_, idx) => (idx === i ? true : false))
+                );
+                break;
+            case " ":
+                e.preventDefault();
+                setDropdownsVisible(
+                    dropdownsVisible.map((_, idx) => (idx === i ? true : false))
+                );
+                break;
+            case "Escape":
+                e.preventDefault();
+                setDropdownsVisible(
+                    dropdownsVisible.map((_, idx) =>
+                        idx === i ? false : false
+                    )
+                );
+            default:
+                break;
+        }
+    };
+
+    /**
+     * Handles dropdown menu state based on focused item.
+     *
+     * @param {KeyboardEvent} e The event propagating from the DOM
+     */
+    const handleFocus = (e) => {
+        if (!e.currentTarget.contains(e.relatedTarget)) {
+            setDropdownsVisible(Array(MENU_DATA.length).fill(false));
+        }
+    };
+
     return (
         <nav
+            aria-description="Menu"
             className={`min-w-full md:px-6 md:py-2 p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
                 backgroundVisible || mobileViewVisible ? "bg-theme-dark" : ""
             } ${mobileViewVisible ? "h-screen" : ""}`}
@@ -90,31 +139,37 @@ export default function Nav() {
                 {MENU_DATA.map((data, i) => {
                     if (data.children) {
                         return (
-                            <div
+                            <ul
+                                key={`nav-top-${i}`}
                                 className="relative md:py-6 py-6"
+                                role="button"
                                 onMouseEnter={() => handleNavMouseEnter(i)}
                                 onMouseLeave={handleNavMouseLeave}
                                 onClick={() => handleNavClick(i)}
+                                onKeyDown={(e) => handleKeyEvents(e, i)}
+                                onBlur={(e) => handleFocus(e)}
+                                aria-expanded={dropdownsVisible[i]} //ARIA expanded property. This is required to make this work with SRs.
                             >
-                                <div className="flex gap-2 items-center">
-                                    <p
-                                        className={`underline hoctive:decoration-4 cursor-pointer ${
-                                            pathname.includes(
-                                                data.title.toLowerCase()
-                                            )
-                                                ? "decoration-4"
-                                                : ""
-                                        }`}
-                                    >
-                                        {data.title}
-                                    </p>
+                                <li
+                                    tabIndex="0"
+                                    className={`flex gap-2 items-center underline hoctive:decoration-4 cursor-pointer ${
+                                        pathname.includes(
+                                            data.title.toLowerCase()
+                                        )
+                                            ? "decoration-4"
+                                            : ""
+                                    }`}
+                                >
+                                    <a>{data.title}</a>
+
                                     <FaAngleDown />
-                                </div>
+                                </li>
                                 <NavDropdown
+                                    tabIndex="0"
                                     items={data.children}
                                     visible={dropdownsVisible[i]}
                                 />
-                            </div>
+                            </ul>
                         );
                     } else {
                         return (
