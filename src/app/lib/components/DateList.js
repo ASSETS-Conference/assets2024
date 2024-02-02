@@ -63,9 +63,9 @@ export function EventItem({ title, date, time }) {
             <p className="font-medium my-2 text-xl md:mt-2 md:text-2xl">
                 {title}
             </p>
-            <div className="flex items-center gap-8">
+            <div className="grid grid-cols-2 gap-8">
                 <p>{date}</p>
-                <p>{time} AOE</p>
+                <p className="!mt-0">{time} AOE</p>
             </div>
         </div>
     );
