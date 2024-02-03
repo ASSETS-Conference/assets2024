@@ -11,7 +11,7 @@ const TECHNICAL_PAPERS_DATES = [
         ],
     },
     {
-        month: "May",
+        month: "April",
         year: "2024",
         eventItems: [
             {
