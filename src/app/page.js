@@ -3,45 +3,60 @@ import Hero from "./lib/components/Hero";
 import Container from "./lib/components/primitives/Container";
 import Link from "./lib/components/primitives/Link";
 import Section from "./lib/components/primitives/Section";
-import { CONFERENCE_DATES } from "./lib/config/homepage.config";
+import { TECHNICAL_PAPERS_DATES } from "./lib/config/importantdates.config";
 import { createMetadata } from "./lib/utils/createMetadata";
 
 export const metadata = createMetadata({ title: "Home" });
 export default function Home() {
-  return (
-    <>
-      <main id="">
-        <Hero />
-        <Container id="content">
-          <Section title="ASSETS at a Glance" spacing={"top-only"}>
-            {/* <div className="flex flex-row gap-x-12"> */}
-              {/* <div className="flex flex-col gap-y-4"> */}
-                <p className="h3">{`The 26th International ACM SIGACCESS Conference on Computers and Accessibility.`}</p>
-                <p>{`The ASSETS conference is the premier forum for presenting research on the design, evaluation, use, and education related to computing for people with disabilities and older adults. For those in Europe and Oceania, ASSETS is rated as Core A — a designation for the top academic conferences that are "highly respected in a discipline area" (Core A; Top 16%).`}</p>
-                <p>
-                  {`We invite high-quality original submissions on topics relevant to computing and accessibility. All contributions are peer-reviewed by an international Program Committee. Accepted papers and the abstracts for posters and demonstrations, experience reports, and the student research competition will be archived in the ACM Digital Library. Authors of selected papers will be invited to submit extended versions of their papers to a special issue of the`}{" "}
-                  <Link
-                    href="https://dl.acm.org/journal/taccess"
-                    target="_blank"
-                    colour={"primary"}
-                  >{`ACM Transactions on Accessible Computing (TACCESS)`}</Link>
-                  .
-                </p>
-              {/* </div> */}
-              {/* <div className="object-cover ">
-                <img className="aspect-[9/16] object-cover" src="/assets/assets23-img-2.jpg" />
-              </div> */}
-            {/* </div> */}
-          </Section>
-          <Section title="Important Dates" spacing={"standard"}>
-            <p>
-              <strong>All deadlines</strong> are 11:59 P.M. Anywhere on Earth
-              (UTC -12:00).
-            </p>
-            <DateList dates={null} />
-          </Section>
-        </Container>
-      </main>
-    </>
-  );
+    return (
+        <>
+            <main id="">
+                <Hero />
+                <Container id="content">
+                    <Section title="ASSETS at a Glance" spacing={"top-only"}>
+                        <p className="h3">{`The 26th International ACM SIGACCESS Conference on Computers and Accessibility.`}</p>
+                        <p>{`The ASSETS conference is the premier forum for presenting research on the design, evaluation, use, and education related to computing for people with disabilities and older adults. For those in Europe and Oceania, ASSETS is rated as Core A — a designation for the top academic conferences that are "highly respected in a discipline area" (Core A; Top 16%).`}</p>
+                        <p>
+                            {`We invite high-quality original submissions on topics relevant to computing and accessibility. All contributions are peer-reviewed by an international Program Committee. Accepted papers and the abstracts for posters and demonstrations, experience reports, and the student research competition will be archived in the ACM Digital Library. Authors of selected papers will be invited to submit extended versions of their papers to a special issue of the`}{" "}
+                            <Link
+                                href="https://dl.acm.org/journal/taccess"
+                                target="_blank"
+                                colour={"primary"}
+                            >{`ACM Transactions on Accessible Computing (TACCESS)`}</Link>
+                            .
+                        </p>
+                    </Section>
+                    <Section title="Important Dates" spacing={"top-only"}>
+                        <p>
+                            <strong>All deadlines</strong> are 11:59 P.M.
+                            Anywhere on Earth (UTC -12:00).
+                        </p>
+                        <DateList dates={TECHNICAL_PAPERS_DATES} />
+                    </Section>
+                    <Section title="Location & Venue" spacing={"bottom-only"}>
+                        <p>
+                            {`The ASSETS 2024 Conference will be held at `}{" "}
+                            <Link
+                                href="https://www.marriott.com/en-us/hotels/yytsi-sheraton-hotel-newfoundland/overview/"
+                                target="_blank"
+                                colour={"primary"}
+                            >
+                                Sheraton Hotel Newfoundland
+                            </Link>{" "}
+                            {`in downtown St. John's, Newfoundland.`}
+                        </p>
+                        <p>
+                            <strong>{`115 Cavendish Square, St. Johns, Newfoundland and Labrador, Canada, A1C 3K2`}</strong>
+                        </p>
+                        <div className="object-cover mt-4">
+                            <img
+                                className="aspect-[16/9] object-cover"
+                                src="/assets/venue.webp"
+                            />
+                        </div>
+                    </Section>
+                </Container>
+            </main>
+        </>
+    );
 }
