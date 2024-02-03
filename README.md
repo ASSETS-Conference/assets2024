@@ -2,8 +2,8 @@
 
 This repository hosts the ASSETS 2024 website:
 
+- Production server: [https://assets24.sigaccess.org/](https://assets24.sigaccess.org)
 - Test server: [https://assets-conference.github.io/assets2024/](https://assets-conference.github.io/assets2024/)
-- Production server: `Coming soon.`
 
 ## Technologies Used:
 - [NextJS](https://nextjs.org/)
@@ -54,4 +54,4 @@ To learn more about Tailwind, take a look at the following resources:
 - [Tailwind Documentation](https://tailwindcss.com/docs/) - learn about Tailwind features and API.
 
 ## Need Help?
-Feel free to make a GitHub Issue!
+Feel free to make a GitHub Issue or email us, `web-assets24@acm.org`
