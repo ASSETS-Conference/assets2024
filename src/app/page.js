@@ -52,6 +52,7 @@ export default function Home() {
                             <img
                                 className="aspect-[16/9] object-cover"
                                 src="/assets/venue.webp"
+                                alt="The Sheraton Hotel Newfoundland building in front of a night sky."
                             />
                         </div>
                     </Section>
