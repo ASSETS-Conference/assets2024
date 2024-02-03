@@ -2,7 +2,7 @@
 
 This repository hosts the ASSETS 2024 website:
 
-- Production server: [https://assets24.sigaccess.org/](https://assets24.sigaccess.org
+- Production server: [https://assets24.sigaccess.org/](https://assets24.sigaccess.org)
 - Test server: [https://assets-conference.github.io/assets2024/](https://assets-conference.github.io/assets2024/)
 
 ## Technologies Used:
