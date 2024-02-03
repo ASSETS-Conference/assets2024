@@ -11,7 +11,7 @@ export default function NotFound() {
                 <div className="flex flex-col gap-4 sm:items-start items-center">
                     <p className="sm:text-left text-center">
                         {`Hey, you might be lost. The page you're looking for
-                        doesn't exist.`}
+                        doesn't exist or it isn't ready yet.`}
                     </p>
                     <Link href="/">
                         <button className="px-4 py-3 bg-theme-dark rounded-full text-white font-bold text-xs hover:-translate-y-1 transition ease-in-out duration-300">
