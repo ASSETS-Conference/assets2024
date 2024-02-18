@@ -5,7 +5,7 @@ const TECHNICAL_PAPERS_DATES = [
         eventItems: [
             {
                 title: "Deadline for Requesting Mentors",
-                date: "Wednesday, March 6th, 2024",
+                date: "Wednesday, March 20th, 2024",
                 time: "11:59PM",
             },
         ],
