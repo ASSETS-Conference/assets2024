@@ -23,8 +23,10 @@ const nextConfig = {
     
     output: 'export',
     trailingSlash: true,
+
     images: {
-        unoptimized: true
+        loader: 'custom',
+        loaderFile: './src/app/lib/utils/customImageLoader.js',
     }
 }
 
