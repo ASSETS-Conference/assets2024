@@ -182,7 +182,7 @@ export default function CreatingA11y() {
           {`To assist you with creating an accessible video presentation, we have
           developed the following guidelines:`}
         </p>
-        <h2>{`Steps for creating video presentation and closed-captioning:`}</h2>
+        <h2 id="steps-for-creating-video-presentation-and-closed-captioning">{`Steps for creating video presentation and closed-captioning:`}</h2>
         <ul>
           <li>
             {`Please DO NOT burn the captioning text directly into your video presentation. You will upload the video and closed-captioning files separately.`}
@@ -193,7 +193,7 @@ export default function CreatingA11y() {
             {`Try to keep your reading speed under 180 words per minute.`}
           </li>
         </ul>
-        <h2>{`Guidelines for creating your presentation video:`}</h2>
+        <h2 id="guidelines-for-creating-your-presentation-video">{`Guidelines for creating your presentation video:`}</h2>
         <ul>
           <li>
             {`Create your presentation video with audio using your favorite program (Adobe Premiere Pro, Zoom, PowerPoint, etc.).`}
@@ -208,7 +208,7 @@ export default function CreatingA11y() {
           <li>{`Video resolution: 1920 x 1080px`}</li>
           <li>{`Video format: MP4`}</li>
         </ul>
-        <h2>{`Guidelines for accessible narrations:`}</h2>
+        <h2 id="guidelines-for-accessible-narrations">{`Guidelines for accessible narrations:`}</h2>
         <ul>
           <li>
             {`Your narrations should be able to stand on their own. Try listening to your video without looking at it. If everything makes sense, you are on the right track.`}
@@ -221,7 +221,7 @@ export default function CreatingA11y() {
             {`Make sure you read or closely paraphrase any text that appears in the video.`}
           </li>
         </ul>
-        <h2>{`Guidelines for closed-captioning:`}</h2>
+        <h2 id="guidelines-for-closed-captioning">{`Guidelines for closed-captioning:`}</h2>
         <ul>
           <li>{`Font: A san serif font (e.g., Arial, Helvetica, Verdana)`}</li>
           <li>{`Font Color: White`}</li>
@@ -246,7 +246,7 @@ export default function CreatingA11y() {
             {`If splitting your subtitles into two (2) lines, keep the lines at an equal or similar length.`}
           </li>
         </ul>
-        <h3>For authors using Adobe Premiere Pro:</h3>
+        <h3 id="for-authors-using-Adobe-Premiere">For authors using Adobe Premiere Pro:</h3>
         <ul>
           <li>
             {`To create or generate your captions, please follow the instructions
@@ -262,7 +262,7 @@ export default function CreatingA11y() {
             >{`https://helpx.adobe.com/premiere-pro/using/export-text-captions.html`}</Link>
           </li>
         </ul>
-        <h3>For authors using Flixier:</h3>
+        <h3 id="for-authors-using-Flixier">For authors using Flixier:</h3>
         <ul>
           <li>
             {`To create, generate, and download your captions as a SRT file, please follow the instructions on “Add or Generate Subtitles” at:`}{" "}
@@ -271,7 +271,7 @@ export default function CreatingA11y() {
             >{`https://flixier.com/help/219-adding-subtitles`}</Link>
           </li>
         </ul>
-        <h3>Additional resources:</h3>
+        <h3 id="additional-resources">Additional resources:</h3>
         <ul>
           <li>
             {`Guide on language mechanics for captioning`}{" "}
@@ -289,14 +289,42 @@ export default function CreatingA11y() {
         </ul>
         <p>
           {`All accessible video presentation submissions (.mp4 and .srt) are due
-          no later than (DATE TBA). Instructions for submitting the video
+          no later than`} <b>(DATE TBA)</b>. {`Instructions for submitting the video
           presentation files will be announced shortly.`}
         </p>
         <p>
           {`If you have any questions about the accessible video presentation
           guidelines, please contact the Accessibility Chairs at `}
-          <Link href={"mailto:access-assets24@acm.org"}>access-assets24@acm.org.</Link>
+          <Link href={"mailto:access-assets24@acm.org"}>
+            access-assets24@acm.org.
+          </Link>
         </p>
+        <h2 id="making-accessible-presentations">Making Accessible Presentations</h2>
+        <p>
+          {`Presenters are responsible for making their presentations accessible
+          to the diverse attendees at the conference. For instance, there will
+          be ASL interpreters during the conference for people who use sign
+          language, and there will be attendees in the audience who are blind or
+          who have low vision.`}
+        </p>
+        <p>
+          {`As a resource to our community, Kyle Rector has prepared a wonderful
+          and concise guide about how to make your presentation accessible,
+          along with a video `}
+          <Link
+            href={`http://www.sigaccess.org/welcome-to-sigaccess/resources/accessible-presentation-guide/`}
+          >
+            {`Accessible Presentation Guide`}
+          </Link>
+          {` Please ensure that your presentation incorporates the recommendations from this guide.`}
+        </p>
+      </Section>
+      <Section title="Other Useful Links" spacing={"bottom-only"}>
+        <ul>
+          <li><Link href={"http://interactions.acm.org/archive/view/november-december-2015/writing-about-accessibility"}>Writing Guidelines</Link></li>
+          <li><Link href={"https://www.acm.org/publications/policies"}>ACM Policies</Link></li>
+          <li><Link href={"https://www.sigaccess.org/welcome-to-sigaccess/resources/conflict-of-interest/"}>Conflict of Interest</Link></li>
+        </ul>
       </Section>
     </Subpage>
   );

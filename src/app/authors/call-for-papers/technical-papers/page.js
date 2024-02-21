@@ -25,7 +25,7 @@ export default function TechnicalPapers() {
         <DateList dates={TECHNICAL_PAPERS_SUBPAGE_DEADLINES} />
       </Section>
       <Section title={"Submission Guidelines"} spacing={"bottom-only"}>
-        <h2>Paper Format and Length</h2>
+        <h2 id="paper-format-and-length">Paper Format and Length</h2>
         <ul>
           <li>
             ASSETS uses{" "}
@@ -44,9 +44,9 @@ export default function TechnicalPapers() {
               single-column LaTeX
             </Link>{" "}
             (using “manuscript” style available in the template). You may also
-            choose to use
+            choose to use 
             <Link href="https://authors.acm.org/proceedings/production-information/overleaf">
-              Overleaf
+              {` Overleaf`}
             </Link>
             .
           </li>
@@ -61,7 +61,7 @@ export default function TechnicalPapers() {
           </Link>
           .
         </p>
-        <h2>Accessible Submissions</h2>
+        <h2 id="accessible-submissions">Accessible Submissions</h2>
         <p>
           {`Your PDF file must be accessible. It may take several hours to make your PDF file accessible (adding alt tags, etc.), so be sure to leave time before the submission deadline to do so. Please refer to the instructions on `}
           <Link href="/resources/creating-a11y-pdfs">
@@ -82,7 +82,7 @@ export default function TechnicalPapers() {
           </Link>
           .{" "}
         </p>
-        <h3>Optional Accessible Video Figures as Supplementary Material</h3>
+        <h3 id="optional-accessible-video-figures">Optional Accessible Video Figures as Supplementary Material</h3>
         <p>
           You may include optional video figures to accompany your paper
           submissions as supplementary material, which may be up to{" "}
@@ -106,7 +106,7 @@ export default function TechnicalPapers() {
             Accessible Video Figures.
           </Link>
         </p>
-        <h2>Anonymous Submissions</h2>
+        <h2 id="anonymous-submissions">Anonymous Submissions</h2>
         <p>
           {`ASSETS will utilize a fully anonymous review process for Technical
           Papers, in which the`}{" "}
@@ -139,7 +139,7 @@ export default function TechnicalPapers() {
           contribute to ongoing community efforts around name normalization;
           your ORCID ID will help in these efforts.`}
         </p>
-        <h2>Review Process</h2>
+        <h2 id="review-process">Review Process</h2>
         <p>
           {`Submissions that do not meet formatting or accessibility guidelines,
           are not properly anonymized, are out of the topical scope of the
@@ -170,7 +170,7 @@ export default function TechnicalPapers() {
           ACM Digital Library as far as two weeks in advance of the conference
           date.`}
         </p>
-        <h2>How to submit</h2>
+        <h2 id="how-to-submit">How to submit</h2>
         <p>
           The submission deadline is{" "}
           <b>
@@ -180,7 +180,7 @@ export default function TechnicalPapers() {
           {`Please submit via the ASSETS 2024
           technical papers submission site (link coming soon).`}
         </p>
-        <h2>Author PCS Account Details</h2>
+        <h2 id="author-PCS-account-details">Author PCS Account Details</h2>
         <p>
           {`ACM continues to update the publication process. Currently, paper
           metadata will be pulled directly from your personal PCS account. This
@@ -194,7 +194,7 @@ export default function TechnicalPapers() {
             check your author information and make the necessary changes.
           </Link>
         </p>
-        <h2>Publishing with ACM Digital Library</h2>
+        <h2 id="publishing-with-ACM-Digital-Library">Publishing with ACM Digital Library</h2>
         <p>
           {`The official publication date is when the proceedings are made
           available in the ACM Digital Library. This date may be up to two weeks
