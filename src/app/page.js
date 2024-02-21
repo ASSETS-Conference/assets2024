@@ -44,10 +44,10 @@ export default function Home() {
                             >
                                 Sheraton Hotel Newfoundland
                             </Link>{" "}
-                            {`in downtown St. John's, Newfoundland.`}
+                            {`in downtown St. John's, Newfoundland and Labrador.`}
                         </p>
                         <p>
-                            <strong>{`115 Cavendish Square, St. Johns, Newfoundland and Labrador, Canada, A1C 3K2`}</strong>
+                            <strong>{`115 Cavendish Square, St. John's, Newfoundland and Labrador, Canada, A1C 3K2`}</strong>
                         </p>
                         <div className="object-cover mt-4">
                             <Image

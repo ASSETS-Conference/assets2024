@@ -16,7 +16,7 @@ const createMetadata = ({ title }) => {
       "SIGCHI",
       "CHI",
       "Conference",
-      "St. Johns Conference",
+      "St. John's Conference",
       "Accessibility Conference",
     ],
     openGraph: {

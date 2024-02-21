@@ -23,7 +23,7 @@ export default function HeroCard() {
             <div className="text-theme-off-white flex items-end md:flex-row flex-col md:gap-8 gap-4">
                 <p className="md:w-[50%] w-full font-bold flex md:flex-col flex-row md:gap-1 gap-2">
                     <FaLocationPin className="text-xl" />
-                    St Johns, Newfoundland and Labrador
+                    St. John's, Newfoundland and Labrador
                 </p>
                 <p className="md:w-[50%] w-full font-bold flex md:flex-col flex-row md:gap-1 gap-2">
                     <AiFillCalendar className="text-xl" />
