@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { DateList } from "./lib/components/DateList";
 import Hero from "./lib/components/Hero";
 import Container from "./lib/components/primitives/Container";
@@ -49,7 +50,10 @@ export default function Home() {
                             <strong>{`115 Cavendish Square, St. Johns, Newfoundland and Labrador, Canada, A1C 3K2`}</strong>
                         </p>
                         <div className="object-cover mt-4">
-                            <img
+                            <Image
+                                unoptimized
+                                width={1000}
+                                height={1000}
                                 className="aspect-[16/9] object-cover"
                                 src="/assets/venue.webp"
                                 alt="The Sheraton Hotel Newfoundland building in front of a night sky."

@@ -1,12 +1,16 @@
 import React from "react";
 import { FaLocationPin } from "react-icons/fa6";
 import { AiFillCalendar } from "react-icons/ai";
+import Image from "next/image";
 
 export default function HeroCard() {
     return (
         <div className="2xl:w-[66%] xl:w-[90%] lg:w-[80%] w-[100%] min-h-[50%] h-fit z-10 bg-theme-dark md:p-16 sm:p-12 p-8 flex flex-col gap-16 justify-between">
             <div className="text-theme-off-white flex flex-col gap-8">
-                <img
+                <Image
+                    unoptimized
+                    width={500}
+                    height={225}
                     className="w-[300px]"
                     src="./assets/logos/a24-simplified-logo-grey.svg"
                     alt="Assets 2024 Logo, displaying a lighthouse to the left and the words 'assets' in the middle."

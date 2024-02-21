@@ -1,6 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import Link from "./Link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -14,8 +15,10 @@ export default function Footer() {
             <div className="mt-8 max-w-[100%] xl:max-w-[60%]">
               <p className="font-light">
                 Please contact the{" "}
-                <Link href="mailto:generalchair-assets24@acm.org">General Chair</Link> for
-                more information about the conference.
+                <Link href="mailto:generalchair-assets24@acm.org">
+                  General Chair
+                </Link>{" "}
+                for more information about the conference.
               </p>
               <p className="mt-4">
                 Please contact the{" "}
@@ -27,8 +30,17 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <p className="text-2xl font-bold hidden xl:block text-right">All rights reserved</p>
-            <img className="mt-12 w-[200px] md:w-[40%] xl:w-auto " src="/assets/logos/a24-full-logo-grey.svg" alt="Assets 2024 Logo, displaying a lighthouse to the left and the words 'assets' in the middle."/>
+            <p className="text-2xl font-bold hidden xl:block text-right">
+              All rights reserved
+            </p>
+            <Image
+              unoptimized
+              width={500}
+              height={225}
+              className="mt-12 w-[200px] md:w-[40%] xl:w-auto "
+              src="/assets/logos/a24-full-logo-grey.svg"
+              alt="Assets 2024 Logo, displaying a lighthouse to the left and the words 'assets' in the middle."
+            />
           </div>
         </div>
       </Container>
