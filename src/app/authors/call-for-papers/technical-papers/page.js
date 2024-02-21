@@ -77,8 +77,8 @@ export default function TechnicalPapers() {
           </b>{" "}
           If you have questions about making your paper accessible, please
           contact{" "}
-          <Link href="mailto:papers-assets24@acm.org">
-            papers-assets24@acm.org
+          <Link href="mailto:tpc-assets24@acm.org">
+            tpc-assets24@acm.org
           </Link>
           .{" "}
         </p>
@@ -229,7 +229,7 @@ export default function TechnicalPapers() {
         <p>
           {`For further information or any questions regarding technical paper
           submissions, please contact the Program Chairs, Robin Brewer and Tiago
-          Guerreiro, at `}<Link href={'mailto:papers-assets24@acm.org'}>papers-assets24@acm.org.</Link>
+          Guerreiro, at `}<Link href={'mailto:tpc-assets24@acm.org'}>tpc-assets24@acm.org.</Link>
         </p>
       </Section>
     </Subpage>
