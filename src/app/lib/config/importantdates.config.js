@@ -27,7 +27,7 @@ const TECHNICAL_PAPERS_DATES = [
         eventItems: [
             {
                 title: "Author Rebuttal Period Opens",
-                date: "Wednesday, June 6th, 2024",
+                date: "Wednesday, June 5th, 2024",
                 time: "11:59PM",
             },
             {
@@ -70,10 +70,9 @@ const TECHNICAL_PAPERS_SUBPAGE_DEADLINES = [
                 date: "Wednesday, June 26th, 2024",
                 time: "11:59PM",
             },
-            
         ],
     },
-]
+];
 
 const POSTER_DEMOS_DATES = [
     {
@@ -268,5 +267,5 @@ export {
     DOCTORAL_CONSORTIUM_DATES,
     STUDENT_RESEARCH_DATES,
     WORKSHOP_PROPOSAL_DATES,
-    TECHNICAL_PAPERS_SUBPAGE_DEADLINES
+    TECHNICAL_PAPERS_SUBPAGE_DEADLINES,
 };
