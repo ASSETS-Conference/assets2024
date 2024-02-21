@@ -7,6 +7,7 @@ import { FaAngleDown } from "react-icons/fa6";
 import { MENU_DATA } from "../../config/navigation.config";
 import NavDropdown from "./NavDropdown";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Nav() {
   const pathname = usePathname();
@@ -158,7 +159,7 @@ export default function Nav() {
                       : ""
                   }`}
                 >
-                  <a>{data.title}</a>
+                  <Link>{data.title}</Link>
 
                   <FaAngleDown />
                 </li>
@@ -172,14 +173,14 @@ export default function Nav() {
           } else {
             return (
               <li key={`menu_item-${i}`} className="md:py-6 py-6">
-                <a
+                <Link
                   className={`underline hoctive:decoration-4 ${
                     pathname === data.href ? "decoration-4" : ""
                   }`}
                   href={data.href}
                 >
                   {data.title}
-                </a>
+                </Link>
               </li>
             );
           }
