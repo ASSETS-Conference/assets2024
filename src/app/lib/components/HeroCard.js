@@ -16,7 +16,7 @@ export default function HeroCard() {
                     alt="Assets 2024 Logo, displaying a lighthouse to the left and the words 'assets' in the middle."
                 />
                 <p>
-                    The 24th International ACM SIGACCESS Conference on Computers
+                    The 26th International ACM SIGACCESS Conference on Computers
                     and Accessibility
                 </p>
             </div>
