@@ -4,172 +4,172 @@ import Subpage from "@/app/lib/components/templates/Subpage";
 import { createMetadata } from "@/app/lib/utils/createMetadata";
 import Link from "@/app/lib/components/primitives/Link";
 import {
-  TECHNICAL_PAPERS_DATES,
-  TECHNICAL_PAPERS_SUBPAGE_DEADLINES,
+    TECHNICAL_PAPERS_DATES,
+    TECHNICAL_PAPERS_SUBPAGE_DEADLINES,
 } from "@/app/lib/config/importantdates.config";
 import { DateList } from "@/app/lib/components/DateList";
 
 export const metadata = createMetadata({ title: "Accessibility Guidelines" });
 
 export default function CreatingA11y() {
-  return (
-    <Subpage
-      title={"Accessibility Guidelines"}
-      subheading={
-        "Guidelines for ensuring accessible submissions for ASSETS '24"
-      }
-    >
-      <Section title="Creating Accessible PDFs" spacing={"bottom-only"}>
-        <p>
-          {`ACM publications are read (and reviewed) by many people. Making your
+    return (
+        <Subpage
+            title={"Accessibility Guidelines"}
+            subheading={
+                "Guidelines for ensuring accessible submissions for ASSETS '24"
+            }
+        >
+            <Section title="Creating Accessible PDFs" spacing={"bottom-only"}>
+                <p>
+                    {`ACM publications are read (and reviewed) by many people. Making your
           paper accessible will help to promote the equal participation of
           people with disabilities in science and engineering. This note
           describes how to check if your PDF is accessible, and how to fix the
           most common accessibility problems. For more information please refer
           to`}{" "}
-          <Link href="http://www.adobe.com/accessibility/resources.html">
-            Adobe's accessibility resource center
-          </Link>
-          .
-        </p>
-      </Section>
-      <Section
-        title="How do I test if my PDF is accessible?"
-        spacing={"bottom-only"}
-      >
-        <ul>
-          <li>
-            {`The document should be tagged. In Adobe Acrobat Pro: Go to the
+                    <Link href="http://www.adobe.com/accessibility/resources.html">
+                        {`Adobe's accessibility resource center`}
+                    </Link>
+                    .
+                </p>
+            </Section>
+            <Section
+                title="How do I test if my PDF is accessible?"
+                spacing={"bottom-only"}
+            >
+                <ul>
+                    <li>
+                        {`The document should be tagged. In Adobe Acrobat Pro: Go to the
             'File' menu. 'Document properties'. 'Description' tab. Look for
             'Tagged PDF: Yes' among the set of advanced properties. If you do
             not have access to Adobe Acrobat, try selecting some text in the PDF
             and pasting it into a text editor. If you can't do this, or the text
             looks wrong, chances are your document is not readable with a screen
             reader.`}
-          </li>
-          <li>
-            {`Check the accessibility. In Adobe Acrobat Pro: Go to the 'Advanced'
+                    </li>
+                    <li>
+                        {`Check the accessibility. In Adobe Acrobat Pro: Go to the 'Advanced'
             menu. 'Accessibility'. 'Full Check'. The checker will report
             accessibility problems.`}
-          </li>
-          <li>
-            {`Fonts should be embedded, or your PDF will need to be regenerated,
+                    </li>
+                    <li>
+                        {`Fonts should be embedded, or your PDF will need to be regenerated,
             and you may lose accessibility that you have added. In Adobe Acrobat
             Pro: Go to the 'File' menu. 'Document properties'. 'Fonts 'tab. All
             of the fonts should have the word 'embedded' in parentheses after
             the font name (unless they are not visible in the final document).`}
-          </li>
-        </ul>
-      </Section>
-      <Section
-        title={"How do I fix accessibility problems?"}
-        spacing={"bottom-only"}
-      >
-        <p>
-          {`Word users should correct as many problems as possible in the Word
+                    </li>
+                </ul>
+            </Section>
+            <Section
+                title={"How do I fix accessibility problems?"}
+                spacing={"bottom-only"}
+            >
+                <p>
+                    {`Word users should correct as many problems as possible in the Word
           source file rather than the pdf, as described in the next section. On
           a PC, the Adobe plugin for Word can export accessibility features from
           the Word document into the pdf.`}
-        </p>
-        <p>
-          {`On a Mac, this is not the case. Those using Word on a Mac, and all
+                </p>
+                <p>
+                    {`On a Mac, this is not the case. Those using Word on a Mac, and all
           LaTeX users will need to edit the PDF directly using Adobe Acrobat. A
           better basic PDF may be produced by using latex2pdf as opposed to
           ps2pdf. See also the`}{" "}
-          <Link href="http://webaim.org/techniques/acrobat/converting">
-            WebAim PDF Accessibility primer
-          </Link>
-          {` which provides
+                    <Link href="http://webaim.org/techniques/acrobat/converting">
+                        WebAim PDF Accessibility primer
+                    </Link>
+                    {` which provides
           information for OpenOffice users.`}
-        </p>
-        <p>
-          {`The accessibility checker in Adobe Acrobat Pro provides help with
+                </p>
+                <p>
+                    {`The accessibility checker in Adobe Acrobat Pro provides help with
           fixing many accessibility problems. The following steps are for Adobe
           Acrobat Pro 9.`}{" "}
-          <Link href="http://www.sigaccess.org/welcome-to-sigaccess/resources/accessible-pdf-author-guide/">
-            More detailed instructions for Adobe Acrobat Pro XI
-          </Link>
-          {` and a`}
-          <Link href="https://www.youtube.com/watch?v=fO4udYorD6g">
-            {" "}
-            video for Adobe Acrobat Pro XI,
-          </Link>
-          {` are also available. Please see `}
-          <Link href="http://www.adobe.com/accessibility/resources.html">{`Adobe's best practices`}</Link>
-          {` for instructions covering more versions of Adobe Acrobat.`}
-        </p>
-        <ul>
-          <li>
-            {`Add tags. Go to the 'Advanced' menu. Select 'Accessibility', then
+                    <Link href="http://www.sigaccess.org/welcome-to-sigaccess/resources/accessible-pdf-author-guide/">
+                        More detailed instructions for Adobe Acrobat Pro XI
+                    </Link>
+                    {` and a`}
+                    <Link href="https://www.youtube.com/watch?v=fO4udYorD6g">
+                        {" "}
+                        video for Adobe Acrobat Pro XI,
+                    </Link>
+                    {` are also available. Please see `}
+                    <Link href="http://www.adobe.com/accessibility/resources.html">{`Adobe's best practices`}</Link>
+                    {` for instructions covering more versions of Adobe Acrobat.`}
+                </p>
+                <ul>
+                    <li>
+                        {`Add tags. Go to the 'Advanced' menu. Select 'Accessibility', then
             'Add tags to document'.`}
-          </li>
-          <li>
-            {`Add alternative text for figures. Context-click the Figure, select
+                    </li>
+                    <li>
+                        {`Add alternative text for figures. Context-click the Figure, select
             'Properties', and fill in 'Alternate Text'. If no 'Properties'
             option appears, go to the 'Advanced' menu, select 'Touch Up Reading
             Order', and then try context-clicking on the figures again, looking
             for an 'Edit alternate text' option.`}
-          </li>
-          <li>
-            {`Specify the document language. Go to the 'File' menu. Select
+                    </li>
+                    <li>
+                        {`Specify the document language. Go to the 'File' menu. Select
             'Properties', then the 'Advanced' tab, 'Language' field. In some
             versions of Acrobat, the 'Properties' option is called 'Document
             Properties'. In some versions the 'Language' field is in a 'Reading
             Options' tab.`}
-          </li>
-          <li>
-            {`Define tab order.`}
-            <ul>
-              <li>{`Go to the 'View' menu. Select 'Navigation tabs', then 'Pages'.`}</li>
-              <li>{`Click on any page, then type Ctrl-A (or Command-A on a Mac) to select all the pages.`}</li>
-              <li>{`Go to the 'Options' menu in the top right of the dialog box (icon showing two cogs), and select 'Page Properties'.`}</li>
-              <li>{`In the 'Tab Order' tab, select 'Use document structure'.`}</li>
-            </ul>
-          </li>
-          <li>
-            {`Make sure tables have headings.`}
-            <ul>
-              <li>{`Go to the 'View' menu. Select 'Navigation tabs', then 'Tags'.`}</li>
-              <li>{`Select the 'Tags' tab. This panel shows the document structure as a tree.`}</li>
-              <li>{`Navigate to the table cells that should be headers.`}</li>
-              <li>{`Check they have the type <TH>. If not, then right click on the header cell, select 'properties', select the 'Tag' tab, and change the value for 'Type' to 'Table Header Cell'.`}</li>
-            </ul>
-          </li>
-        </ul>
-      </Section>
-      <Section
-        title="Creating an accessible PDF directly from Word"
-        spacing={"bottom-only"}
-      >
-        <p>
-          {`The following link provides step-by-step instructions for adding basic
+                    </li>
+                    <li>
+                        {`Define tab order.`}
+                        <ul>
+                            <li>{`Go to the 'View' menu. Select 'Navigation tabs', then 'Pages'.`}</li>
+                            <li>{`Click on any page, then type Ctrl-A (or Command-A on a Mac) to select all the pages.`}</li>
+                            <li>{`Go to the 'Options' menu in the top right of the dialog box (icon showing two cogs), and select 'Page Properties'.`}</li>
+                            <li>{`In the 'Tab Order' tab, select 'Use document structure'.`}</li>
+                        </ul>
+                    </li>
+                    <li>
+                        {`Make sure tables have headings.`}
+                        <ul>
+                            <li>{`Go to the 'View' menu. Select 'Navigation tabs', then 'Tags'.`}</li>
+                            <li>{`Select the 'Tags' tab. This panel shows the document structure as a tree.`}</li>
+                            <li>{`Navigate to the table cells that should be headers.`}</li>
+                            <li>{`Check they have the type <TH>. If not, then right click on the header cell, select 'properties', select the 'Tag' tab, and change the value for 'Type' to 'Table Header Cell'.`}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </Section>
+            <Section
+                title="Creating an accessible PDF directly from Word"
+                spacing={"bottom-only"}
+            >
+                <p>
+                    {`The following link provides step-by-step instructions for adding basic
           accessibility information to a Word document on a PC, then exporting
           it to a PDF document intended for ACM: `}
-          <Link href="http://www.sigaccess.org/welcome-to-sigaccess/resources/acm-submission-with-ms-word/">{`Create an accessible ACM submission using Microsoft Word.`}</Link>
-        </p>
-      </Section>
-      <Section
-        title="Making Accessible Figures and Tables"
-        spacing={"bottom-only"}
-      >
-        <ul>
-          <li>
-            {`Do not add your figures as a pdf. The tagging of figures that are in
+                    <Link href="http://www.sigaccess.org/welcome-to-sigaccess/resources/acm-submission-with-ms-word/">{`Create an accessible ACM submission using Microsoft Word.`}</Link>
+                </p>
+            </Section>
+            <Section
+                title="Making Accessible Figures and Tables"
+                spacing={"bottom-only"}
+            >
+                <ul>
+                    <li>
+                        {`Do not add your figures as a pdf. The tagging of figures that are in
             pdf can sometimes lead to undesired effects on the visual
             presentation. Instead, insert the image, for example, as png or svg.`}
-          </li>
-          <li>{`Do not add your tables as images.`}</li>
-          <li>
-            {`Give your tables lines/borders.This can facilitate the tagging of the document.`}
-          </li>
-        </ul>
-      </Section>
-      <Section
-        title="Video Presentation Creation Guidelines"
-        spacing={"bottom-only"}
-      >
-        <p>
-          {`Video presentations, like papers, must be accessible. For videos to be
+                    </li>
+                    <li>{`Do not add your tables as images.`}</li>
+                    <li>
+                        {`Give your tables lines/borders.This can facilitate the tagging of the document.`}
+                    </li>
+                </ul>
+            </Section>
+            <Section
+                title="Video Presentation Creation Guidelines"
+                spacing={"bottom-only"}
+            >
+                <p>
+                    {`Video presentations, like papers, must be accessible. For videos to be
           accessible, they require an audio narration (so that a person with a
           visual impairment can understand the contents of the video) and text
           captions (so that a person who is deaf or hard of hearing can
@@ -177,9 +177,9 @@ export default function CreatingA11y() {
           priority in our community, we may ask you to fix your video if it is
           not fully accessible. So, please follow these guidelines carefully,
           ask questions if you have them, and make accessibility a priority.`}
-        </p>
-        <p>
-          {`To assist you with creating an accessible video presentation, we have
+                </p>
+                <p>
+                    {`To assist you with creating an accessible video presentation, we have
           developed the following guidelines:`}
         </p>
         <h2 id="steps-for-creating-video-presentation-and-closed-captioning">{`Steps for creating video presentation and closed-captioning:`}</h2>
@@ -291,9 +291,9 @@ export default function CreatingA11y() {
           {`All accessible video presentation submissions (.mp4 and .srt) are due
           no later than`} <b>(DATE TBA)</b>. {`Instructions for submitting the video
           presentation files will be announced shortly.`}
-        </p>
-        <p>
-          {`If you have any questions about the accessible video presentation
+                </p>
+                <p>
+                    {`If you have any questions about the accessible video presentation
           guidelines, please contact the Accessibility Chairs at `}
           <Link href={"mailto:access-assets24@acm.org"}>
             access-assets24@acm.org.

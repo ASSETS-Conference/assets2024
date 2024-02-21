@@ -5,7 +5,11 @@ const MENU_DATA = [
         href: null,
         children: [
             { title: "Call for Papers", href: "/authors/call-for-papers/" },
-            { title: "Technical Papers", href: "/authors/call-for-papers/technical-papers" },
+            {
+                title: "Technical Papers",
+                href: "/authors/call-for-papers/technical-papers",
+            },
+            { title: "Mentoring", href: "/authors/mentoring" },
             // { title: "Workshop Proposals", href: "/authors/workshops/" },
         ],
     },
