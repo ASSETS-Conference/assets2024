@@ -46,7 +46,7 @@ export default function TechnicalPapers() {
                     </Link>
                     {`.`}
                 </p>
-                <p>
+                {/* <p>
                     {`Given the hybrid format of the conference, the current
                     expectation is that at least one author from all categories
                     physically present their artifacts in Athens at the
@@ -54,7 +54,7 @@ export default function TechnicalPapers() {
                     prerecorded and captioned videos that will be made available
                     to all attendees (both virtual-only attendees and on-site
                     attendees).`}
-                </p>
+                </p> */}
             </Section>
             <Section title={"Submission Procedures"} spacing={"bottom-only"}>
                 <p>{`ASSETS accepts submissions in the following categories:`}</p>
