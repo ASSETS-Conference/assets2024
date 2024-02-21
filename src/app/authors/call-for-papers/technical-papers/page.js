@@ -64,7 +64,7 @@ export default function TechnicalPapers() {
         <h2 id="accessible-submissions">Accessible Submissions</h2>
         <p>
           {`Your PDF file must be accessible. It may take several hours to make your PDF file accessible (adding alt tags, etc.), so be sure to leave time before the submission deadline to do so. Please refer to the instructions on `}
-          <Link href="/resources/creating-a11y-pdfs">
+          <Link href="/resources/creating-a11y-papers">
             Creating an Accessible ACM Conference Paper
           </Link>{" "}
           {`for information on how to accomplish this.`}
@@ -102,7 +102,7 @@ export default function TechnicalPapers() {
           the video as subtitles (preferred), or closed-captioning metadata
           files (*.srt, *.ttml, *.vtt) can be uploaded as additional
           supplementary material. Please also refer to the guidance on `}
-          <Link href="/resources/creating-a11y-pdfs">
+          <Link href="/resources/creating-a11y-papers">
             Accessible Video Figures.
           </Link>
         </p>

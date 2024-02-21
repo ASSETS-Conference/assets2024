@@ -77,7 +77,7 @@ export default function TechnicalPapers() {
                     However, producing accessible research articles, especially
                     in PDF format, can be challenging. If you are new to this
                     process, refer to the `}
-                    <Link href={"/resources/creating-a11y-pdfs/"}>
+                    <Link href={"/resources/creating-a11y-papers/"}>
                         instructions on Creating Accessible PDFs
                     </Link>
                     {`. If you are new to producing accessible documents or are
