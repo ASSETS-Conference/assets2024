@@ -159,7 +159,7 @@ export default function Nav() {
                       : ""
                   }`}
                 >
-                  <Link>{data.title}</Link>
+                  <a>{data.title}</a>
 
                   <FaAngleDown />
                 </li>
