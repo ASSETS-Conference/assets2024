@@ -3,7 +3,7 @@ import Section from "@/app/lib/components/primitives/Section";
 import Subpage from "@/app/lib/components/templates/Subpage";
 import { createMetadata } from "@/app/lib/utils/createMetadata";
 
-export const metadata = createMetadata({ title: "Technical Papers" });
+export const metadata = createMetadata({ title: "Mentoring" });
 
 export default function TechnicalPapers() {
     return (
@@ -129,7 +129,7 @@ export default function TechnicalPapers() {
                     {` to indicate your area of expertise.`}
                 </p>
 
-                <h2>{`Suggested Communication Process`}</h2>
+                <h2 id="suggested-communication-process">{`Suggested Communication Process`}</h2>
                 <p>{`Once we have put the mentor and mentee in touch, they are free to choose whatever communication method they prefer. One possibility might look like this:`}</p>
                 <ol type="1" className="!list-decimal">
                     <li>
