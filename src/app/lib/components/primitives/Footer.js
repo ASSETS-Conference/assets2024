@@ -14,7 +14,7 @@ export default function Footer() {
             <div className="mt-8 max-w-[100%] xl:max-w-[60%]">
               <p className="font-light">
                 Please contact the{" "}
-                <Link href="mailto:general-assets24@acm.org">General Chair</Link> for
+                <Link href="mailto:generalchair-assets24@acm.org">General Chair</Link> for
                 more information about the conference.
               </p>
               <p className="mt-4">

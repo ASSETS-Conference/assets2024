@@ -5,7 +5,7 @@ const TECHNICAL_PAPERS_DATES = [
         eventItems: [
             {
                 title: "Deadline for Requesting Mentors",
-                date: "Wednesday, March 6th, 2024",
+                date: "Wednesday, March 20th, 2024",
                 time: "11:59PM",
             },
         ],
@@ -27,12 +27,47 @@ const TECHNICAL_PAPERS_DATES = [
         eventItems: [
             {
                 title: "Author Rebuttal Period Opens",
-                date: "Wednesday, June 6th, 2024",
+                date: "Wednesday, June 5th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Author Rebuttal Period Closes",
                 date: "Wednesday, June 12th, 2024",
+                time: "11:59PM",
+            },
+        ],
+    },
+];
+
+const TECHNICAL_PAPERS_SUBPAGE_DEADLINES = [
+    {
+        month: "April",
+        year: "2024",
+        eventItems: [
+            {
+                title: "Technical Paper submission deadline",
+                date: "Wednesday, April 24th, 2024",
+                time: "11:59PM",
+            },
+        ],
+    },
+    {
+        month: "June",
+        year: "2024",
+        eventItems: [
+            {
+                title: "Initial Technical Paper reviews sent to authors, rebuttal phase opens",
+                date: "Wednesday, June 5th, 2024",
+                time: "11:59PM",
+            },
+            {
+                title: "Rebuttal phase closes",
+                date: "Wednesday, June 12th, 2024",
+                time: "11:59PM",
+            },
+            {
+                title: "Technical Paper acceptance decisions sent to authors",
+                date: "Wednesday, June 26th, 2024",
                 time: "11:59PM",
             },
         ],
@@ -232,4 +267,5 @@ export {
     DOCTORAL_CONSORTIUM_DATES,
     STUDENT_RESEARCH_DATES,
     WORKSHOP_PROPOSAL_DATES,
+    TECHNICAL_PAPERS_SUBPAGE_DEADLINES,
 };

@@ -1,13 +1,27 @@
 const MENU_DATA = [
     { title: "Home", href: "/" },
-    // {
-    //     title: "Authors",
-    //     href: null,
-    //     children: [
-    //         { title: "Call for Papers", href: "/authors/call-for-papers/" },
-    //         { title: "Workshop Proposals", href: "/authors/workshops/" },
-    //     ],
-    // },
+    {
+        title: "Authors",
+        href: null,
+        children: [
+            { title: "Call for Papers", href: "/authors/call-for-papers/" },
+            {
+                title: "Technical Papers",
+                href: "/authors/call-for-papers/technical-papers",
+            },
+            { title: "Mentoring", href: "/authors/mentoring" },
+            // { title: "Workshop Proposals", href: "/authors/workshops/" },
+        ],
+    },
+    {
+        title: "Additional Resources",
+        href: null,
+        children: [
+            { title: "Creating Accessible ACM Conference Papers", href: "/resources/creating-a11y-papers" },
+            { title: "Submission Templates", href: "/resources/submission-templates" },
+            // { title: "Workshop Proposals", href: "/authors/workshops/" },
+        ],
+    },
     // {
     //     title: "Attending",
     //     href: null,
