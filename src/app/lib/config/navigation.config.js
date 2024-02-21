@@ -17,14 +17,8 @@ const MENU_DATA = [
         title: "Additional Resources",
         href: null,
         children: [
-            {
-                title: "Creating Accessible ACM Conference Papers",
-                href: "/resources/creating-a11y-pdfs",
-            },
-            {
-                title: "Submission Templates",
-                href: "/authors/call-for-papers/technical-papers",
-            },
+            { title: "Creating Accessible ACM Conference Papers", href: "/resources/creating-a11y-papers" },
+            { title: "Submission Templates", href: "/resources/submission-templates" },
             // { title: "Workshop Proposals", href: "/authors/workshops/" },
         ],
     },
