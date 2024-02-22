@@ -189,10 +189,10 @@ export default function TechnicalPapers() {
           addresses are stylized exactly in the way that you all would want to
           see them in the ACM digital library and on your paper. For example, if
           you use a personal email address (xyz123@hotmail.com) as your primary
-          contact email in PCS then this email will appear on your paper. Please `}
-          <Link href="https://new.precisionconference.com/user/login?next=https%3A//new.precisionconference.com/contact_info">
-            check your author information and make the necessary changes.
-          </Link>
+          contact email in PCS then this email will appear on your paper. Please check your author information and make the necessary changes (link forthcoming).`}
+          {/* <Link href="https://new.precisionconference.com/user/login?next=https%3A//new.precisionconference.com/contact_info">
+           
+          </Link> */}
         </p>
         <h2 id="publishing-with-ACM-Digital-Library">Publishing with ACM Digital Library</h2>
         <p>
