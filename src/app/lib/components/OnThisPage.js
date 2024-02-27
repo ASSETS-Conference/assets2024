@@ -25,7 +25,6 @@ export default function OnThisPage() {
   return (
     <div
       id="side-bar-content"
-      aria-hidden="true"
       className={`flex-1 min-w-[25%] max-w-[100%] lg:max-w-[25%] top-0 mb-4 ml-0 md:mb-16 md:ml-4 `}
     >
       <div className=" md:sticky  md:top-24 relative border-dashed border-theme-dark border-2 p-8 text-theme-dark">
