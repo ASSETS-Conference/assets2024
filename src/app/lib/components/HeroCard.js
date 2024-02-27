@@ -12,7 +12,7 @@ export default function HeroCard() {
                     width={500}
                     height={225}
                     className="w-[300px]"
-                    src="./assets/logos/a24-simplified-logo-grey.svg"
+                    src="/assets/logos/a24-simplified-logo-grey.svg"
                     alt="Assets 2024 Logo, displaying a lighthouse to the left and the words 'assets' in the middle."
                 />
                 <p>
