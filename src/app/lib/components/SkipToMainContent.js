@@ -7,7 +7,7 @@ import React from 'react'
  */
 export default function SkipToMainContent() {
   return (
-    <a tabIndex={1} href='#content' className='absolute bg-theme-off-white text-theme-dark 
+    <a tabIndex={0} href='#content' className='absolute bg-theme-off-white text-theme-dark 
     border-2/2 border-solid
     border-indigo-500 -z-[999] -left-[999px] 
     top-auto overflow-hidden hoctive:left-auto focus:z-[999] 
