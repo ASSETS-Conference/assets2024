@@ -5,7 +5,7 @@
  * @returns 
  */
 export default function customImageLoader({ src, width, quality }) {
-    const basePath = process.env.NEXT_PUBLIC_BASE_PATH;
+    const basePath = process.env.GITHUB_ACTIONS ? '/assets2024' : ''
     const url = src?.startsWith('/') ? `${basePath || ''}${src}` : src;
     return `${url}`
   }
