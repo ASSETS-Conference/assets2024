@@ -1,7 +1,7 @@
 import React from "react";
 import { FaLocationPin } from "react-icons/fa6";
 import { AiFillCalendar } from "react-icons/ai";
-import Image from "next/image";
+import Image from "@/app/lib/components/primitives/Image";
 
 export default function HeroCard() {
     return (

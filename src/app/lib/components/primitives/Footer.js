@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "./Container";
 import Link from "./Link";
-import Image from "next/image";
+import Image from "@/app/lib/components/primitives/Image";
 
 export default function Footer() {
   return (

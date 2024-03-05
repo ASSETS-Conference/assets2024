@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "@/app/lib/components/primitives/Image";
 import { DateList } from "./lib/components/DateList";
 import Hero from "./lib/components/Hero";
 import Container from "./lib/components/primitives/Container";

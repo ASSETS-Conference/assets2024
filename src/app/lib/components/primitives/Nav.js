@@ -6,7 +6,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { FaAngleDown } from "react-icons/fa6";
 import { MENU_DATA } from "../../config/navigation.config";
 import NavDropdown from "./NavDropdown";
-import Image from "next/image";
+import Image from "@/app/lib/components/primitives/Image";
 import Link from "next/link";
 
 export default function Nav() {

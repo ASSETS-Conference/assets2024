@@ -2,7 +2,7 @@ import Section from "@/app/lib/components/primitives/Section";
 import Subpage from "@/app/lib/components/templates/Subpage";
 import { createMetadata } from "@/app/lib/utils/createMetadata";
 import Link from "../lib/components/primitives/Link";
-import Image from "next/image";
+import Image from "@/app/lib/components/primitives/Image";
 
 export const metadata = createMetadata({ title: "Sponsors" });
 
