@@ -53,20 +53,20 @@ const MENU_DATA = [
     //         },
     //     ],
     // },
-    // {
-    //     title: "Sponsors",
-    //     href: null,
-    //     children: [
-    //         {
-    //             title: "Sponsors",
-    //             href: "/sponsors/",
-    //         },
-    //         {
-    //             title: "Become a Sponsor",
-    //             href: "/sponsors/become-a-sponsor/",
-    //         },
-    //     ],
-    // },
+    {
+        title: "Sponsors",
+        href: null,
+        children: [
+            {
+                title: "Sponsors",
+                href: "/sponsors/",
+            },
+            {
+                title: "Become a Sponsor",
+                href: "/sponsors/become-a-sponsor/",
+            },
+        ],
+    },
     { title: "Code of Conduct", href: "/code-of-conduct/" },
 ];
 
