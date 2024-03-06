@@ -17,7 +17,7 @@ export default function TechnicalPapers() {
         <p>{`Our conference community is composed of scholars, educators, and students in computing technology and accessibility. Roughly half of our attendees are undergraduate, MS, or PhD students. The conference will include research talks, poster and demo presentations, a doctoral consortium, and community-building events such as accessible cultural activities and a reception. Based on attendance in prior years, we anticipate 200-250 attendees.`}</p>
       </Section>
       <Section title={"Sponsorship Tiers"} spacing={"bottom-only"}>
-        <h2>Champion Level: $20,000 USD</h2>
+        <h2 id="champion-level">Champion Level: $20,000 USD</h2>
         <ul>
           <li>Largest, most prominent logo on conference website</li>
           <li>{`Naming rights for a conference activity of comparable value (for example, “The <Company Name> Reception”)`}</li>
@@ -27,20 +27,20 @@ export default function TechnicalPapers() {
           <li>{`Acknowledgement on social media`}</li>
           <li>{`Logo and company name presented on the conference website`}</li>
         </ul>
-        <h2>Gold Level: $10,000 USD</h2>
+        <h2 id="gold-level">Gold Level: $10,000 USD</h2>
         <ul>
           <li>{`A booth at all poster and demo sessions`}</li>
           <li>{`Acknowledgement during opening and closing ceremonies`}</li>
           <li>{`Acknowledgement on social media`}</li>
           <li>{`Logo and company name presented on the conference website`}</li>
         </ul>
-        <h2>Silver Level: $5,000 USD</h2>
+        <h2 id="silver-level">Silver Level: $5,000 USD</h2>
         <ul>
           <li>{`Acknowledgement during opening and closing ceremonies`}</li>
           <li>{`Acknowledgement on social media`}</li>
           <li>{`Logo and company name presented on the conference website`}</li>
         </ul>
-        <h2>Bronze Level: $3,000 USD</h2>
+        <h2 id="bronze-level">Bronze Level: $3,000 USD</h2>
         <ul>
           <li>{`Acknowledgement during opening and closing ceremonies`}</li>
           <li>{`Company name (without logo) presented on the website`}</li>
