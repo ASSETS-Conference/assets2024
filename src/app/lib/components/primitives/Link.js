@@ -1,11 +1,29 @@
-import React from 'react'
-import NextLink from 'next/link';
+import React from "react";
+import NextLink from "next/link";
 
-export default function Link({children, href, target, className, colour}) {
-  
-  const colourSelect = (colour) => colour === 'primary' ? 'text-link-underline-red' : '';
+export default function Link({ children, href, target, className, colour }) {
+    const colourSelect = (colour) =>
+        colour === "primary" ? "text-link-underline-red" : "";
 
-  return (
-   <NextLink href={href} target={target} className={` underline hoctive:decoration-4 ${className} ${colourSelect(colour)}`}>{children}</NextLink>
-  )
+    function adjustSrc(src) {
+        const basePath = process.env.NEXT_PUBLIC_IN_GITHUB_ACTIONS
+            ? "/assets2024"
+            : "";
+        const url = src.startsWith("/")
+            ? `${basePath}${src}`
+            : `${basePath}/${src}`;
+        return `${url}`;
+    }
+
+    return (
+        <a
+            href={adjustSrc(href)}
+            target={target}
+            className={` underline hoctive:decoration-4 ${className} ${colourSelect(
+                colour
+            )}`}
+        >
+            {children}
+        </a>
+    );
 }
