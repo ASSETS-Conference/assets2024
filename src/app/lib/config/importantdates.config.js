@@ -72,6 +72,22 @@ const TECHNICAL_PAPERS_SUBPAGE_DEADLINES = [
             },
         ],
     },
+    {
+        month: "July",
+        year: "2024",
+        eventItems: [
+            {
+                title: "Camera-ready deadline",
+                date: "Wednesday, July 24th, 2024",
+                time: "11:59PM",
+            },
+            {
+                title: "Video presentation",
+                date: "Wednesday, July 31st, 2024",
+                time: "11:59PM",
+            },
+        ],
+    },
 ];
 
 const POSTER_DEMOS_DATES = [
