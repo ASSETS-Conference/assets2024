@@ -56,7 +56,7 @@ export default function Nav() {
         if (window.innerWidth >= 768) return;
 
         if (dropdownsVisible[i] === true) {
-            setDropdownsVisible(Array(MENU_DATA.length).fill(false));
+            // setDropdownsVisible(Array(MENU_DATA.length).fill(false));
         } else {
             setDropdownsVisible(
                 dropdownsVisible.map((_, idx) => (idx === i ? true : false))
@@ -137,7 +137,7 @@ export default function Nav() {
                 )}
             </div>
             <ul
-                className={`min-h-full min-w-full md:flex md:flex-row flex-col md:justify-center md:items-center lg:gap-16 md:gap-6 lg:text-md md:text-sm sm:text-xl text-lg md:opacity-100 md:mt-0 mt-6 md:[&>*]:border-none [&>*]:border-b-[1px] [&>*]:border-white/25 ${
+                className={`min-h-full min-w-full md:flex md:flex-row flex-col md:justify-center md:items-center lg:gap-16 md:gap-6 lg:text-md md:text-sm sm:text-xl text-lg md:opacity-100 md:mt-0 mt-6 md:[&>*]:border-none [&>*]:border-b-[1px] [&>*]:border-white/25 cursor-pointer ${
                     mobileViewVisible ? "opacity-100 flex" : "opacity-0 hidden"
                 }`}
             >
@@ -146,13 +146,14 @@ export default function Nav() {
                         return (
                             <ul
                                 key={`nav-top-${i}`}
-                                className="relative md:py-6 py-6"
+                                className="relative md:py-6 py-6 cursor-pointer"
                                 role="button"
                                 onMouseEnter={() => handleNavMouseEnter(i)}
                                 onMouseLeave={handleNavMouseLeave}
                                 onClick={() => handleNavClick(i)}
                                 onKeyDown={(e) => handleKeyEvents(e, i)}
                                 onBlur={(e) => handleFocus(e)}
+                                onTouchEnd={() => handleNavClick(i)}
                                 aria-expanded={dropdownsVisible[i]} //ARIA expanded property. This is required to make this work with SRs.
                             >
                                 <li
