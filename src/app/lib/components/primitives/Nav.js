@@ -98,12 +98,12 @@ export default function Nav() {
     /**
      * Handles dropdown menu state based on focused item.
      *
-     * @param {KeyboardEvent} e The event propagating from the DOM
+     * @param {KeyboardEvent|MouseEvent} e The event propagating from the DOM
      */
     const handleFocus = (e) => {
-        if (!e.currentTarget.contains(e.relatedTarget)) {
+        if (!e.currentTarget.contains(e.relatedTarget) && !mobileViewVisible) {  
             setDropdownsVisible(Array(MENU_DATA.length).fill(false));
-        }
+        } 
     };
 
     return (
@@ -171,6 +171,7 @@ export default function Nav() {
                                     <FaAngleDown />
                                 </li>
                                 <NavDropdown
+                                    mobileViewVisible={mobileViewVisible}
                                     tabIndex="0"
                                     items={data.children}
                                     visible={dropdownsVisible[i]}
