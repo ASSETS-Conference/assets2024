@@ -9,7 +9,7 @@ export default function TechnicalPapers() {
     <Subpage
       title="Sponsor the ACM ASSETS 2024"
       subheading={
-        "Sponsor the ACM SIGACCESS conference on computing and accessibility (ASSETS 2024)"
+        "Sponsor the ACM SIGACCESS conference on computers and accessibility (ASSETS 2024)"
       }
     >
       <Section title={"About Sponsorship"} spacing={"bottom-only"}>
