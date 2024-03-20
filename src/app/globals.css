@@ -21,7 +21,7 @@
   ** This is to help create some defaults that look good 
   ** and that the user gets for free.
   */
-
+    
     section h2,
     section h3,
     section h4 {
@@ -41,6 +41,10 @@
     }
     section li li {
         @apply list-circle;
+    }
+    /* Ignore the personas and don't apply our regular p tag spacing */
+    #persona p {
+        @apply mt-0;
     }
 }
 
