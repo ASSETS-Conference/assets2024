@@ -38,21 +38,21 @@ const MENU_DATA = [
     //         { title: "Keynote", href: "/program/keynote/" },
     //     ],
     // },
-    // {
-    //     title: "Committees",
-    //     href: null,
-    //     children: [
-    //         {
-    //             title: "Organizing Committee",
-    //             href: "/committees/organizing/",
-    //         },
-    //         { title: "Program Committee", href: "/committees/program/" },
-    //         {
-    //             title: "Policy on Program Committee",
-    //             href: "/committees/policy/",
-    //         },
-    //     ],
-    // },
+    {
+        title: "Committees",
+        href: null,
+        children: [
+            {
+                title: "Organizing Committee",
+                href: "/committees/organizing/",
+            },
+            // { title: "Program Committee", href: "/committees/program/" },
+            // {
+            //     title: "Policy on Program Committee",
+            //     href: "/committees/policy/",
+            // },
+        ],
+    },
     {
         title: "Sponsors",
         href: null,
