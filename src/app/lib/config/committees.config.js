@@ -11,7 +11,7 @@ export const ORGANIZING_COMMITTEE = [
         email: "general-assets24@acm.org",
       },
       {
-        name: "Faustina Hawng",
+        name: "Faustina Hwang",
         role: "General Chair",
         picture: "/assets/committees/organizing/faustina_hwang.jpg",
         affiliation: "University of Reading",
