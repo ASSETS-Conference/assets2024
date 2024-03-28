@@ -17,8 +17,14 @@ const MENU_DATA = [
         title: "Additional Resources",
         href: null,
         children: [
-            { title: "Creating Accessible ACM Conference Papers", href: "/resources/creating-a11y-papers" },
-            { title: "Submission Templates", href: "/resources/submission-templates" },
+            {
+                title: "Creating Accessible ACM Conference Papers",
+                href: "/resources/creating-a11y-papers",
+            },
+            {
+                title: "Submission Templates",
+                href: "/resources/submission-templates",
+            },
             // { title: "Workshop Proposals", href: "/authors/workshops/" },
         ],
     },
@@ -46,7 +52,7 @@ const MENU_DATA = [
                 title: "Organizing Committee",
                 href: "/committees/organizing/",
             },
-            // { title: "Program Committee", href: "/committees/program/" },
+            { title: "Program Committee", href: "/committees/program/" },
             // {
             //     title: "Policy on Program Committee",
             //     href: "/committees/policy/",
