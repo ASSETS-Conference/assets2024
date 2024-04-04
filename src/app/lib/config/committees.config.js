@@ -21,6 +21,103 @@ export const ORGANIZING_COMMITTEE = [
         ],
     },
     {
+        heading: "Technical Program Chairs",
+        members: [
+            {
+                name: "Tiago Guerreiro",
+                role: "Technical Program Chair",
+                picture: "/assets/committees/organizing/tiago_guerreiro.png",
+                affiliation: "University of Lisbon",
+                location: "PORTUGAL",
+                email: "tpc-assets24@acm.org",
+            },
+            {
+                name: "Robin Brewer",
+                role: "Technical Program Chair",
+                picture: "/assets/committees/organizing/robin_brewer.jpeg",
+                affiliation: "University of Maryland",
+                location: "UNITED STATES",
+                email: "tpc-assets24@acm.org",
+            },
+        ],
+    },
+    {
+        heading: "Treasurer/Registration Chair",
+        members: [
+            {
+                name: "Cynthia Bennett",
+                role: "Treasurer/Registration Chair",
+                picture: "/assets/committees/organizing/cynthia_bennett.jpeg",
+                affiliation: "Google",
+                location: "UNITED STATES",
+                email: "tpc-assets24@acm.org",
+            },
+        ],
+    },
+    {
+        heading: "Proceedings Chairs",
+        members: [
+            {
+                name: "Connor Geddes",
+                role: "Proceedings Chair",
+                picture: "/assets/committees/organizing/connor_geddes.jpeg",
+                affiliation: "University of Guelph",
+                location: "CANADA",
+                email: "tpc-assets24@acm.org",
+            },
+            {
+                name: "André Rodrigues",
+                role: "Proceedings Chair",
+                picture: "/assets/committees/organizing/andre_rodrigues.jpg",
+                affiliation: "University of Lisbon",
+                location: "PORTUGAL",
+                email: "tpc-assets24@acm.org",
+            },
+        ],
+    },
+    {
+        heading: "Posters and Demos Chairs",
+        members: [
+            {
+                name: "Garreth Tigwell",
+                role: "Posters and Demo Chair 1",
+                picture: "/assets/committees/organizing/garreth_tigwell.jpeg",
+                affiliation: "Rochester Institute of Technology",
+                location: "UNITED STATES",
+                email: "tpc-assets24@acm.org",
+            },
+            {
+                name: "Anne Ross",
+                role: "Posters and Demo Chair 2",
+                picture: undefined,
+                affiliation: "Bucknell University",
+                location: "UNITED STATES",
+                email: "tpc-assets24@acm.org",
+            },
+        ],
+    },
+    {
+        heading: "DC Chairs",
+        members: [
+            {
+                name: "Kristen Shinohara",
+                role: "DC Chair 1",
+                picture: "/assets/committees/organizing/kristen_shinohara.jpeg",
+                affiliation: "Rochester Institute of Technology",
+                location: "UNITED STATES",
+                email: "tpc-assets24@acm.org",
+            },
+            {
+                name: "Shari Trewin",
+                role: "DC Chair 2",
+                picture: "/assets/committees/organizing/shari_trewin.jpeg",
+                affiliation: "IBM",
+                location: "UNITED STATES",
+                email: "tpc-assets24@acm.org",
+            },
+        ],
+    },
+    {
         heading: "Web and Graphic Design Chairs",
         members: [
             {
