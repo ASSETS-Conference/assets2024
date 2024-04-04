@@ -12,6 +12,8 @@ module.exports = {
         "theme-dark": "#2B2B2B",
         "theme-off-white": "#D4D4D4",
         "theme-red": "#592321",
+        // "theme-blue": "#4597BA",
+        "theme-blue": "#367691",
         "primary-text-light": "var(--primary-light)",
         "primary-text-dark": "var(--primary-dark)",
         "link-underline-red": "#a62929",
