@@ -129,7 +129,7 @@ export const ORGANIZING_COMMITTEE = [
         name: "Taliesin Smith",
         role: "Local Arrangements 2",
         // picture: undefined,
-        picture: "/assets/committees/organizing/taliesin_smith.webp",
+        picture: "/assets/committees/organizing/taliesin_smith.png",
         affiliation: "University of Colorado Boulder",
         location: "UNITED STATES",
         email: "local-assets24@acm.org",
