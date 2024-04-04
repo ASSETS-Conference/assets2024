@@ -92,6 +92,28 @@ export const ORGANIZING_COMMITTEE = [
     ],
   },
   {
+    heading: "Workshop Chairs",
+    members: [
+      {
+        name: "Saad Hassan",
+        role: "Workshop Chair 1",
+        picture: "/assets/committees/organizing/saad_hassan.jpeg",
+        affiliation: "Tulane University",
+        location: "UNITED STATES",
+        email: "workshops-assets24@acm.org",
+      },
+      {
+        name: "Jonggi Hong",
+        role: "Workshop Chair 2",
+        picture: "/assets/committees/organizing/jonggi_hong.jpg",
+        // picture: undefined,
+        affiliation: "Stevens Institute of Technology",
+        location: "UNITED STATES",
+        email: "workshops-assets24@acm.org",
+      },
+    ],
+  },
+  {
     heading: "Posters and Demos Chairs",
     members: [
       {
@@ -158,11 +180,11 @@ export const ORGANIZING_COMMITTEE = [
     ],
   },
   {
-    heading: "Student Research Chairs",
+    heading: "Student Research Competition Chairs",
     members: [
       {
         name: "Mauli Pandey",
-        role: "Student Research Chair 1",
+        role: "Student Research Competition Chair 1",
         picture: "/assets/committees/organizing/mauli_pandey.jpg",
         affiliation: "Google",
         location: "UNITED STATES",
@@ -170,7 +192,7 @@ export const ORGANIZING_COMMITTEE = [
       },
       {
         name: "Stephanie Valencia",
-        role: "Student Research Chair 2",
+        role: "Student Research Competition Chair 2",
         picture: "/assets/committees/organizing/stephanie_valencia.png",
         affiliation: "Carnegie Mellon University",
         location: "UNITED STATES",
