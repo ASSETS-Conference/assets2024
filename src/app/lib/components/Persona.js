@@ -28,9 +28,10 @@ export default function Persona({
       <div className={`p-4 flex flex-col ${picture ? 'mt-auto mb-auto' : ''}`}>
         {/* <p className="font-light text-xs">{role}</p> */}
         <p className="font-bold text-2xl mb-1">{name}</p>
-        <p className="text-xs italic mb-1">{`${affiliation}, ${location}`}</p>
+        <p className="text-xs mb-1 italic inline-block">{`${affiliation},`}</p>
+        <p className="text-xs italic inline-block">{`${location}`}</p>
 
-        <div className=" mt-8 flex gap-2 text-sm items-center">
+        <div className="mt-8 flex gap-2 text-sm items-center flex-grow justify-self-end">
           <FaArrowUpRightFromSquare aria-hidden={true}/>
           <Link href={`mailto:${email}`} className={"text-theme-off-white"}>{email}</Link>
         </div>
