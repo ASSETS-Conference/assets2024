@@ -16,17 +16,16 @@ export default function Home() {
         <Hero />
         <Container id="content">
           <Section title="Important Dates" spacing={"top-only"}>
-            <Alert className={"mb-5"}
+            <Alert
+              className={"mb-5"}
               raw={true}
-              heading={"Technical Paper submissions are now live!"}
+              heading={"Technical Paper submissions now live"}
             >
               <p className="text-md text-white">
-                The PCS portal to submit Technical Papers is now live,{" "}
-                <Link
-                  className={"text-white"}
-                  href={"https://new.precisionconference.com/"}
-                >
-                  click here to submit
+                The PCS portal to submit Technical Papers is now live! Please
+                submit via the{" "}
+                <Link className={"text-white"} href={"https://new.precisionconference.com/"}>
+                  ASSETS 2024 submission site
                 </Link>
                 .
               </p>
@@ -76,7 +75,6 @@ export default function Home() {
               />
             </div>
           </Section>
-          
         </Container>
       </main>
     </>

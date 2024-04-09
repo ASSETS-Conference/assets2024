@@ -14,11 +14,12 @@ export default function TechnicalPapers() {
       title="Call for Papers"
       subheading={"October 28th - 30th, 2024"}
       overrideTOC={
-        <Alert raw={true} heading={"Technical Paper submissions are now live!"}>
+        <Alert raw={true} heading={"Technical Paper submissions now live"}>
           <p className="text-md text-white">
-            The PCS portal to submit Technical Papers is now live,{" "}
+            The PCS portal to submit Technical Papers is now live! Please submit
+            via the{" "}
             <Link href={"https://new.precisionconference.com/"}>
-              click here to submit
+              ASSETS 2024 submission site
             </Link>
             .
           </p>
