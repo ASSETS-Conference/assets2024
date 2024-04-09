@@ -42,6 +42,41 @@ export const ORGANIZING_COMMITTEE = [
     ],
   },
   {
+    heading: "Treasurer/Registration Chair",
+    members: [
+      {
+        name: "Cynthia Bennett",
+        role: "Treasurer/Registration Chair",
+        picture: "/assets/committees/organizing/cynthia_bennett.jpeg",
+        affiliation: "Google",
+        location: "UNITED STATES",
+        email: "treasurer-assets24@acm.org",
+      },
+    ],
+  },
+  {
+    heading: "Posters and Demos Chairs",
+    members: [
+      {
+        name: "Garreth Tigwell",
+        role: "Posters and Demo Chair 1",
+        picture: "/assets/committees/organizing/garreth_tigwell.jpeg",
+        affiliation: "Rochester Institute of Technology",
+        location: "UNITED STATES",
+        email: "poster-demo-assets24@acm.org",
+      },
+      {
+        name: "Anne Ross",
+        role: "Posters and Demo Chair 2",
+        picture: "/assets/committees/organizing/anne_ross.jpeg",
+        // picture: undefined,
+        affiliation: "Bucknell University",
+        location: "UNITED STATES",
+        email: "poster-demo-assets24@acm.org",
+      },
+    ],
+  },
+  {
     heading: "Proceedings Chairs",
     members: [
       {
@@ -114,28 +149,6 @@ export const ORGANIZING_COMMITTEE = [
     ],
   },
   {
-    heading: "Posters and Demos Chairs",
-    members: [
-      {
-        name: "Garreth Tigwell",
-        role: "Posters and Demo Chair 1",
-        picture: "/assets/committees/organizing/garreth_tigwell.jpeg",
-        affiliation: "Rochester Institute of Technology",
-        location: "UNITED STATES",
-        email: "poster-demo-assets24@acm.org",
-      },
-      {
-        name: "Anne Ross",
-        role: "Posters and Demo Chair 2",
-        picture: "/assets/committees/organizing/anne_ross.jpeg",
-        // picture: undefined,
-        affiliation: "Bucknell University",
-        location: "UNITED STATES",
-        email: "poster-demo-assets24@acm.org",
-      },
-    ],
-  },
-  {
     heading: "Local Arrangements Chair",
     members: [
       {
@@ -173,7 +186,7 @@ export const ORGANIZING_COMMITTEE = [
         name: "Shari Trewin",
         role: "DC Chair 2",
         picture: "/assets/committees/organizing/shari_trewin.jpeg",
-        affiliation: "IBM",
+        affiliation: "Google",
         location: "UNITED STATES",
         email: "dc-chairs-assets24@acm.org",
       },
@@ -280,19 +293,6 @@ export const ORGANIZING_COMMITTEE = [
         affiliation: "King's College London",
         location: "UNITED KINGDOM",
         email: "sv-chairs-assets24@acm.org",
-      },
-    ],
-  },
-  {
-    heading: "Treasurer/Registration Chair",
-    members: [
-      {
-        name: "Cynthia Bennett",
-        role: "Treasurer/Registration Chair",
-        picture: "/assets/committees/organizing/cynthia_bennett.jpeg",
-        affiliation: "Google",
-        location: "UNITED STATES",
-        email: "treasurer-assets24@acm.org",
       },
     ],
   },
