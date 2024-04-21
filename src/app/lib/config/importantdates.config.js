@@ -108,17 +108,17 @@ const POSTER_DEMOS_DATES = [
         eventItems: [
             {
                 title: "Notification of Acceptance",
-                date: "Wednesday, August 7, 2024",
+                date: "Wednesday, August 7th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Camera Ready Deadline",
-                date: "Wednesday, August 14, 2024",
+                date: "Wednesday, August 14th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Video Presentations Submission Deadline",
-                date: "Wednesday, August 28, 2024",
+                date: "Wednesday, August 28th, 2024",
                 time: "11:59PM",
             },
         ],
@@ -132,7 +132,7 @@ const EXPERIENCE_REPORTS_DATES = [
         eventItems: [
             {
                 title: "Experience Reports Submission Deadline",
-                date: "Friday, July 7th, 2024",
+                date: "Wednesday, July 3rd, 2024",
                 time: "11:59PM",
             },
         ],
@@ -143,17 +143,17 @@ const EXPERIENCE_REPORTS_DATES = [
         eventItems: [
             {
                 title: "Notification of Acceptance",
-                date: "Friday, August 4th, 2024",
+                date: "Wednesday, August 7th, 2024",
                 time: "11:59PM",
             },
             {
-                title: "Final versions of Experience Reports Deadline",
-                date: "Friday, August 18th, 2024",
+                title: "Final Versions of Experience Reports Due",
+                date: "Wednesday, August 14th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Video Presentations Submission Deadline",
-                date: "Wednesday, August 30th, 2024",
+                date: "Wednesday, August 28th, 2024",
                 time: "11:59PM",
             },
         ],
