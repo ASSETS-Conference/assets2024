@@ -197,12 +197,7 @@ const STUDENT_RESEARCH_DATES = [
         eventItems: [
             {
                 title: "Initial Submissions Deadline",
-                date: "Monday, July 10th, 2024",
-                time: "11:59PM",
-            },
-            {
-                title: "Acceptance Decisions Released",
-                date: "Monday, July 31st, 2024",
+                date: "Wednesday, July 3rd, 2024",
                 time: "11:59PM",
             },
         ],
@@ -212,13 +207,18 @@ const STUDENT_RESEARCH_DATES = [
         year: "2024",
         eventItems: [
             {
+                title: "Acceptance Decisions Released",
+                date: "Wednesday, August 7th, 2024",
+                time: "11:59PM",
+            },
+            {
                 title: "Final Versions Deadline",
-                date: "Monday, August 14, 2024",
+                date: "Wednesday, August 14th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Video Presentations Submission Deadline",
-                date: "Wednesday, August 30, 2024",
+                date: "Wednesday, August 28th, 2024",
                 time: "11:59PM",
             },
         ],
