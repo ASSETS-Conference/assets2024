@@ -96,8 +96,8 @@ const POSTER_DEMOS_DATES = [
         year: "2024",
         eventItems: [
             {
-                title: "Posters & Demos Submission Deadline",
-                date: "Friday, July 7th, 2024",
+                title: "Posters and Demos Submission Deadline",
+                date: "Wednesday, July 3rd, 2024",
                 time: "11:59PM",
             },
         ],
@@ -108,17 +108,17 @@ const POSTER_DEMOS_DATES = [
         eventItems: [
             {
                 title: "Notification of Acceptance",
-                date: "Friday, August 4th, 2024",
+                date: "Wednesday, August 7th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Camera Ready Deadline",
-                date: "Friday, August 18th, 2024",
+                date: "Wednesday, August 14th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Video Presentations Submission Deadline",
-                date: "Wednesday, August 30th, 2024",
+                date: "Wednesday, August 28th, 2024",
                 time: "11:59PM",
             },
         ],
@@ -132,7 +132,7 @@ const EXPERIENCE_REPORTS_DATES = [
         eventItems: [
             {
                 title: "Experience Reports Submission Deadline",
-                date: "Friday, July 7th, 2024",
+                date: "Wednesday, July 3rd, 2024",
                 time: "11:59PM",
             },
         ],
@@ -143,17 +143,17 @@ const EXPERIENCE_REPORTS_DATES = [
         eventItems: [
             {
                 title: "Notification of Acceptance",
-                date: "Friday, August 4th, 2024",
+                date: "Wednesday, August 7th, 2024",
                 time: "11:59PM",
             },
             {
-                title: "Final versions of Experience Reports Deadline",
-                date: "Friday, August 18th, 2024",
+                title: "Final Versions of Experience Reports Due",
+                date: "Wednesday, August 14th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Video Presentations Submission Deadline",
-                date: "Wednesday, August 30th, 2024",
+                date: "Wednesday, August 28th, 2024",
                 time: "11:59PM",
             },
         ],
@@ -197,12 +197,7 @@ const STUDENT_RESEARCH_DATES = [
         eventItems: [
             {
                 title: "Initial Submissions Deadline",
-                date: "Monday, July 10th, 2024",
-                time: "11:59PM",
-            },
-            {
-                title: "Acceptance Decisions Released",
-                date: "Monday, July 31st, 2024",
+                date: "Wednesday, July 3rd, 2024",
                 time: "11:59PM",
             },
         ],
@@ -212,13 +207,18 @@ const STUDENT_RESEARCH_DATES = [
         year: "2024",
         eventItems: [
             {
+                title: "Acceptance Decisions Released",
+                date: "Wednesday, August 7th, 2024",
+                time: "11:59PM",
+            },
+            {
                 title: "Final Versions Deadline",
-                date: "Monday, August 14, 2024",
+                date: "Wednesday, August 14th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Video Presentations Submission Deadline",
-                date: "Wednesday, August 30, 2024",
+                date: "Wednesday, August 28th, 2024",
                 time: "11:59PM",
             },
         ],
