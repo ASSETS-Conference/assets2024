@@ -3,6 +3,7 @@ import Link from "@/app/lib/components/primitives/Link";
 import Section from "@/app/lib/components/primitives/Section";
 import Subpage from "@/app/lib/components/templates/Subpage";
 import { EXPERIENCE_REPORTS_DATES } from "@/app/lib/config/importantdates.config";
+import { createMetadata } from "@/app/lib/utils/createMetadata";
 
 export const metadata = createMetadata({ title: "Experience Reports" });
 
