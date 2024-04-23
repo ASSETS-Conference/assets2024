@@ -4,6 +4,8 @@ import Section from "@/app/lib/components/primitives/Section";
 import Subpage from "@/app/lib/components/templates/Subpage";
 import { EXPERIENCE_REPORTS_DATES } from "@/app/lib/config/importantdates.config";
 
+export const metadata = createMetadata({ title: "Experience Reports" });
+
 export default function ExperienceReports() {
     return (
         <Subpage

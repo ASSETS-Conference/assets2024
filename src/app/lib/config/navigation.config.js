@@ -15,6 +15,10 @@ const MENU_DATA = [
                 title: "Experience Reports",
                 href: "/authors/experience-reports",
             },
+            {
+                title: "Student Research Competition",
+                href: "/authors/student-research-competition",
+            },
             // { title: "Workshop Proposals", href: "/authors/workshops/" },
         ],
     },
