@@ -13,7 +13,7 @@ export default function ExperienceReports() {
             title={"Experience Reports"}
             subheading={"Deadline: Wednesday, July 3rd, 2024"}
         >
-            <Section title="Posters and Demos" spacing={"bottom-only"}>
+            <Section title="Experience Reports" spacing={"bottom-only"}>
                 <p>
                     {`Research on accessible and assistive technologies is primarily motivated by the needs of people with disabilities and other stakeholders, like caregivers and educators. Understanding these needs is crucial but often requires first-hand experience that might be unavailable to all researchers in the community. ASSETS 2024 invites submissions that reflect people’s experiences with disabilities and the challenges and opportunities related to accessible and assistive technologies. These reports will be reflective in nature and will give authors an opportunity to share their experiences as people with disabilities, caregivers, rehabilitation professionals, educators, researchers, developers, entrepreneurs, or other stakeholders.`}
                 </p>
@@ -43,15 +43,15 @@ export default function ExperienceReports() {
             </Section>
             <Section title="Submission Guidelines" spacing={"bottom-only"}>
                 <p>
-                    {`Experience Reports proposals should be submitted using one of the templates found on the Submission Templates page. This year, we are only accepting position papers (e.g., `}
+                    {`Experience Reports proposals should be submitted using one of the templates found on the `}
+                    <Link href="/resources/submission-templates/">
+                        Submission Templates page
+                    </Link>
+                    {`. Submissions should consist of position papers (e.g., `}
                     <Link href="https://dl.acm.org/doi/abs/10.1145/1878803.1878807">{`https://dl.acm.org/doi/abs/10.1145/1878803.1878807`}</Link>
-                    {`) and case studies (e.g., `}
+                    {`), case studies (e.g., `}
                     <Link href="https://dl.acm.org/doi/10.1145/3441852.3476468">{`https://dl.acm.org/doi/10.1145/3441852.3476468`}</Link>
-                    {`). `}
-                    <strong>
-                        No other types of submissions will be accepted.
-                    </strong>
-                    {` This is because Experience Reports are managed by the Technical Program Chairs and the Posters and Demos chairs.`}
+                    {`), or similar content.`}
                 </p>
                 <p>
                     {`Experience Reports proposals are limited to 8 pages in the single-column submission format, and references do not count toward page limits. Submissions are NOT double-anonymized: the authors' names should be on the paper.`}
@@ -101,10 +101,10 @@ export default function ExperienceReports() {
                     <strong>
                         {`Wednesday, July 3, 2024, 11:59 P.M. Anywhere on Earth (UTC - 12:00).`}
                     </strong>
-                    {` Please submit your posters and demonstrations via the `}
+                    {` Please submit your experience reports via `}
 
                     <Link href={"https://new.precisionconference.com/"}>
-                        Posters and Demonstrations submission site
+                        PCS
                     </Link>
                     {`.`}
                 </p>
