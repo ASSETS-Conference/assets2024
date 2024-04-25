@@ -9,7 +9,6 @@ const MENU_DATA = [
                 title: "Technical Papers",
                 href: "/authors/call-for-papers/technical-papers",
             },
-            { title: "Mentoring", href: "/authors/mentoring" },
             { title: "Posters and Demos", href: "/authors/posters-and-demos" },
             {
                 title: "Experience Reports",
@@ -19,6 +18,7 @@ const MENU_DATA = [
                 title: "Student Research Competition",
                 href: "/authors/student-research-competition",
             },
+            { title: "Mentoring", href: "/authors/mentoring" },
             // { title: "Workshop Proposals", href: "/authors/workshops/" },
         ],
     },

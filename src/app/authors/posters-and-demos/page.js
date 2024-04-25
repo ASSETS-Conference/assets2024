@@ -52,11 +52,7 @@ export default function PostersAndDemos() {
                     {`.`}
                 </p>
                 <p>
-                    {`Accepted submissions will be included in the conference proceedings. For accepted posters and demonstrations, at least one author must register as the presenter by the early registration deadline to be included in the proceedings. While details for a digital participation option for attendees are still being finalized, the expectation is that at least one author of the posters or demos will need to attend the conference in person to present. If no authors of a submission will be able to travel due to accessibility or health concerns, the authors are encouraged to reach out to the Posters and Demos Chairs, Anne Ross and Garreth Tigwell, at `}
-                    <Link href={"mailto:posters-assets24@acm.org"}>
-                        {`posters-assets24@acm.org`}
-                    </Link>
-                    {` to discuss potential alternatives for the presentation of the work.`}
+                    {`Accepted submissions will be included in the conference proceedings. For accepted posters and demonstrations, at least one author must register as the presenter by the early registration deadline to be included in the proceedings.`}
                 </p>
                 <h2 id="accessible-submissions">Accessible Submissions</h2>
                 <p>
