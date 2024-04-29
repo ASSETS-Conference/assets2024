@@ -5,6 +5,7 @@ import Subpage from "@/app/lib/components/templates/Subpage";
 import { createMetadata } from "@/app/lib/utils/createMetadata";
 import { TECHNICAL_PAPERS_SUBPAGE_DEADLINES } from "@/app/lib/config/importantdates.config";
 import Alert from "@/app/lib/components/Alert";
+import { MENU_DATA } from "@/app/lib/config/navigation.config";
 
 export const metadata = createMetadata({ title: "Call for Papers" });
 
@@ -13,18 +14,18 @@ export default function TechnicalPapers() {
     <Subpage
       title="Call for Papers"
       subheading={"October 28th - 30th, 2024"}
-      overrideTOC={
-        <Alert raw={true} heading={"Technical Paper submissions now live"}>
-          <p className="text-md text-white">
-            The PCS portal to submit Technical Papers is now live! Please submit
-            via the{" "}
-            <Link href={"https://new.precisionconference.com/"}>
-              ASSETS 2024 submission site
-            </Link>
-            .
-          </p>
-        </Alert>
-      }
+      // overrideTOC={
+      //   <Alert raw={true} heading={"Technical Paper submissions now live"}>
+      //     <p className="text-md text-white">
+      //       The PCS portal to submit Technical Papers is now live! Please submit
+      //       via the{" "}
+      //       <Link href={"https://new.precisionconference.com/"}>
+      //         ASSETS 2024 submission site
+      //       </Link>
+      //       .
+      //     </p>
+      //   </Alert>
+      // }
     >
       <Section title={"Call for Papers"} spacing={"bottom-only"}>
         <p>{`The ASSETS conference is the premier forum for presenting research on the design, evaluation, use, and education related to computing for people with disabilities and older adults. We invite high-quality original submissions on topics relevant to computing and accessibility.`}</p>
@@ -70,16 +71,16 @@ export default function TechnicalPapers() {
       <Section title={"Submission Procedures"} spacing={"bottom-only"}>
         <p>{`ASSETS accepts submissions in the following categories:`}</p>
         <ul>
-          <li>
-            <Link href={"/authors/call-for-papers/technical-papers/"}>
-              Technical Papers
-            </Link>
-          </li>
-          <li>Posters and Demonstrations (TBA)</li>
-          <li>Experience Reports (TBA)</li>
-          <li>Doctoral Consortium (TBA)</li>
-          <li>Student Research Competition (TBA)</li>
-          <li>Workshop Proposals (TBA)</li>
+          {MENU_DATA.filter((a) => a.title === "Authors")[0].children.map(
+            (accepts, i) => {
+              return accepts.title === "Call for Papers" ||
+                accepts.title === "Mentoring" ? null : (
+                <li key={i}>
+                  <Link href={accepts.href}>{accepts.title}</Link>
+                </li>
+              );
+            }
+          )}
         </ul>
         <p>
           {`Technical papers are expected to present significant and original contributions. For early work and work-in-progress, authors may consider submitting a poster or demo. Papers may expand upon previously published posters or demos, but must present novel and significantly extended content, and should cite any previous abstracts for posters or demos. Please refer to the `}{" "}
@@ -97,9 +98,9 @@ export default function TechnicalPapers() {
           {`. Accepted papers and the abstracts for posters and demonstrations, experience reports, and the student research competition will be archived in the ACM Digital Library. At least one author of accepted submissions must register as the presenter by the early registration deadline.`}
         </p>
       </Section>
-      <Section title={"Important Dates"} spacing={"bottom-only"}>
+      {/* <Section title={"Important Dates"} spacing={"bottom-only"}>
         <DateList dates={TECHNICAL_PAPERS_SUBPAGE_DEADLINES} />
-      </Section>
+      </Section> */}
     </Subpage>
   );
 }

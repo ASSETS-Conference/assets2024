@@ -1,8 +1,9 @@
 import React from "react";
 
-export function DateList({ dates }) {
+export function DateList({ dates, notice}) {
     return dates && dates.length ? (
         <>
+            {notice ? <p className="pl-4 flex items-center gap-3"><p className=" bg-theme-blue text-white ml-[-1rem] p-2 font-bold">Notice:</p>{notice}</p> : null}
             {dates.map((date, i, all) => {
                 return (
                     <MonthContainer
@@ -65,7 +66,7 @@ export function EventItem({ title, date, time }) {
             </p>
             <div className="grid grid-cols-2 gap-8">
                 <p>{date}</p>
-                <p className="!mt-0">{time} AOE</p>
+                {time ? <p className="!mt-0">{time} AOE</p> : null}
             </div>
         </div>
     );

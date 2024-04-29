@@ -20,6 +20,9 @@ export default function Section({ title, children, className, spacing, id }) {
       case 'bottom-only':
         setSpacing = 'pb-16 md:pb-18'
         break;
+      case 'none':
+        setSpacing = ''
+        break;
       default:
         setSpacing = 'py-16 md:py-18'
         break;
