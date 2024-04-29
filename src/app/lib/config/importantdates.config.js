@@ -232,12 +232,12 @@ const WORKSHOP_PROPOSAL_DATES = [
         eventItems: [
             {
                 title: "Submission deadline",
-                date: "Thursday, July 6, 2024",
+                date: "Wednesday, July 3, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Open Discussion (via PCS)",
-                date: "Sunday, July 7 - Sunday, July 14, 2024",
+                date: "Sunday, July 10 - Sunday, July 24, 2024",
                 time: "11:59PM",
             },
         ],
@@ -248,17 +248,17 @@ const WORKSHOP_PROPOSAL_DATES = [
         eventItems: [
             {
                 title: "Notification of Acceptance",
-                date: "Thursday, August 3, 2024",
+                date: "Wednesday, August 7, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Workshop Website Online",
-                date: "Friday, August 4, 2024",
+                date: "Monday, August 12, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Camera-ready Deadline",
-                date: "Friday, August 18, 2024",
+                date: "Wednesday, August 14, 2024",
                 time: "11:59PM",
             },
         ],
@@ -270,7 +270,7 @@ const WORKSHOP_PROPOSAL_DATES = [
             {
                 title: "ASSETS'24 Workshops",
                 date: "Week of October 22, 2024",
-                time: "11:59PM",
+                time: undefined,
             },
         ],
     },
