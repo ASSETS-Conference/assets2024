@@ -9,7 +9,8 @@ const MENU_DATA = [
         title: "Technical Papers",
         href: "/authors/call-for-papers/technical-papers",
       },
-      { title: "Posters and Demos", href: "/authors/posters-and-demos" },
+      { title: "Posters and Demos", href: "/authors/posters-and-demos/" },
+      { title: "Doctoral Consortium", href: "/authors/doctoral-consortium/" },
       { title: "Workshop Proposals", href: "/authors/workshops/" },
       {
         title: "Experience Reports",

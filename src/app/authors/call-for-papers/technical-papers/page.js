@@ -17,18 +17,18 @@ export default function TechnicalPapers() {
     <Subpage
       title={"Technical Papers"}
       subheading={"Submission Guidelines for Technical Papers at ASSETS '24"}
-      overrideTOC={
-        <Alert raw={true} heading={"Technical Paper submissions now live"}>
-          <p className="text-md text-white">
-            The PCS portal to submit Technical Papers is now live! Please submit
-            via the{" "}
-            <Link href={"https://new.precisionconference.com/"}>
-              ASSETS 2024 submission site
-            </Link>
-            .
-          </p>
-        </Alert>
-      }
+      // overrideTOC={
+      //   <Alert raw={true} heading={"Technical Paper submissions now live"}>
+      //     <p className="text-md text-white">
+      //       The PCS portal to submit Technical Papers is now live! Please submit
+      //       via the{" "}
+      //       <Link href={"https://new.precisionconference.com/"}>
+      //         ASSETS 2024 submission site
+      //       </Link>
+      //       .
+      //     </p>
+      //   </Alert>
+      // }
     >
       <Section title="Important Dates" spacing={"bottom-only"}>
         <p>

@@ -16,7 +16,7 @@ export default function Home() {
         <Hero />
         <Container id="content">
           <Section title="Important Dates" spacing={"top-only"}>
-            <Alert
+            {/* <Alert
               className={"mb-5"}
               raw={true}
               heading={"Technical Paper submissions now live"}
@@ -29,7 +29,7 @@ export default function Home() {
                 </Link>
                 .
               </p>
-            </Alert>
+            </Alert> */}
             <p>
               <strong>All deadlines</strong> are 11:59 P.M. Anywhere on Earth
               (UTC -12:00).
