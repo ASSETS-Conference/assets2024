@@ -166,8 +166,13 @@ const DOCTORAL_CONSORTIUM_DATES = [
         year: "2024",
         eventItems: [
             {
-                title: "Notification of Acceptance",
-                date: "Friday, July 28th, 2024",
+                title: "Cover letter, Research Project Summary, CV Submission Due",
+                date: "Wednesday, July 3rd, 2024",
+                time: "11:59PM",
+            },
+            {
+                title: "Advisor's Letter of Recommendation Due",
+                date: "Wednesday, July 10th, 2024",
                 time: "11:59PM",
             },
         ],
@@ -177,13 +182,13 @@ const DOCTORAL_CONSORTIUM_DATES = [
         year: "2024",
         eventItems: [
             {
-                title: "Camera-ready Deadline",
-                date: "Friday, August 11th, 2024",
+                title: "Notification of Acceptance",
+                date: "Wednesday, August 7th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Video Presentation Deadline",
-                date: "Monday, August 28th, 2024",
+                date: "Wednesday, August 28th, 2024",
                 time: "11:59PM",
             },
         ],
