@@ -3,7 +3,7 @@ import React from "react";
 export function DateList({ dates, notice}) {
     return dates && dates.length ? (
         <>
-            {notice ? <p className="pl-4 flex items-center gap-3"><p className=" bg-theme-blue text-white ml-[-1rem] p-2 font-bold">Notice:</p>{notice}</p> : null}
+            {notice ? <div className="pl-4 flex flex-row items-center gap-3"><p className=" bg-theme-blue text-white ml-[-1rem] p-2 font-bold">Notice:</p><p className="mb-[1rem]">{notice}</p></div> : null}
             {dates.map((date, i, all) => {
                 return (
                     <MonthContainer
