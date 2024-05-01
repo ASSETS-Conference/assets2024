@@ -1,9 +1,17 @@
 import React from "react";
+import { formatDate } from "../utils/mergeDates";
 
-export function DateList({ dates, notice}) {
+export function DateList({ dates, notice }) {
     return dates && dates.length ? (
         <>
-            {notice ? <p className="pl-4 flex items-center gap-3"><p className=" bg-theme-blue text-white ml-[-1rem] p-2 font-bold">Notice:</p>{notice}</p> : null}
+            {notice ? (
+                <p className="pl-4 flex items-center gap-3">
+                    <p className=" bg-theme-blue text-white ml-[-1rem] p-2 font-bold">
+                        Notice:
+                    </p>
+                    {notice}
+                </p>
+            ) : null}
             {dates.map((date, i, all) => {
                 return (
                     <MonthContainer
@@ -31,10 +39,22 @@ export function DateList({ dates, notice}) {
 }
 
 export function MonthContainer({ monthName, year, eventItems, isLast }) {
+    const formatted = new Date(`${monthName} 1, ${year}`);
+    const endOfMonth = new Date(
+        formatted.getFullYear(),
+        formatted.getMonth() + 1,
+        0
+    ).getTime();
+    const isPast = endOfMonth < new Date().setHours(0, 0, 0, 0);
+
     return (
-        <div className="pt-10 w-[100%] flex flex-col md:flex-row items-start">
+        <div className={`pt-10 w-[100%] flex flex-col md:flex-row items-start`}>
             <div className="flex-1">
-                <p className="h2 uppercase">{`${monthName} ${year}`}</p>
+                <p
+                    className={`h2 uppercase ${
+                        isPast ? "opacity-50" : "opacity-100"
+                    }`}
+                >{`${monthName} ${year}`}</p>
             </div>
             <div
                 className={`flex-1 border-black w-[100%] ${
@@ -59,8 +79,10 @@ export function MonthContainer({ monthName, year, eventItems, isLast }) {
 }
 
 export function EventItem({ title, date, time }) {
+    const isPast = new Date(formatDate(date)) < new Date().setHours(0, 0, 0, 0);
+
     return (
-        <div className="mb-8">
+        <div className={`mb-8 ${isPast ? "opacity-50" : "opacity-100"}`}>
             <p className="font-medium my-2 text-xl md:mt-2 md:text-2xl">
                 {title}
             </p>
