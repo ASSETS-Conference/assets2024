@@ -68,12 +68,12 @@ export default function WorkshopProposals() {
         title={"Important Dates and How to Apply"}
         spacing={"bottom-only"}
       >
-        <Alert
+        {/* <Alert
           className={"mb-2"}
           isNotice
           body={`All deadlines are 11:59 P.M. Anywhere on Earth (UTC -12:00).`}
-        />
-        <DateList dates={DOCTORAL_CONSORTIUM_DATES} />
+        /> */}
+        <DateList dates={DOCTORAL_CONSORTIUM_DATES} notice={'All deadlines are 11:59 P.M. Anywhere on Earth (UTC -12:00).'} />
         <p>
           Each Doctoral Consortium applicant must submit a package of
           application materials and also request a letter of recommendation from
