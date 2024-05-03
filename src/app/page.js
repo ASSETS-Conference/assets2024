@@ -9,7 +9,7 @@ import {
     EXPERIENCE_REPORTS_DATES,
     POSTER_DEMOS_DATES,
     STUDENT_RESEARCH_DATES,
-    TECHNICAL_PAPERS_DATES,
+    MAIN_DEADLINES,
     TECHNICAL_PAPERS_SUBPAGE_DEADLINES,
     WORKSHOP_PROPOSAL_DATES,
 } from "./lib/config/importantdates.config";
@@ -48,11 +48,16 @@ export default function Home() {
                 .
               </p>
             </Alert> */}
-                        <p>
+                        {/* <p>
                             <strong>All deadlines</strong> are 11:59 P.M.
                             Anywhere on Earth (UTC -12:00).
-                        </p>
-                        <DateList dates={TECHNICAL_PAPERS_DATES} />
+                        </p> */}
+                        <DateList
+                            dates={MAIN_DEADLINES}
+                            notice={
+                                "All deadlines are 11:59 P.M. Anywhere on Earth (UTC -12:00)."
+                            }
+                        />
                     </Section>
                     <Section title="ASSETS at a Glance" spacing={"bottom-only"}>
                         <p className="h3">{`The 26th International ACM SIGACCESS Conference on Computers and Accessibility.`}</p>

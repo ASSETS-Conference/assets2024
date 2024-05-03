@@ -1,4 +1,4 @@
-const TECHNICAL_PAPERS_DATES = [
+const MAIN_DEADLINES = [
     {
         month: "March",
         year: "2024",
@@ -15,7 +15,7 @@ const TECHNICAL_PAPERS_DATES = [
         year: "2024",
         eventItems: [
             {
-                title: "Technical Paper Submission Deadline",
+                title: "Technical Papers: Submission Deadline",
                 date: "Wednesday, April 24th, 2024",
                 time: "11:59PM",
             },
@@ -26,14 +26,87 @@ const TECHNICAL_PAPERS_DATES = [
         year: "2024",
         eventItems: [
             {
-                title: "Author Rebuttal Period Opens",
+                title: "Technical Papers: Author Rebuttal Period Opens",
                 date: "Wednesday, June 5th, 2024",
                 time: "11:59PM",
             },
             {
-                title: "Author Rebuttal Period Closes",
+                title: "Technical Papers: Author Rebuttal Period Closes",
                 date: "Wednesday, June 12th, 2024",
                 time: "11:59PM",
+            },
+            {
+                title: "Technical Papers: Acceptance Decisions Sent",
+                date: "Wednesday, June 26th, 2024",
+                time: "11:59PM",
+            },
+        ],
+    },
+    {
+        month: "July",
+        year: "2024",
+        eventItems: [
+            {
+                title: "Posters and Demos Submission Deadline",
+                date: "Wednesday, July 3rd, 2024",
+                time: "11:59PM",
+            },
+            {
+                title: "Cover letter, Research Project Summary, CV Submission Due",
+                subtitle: "For Doctoral Consortium Only",
+                date: "Wednesday, July 3rd, 2024",
+                time: "11:59PM",
+            },
+            {
+                title: "Advisor's Letter of Recommendation Due",
+                subtitle: "For Doctoral Consortium Only",
+                date: "Wednesday, July 10th, 2024",
+                time: "11:59PM",
+            },
+            {
+                title: "Technical Papers: Camera-ready Deadline",
+                date: "Wednesday, July 24th, 2024",
+                time: "11:59PM",
+            },
+            {
+                title: "Technical Papers: Video Presentation Deadline",
+                date: "Wednesday, July 31st, 2024",
+                time: "11:59PM",
+            },
+        ],
+    },
+    {
+        month: "August",
+        year: "2024",
+        eventItems: [
+            {
+                title: "All Other Notification of Acceptance",
+                subtitle: "For Posters, Experience Reports, DC, SRC, Workshops",
+                date: "Wednesday, August 7th, 2024",
+                time: "11:59PM",
+            },
+            {
+                title: "Camera Ready Deadline",
+                subtitle: "For Posters, Workshops",
+                date: "Wednesday, August 14th, 2024",
+                time: "11:59PM",
+            },
+            {
+                title: "Video Presentations Submission Deadline",
+                subtitle: "For Posters, Experience Reports, DC, SRC",
+                date: "Wednesday, August 28th, 2024",
+                time: "11:59PM",
+            },
+        ],
+    },
+    {
+        month: "October",
+        year: "2024",
+        eventItems: [
+            {
+                title: "ASSETS'24 Workshops",
+                date: "Week of October 22nd, 2024",
+                time: undefined,
             },
         ],
     },
@@ -272,17 +345,17 @@ const WORKSHOP_PROPOSAL_DATES = [
         month: "October",
         year: "2024",
         eventItems: [
-            // {
-            //     title: "ASSETS'24 Workshops",
-            //     date: "Week of October 22th, 2024",
-            //     time: undefined,
-            // },
+            {
+                title: "ASSETS'24 Workshops",
+                date: "Week of October 22nd, 2024",
+                time: undefined,
+            },
         ],
     },
 ];
 
 export {
-    TECHNICAL_PAPERS_DATES,
+    MAIN_DEADLINES,
     POSTER_DEMOS_DATES,
     EXPERIENCE_REPORTS_DATES,
     DOCTORAL_CONSORTIUM_DATES,
