@@ -47,7 +47,8 @@ const MAIN_DEADLINES = [
         year: "2024",
         eventItems: [
             {
-                title: "Posters and Demos Submission Deadline",
+                title: "Submission Deadline",
+                subtitle: "For Posters and Demos, Experience Reports, DC, SRC and Workshops",
                 date: "Wednesday, July 3rd, 2024",
                 time: "11:59PM",
             },
@@ -80,20 +81,20 @@ const MAIN_DEADLINES = [
         year: "2024",
         eventItems: [
             {
-                title: "All Other Notification of Acceptance",
-                subtitle: "For Posters, Experience Reports, DC, SRC, Workshops",
+                title: "Notification of Acceptance",
+                subtitle: "For Posters, Experience Reports, DC, SRC and Workshops",
                 date: "Wednesday, August 7th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Camera Ready Deadline",
-                subtitle: "For Posters, Workshops",
+                subtitle: "For Posters and Demos, Experience Reports, SRC, and Workshops",
                 date: "Wednesday, August 14th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Video Presentations Submission Deadline",
-                subtitle: "For Posters, Experience Reports, DC, SRC",
+                subtitle: "For Posters, Experience Reports, DC and SRC",
                 date: "Wednesday, August 28th, 2024",
                 time: "11:59PM",
             },

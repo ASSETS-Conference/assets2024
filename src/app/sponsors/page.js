@@ -29,10 +29,10 @@ export default function TechnicalPapers() {
                     <Image
                         src={"/sponsors/apple.png"}
                         alt="Logo of Apple Inc."
-                        height={200}
-                        width={200}
+                        height={175}
+                        width={175}
                         style={{
-                            padding: "48px 56px 56px 56px",
+                            padding: "48px 56px 56px 0px",
                         }}
                     />
                 </div>
