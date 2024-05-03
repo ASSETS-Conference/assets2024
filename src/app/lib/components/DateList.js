@@ -7,7 +7,7 @@ export function DateList({ dates, notice }) {
             {notice ? (
                 <div className="pl-4 flex flex-row items-center gap-3">
                     <p className=" bg-theme-blue text-white ml-[-1rem] p-2 font-bold">
-                        Notice:
+                        NOTICE:
                     </p>
                     <p className="mb-[1rem]">{notice}</p>
                 </div>
