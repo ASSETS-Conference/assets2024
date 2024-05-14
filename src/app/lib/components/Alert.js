@@ -1,5 +1,5 @@
 import React from "react";
-import { MdInfo, MdWarning } from "react-icons/md";
+import { MdInfo, MdNotificationsActive, MdWarning } from "react-icons/md";
 
 /**
  * @param {Object} props
@@ -9,7 +9,7 @@ import { MdInfo, MdWarning } from "react-icons/md";
  * @param {Boolean} [props.raw=false] When set to `true`, the body fo the alert may be a HTML or React element
  * @param {HTMLElement} props.className Standard Class property.
  * @param {Boolean} props.isNotice If set to true, a compact version of the alert is displayed, this alert lacks the icon, the heading or any ability to use `raw` mode.
- * @param {'warning', 'notice'} props.type The type of alert.
+ * @param {'warning'|'notice'| 'changes'} props.type The type of alert.
  *
  * @returns {import("react").ReactNode} An Alert element
  */
@@ -21,6 +21,7 @@ export default function Alert({
   className,
   isNotice = false,
   type,
+  id,
 }) {
   return isNotice ? (
     <p
@@ -35,28 +36,56 @@ export default function Alert({
     </p>
   ) : (
     <div
+      id={id ? id : ""}
       role="alert"
       className={`${
-        type === "warning" ? "bg-theme-red" : "bg-theme-blue"
+        type === "warning"
+          ? "bg-theme-red"
+          : type === "changes"
+          ? "bg-theme-dark"
+          : "bg-theme-blue"
       } bg-theme-blue text-white p-4 flex flex-row gap-2 ${
         heading ? "items-start" : "items-center"
       } ${className}`}
     >
-      {type && type === "warning" ? (
-        <MdWarning
-          aria-hidden={true}
-          className={`text-xl flex-shrink-0 ${heading ? "mt-1" : ""}`}
-        />
-      ) : (
-        <MdInfo
-          aria-hidden={true}
-          className={`text-xl flex-shrink-0 ${heading ? "mt-1" : ""}`}
-        />
-      )}
+      {switchAlertType(type, heading)}
       <div>
         {heading ? <p className="text-lg font-bold mb-1">{heading}</p> : null}
         {raw ? children : <p>{body}</p>}
       </div>
     </div>
   );
+}
+
+function switchAlertType(type, heading) {
+  switch (type) {
+    case "warning":
+      return (
+        <MdWarning
+          aria-hidden={true}
+          className={`text-xl flex-shrink-0 ${heading ? "mt-1" : ""}`}
+        />
+      );
+    case "notice":
+      return (
+        <MdInfo
+          aria-hidden={true}
+          className={`text-xl flex-shrink-0 ${heading ? "mt-1" : ""}`}
+        />
+      );
+    case "changes":
+      return (
+        <MdNotificationsActive
+          aria-hidden={true}
+          className={`text-xl flex-shrink-0 ${heading ? "mt-1" : ""}`}
+        />
+      );
+    default:
+      return (
+        <MdInfo
+          aria-hidden={true}
+          className={`text-xl flex-shrink-0 ${heading ? "mt-1" : ""}`}
+        />
+      );
+  }
 }
