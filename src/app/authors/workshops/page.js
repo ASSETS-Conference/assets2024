@@ -13,17 +13,27 @@ export default function WorkshopProposals() {
     <Subpage
       title={"Workshop Proposals"}
       subheading={"Due Date: June 07, 2024"}
-    >
-      <Alert type="changes" heading="Notice: Workshop Format Updated" raw className={'mb-4'}>
-        <p>
-          {`Workshops will be an online-only event and take place the week of
-          October 21. Please note that workshops `}
-          <strong className="underline">{`will not`}</strong>
-          {` have a physical space
+      overrideTOC={
+        <Alert
+          type="changes"
+          heading="Correction: Workshop Format Updated"
+          raw
+          className={"lg:mb-4 md:-mt-8 sm:-mt-4 sm:mb-8"}
+        >
+          <p>
+            {`Workshops will be an online-only event and take place the week of
+          October 21. `}{`Please note that workshops `}
+
+            <strong className="underline">{`will not`}</strong>
+            {` have a physical space
           at the conference. `}
-          {`Please see `}<Link href={'#workshop-format'}>Workshop Format</Link> {` for more information.`}
-        </p>
-      </Alert>
+            {`Please see `}
+            <Link href={"#workshop-format"}>Workshop Format</Link>{" "}
+            {` for more information.`}
+          </p>
+        </Alert>
+      }
+    >
       <p>
         {`We invite you to submit a proposal for workshops at ASSETS 2024.
         Workshops will bring together attendees with shared interests to meet in
@@ -86,7 +96,7 @@ export default function WorkshopProposals() {
             including activities, timing, resources, and any follow-up
             activities or tangible outcomes. Please provide details regarding
             what specific technical capacity will be necessary to support the
-            online and in-person workshop day.`}
+            online workshop day.`}
           </li>
           <li>
             <strong>Diversity and inclusion considerations:</strong>
@@ -114,9 +124,9 @@ export default function WorkshopProposals() {
             Participation that will be posted on the conference site to recruit
             participants for your workshop. This should appear at the end of
             your workshop proposal, and should include the following:`}
-            {/* <ul>
-              <li>The goals of the workshop</li>
-              <li>The participant selection criteria</li>
+            <ul>
+              <li>{`The goals of the workshop`}</li>
+              <li>{`The participant selection criteria`}</li>
               <li>
                 {`Requirements for position papers (e.g., topics to address, page
               length, format) or workshop artifact`}
@@ -134,7 +144,7 @@ export default function WorkshopProposals() {
                 {`A link to the workshop website. (This may be TBD until after
                 acceptance)`}
               </li>
-            </ul> */}
+            </ul>
           </li>
           <li>
             <strong>References:</strong>
@@ -324,9 +334,10 @@ export default function WorkshopProposals() {
         </p>
         <p>
           <strong>Registration fee:</strong>
-          {` Workshop registration fees will be found on the
-          registration page – attendees do not need to register for the
-          conference to attend the workshops.`}
+          {`Workshop registration fees will be found on the conference
+          registration page. Although not required, workshop attendees are
+          strongly encouraged to register for the full conference in addition to
+          their workshop.`}
         </p>
       </Section>
       <Section title={"Further Information"}>
@@ -352,7 +363,7 @@ export default function WorkshopProposals() {
         </p>
         <p>
           {`For further information or any questions regarding workshop
-          submissions, please contact the Workshop Chair – Saad Hassan at `}
+          submissions, please contact the Workshop Chairs - Saad Hassan and Jonggi Hong at `}
           <Link href="mailto:workshops-assets24@acm.org">
             workshops-assets24@acm.org
           </Link>
