@@ -106,7 +106,7 @@ const MAIN_DEADLINES = [
         eventItems: [
             {
                 title: "ASSETS'24 Workshops",
-                date: "Week of October 22nd, 2024",
+                date: "Week of October 21st, 2024",
                 time: undefined,
             },
         ],
@@ -348,7 +348,7 @@ const WORKSHOP_PROPOSAL_DATES = [
         eventItems: [
             {
                 title: "ASSETS'24 Workshops",
-                date: "Week of October 22nd, 2024",
+                date: "Week of October 21st, 2024",
                 time: undefined,
             },
         ],
