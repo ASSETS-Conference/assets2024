@@ -255,6 +255,16 @@ export const ORGANIZING_COMMITTEE = [
         email: "virtual-assets24@acm.org",
         alt: "Jesse Martinez, a fair-skinned masc-presenting person with short, wavy brown hair, mild stubble, and a silver eyebrow piercing. He is wearing a pink t-shirt under a denim jacket-hoodie combo and a twisted silver pendant necklace.",
       },
+      {
+        name: "Jay Henderson",
+        role: "Virtual Chair 3",
+        // picture: undefined,
+        picture: "/assets/committees/organizing/jay_henderson.jpeg",
+        affiliation: "Memorial University of Newfoundland",
+        location: "CANADA",
+        email: "virtual-assets24@acm.org",
+        alt: "A portrait of Jay Henderson, a smiling white masculine person with short brown hair, wearing a light blue button up shirt.",
+      },
     ],
   },
   {
