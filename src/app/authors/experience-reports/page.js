@@ -1,3 +1,4 @@
+import Alert from "@/app/lib/components/Alert";
 import { DateList } from "@/app/lib/components/DateList";
 import Link from "@/app/lib/components/primitives/Link";
 import Section from "@/app/lib/components/primitives/Section";
@@ -108,16 +109,18 @@ export default function ExperienceReports() {
                     </Link>
                     {`.`}
                 </p>
-                <h3 id="author-pcs-account-details">
+                <h3 aria-hidden={true} className="opacity-0" id="author-pcs-account-details">
                     IMPORTANT - Author PCS Account Details
-                </h3>
+                 </h3>
+                <Alert className={'-mt-8'} type="warning" raw heading={"IMPORTANT - Author PCS Account Details"}>
                 <p>
                     {`ACM continues to update the publication process. Currently, paper metadata will be pulled directly from your personal PCS account. This means that it is crucial for you and all of your co-authors to update the contact information so that names, affiliations, AND primary email addresses are stylized precisely in the way that you all would want to see them in the ACM digital library and on your paper. For example, if you use a personal email address (xyz123@hotmail.com) as your primary contact email in PCS then this email will appear on your paper. Please `}
-                    <Link href="https://new.precisionconference.com/user/login?next=https%3A//new.precisionconference.com/contact_info">
+                    <Link className={'text-white'} href="https://new.precisionconference.com/user/login?next=https%3A//new.precisionconference.com/contact_info">
                         {`check your author information and make the necessary changes`}
                     </Link>
                     {`.`}
                 </p>
+                </Alert>
             </Section>
             <Section title="Further Information" spacing={"bottom-only"}>
                 <p>
