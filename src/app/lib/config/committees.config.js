@@ -215,7 +215,7 @@ export const ORGANIZING_COMMITTEE = [
       {
         name: "Mauli Pandey",
         role: "Student Research Competition Chair 1",
-        picture: "/assets/committees/organizing/mauli_pandey.jpg",
+        picture: "/assets/committees/organizing/mauli_pandey.jpeg",
         affiliation: "Google",
         location: "UNITED STATES",
         email: "src-chairs-assets24@acm.org",
@@ -224,7 +224,7 @@ export const ORGANIZING_COMMITTEE = [
       {
         name: "Stephanie Valencia",
         role: "Student Research Competition Chair 2",
-        picture: "/assets/committees/organizing/stephanie_valencia.png",
+        picture: "/assets/committees/organizing/stephanie_valencia.jpg",
         affiliation: "University of Maryland",
         location: "UNITED STATES",
         email: "src-chairs-assets24@acm.org",
