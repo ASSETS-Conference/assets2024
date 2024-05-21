@@ -12,7 +12,7 @@ export default function WorkshopProposals() {
   return (
     <Subpage
       title={"Workshop Proposals"}
-      subheading={"Due Date: June 07, 2024"}
+      subheading={"Due Date: July 3rd, 2024"}
       overrideTOC={
         <Alert
           type="changes"
