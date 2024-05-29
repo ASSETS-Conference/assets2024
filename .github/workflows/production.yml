@@ -92,22 +92,25 @@ jobs:
     runs-on: ubuntu-latest
     needs: build
     steps:
-      - name: ⬇️ Grab Artifact
+      - name: 🌆 Grab Artifact
         uses: actions/download-artifact@v4
       - name: Display structure of downloaded files
         run: ls -R
-      - name: 🆙 Upload
-        id: deployment
+      - name: 📂 Upload Files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          server: ${{ secrets.ftp_server }}
-          username: ${{ secrets.fpt_username }}
-          password: ${{ secrets.ftp_password }}
-          local-dir: './out'
+          server: ${{secrets.server}}
+          username: ${{secrets.username}}
+          password: ${{ secrets.password }}
           dry-run: true
+          local-dir: ./out/
+          log-level: verbose
           exclude: |
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.well-known/**
+            **/cgi-bin/**
+            .ftpquota
+            .htaccess
 
