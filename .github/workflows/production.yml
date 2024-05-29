@@ -98,8 +98,6 @@ jobs:
           username: ${{secrets.username}}
           password: ${{ secrets.password }}
           dry-run: true
-          local-dir: ./out/
-          log-level: verbose
           exclude: |
             **/.git*
             **/.git*/**
