@@ -97,7 +97,7 @@ jobs:
           server: ${{secrets.server}}
           username: ${{secrets.username}}
           password: ${{ secrets.password }}
-          dry-run: true
+        #   dry-run: true
           exclude: |
             **/.git*
             **/.git*/**
@@ -106,3 +106,5 @@ jobs:
             **/cgi-bin/**
             .ftpquota
             .htaccess
+      - name: Display Changes
+        run: cat ./.ftp-deploy-sync-state.json
