@@ -29,8 +29,6 @@ jobs:
   build:
     name: 🌇 Build
     runs-on: ubuntu-latest
-    env:
-      NEXT_PUBLIC_IN_GITHUB_ACTIONS: true
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -56,14 +54,6 @@ jobs:
         with:
           node-version: "18"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-        # with:
-        # Automatically inject basePath in your Next.js configuration file and disable
-        # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
-        #
-        # You may remove this line if you want to manage the configuration yourself.
-        # static_site_generator: next
       - name: Restore cache
         uses: actions/cache@v3
         with:
@@ -79,8 +69,9 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
+          name: 'assets-prod-upload'
           path: ./out
 
   # Deployment job
@@ -94,6 +85,8 @@ jobs:
     steps:
       - name: 🌆 Grab Artifact
         uses: actions/download-artifact@v4
+        with:
+            name: 'assets-prod-upload'
       - name: Display structure of downloaded files
         run: ls -R
       - name: 📂 Upload Files
@@ -102,9 +95,7 @@ jobs:
           server: ${{secrets.server}}
           username: ${{secrets.username}}
           password: ${{ secrets.password }}
-          dry-run: true
-          local-dir: ./out/
-          log-level: verbose
+        #   dry-run: true
           exclude: |
             **/.git*
             **/.git*/**
@@ -113,3 +104,5 @@ jobs:
             **/cgi-bin/**
             .ftpquota
             .htaccess
+      - name: Display Changes
+        run: cat ./.ftp-deploy-sync-state.json
