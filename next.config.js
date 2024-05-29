@@ -8,7 +8,7 @@
  * check for that.
  */
 
-const _IN_GH_ACTIONS = process.env.GITHUB_ACTIONS || false;
+const _IN_GH_ACTIONS = process.env.NEXT_PUBLIC_IN_GITHUB_ACTIONS || false;
 console.log('GITHUB ACTION DETECTED?: ', _IN_GH_ACTIONS);
 const _REPO = 'assets2024';
 
