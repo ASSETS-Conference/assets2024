@@ -24,7 +24,7 @@ export default function TechnicalPapers() {
                         width={400}
                     />
                 </div>
-                <h2>Gold Level Sponsors</h2>
+                {/* <h2>Gold Level Sponsors</h2>
                 <div className="flex flex-col gap-8 mt-8 mb-8 md:flex-row">
                     <Image
                         src={"/sponsors/apple.png"}
@@ -35,7 +35,7 @@ export default function TechnicalPapers() {
                             padding: "48px 56px 56px 0px",
                         }}
                     />
-                </div>
+                </div> */}
                 {/* <h2>Silver Level Sponsors</h2>
       <h2>Bronze Level Sponsors</h2> */}
                 <h2>Sponsoring Organizations</h2>
