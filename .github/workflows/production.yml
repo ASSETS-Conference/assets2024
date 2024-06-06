@@ -71,7 +71,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: 'assets-prod-upload'
+          name: assets-prod-upload
           path: ./out
 
   # Deployment job
@@ -86,7 +86,7 @@ jobs:
       - name: 🌆 Grab Artifact
         uses: actions/download-artifact@v4
         with:
-            name: 'assets-prod-upload'
+            name: assets-prod-upload
       - name: Display structure of downloaded files
         run: ls -R
       - name: 📂 Upload Files
@@ -106,3 +106,7 @@ jobs:
             .htaccess
       - name: Display Changes
         run: cat ./.ftp-deploy-sync-state.json
+      - name: 🚚 Delete Artifacts
+        uses: geekyeggo/delete-artifact@v5
+        with:
+          name: assets-upload-prod

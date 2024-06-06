@@ -105,8 +105,8 @@ export default function PostersAndDemos() {
                 </p>
                 <p>
                     {`For further information or any questions regarding the event or submissions, please contact the Posters and Demos Chairs Anne Ross and Garreth Tigwell at `}{" "}
-                    <Link href={"mailto:posters-assets24@acm.org"}>
-                        {`posters-assets24@acm.org`}
+                    <Link href={"mailto:poster-demo-assets24@acm.org"}>
+                        {`poster-demo-assets24@acm.org`}
                     </Link>
                     {`.`}
                 </p>
