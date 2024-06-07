@@ -22,8 +22,8 @@ export default function WorkshopProposals() {
         >
           <p>
             {`Workshops will be an online-only event and take place the week of
-          October 21. `}{`Please note that workshops `}
-
+          October 21. `}
+            {`Please note that workshops `}
             <strong className="underline">{`will not`}</strong>
             {` have a physical space
           at the conference. `}
@@ -77,8 +77,10 @@ export default function WorkshopProposals() {
       </Section>
       <Section title={"Preparing and Submitting Your Workshop Proposal"}>
         <p>
-          {`  A workshop proposal must be prepared according to the ACM Master
-          Article Submission Templates (single column). It must be submitted via
+          {`A workshop proposal must be prepared according to the ACM Master
+          Article Submission Templates (single column). The submission`}{" "}
+          <strong className="underline">{` should not`}</strong>{" "}
+          {`be anonymized and must be must be submitted via
           the PCS Submission System as a single PDF file. The proposal must be
           no more than 6,000 words (excluding references) and have the following
           structure:`}
