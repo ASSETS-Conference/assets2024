@@ -2,7 +2,15 @@ import React from 'react'
 
 import { FaArrowRight } from 'react-icons/fa';
 
-export default function Section({ title, children, className, spacing, id }) {
+/**
+ * 
+ * @param {React.PropsWithChildren} props
+ * @param {String} props.title The title of the overarching section
+ * @param {React.ReactNode} props.children Children placed within the 
+ *  
+ * @returns 
+ */
+export default function Section({ title, children, className, spacing, id, invertColours}) {
 
   const generateID = () => {
     return title.replace(/\s/g, '-').toLowerCase();
@@ -32,8 +40,8 @@ export default function Section({ title, children, className, spacing, id }) {
   }
 
   return (
-    <section className={`${evalSpacing()} ${className}`}>
-      <div className='mt-7 border-b-[2px] border-black'>
+    <section className={`${evalSpacing()} ${className} ${invertColours ? 'text-white' : 'text-black'}`}>
+      <div className={`mt-7 border-b-[2px]  ${invertColours ? 'border-white' : 'border-black'}`}>
         <h1  id={id ? id : generateID()}  className='flex flex-row justify-flex-start content-center gap-3 mb-6 max-w-[30ch]'><FaArrowRight aria-hidden className='mt-[.1rem] min-w-[1em] aspect-square'/>{title}</h1>
       </div>
       <div className='mt-7'>
