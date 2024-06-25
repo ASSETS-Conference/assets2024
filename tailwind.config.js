@@ -17,6 +17,7 @@ module.exports = {
         "primary-text-light": "var(--primary-light)",
         "primary-text-dark": "var(--primary-dark)",
         "link-underline-red": "#a62929",
+        "link-underline-blue": "#4597BA",
       },
       listStyleType: {
         circle: "circle",
