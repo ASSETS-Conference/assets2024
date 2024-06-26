@@ -14,18 +14,32 @@ export default function TechnicalPapers() {
     <Subpage
       title="Call for Papers"
       subheading={"October 28th - 30th, 2024"}
-      // overrideTOC={
-      //   <Alert raw={true} heading={"Technical Paper submissions now live"}>
-      //     <p className="text-md text-white">
-      //       The PCS portal to submit Technical Papers is now live! Please submit
-      //       via the{" "}
-      //       <Link href={"https://new.precisionconference.com/"}>
-      //         ASSETS 2024 submission site
-      //       </Link>
-      //       .
-      //     </p>
-      //   </Alert>
-      // }
+      overrideTOC={
+        <Alert
+          className={"mb-5"}
+          raw={true}
+          heading={"All CFPs are now Live on PCS for Submission"}
+        >
+          <p className="text-md text-white">
+            All submission tracks are now live and available for submission on
+            the{" "}
+            <Link
+              className={"text-white"}
+              href={"https://new.precisionconference.com/"}
+            >
+              {" "}
+              PCS system
+            </Link>
+            . <br className="block lg:hidden" />
+            <br className="block lg:hidden" />
+            For more information, please take a look at the individual{" "}
+            <Link className={"text-white"} href={"/authors/call-for-papers/"}>
+              Call for Papers
+            </Link>{" "}
+            pages.
+          </p>
+        </Alert>
+      }
     >
       <Section title={"Call for Papers"} spacing={"bottom-only"}>
         <p>{`The ASSETS conference is the premier forum for presenting research on the design, evaluation, use, and education related to computing for people with disabilities and older adults. We invite high-quality original submissions on topics relevant to computing and accessibility.`}</p>
