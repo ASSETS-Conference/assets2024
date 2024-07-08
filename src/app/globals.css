@@ -3,57 +3,70 @@
 @tailwind utilities;
 
 @layer base {
-  h1,
-  .h1 {
-    @apply font-bold text-2xl md:text-3xl xl:text-4xl;
-  }
-  h2,
-  .h2 {
-    @apply font-bold text-xl md:text-2xl xl:text-3xl;
-  }
-  h3,
-  .h3 {
-    @apply font-normal text-lg md:text-xl xl:text-2xl;
-  }
+    h1,
+    .h1 {
+        @apply font-bold text-2xl md:text-3xl xl:text-4xl;
+    }
+    h2,
+    .h2 {
+        @apply font-bold text-xl md:text-2xl xl:text-3xl;
+    }
+    h3,
+    .h3 {
+        @apply font-normal text-lg md:text-xl xl:text-2xl;
+    }
 
-  /* 
+    /* 
   ** Applies to all things within a "section" component.
   ** This is to help create some defaults that look good 
   ** and that the user gets for free.
   */
 
-  section h2,
-  section h3,
-  section h4 {
-    @apply my-4;
-  }
-  section p:not(:first-child) {
-    @apply mt-4;
-  }
-  section a {
-    @apply text-link-underline-red;
-  }
-  section li {
-    @apply ml-8 list-disc mb-2;
-  }
-  section li:first-child {
-    @apply mt-4;
-  }
-  section li li {
-    @apply list-circle;
-  }
-  /** Remove override for list items, we should really redo this **/
-  section ol > li {
-    @apply list-decimal;
-  }
-  /* Ignore the personas and don't apply our regular p tag spacing */
-  #persona p {
-    @apply mt-0;
-  }
+    section h2,
+    section h3,
+    section h4 {
+        @apply my-4;
+    }
+    section p:not(:first-child) {
+        @apply mt-4;
+    }
+    section a {
+        @apply text-link-underline-red;
+    }
+    section li {
+        @apply ml-8 list-disc mb-2;
+    }
+    section li:first-child {
+        @apply mt-4;
+    }
+    section li li {
+        @apply list-circle;
+    }
+    /** Remove override for list items, we should really redo this **/
+    section ol > li {
+        @apply list-decimal;
+    }
+    /* Ignore the personas and don't apply our regular p tag spacing */
+    #persona p {
+        @apply mt-0;
+    }
+    thead tr {
+        @apply bg-theme-dark text-theme-off-white;
+    }
+    thead tr th {
+        @apply border border-theme-off-white;
+    }
+    tbody tr td {
+        @apply border border-theme-dark;
+    }
+    th,
+    td {
+        @apply px-4 py-4 border;
+    }
 }
 
 :root {
-  --background-grey: #2b2b2b;
-  --primary-light: #ffffff;
-  --primary-dark: #000000;
+    --background-grey: #2b2b2b;
+    --primary-light: #ffffff;
+    --primary-dark: #000000;
 }
