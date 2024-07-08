@@ -24,6 +24,14 @@ const MENU_DATA = [
     ],
   },
   {
+    title: "Attending",
+    href: null,
+    children: [
+        { title: "Registration", href: "/attending/registration/" },
+        { title: "Scholarships", href: "/attending/scholarships/" },
+    ],
+  },
+  {
     title: "Additional Resources",
     href: null,
     children: [
@@ -38,14 +46,6 @@ const MENU_DATA = [
       // { title: "Workshop Proposals", href: "/authors/workshops/" },
     ],
   },
-  // {
-  //     title: "Attending",
-  //     href: null,
-  //     children: [
-  //         { title: "Overview", href: "/attending/overview/" },
-  //         { title: "Registration", href: "/attending/registration/" },
-  //     ],
-  // },
   // {
   //     title: "Program",
   //     href: null,
