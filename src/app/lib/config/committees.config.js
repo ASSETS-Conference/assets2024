@@ -670,7 +670,16 @@ export const PROGRAM_COMMITTEE = [
     },
     { name: "Taslima Akter", school: "UC Irvine", location: "USA" },
     { name: "Tim Neate", school: "King’s College London", location: "UK" },
-    { name: "Varsha Koushik", school: "Colorado College", location: "USA" },
+    {
+        name: "Vaishnav Kameswaran",
+        school: "University of Maryland",
+        location: "College Park, USA",
+    },
+    {
+        name: "Varsha Koushik",
+        school: "Colorado College",
+        location: "USA",
+    },
     {
         name: "William Payne",
         school: "University of North Carolina at Chapel Hill",
