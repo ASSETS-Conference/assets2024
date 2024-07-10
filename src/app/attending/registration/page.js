@@ -160,7 +160,7 @@ export default function Registration() {
                     <table className="w-full mt-4">
                         <thead>
                             <tr>
-                                <th>{``}</th>
+                                <td>{``}</td>
                                 <th>{`ACM/SIG Member`}</th>
                                 <th>{`Non-Member`}</th>
                                 <th>{`Student Member`}</th>
