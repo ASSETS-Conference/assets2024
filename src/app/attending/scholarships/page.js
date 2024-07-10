@@ -12,7 +12,7 @@ export default function Scholarships() {
     return (
         <Subpage
             noTOC={false}
-            title={"Scholarship"}
+            title={"Scholarships"}
             subheading={"Deadline: July 20, 2024"}
         >
             <Section
