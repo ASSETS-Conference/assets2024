@@ -66,7 +66,6 @@ export default function Home() {
                                 pages.
                             </p>
                         </Alert>
-
                         <DateList
                             dates={MAIN_DEADLINES}
                             notice={{
@@ -106,7 +105,8 @@ export default function Home() {
                                     <p>
                                         {`The ASSETS 2024 Conference will be held at `}{" "}
                                         <Link
-                                            href="https://www.marriott.com/en-us/hotels/yytsi-sheraton-hotel-newfoundland/overview/"
+                                            // href="https://www.marriott.com/en-us/hotels/yytsi-sheraton-hotel-newfoundland/overview/"
+                                            href="https://www.marriott.com/events/start.mi?id=1716409363485&key=GRP"
                                             target="_blank"
                                             colour={"secondary"}
                                             className={"text-white"}

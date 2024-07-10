@@ -97,6 +97,7 @@ export default function Registration() {
                         </tbody>
                     </table>
                 </div>
+                <p>{`Cancellation policy: If you cancel your in-person conference registration by Sept. 11, 2024, you will be refunded 50% of the registration amount and you will continue to have access to the virtual content. Cancellations after Sept. 11, 2024 will not be refunded, unless it is for visa reasons. If your visa is denied (you may be asked to provide evidence), you will be refunded the in-person registration amount less a USD $50 processing fee.`}</p>
             </Section>
             <Section
                 title={"Virtual Attendance Option"}
@@ -177,7 +178,7 @@ export default function Registration() {
                         </tbody>
                     </table>
                 </div>
-                <p>{`Cancellation policy: virtual conference registrations are non-refundable.`}</p>
+                <p>{`Cancellation policy: virtual workshop registrations are non-refundable.`}</p>
             </Section>
         </Subpage>
     );
