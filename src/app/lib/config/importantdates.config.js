@@ -48,7 +48,8 @@ const MAIN_DEADLINES = [
         eventItems: [
             {
                 title: "Submission Deadline",
-                subtitle: "For Posters and Demos, Experience Reports, DC, SRC and Workshops",
+                subtitle:
+                    "For Posters and Demos, Experience Reports, DC, SRC and Workshops",
                 date: "Wednesday, July 3rd, 2024",
                 time: "11:59PM",
             },
@@ -71,7 +72,7 @@ const MAIN_DEADLINES = [
             },
             {
                 title: "Technical Papers: Video Presentation Deadline",
-                date: "Wednesday, July 31st, 2024",
+                date: "Wednesday, August 7th, 2024",
                 time: "11:59PM",
             },
         ],
@@ -82,13 +83,15 @@ const MAIN_DEADLINES = [
         eventItems: [
             {
                 title: "Notification of Acceptance",
-                subtitle: "For Posters, Experience Reports, DC, SRC and Workshops",
+                subtitle:
+                    "For Posters, Experience Reports, DC, SRC and Workshops",
                 date: "Wednesday, August 7th, 2024",
                 time: "11:59PM",
             },
             {
                 title: "Camera Ready Deadline",
-                subtitle: "For Posters and Demos, Experience Reports, SRC, and Workshops",
+                subtitle:
+                    "For Posters and Demos, Experience Reports, SRC, and Workshops",
                 date: "Wednesday, August 14th, 2024",
                 time: "11:59PM",
             },
@@ -157,7 +160,7 @@ const TECHNICAL_PAPERS_SUBPAGE_DEADLINES = [
             },
             {
                 title: "Video presentation",
-                date: "Wednesday, July 31st, 2024",
+                date: "Wednesday, August 7th, 2024",
                 time: "11:59PM",
             },
         ],
