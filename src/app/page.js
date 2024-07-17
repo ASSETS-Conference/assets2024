@@ -66,6 +66,24 @@ export default function Home() {
                                 pages.
                             </p>
                         </Alert>
+                        <Alert
+                            className={"mb-5"}
+                            raw={true}
+                            heading={"Hotel Booking is now Live"}
+                        >
+                            <p className="text-md text-white">
+                                {`If you would like to reserve a stay, please go to the following link: `}
+                                <Link
+                                    href="https://www.marriott.com/events/start.mi?id=1716409363485&key=GRP"
+                                    target="_blank"
+                                    colour={"secondary"}
+                                    className={"text-white"}
+                                >
+                                    Sheraton Hotel Newfoundland
+                                </Link>
+                                {`.`}
+                            </p>
+                        </Alert>
                         <DateList
                             dates={MAIN_DEADLINES}
                             notice={{

@@ -70,17 +70,17 @@ const MAIN_DEADLINES = [
                 date: "Wednesday, July 24th, 2024",
                 time: "11:59PM",
             },
-            {
-                title: "Technical Papers: Video Presentation Deadline",
-                date: "Wednesday, August 7th, 2024",
-                time: "11:59PM",
-            },
         ],
     },
     {
         month: "August",
         year: "2024",
         eventItems: [
+            {
+                title: "Technical Papers: Video Presentation Deadline",
+                date: "Wednesday, August 7th, 2024",
+                time: "11:59PM",
+            },
             {
                 title: "Notification of Acceptance",
                 subtitle:
@@ -158,6 +158,12 @@ const TECHNICAL_PAPERS_SUBPAGE_DEADLINES = [
                 date: "Wednesday, July 24th, 2024",
                 time: "11:59PM",
             },
+        ],
+    },
+    {
+        month: "August",
+        year: "2024",
+        eventItems: [
             {
                 title: "Video presentation",
                 date: "Wednesday, August 7th, 2024",
