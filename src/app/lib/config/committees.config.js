@@ -484,8 +484,23 @@ export const PROGRAM_COMMITTEE = [
         location: "USA",
     },
     { name: "Danielle Bragg", school: "Microsoft Research", location: "USA" },
+    {
+        name: "David Gonçalves",
+        school: "University of Lisbon",
+        location: "Portugal",
+    },
+    {
+        name: "Dylan Gaines",
+        school: "Michigan Institute of Technology",
+        location: "USA",
+    },
     { name: "Edward Cutrell", school: "MSR", location: "USA" },
     { name: "Elaine Short", school: "Tufts University", location: "USA" },
+    {
+        name: "Elizabeth J. Carter",
+        school: "Carnegie Mellon University",
+        location: "USA",
+    },
     { name: "Erin Brady", school: "IUPUI", location: "USA" },
     { name: "Fabio Paternò", school: "CNR", location: "Italy" },
     {
@@ -580,6 +595,11 @@ export const PROGRAM_COMMITTEE = [
         school: "University of Washington",
         location: "USA & Apple Research, USA",
     },
+    {
+        name: "Letícia Pereira",
+        school: "University of Lisbon",
+        location: "Portugal",
+    },
     { name: "Liang He", school: "Purdue University", location: "USA" },
     { name: "Lynn Kirabo", school: "Harvey Mudd College", location: "USA" },
     {
@@ -617,6 +637,11 @@ export const PROGRAM_COMMITTEE = [
         name: "Oussama Metatla",
         school: "University of Bristol",
         location: "UK",
+    },
+    {
+        name: "Qisheng Li",
+        school: "Meta Reality Labs",
+        location: "USA",
     },
     {
         name: "Ravi Kuber",

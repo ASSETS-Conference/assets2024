@@ -37,33 +37,36 @@ export default function Home() {
                         <Alert
                             className={"mb-5"}
                             raw={true}
-                            heading={
-                                "All CFPs are now Live on PCS for Submission"
-                            }
+                            heading={"Registration is open"}
                         >
                             <p className="text-md text-white">
-                                All submission tracks are now live and available
-                                for submission on the{" "}
+                                {`Full details of our in-person and virtual conference experiences will be published as they become available. In the meantime, we have opened registration on the `}
                                 <Link
                                     className={"text-white"}
-                                    href={
-                                        "https://new.precisionconference.com/"
-                                    }
+                                    href={"https://cvent.me/45nlmw"}
                                 >
-                                    {" "}
-                                    PCS system
+                                    CVENT Registration Site
                                 </Link>
-                                . <br className="block lg:hidden" />
-                                <br className="block lg:hidden" />
-                                For more information, please take a look at the
-                                individual{" "}
+
+                                {` to support attendees who may need additional time to make plans (e.g., travel, visa).`}
+                            </p>
+                        </Alert>
+                        <Alert
+                            className={"mb-5"}
+                            raw={true}
+                            heading={"Hotel booking is live"}
+                        >
+                            <p className="text-md text-white">
+                                {`The hotel is offering ASSETS attendees a group rate of CAD$199 per night.  Please use the `}
                                 <Link
+                                    href="https://www.marriott.com/events/start.mi?id=1716409363485&key=GRP"
+                                    target="_blank"
+                                    colour={"secondary"}
                                     className={"text-white"}
-                                    href={"/authors/call-for-papers/"}
                                 >
-                                    Call for Papers
-                                </Link>{" "}
-                                pages.
+                                    {`ASSETS’24 Sheraton Hotel Newfoundland booking link`}
+                                </Link>
+                                {` to make your reservation.`}
                             </p>
                         </Alert>
                         <DateList
