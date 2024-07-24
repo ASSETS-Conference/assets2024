@@ -193,23 +193,7 @@ export default function WorkshopProposals() {
       </Section>
       <Section title={`Workshop Selection Process`} spacing={"bottom-only"}>
         <p>
-          {`We would like the ASSETS community to guide and shape the workshops
-          that will be included in the conference. As such, ASSETS Workshop
-          track will follow an open review and then a Juried review process.`}
-        </p>
-        <p>
-          {`During the period between submissions and notifications researchers
-          and practitioners who work in the areas of accessibility, disability,
-          and computing will be invited to comment and discuss the workshop
-          proposal submissions within a reviewer forum via PCS in a
-          non-anonymous format`}
-          <strong>*</strong>
-          {`.`}
-          {` Authors will also be encouraged to invite
-          relevant members (such as potential attendees) to review the proposal
-          and provide feedback. Such discussion and feedback we hope will give
-          the authors an opportunity to refine and adapt their workshop plans
-          (if they choose) to ultimately create a successful workshop.`}
+          {`The ASSETS Workshop track will follow a peer review process. During the period between submissions and notifications, researchers and practitioners in the areas of accessibility, disability, and computing from the program committee will be invited to review and discuss workshop proposal submissions on PCS.`}
         </p>
         <p>
           {`After the discussion period, the final selection will be curated by
@@ -235,9 +219,8 @@ export default function WorkshopProposals() {
             diverse organization team.`}
           </li>
         </ul>
-        <p className="italic font-semibold">
-          {`* All reviewers will be required to consent to a review agreement
-          prior to participating in the selection process.`}
+        <p className="">
+          {`Based on the reviews and the discussion, the workshop chairs will make final decisions.`}
         </p>
       </Section>
       <Section title={"Reviewing for Workshops"} spacing={"bottom-only"}>
