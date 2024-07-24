@@ -778,3 +778,61 @@ export const PROGRAM_COMMITTEE = [
         location: "USA",
     },
 ];
+
+export const EXPERIENCE_REPORTS_PROGRAM_COMMITTEE = [
+    {
+        name: "Raja Kushalnagar",
+        school: "Gallaudet University",
+        location: "USA",
+    },
+    {
+        name: "Emily Wang",
+        school: "Oberlin College",
+        location: "USA",
+    },
+    {
+        name: "Venkatesh Potluri",
+        school: "University of Washington",
+        location: "USA",
+    },
+    {
+        name: "Kathrin Gerling",
+        school: "Karlsruhe Institute of Technology",
+        location: "Germany",
+    },
+    {
+        name: "Martez Mott",
+        school: "Microsoft Research",
+        location: "USA",
+    },
+    {
+        name: "Vinitha Gadiraju",
+        school: "Wellesley College",
+        location: "USA",
+    },
+    {
+        name: "Claudia Loitsch",
+        school: "Technische Universität Dresden",
+        location: "Germany",
+    },
+    {
+        name: "Yue Jiang",
+        school: "Aalto University",
+        location: "Finland",
+    },
+    {
+        name: "Meryl Alper",
+        school: "Northeastern University",
+        location: "USA",
+    },
+    {
+        name: "Leanne Chukoskie",
+        school: "Northeastern University",
+        location: "USA",
+    },
+    {
+        name: "Kelly Avery Mack",
+        school: "University of Washington",
+        location: "USA",
+    },
+];
