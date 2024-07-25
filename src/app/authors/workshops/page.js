@@ -330,14 +330,14 @@ export default function WorkshopProposals() {
           they are attending.`}
                 </p>
                 <p>
-                    <strong>Registration fee:</strong>
+                    <strong>{`Registration fee: `}</strong>
                     {`Workshop registration fees will be found on the conference
           registration page. Although not required, workshop attendees are
           strongly encouraged to register for the full conference in addition to
           their workshop.`}
                 </p>
             </Section>
-            <Section title={"Further Information"}>
+            <Section title={"Further Information"} spacing={"bottom-only"}>
                 <p>
                     {`By submitting your article to an ACM Publication, you are hereby
           acknowledging that you and your co-authors are subject to all ACM
