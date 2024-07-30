@@ -36,6 +36,10 @@ const MENU_DATA = [
                 title: "Student Volunteers",
                 href: "/attending/student-volunteers/",
             },
+            {
+                title: "Accessibility FAQ",
+                href: "/attending/accessibility-faq/",
+            },
         ],
     },
     {
