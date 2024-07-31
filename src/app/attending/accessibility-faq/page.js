@@ -137,7 +137,7 @@ export default function Registration() {
                 spacing={"bottom-only"}
             >
                 <p>
-                    {`The conference space is in a grand hotel at the east end of the old city of St. John’s. It is located near the foot of Signal Hill from which the first transatlantic cable was received.`}
+                    {`The conference space is in a grand hotel at the east end of the old city of St. John’s. It is located near the foot of Signal Hill, where Guglielmo Marconi received the first transatlantic wireless communication in 1901.`}
                 </p>
             </Section>
             <Section
@@ -281,6 +281,13 @@ export default function Registration() {
                 spacing={"bottom-only"}
             >
                 <p>{`We are still gathering information on sensory aspects of the conference. Participants will be requested not to use flash photography or to wear strong scents. Please indicate on your registration form if there are specific items you would like to know about in advance.`}</p>
+                <p>
+                    {`We are still gathering information on sensory demands of the offsite events and availability of quiet places. Please contact the Accessibility Chairs `}
+                    <Link
+                        href={"mailto:access-assets24@acm.org"}
+                    >{`access-assets24@acm.org`}</Link>
+                    {` as early as possible if you have further questions or special requests.`}
+                </p>
             </Section>
             <Section
                 title={
