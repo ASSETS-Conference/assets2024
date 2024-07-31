@@ -91,6 +91,10 @@ const MENU_DATA = [
         ],
     },
     { title: "Code of Conduct", href: "/code-of-conduct/" },
+    {
+        title: "Accessibility FAQ",
+        href: "/attending/accessibility-faq/",
+    },
 ];
 
 export { MENU_DATA };
