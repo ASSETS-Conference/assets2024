@@ -101,9 +101,9 @@ export default function Nav() {
      * @param {KeyboardEvent|MouseEvent} e The event propagating from the DOM
      */
     const handleFocus = (e) => {
-        if (!e.currentTarget.contains(e.relatedTarget) && !mobileViewVisible) {  
+        if (!e.currentTarget.contains(e.relatedTarget) && !mobileViewVisible) {
             setDropdownsVisible(Array(MENU_DATA.length).fill(false));
-        } 
+        }
     };
 
     return (
@@ -111,7 +111,7 @@ export default function Nav() {
             aria-description="Menu"
             className={`min-w-full md:px-6 md:py-2 p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
                 backgroundVisible || mobileViewVisible ? "bg-theme-dark" : ""
-            } ${mobileViewVisible ? "h-screen" : ""}`}
+            } ${mobileViewVisible ? "h-screen overflow-y-scroll" : ""}`}
         >
             <div
                 onClick={() => setMobileViewVisible(!mobileViewVisible)}
