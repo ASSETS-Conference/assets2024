@@ -40,6 +40,13 @@ const MENU_DATA = [
         ],
     },
     {
+        title: "Program",
+        href: null,
+        children: [
+            { title: "Accepted Papers", href: "/program/accepted-papers/" },
+        ],
+    },
+    {
         title: "Additional Resources",
         href: null,
         children: [
