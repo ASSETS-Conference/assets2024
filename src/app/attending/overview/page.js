@@ -2,12 +2,11 @@ import React from "react";
 import Section from "@/app/lib/components/primitives/Section";
 import Subpage from "@/app/lib/components/templates/Subpage";
 import Link from "@/app/lib/components/primitives/Link";
-import Alert from "@/app/lib/components/Alert";
 import { createMetadata } from "@/app/lib/utils/createMetadata";
 
-export const metadata = createMetadata({ title: "Registration" });
+export const metadata = createMetadata({ title: "Attending Overview" });
 
-export default function Registration() {
+export default function AttendingOverview() {
     return (
         <Subpage title={"Attending Overview"}>
             <Section title={"Conference Location"} spacing={"bottom-only"}>

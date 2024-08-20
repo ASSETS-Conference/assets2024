@@ -5,7 +5,7 @@ import Link from "@/app/lib/components/primitives/Link";
 import { createMetadata } from "@/app/lib/utils/createMetadata";
 
 export const metadata = createMetadata({
-    title: "Scholarship",
+    title: "Scholarships",
 });
 
 export default function Scholarships() {
