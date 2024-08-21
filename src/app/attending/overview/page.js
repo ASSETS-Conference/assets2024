@@ -53,18 +53,18 @@ export default function AttendingOverview() {
                     >{`https://www.marriott.com/events/start.mi?id=1716409363485&key=GRP`}</Link>
                 </p>
                 <p>
-                    {`If you find that the booking link says there is no availability for your desired dates, it could be that our room block is full but the hotel may still have availability outside of our block.  We recommend emailing `}
+                    {`If you find that the booking link says there is no availability for your desired dates, it could be that our room block is full but the hotel may still have availability outside of our block, with the same benefits of the group booking. We recommend emailing `}
                     <Link
                         href={`mailto:reservations@sheratonhotelnewfoundland.com`}
                     >{`reservations@sheratonhotelnewfoundland.com`}</Link>
-                    {` to ask their help with checking availability and assisting with the booking.`}
+                    {` to ask their help with checking availability and assisting with the booking. Please tell them that you are booking for ASSETS’24.`}
                 </p>
                 <p>
                     {`The rate is available from October 25 to 31, 2024. Guests wishing to book dates outside of the dates associated with the booking link are to contact the reservations department directly via email at `}
                     <Link
                         href={`mailto:reservations@sheratonhotelnewfoundland.com`}
                     >{`reservations@sheratonhotelnewfoundland.com`}</Link>
-                    {`. Dates pre and post are based on availability.`}
+                    {`. Dates pre and post are based on availability. Please tell them that you are booking for ASSETS’24.`}
                 </p>
                 <p>
                     {`If you require a room with two beds, please contact the reservations department directly at `}
