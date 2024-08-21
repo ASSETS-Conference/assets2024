@@ -30,12 +30,20 @@ const MENU_DATA = [
         title: "Attending",
         href: null,
         children: [
+            { title: "Overview", href: "/attending/overview/" },
             { title: "Registration", href: "/attending/registration/" },
             { title: "Scholarships", href: "/attending/scholarships/" },
             {
                 title: "Student Volunteers",
                 href: "/attending/student-volunteers/",
             },
+        ],
+    },
+    {
+        title: "Program",
+        href: null,
+        children: [
+            { title: "Accepted Papers", href: "/program/accepted-papers/" },
         ],
     },
     {

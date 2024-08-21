@@ -5,7 +5,7 @@ import Link from "@/app/lib/components/primitives/Link";
 import { createMetadata } from "@/app/lib/utils/createMetadata";
 
 export const metadata = createMetadata({
-    title: "Scholarship",
+    title: "Scholarships",
 });
 
 export default function Scholarships() {
@@ -13,8 +13,38 @@ export default function Scholarships() {
         <Subpage
             noTOC={false}
             title={"Scholarships"}
-            subheading={"Deadline: July 20, 2024"}
+            // subheading={"Deadline: July 20, 2024"}
         >
+            <Section
+                title={"ASSETS’24 Scholarships for Virtual Attendance"}
+                spacing={"bottom-only"}
+            >
+                <p>{`ASSETS’24 is pleased to offer scholarships to support virtual conference attendance. Awardees will receive a code that will enable them to register for virtual registration for free (all categories).`}</p>
+                <h2>{`Eligibility Criteria`}</h2>
+                <p>{`Applicants must be involved in or interested in accessibility research, and they must explain this in their application.`}</p>
+                <p>{`We particularly encourage applications from people who are attending ASSETS for the first time, who are from backgrounds that are underrepresented in the computing field, who are based in countries that are traditionally underrepresented at ASSETS, or who would otherwise find it difficult to participate in the conference (for financial or other reasons).`}</p>
+                <h2>{`Application Requirements`}</h2>
+                <p>
+                    {`To apply, please complete the `}
+                    <Link
+                        href={`https://forms.gle/A4PAEJdXoTFS3Uy67`}
+                    >{`online application form`}</Link>
+                    {`.`}
+                </p>
+                <p>
+                    {`All applications received by Friday, August 23rd, 2024 will be notified of the outcome of their application by Tuesday, August 27th.  After August 23rd, applications will be reviewed on a rolling basis until Friday October 18th or until the designated fund runs out, whichever comes first. `}
+                </p>
+                <p>
+                    {`After your application is approved, you will receive a code that will allow you to register for ASSETS 2024 without the registration fee.`}
+                </p>
+                <p>
+                    {`Please contact `}
+                    <Link
+                        href={`mailto:scholarships-assets24@acm.org`}
+                    >{`scholarships-assets24@acm.org`}</Link>
+                    {` with any questions.`}
+                </p>
+            </Section>
             <Section
                 title={"ACM SIGACCESS Travel Scholarship Award"}
                 spacing={"bottom-only"}

@@ -328,6 +328,31 @@ export const ORGANIZING_COMMITTEE = [
         ],
     },
     {
+        heading: "Scholarships Chairs",
+        members: [
+            {
+                name: "Heidi Jinjuan Feng",
+                role: "Scholarships Chair 1",
+                // picture: undefined,
+                picture: "/assets/committees/organizing/heidi-feng.jpg",
+                affiliation: "Towson University",
+                location: "UNITED STATES",
+                email: "scholarships-assets24@acm.org",
+                alt: "A portrait of Heidi Jinjuan Feng, an Asian female with dark hair, wearing glasses and a black suit.",
+            },
+            {
+                name: "Uran Oh",
+                role: "Scholarships Chair 2",
+                // picture: undefined,
+                picture: "/assets/committees/organizing/uran-oh.png",
+                affiliation: "Ewha Womans University",
+                location: "SOUTH KOREA",
+                email: "scholarships-assets24@acm.org",
+                alt: "A portrait of Uran Oh, an Asian female with brown long hair, wearing a white cardigan over a black blouse.",
+            },
+        ],
+    },
+    {
         heading: "Student Volunteer Chair",
         members: [
             {
