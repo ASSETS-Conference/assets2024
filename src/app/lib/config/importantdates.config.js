@@ -196,7 +196,7 @@ const POSTER_DEMOS_DATES = [
             },
             {
                 title: "Camera Ready Deadline",
-                date: "Wednesday, August 14th, 2024",
+                date: "Thursday, August 15th, 2024",
                 time: "11:59PM",
             },
             {
