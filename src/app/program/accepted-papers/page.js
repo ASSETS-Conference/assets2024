@@ -14,9 +14,11 @@ function AcceptedPaper({ title, authors }) {
                 <strong>{title}</strong>
                 <br />
                 {authors.map((author, idx) => {
-                    return idx < authors.length - 1
-                        ? `${author}, `
-                        : `${author}`;
+                    return idx < authors.length - 1 ? (
+                        <span key={idx}>{`${author}, `}</span>
+                    ) : (
+                        <span key={idx}>{`${author}`}</span>
+                    );
                 })}
             </p>
         </div>
@@ -30,8 +32,9 @@ export default function AcceptedPapers() {
                 <p className="mb-6">
                     {`We are pleased to share the titles and authors of accepted technical papers (in alphabetical order). More information regarding the program will be made available in September.`}
                 </p>
-                {ACCEPTED_PAPERS.map((paper) => (
+                {ACCEPTED_PAPERS.map((paper, idx) => (
                     <AcceptedPaper
+                        key={idx}
                         title={paper.title}
                         authors={paper.authors}
                     />
