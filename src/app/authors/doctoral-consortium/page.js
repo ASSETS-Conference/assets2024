@@ -253,7 +253,11 @@ export default function WorkshopProposals() {
         </p>
       </Section>
       <Section title={"Mentors"} spacing={"bottom-only"}>
-        <p>{`Please check back for information about the mentors.`}</p>
+        <p>{`The mentors for the Doctoral Consortium will be:`}</p>
+        <ul>
+          <li><strong>{`Foad Hamidi,`}</strong><em>{` UMBC, USA`}</em></li>
+          <li><strong>{`Megan Hofmann,`}</strong><em>{` Northeastern University, USA`}</em></li>
+        </ul>
       </Section>
     </Subpage>
   );
