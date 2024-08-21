@@ -33,7 +33,7 @@ export default function Home() {
             <main id="">
                 <Hero />
                 <Container id="content">
-                    <Section title="Important Dates" spacing={"top-only"}>
+                    <div className="pt-16 md:pt-18 pb-4">
                         <Alert
                             className={"mb-5"}
                             raw={true}
@@ -69,6 +69,8 @@ export default function Home() {
                                 {` to make your reservation.`}
                             </p>
                         </Alert>
+                    </div>
+                    <Section title="Important Dates" spacing={"none"}>
                         <DateList
                             dates={MAIN_DEADLINES}
                             notice={{
