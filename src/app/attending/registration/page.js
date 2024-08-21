@@ -12,21 +12,23 @@ export default function Registration() {
         <Subpage
             noTOC={false}
             title={"Registration"}
+            overrideTOC={
+                <Alert
+                    className={"mb-5"}
+                    raw={true}
+                    // heading={"All CFPs are now Live on PCS for Submission"}
+                >
+                    <p>
+                        {`Full details of our in-person and virtual conference experiences will be published as they become available. In the meantime, we have opened registration on the `}
+                        <Link href={`https://cvent.me/45nlmw`}>
+                            CVENT Registration Site
+                        </Link>
+                        {` to support attendees who may need additional time to make plans (e.g., travel, visa).`}
+                    </p>
+                </Alert>
+            }
             // subheading={"Behind the Scenes"}
         >
-            <Alert
-                className={"mb-5"}
-                raw={true}
-                // heading={"All CFPs are now Live on PCS for Submission"}
-            >
-                <p>
-                    {`Full details of our in-person and virtual conference experiences will be published as they become available. In the meantime, we have opened registration on the `}
-                    <Link href={`https://cvent.me/45nlmw`}>
-                        CVENT Registration Site
-                    </Link>
-                    {` to support attendees who may need additional time to make plans (e.g., travel, visa).`}
-                </p>
-            </Alert>
             <Section title={"Registration Overview"} spacing={"bottom-only"}>
                 <p>
                     {`Registrations for conferences can be complicated, reflecting an array of options and time-contingent fee structures. ASSETS is no different. Allow us to help make sense of things. We have:`}
