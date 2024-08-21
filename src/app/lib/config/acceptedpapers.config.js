@@ -137,18 +137,23 @@ export const ACCEPTED_PAPERS = [
         authors: ["Ananya Gubbi Mohanbabu", "Amy Pavel"],
     },
     {
-        title: "Design considerations for photosensitivity warnings in visual media",
+        title: "Design and Evaluation of an Automatic Text Simplification Prototype with Deaf and Hard-of-hearing Readers",
         authors: [
-            "Laura South",
-            "Caglar Yildirim",
-            "Amy Pavel",
-            "Michelle A. Borkin",
             "Oliver Alonzo",
             "Sooyeon Lee",
             "Akhter Al Amin",
             "Mounica Maddela",
             "Wei Xu",
             "Matt Huenerfauth",
+        ],
+    },
+    {
+        title: "Design considerations for photosensitivity warnings in visual media",
+        authors: [
+            "Laura South",
+            "Caglar Yildirim",
+            "Amy Pavel",
+            "Michelle A. Borkin",
         ],
     },
     {
