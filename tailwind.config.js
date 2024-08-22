@@ -13,6 +13,7 @@ module.exports = {
         "theme-off-white": "#D4D4D4",
         "theme-red": "#592321",
         // "theme-blue": "#4597BA",
+        "theme-orange": "#A74A07",
         "theme-blue": "#367691",
         "primary-text-light": "var(--primary-light)",
         "primary-text-dark": "var(--primary-dark)",

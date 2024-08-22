@@ -42,16 +42,18 @@ export default function Alert({
         type === "warning"
           ? "bg-theme-red"
           : type === "changes"
-          ? "bg-theme-dark"
+          ? "bg-theme-orange"
           : "bg-theme-blue"
       } bg-theme-blue text-white p-4 flex flex-row gap-2 ${
         heading ? "items-start" : "items-center"
-      } ${className}`}
+      } max-w-[100%] ${className}`}
     >
       {switchAlertType(type, heading)}
-      <div>
-        {heading ? <p className="text-lg font-bold mb-1">{heading}</p> : null}
-        {raw ? children : <p>{body}</p>}
+      <div className="max-w-[85%] pb-2 md:pb-0 md:max-w-max">
+        {heading ? (
+          <p className="text-lg font-bold mb-1 max-w-max">{heading}</p>
+        ) : null}
+        <div>{raw ? children : <p>{body}</p>}</div>
       </div>
     </div>
   );
