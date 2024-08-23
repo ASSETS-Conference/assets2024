@@ -19,13 +19,13 @@ export default function ProgramCommittee() {
       subheading={"Behind the Scenes"}
     >
       <Section title={"Program Committee Members"} spacing={"bottom-only"}>
-        {displayNames("pc",PROGRAM_COMMITTEE)}
+        {displayNames("pc", PROGRAM_COMMITTEE)}
       </Section>
       <Section
         title={"Experience Reports Program Committee"}
         spacing={"bottom-only"}
       >
-        {displayNames("exr-pc",EXPERIENCE_REPORTS_PROGRAM_COMMITTEE)}
+        {displayNames("exr-pc", EXPERIENCE_REPORTS_PROGRAM_COMMITTEE)}
       </Section>
     </Subpage>
   );
@@ -41,7 +41,14 @@ function displayNames(hashID, names) {
     .map((e, i) => {
       if (firstLetterOfName !== e.name[0]) {
         firstLetterOfName = e.name[0];
-        letterComp = <Letter letter={firstLetterOfName} hashID={`${hashID}-names`} className={"mb-4 mt-8"} />;
+        letterComp = (
+          <Letter
+            key={`${hashID}-names`}
+            letter={firstLetterOfName}
+            hashID={`${hashID}-names`}
+            className={"mb-4 mt-8"}
+          />
+        );
         letterChanged = true;
       } else {
         letterChanged = false;
