@@ -43,7 +43,7 @@ function displayNames(hashID, names) {
         firstLetterOfName = e.name[0];
         letterComp = (
           <Letter
-            key={`${hashID}-names`}
+            key={`${hashID}-names-${firstLetterOfName}-top`}
             letter={firstLetterOfName}
             hashID={`${hashID}-names`}
             className={"mb-4 mt-8"}
