@@ -4,15 +4,22 @@ import react from "react";
  * @param {object} props The props of the component
  * @param {String} props.letter The letter of the alphabet you would like displayed as the header in the listing
  * @param {HTMLElement?} props.className Standard Class property.
+ * @param {String} props.hashID The words that will appear in the anchor link
  * @returns {import("react").ReactNode}
  */
-export default function Letter({ letter, className }) {
+export default function Letter({ letter, hashID, className }) {
   return (
     <>
       <a
         key={`letter-${letter}`}
         className={`border-2 w-12 border-theme-dark text-theme-dark flex items-center px-2 pt-4 hover:text-white hover:bg-theme-dark transition-colors ${className}`}
-        href={letter ? "#beginning-with-" + letter .toLowerCase(): "#?"}
+        href={
+          letter
+            ? `${
+                hashID ? `#${hashID}-` : "#beginning-with-"
+              }${letter.toLowerCase()}`
+            : "#?"
+        }
       >
         <h2 className={"text-xl font-light m-0"}>{letter ? letter : "?"}</h2>
       </a>
@@ -20,7 +27,13 @@ export default function Letter({ letter, className }) {
       <div
         aria-hidden
         className="h-0 scroll-m-36"
-        id={letter ? "beginning-with-" + letter.toLowerCase() : "#?"}
+        id={
+          letter
+            ? `${
+                hashID ? `${hashID}-` : "beginning-with-"
+              }${letter.toLowerCase()}`
+            : "#?"
+        }
       ></div>
     </>
   );
