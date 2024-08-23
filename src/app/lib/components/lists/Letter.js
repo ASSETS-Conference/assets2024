@@ -12,7 +12,7 @@ export default function Letter({ letter, className }) {
       <a
         key={`letter-${letter}`}
         className={`border-2 w-12 border-theme-dark text-theme-dark flex items-center px-2 pt-4 hover:text-white hover:bg-theme-dark transition-colors ${className}`}
-        href={letter ? "#starts-with-" + letter : "#?"}
+        href={letter ? "#beginning-with-" + letter .toLowerCase(): "#?"}
       >
         <h2 className={"text-xl font-light m-0"}>{letter ? letter : "?"}</h2>
       </a>
@@ -20,7 +20,7 @@ export default function Letter({ letter, className }) {
       <div
         aria-hidden
         className="h-0 scroll-m-36"
-        id={letter ? "starts-with-" + letter : "#?"}
+        id={letter ? "beginning-with-" + letter.toLowerCase() : "#?"}
       ></div>
     </>
   );
