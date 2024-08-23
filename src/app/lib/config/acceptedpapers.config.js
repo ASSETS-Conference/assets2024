@@ -304,7 +304,7 @@ export const ACCEPTED_PAPERS = [
         authors: ["Rodolfo Cossovich", "Shanel Wu", "Audrey Girouard"],
     },
     {
-        title: "“I Try to Represent Myself as I Am”: Self-Presentation Preferences of People with Invisible Disabilities through Embodied Social VR Avatars",
+        title: "\"I Try to Represent Myself as I Am\": Self-Presentation Preferences of People with Invisible Disabilities through Embodied Social VR Avatars",
         authors: [
             "Ria J. Gualano",
             "Lucy Jiang",
@@ -407,6 +407,18 @@ export const ACCEPTED_PAPERS = [
         ],
     },
     {
+        title: '"Not Only Annoying but Dangerous": devising an ecology of protections for photosensitive social media users',
+        authors: [
+            "Rua Mae Williams",
+            "Chorong Park",
+            "Laila Sameer Dodhy",
+            "Monaami Pal",
+            "Atharva Anand Dnyanmote",
+            "Angel Lam",
+            "Sean Joo",
+        ],
+    },
+    {
         title: "Our Stories, Our Data: Co-designing Visualizations with People with Intellectual and Developmental Disabilities",
         authors: [
             "Keke Wu",
@@ -479,6 +491,10 @@ export const ACCEPTED_PAPERS = [
         authors: ["Xinyun Cao", "Dhruv Jain"],
     },
     {
+        title: "The Promise and Pitfalls of Web Accessibility Overlays for Blind and Low Vision Users",
+        authors: ["Tlamelo Makati", "Garreth W. Tigwell", "Kristen Shinohara"],
+    },
+    {
         title: "Towards Accessible Musical Performances in Virtual Reality: Designing a Conceptual Framework for Omnidirectional Audio Descriptions",
         authors: ["Khang Dang", "Grace Burke", "Hamdi Korreshi", "Sooyeon Lee"],
     },
@@ -504,8 +520,27 @@ export const ACCEPTED_PAPERS = [
         authors: ["Anukriti Kumar", "Lucy Lu Wang"],
     },
     {
+        title: "Understanding and Reducing the Challenges Faced by Creators of Accessible Online Data Visualizations",
+        authors: [
+            "Ather Sharif",
+            "Joo Gyeong Kim",
+            "Jessie Zijia Xu",
+            "Jacob O. Wobbrock",
+        ],
+    },
+    {
         title: "Understanding How Blind Users Handle Object Recognition Errors: Strategies and Challenges",
         authors: ["Jonggi Hong", "Hernisa Kacorri"],
+    },
+    {
+        title: "Understanding Low Vision Graphical Perception of Bar Charts",
+        authors: [
+            "Yash Prakash",
+            "Akshay Kolgar Nayak",
+            "Sampath Jayarathna",
+            "Hae-Na Lee",
+            "Vikas Ashok",
+        ],
     },
     {
         title: "Vision-Based Assistive Technologies for People with Cerebral Visual Impairment: A Review and Focus Study",
@@ -530,41 +565,6 @@ export const ACCEPTED_PAPERS = [
             "Vimal Mollyn",
             "Kuang Yuan",
             "Patrick Carrington",
-        ],
-    },
-    {
-        title: '"Not Only Annoying but Dangerous": devising an ecology of protections for photosensitive social media users',
-        authors: [
-            "Rua Mae Williams",
-            "Chorong Park",
-            "Laila Sameer Dodhy",
-            "Monaami Pal",
-            "Atharva Anand Dnyanmote",
-            "Angel Lam",
-            "Sean Joo",
-        ],
-    },
-    {
-        title: "The Promise and Pitfalls of Web Accessibility Overlays for Blind and Low Vision Users",
-        authors: ["Tlamelo Makati", "Garreth W. Tigwell", "Kristen Shinohara"],
-    },
-    {
-        title: "Understanding and Reducing the Challenges Faced by Creators of Accessible Online Data Visualizations",
-        authors: [
-            "Ather Sharif",
-            "Joo Gyeong Kim",
-            "Jessie Zijia Xu",
-            "Jacob O. Wobbrock",
-        ],
-    },
-    {
-        title: "Understanding Low Vision Graphical Perception of Bar Charts",
-        authors: [
-            "Yash Prakash",
-            "Akshay Kolgar Nayak",
-            "Sampath Jayarathna",
-            "Hae-Na Lee",
-            "Vikas Ashok",
         ],
     },
 ];
