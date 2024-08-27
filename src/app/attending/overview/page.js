@@ -73,7 +73,7 @@ export default function AttendingOverview() {
           >{`reservations@sheratonhotelnewfoundland.com`}</Link>
           {`, indicating that you are booking for ASSETS ’24.`}
         </p>
-        <h2>{`Accessible Rooms`}</h2>
+        <h2 id="hotel-accommodations-a11y-rooms">{`Accessible Rooms`}</h2>
         <p>
           {`The group block at the conference hotel also has 7 accessible rooms, one per each floor conveniently located near the elevator. These rooms can be equipped with bed lifting assistance equipment if needed. Please contact the hotel registration to request an accessible room. An accessible room can be booked by calling the hotel (+1-709-726-4980) or contacting the reservations department directly at `}
           <Link
@@ -143,7 +143,7 @@ export default function AttendingOverview() {
           {` on Torbay Road.`}
         </p>
         <p>{`St. John’s also has a number of private transportation options participants can avail of:`}</p>
-        <h2>{`Local Taxis:`}</h2>
+        <h2 id="transportation-overview-local-taxis">{`Local Taxis:`}</h2>
         <p>
           {`City Wide Taxi operates City Wide Taxi, Newfound Cabs, and Bugdens.All three companies have `}
           <u>{`wheelchair accessible taxis`}</u>
@@ -166,7 +166,7 @@ export default function AttendingOverview() {
           {`Jiffy Cabs: +1 (709) 722-2222 (does not have accessible taxis in their fleet)`}
           <br />
         </p>
-        <h2>{`Ride Apps:`}</h2>
+        <h2 id="transportation-overview-ride-apps">{`Ride Apps:`}</h2>
         <p>
           {`People can install a ride app of their choice to book their taxis. If you need an accessible ride it is best to call the dispatcher and only City Wide Taxi has accessible taxis in their fleet.`}
         </p>
@@ -183,7 +183,7 @@ export default function AttendingOverview() {
         <p>
           {`For those attending the conference and looking for the nearest restaurant, pub or cafe, you'll find options right on the doorstep of the Sheraton in Downtown St. John’s. To get to most options, simply exit the Sheraton and veer down the hill to the corner of Cavendish Square and Duckworth Street. If you continue along Duckworth Street or Water Street (a left turn at Cochrane Street gets you to Water Street along a gentle slope), there are many additional options for restaurants, cafés, pubs and bars for you to enjoy.`}
         </p>
-        <h2>{`Wheelchair Accessible Locations`}</h2>
+        <h2 id="restaurants-wheelchair-accessible-locations">{`Wheelchair Accessible Locations`}</h2>
         <p>
           <strong>{`Bannerman Brewing`}</strong>
           {` located right across from the conference hotel at the corner of Cavendish Square and Duckworth Street. Bannerman Brewing is a hybrid café and brewery, serving fusion Thai fare after 12pm. Bannerman Brewing is equipped with accessible washrooms and a ramp outside.`}
@@ -204,7 +204,7 @@ export default function AttendingOverview() {
           <strong>{`Jumping Bean Café`}</strong>
           {`, one of St. John’s first local coffee roasters has a large accessible space in Atlantic Place at 215 Water Street. The accessible entrance to Atlantic Place is to the side before the main stairs on Water Street. There is an indoor view of St. John’s Harbour from Atlantic Place in case the weather is not cooperating for a visit to the ALT Hotel’s public garden space.`}
         </p>
-        <h2>{`Other Locations Nearby`}</h2>
+        <h2 id="restaurants-other-locations-nearby">{`Other Locations Nearby`}</h2>
         <p>
           <strong>{`CM Café`}</strong>
           {` is located at the intersection of Gower Street and Cavendish Square. This location is not wheelchair accessible.`}

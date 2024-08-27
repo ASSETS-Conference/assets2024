@@ -67,7 +67,7 @@ export default function Registration() {
                 }
                 spacing={"bottom-only"}
             >
-                <h2>{`Wheelchair Accessible Taxis Available. Best to Book Ahead`}</h2>
+                <h2 id="wheelchair-accessible-taxis">{`Wheelchair Accessible Taxis Available. Best to Book Ahead`}</h2>
                 <ul>
                     <li>
                         {`During the day up to 8:00 pm, there are approximately 8 to 10 wheelchair accessible taxis with trained drivers available upon request via the dispatcher at the airport.`}
@@ -76,7 +76,7 @@ export default function Registration() {
                         {`If arriving after 8:00 pm individuals need to call ahead and make special arrangements to have an accessible taxi available at the airport. Though special arrangements can be made for accessible taxis after 8:00 pm, it is advisable to arrive before 8:00 pm. To save time, individuals needing an accessible taxi before 8:00 pm are advised to call ahead to ensure an accessible taxi is dispatched for your arrival. In general, none of the taxis that wait at the airport during busy arrival times are accessible. Book ahead by calling City Wide Taxi +1(709) 722-7777, or see the airport dispatcher just outside the arrivals door if arriving between 8:00 am and 8:00 pm, and they will call for an accessible taxi.`}
                     </li>
                 </ul>
-                <h3>No Automatically Accessible Taxis Upon Arrival</h3>
+                <h3 id="no-automatic-a11y-taxis">No Automatically Accessible Taxis Upon Arrival</h3>
                 <ul>
                     <li>
                         {`Individuals must book ahead to make special arrangements if arriving after 8:00 pm (No extra fee to book ahead).`}
@@ -97,7 +97,7 @@ export default function Registration() {
                         {`City Wide is one of 3 taxi services under one company.  Bugden's and Newfound Cabs, are the other two companies.`}
                     </li>
                 </ul>
-                <h2>{`Public Transit Option`}</h2>
+                <h2 id="public-transit">{`Public Transit Options`}</h2>
                 <p>
                     <Link href={"https://metrobus.com/home/"}>Metrobus</Link>
                     {` is the local public city transit authority. They currently have `}
