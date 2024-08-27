@@ -25,7 +25,7 @@
     section h2,
     section h3,
     section h4 {
-        @apply my-4;
+        @apply scroll-m-28 my-4;
     }
     section p:not(:first-child) {
         @apply mt-4;
