@@ -55,6 +55,10 @@ const MENU_DATA = [
                 href: "/resources/creating-a11y-papers",
             },
             {
+                title: "Creating Accessible ACM Conference Video Presentations",
+                href: "/resources/creating-a11y-papers#video-presentation-creation-guidelines",
+            },
+            {
                 title: "Submission Templates",
                 href: "/resources/submission-templates",
             },

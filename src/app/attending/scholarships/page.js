@@ -20,10 +20,10 @@ export default function Scholarships() {
                 spacing={"bottom-only"}
             >
                 <p>{`ASSETS’24 is pleased to offer scholarships to support virtual conference attendance. Awardees will receive a code that will enable them to register for virtual registration for free (all categories).`}</p>
-                <h2>{`Eligibility Criteria`}</h2>
+                <h2 id="eligibility-criteria">{`Eligibility Criteria`}</h2>
                 <p>{`Applicants must be involved in or interested in accessibility research, and they must explain this in their application.`}</p>
                 <p>{`We particularly encourage applications from people who are attending ASSETS for the first time, who are from backgrounds that are underrepresented in the computing field, who are based in countries that are traditionally underrepresented at ASSETS, or who would otherwise find it difficult to participate in the conference (for financial or other reasons).`}</p>
-                <h2>{`Application Requirements`}</h2>
+                <h2 id="application-requirements">{`Application Requirements`}</h2>
                 <p>
                     {`To apply, please complete the `}
                     <Link

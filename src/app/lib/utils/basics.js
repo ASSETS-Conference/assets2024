@@ -7,3 +7,13 @@ export function SortNameAlphabetically(a, b) {
   }
   return 0;
 }
+
+/**
+ * Escapes spaces and turns them into dashes. Useful for generating ids for aria-labelledby attributes.
+ * @param {String} text
+ * @returns {String} text, with the spaces escaped with `-`
+ */
+export function makeAttributeSafe(text) {
+  const escapeExpression = new RegExp(/( )/g);
+  return text.replace(escapeExpression, "-").toLowerCase();
+}

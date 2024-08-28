@@ -1,5 +1,6 @@
 import React from "react";
 import { MdInfo, MdNotificationsActive, MdWarning } from "react-icons/md";
+import { makeAttributeSafe } from "../utils/basics";
 
 /**
  * @param {Object} props
@@ -10,11 +11,13 @@ import { MdInfo, MdNotificationsActive, MdWarning } from "react-icons/md";
  * @param {HTMLElement} props.className Standard Class property.
  * @param {Boolean} props.isNotice If set to true, a compact version of the alert is displayed, this alert lacks the icon, the heading or any ability to use `raw` mode.
  * @param {'warning'|'notice'| 'changes'} props.type The type of alert.
+ * @param {'alert'|'region'} props.ariaRole The type of ARIA role the alert is playing. Often you should use type 'alert' sparingly, usually region is best unless there is something that you'd like the screen reader to read immediately on page load
  *
  * @returns {import("react").ReactNode} An Alert element
  */
 export default function Alert({
   heading,
+  airaRole,
   body,
   raw = false,
   children,
@@ -23,6 +26,10 @@ export default function Alert({
   type,
   id,
 }) {
+  
+  //Used to label the ARIA region if a heading is not supplied.
+  const ariaIdentifier = heading ? makeAttributeSafe(heading) : 'assets-ds-'+makeAttributeSafe(Math.random().toString(32).slice(2)); 
+
   return isNotice ? (
     <p
       className={`pl-4 flex items-center gap-3 font-bold ${
@@ -37,7 +44,8 @@ export default function Alert({
   ) : (
     <div
       id={id ? id : ""}
-      role="alert"
+      role={airaRole ? airaRole : 'region'}
+      aria-labelledby={heading ? `${ariaIdentifier}-alert-heading` : `${ariaIdentifier}-alert-body`}
       className={`${
         type === "warning"
           ? "bg-theme-red"
@@ -51,9 +59,9 @@ export default function Alert({
       {switchAlertType(type, heading)}
       <div className="max-w-[85%] pb-2 md:pb-0 md:max-w-max">
         {heading ? (
-          <p className="text-lg font-bold mb-1 max-w-max">{heading}</p>
+          <p className="text-lg font-bold mb-1 max-w-max" id={`${ariaIdentifier}-alert-heading`}>{heading}</p>
         ) : null}
-        <div>{raw ? children : <p>{body}</p>}</div>
+        <div>{raw ? <div id={`${ariaIdentifier}-alert-body`}>{children}</div> : <p id={`${ariaIdentifier}-alert-body`}>{body}</p>}</div>
       </div>
     </div>
   );

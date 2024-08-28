@@ -42,7 +42,7 @@ export default function Section({ title, children, className, spacing, id, inver
   return (
     <section className={`${evalSpacing()} ${className} ${invertColours ? 'text-white' : 'text-black'}`}>
       <div className={`mt-7 border-b-[2px]  ${invertColours ? 'border-white' : 'border-black'}`}>
-        <h1  id={id ? id : generateID()}  className='flex flex-row justify-flex-start content-center gap-3 mb-6 max-w-[30ch]'><FaArrowRight aria-hidden className='mt-[.1rem] min-w-[1em] aspect-square'/>{title}</h1>
+        <h1  id={id ? id : generateID()}  className='flex flex-row justify-flex-start content-center gap-3 mb-6 max-w-[30ch] scroll-m-36'><FaArrowRight aria-hidden className='mt-[.1rem] min-w-[1em] aspect-square'/>{title}</h1>
       </div>
       <div className='mt-7'>
         {children}

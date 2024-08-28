@@ -16,14 +16,15 @@ export default function Registration() {
                 <Alert
                     className={"mb-5"}
                     raw={true}
-                    // heading={"All CFPs are now Live on PCS for Submission"}
+                    type={'changes'}
+                    heading={"Registration Now Open"}
                 >
                     <p>
-                        {`Full details of our in-person and virtual conference experiences will be published as they become available. In the meantime, we have opened registration on the `}
+                        {`We have opened registration on the `}
                         <Link href={`https://cvent.me/45nlmw`}>
                             CVENT Registration Site
                         </Link>
-                        {` to support attendees who may need additional time to make plans (e.g., travel, visa).`}
+                        {` to support attendees who may need additional time to make plans (e.g., travel, visa). Full details of our in-person and virtual conference experiences will be published as they continue to become available.`}
                     </p>
                 </Alert>
             }
