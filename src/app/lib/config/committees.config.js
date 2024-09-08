@@ -166,18 +166,8 @@ export const ORGANIZING_COMMITTEE = [
         heading: "Local Arrangements Chair",
         members: [
             {
-                name: "Xianta Jiang",
-                role: "Local Arrangements 1",
-                // picture: undefined,
-                picture: "/assets/committees/organizing/xianta_jiang.jpg",
-                affiliation: "Memorial University of Newfoundland",
-                location: "CANADA",
-                email: "local-assets24@acm.org",
-                alt: "Headshot of Xianta Jiang, an Asian man smiling and wearing a vertical striped shirt.",
-            },
-            {
                 name: "Taliesin Smith",
-                role: "Local Arrangements 2",
+                role: "Local Arrangements 1",
                 // picture: undefined,
                 picture: "/assets/committees/organizing/taliesin_smith.png",
                 affiliation: "University of Colorado Boulder",
@@ -185,6 +175,26 @@ export const ORGANIZING_COMMITTEE = [
                 email: "local-assets24@acm.org",
                 alt: "Portrait of a smiling woman with short grey hair and glasses, wearing a blue and black printed jacket, standing outside against a blurred background of trees.",
             },
+            {
+                name: "Jay Henderson",
+                role: "Local Arrangements 2",
+                // picture: undefined,
+                picture: "/assets/committees/organizing/jay_henderson.jpeg",
+                affiliation: "Memorial University of Newfoundland",
+                location: "CANADA",
+                email: "local-assets24@acm.org",
+                alt: "A portrait of Jay Henderson, a smiling white masculine person with short brown hair, wearing a light blue button up shirt.",
+            },
+            {
+                name: "Xianta Jiang",
+                role: "Local Arrangements 3",
+                // picture: undefined,
+                picture: "/assets/committees/organizing/xianta_jiang.jpg",
+                affiliation: "Memorial University of Newfoundland",
+                location: "CANADA",
+                email: "local-assets24@acm.org",
+                alt: "Headshot of Xianta Jiang, an Asian man smiling and wearing a vertical striped shirt.",
+            }
         ],
     },
     {
