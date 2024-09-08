@@ -44,6 +44,7 @@ const MENU_DATA = [
         href: null,
         children: [
             { title: "Accepted Papers", href: "/program/accepted-papers/" },
+            { title: "Accepted Workshops", href: "/program/accepted-workshops/" },
         ],
     },
     {

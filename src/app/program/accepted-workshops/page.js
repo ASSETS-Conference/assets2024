@@ -52,10 +52,10 @@ function WorkshopSection({
           {placeDetails}
         </p>
         <p>
-          <strong>{`Abstract `}&mdash;</strong>
+          <strong>{`Abstract: `}</strong>
         </p>
         <blockquote className="pl-4 mt-4 border-l-4 border-theme-dark">
-          {abstract}
+          <p>{abstract}</p>
         </blockquote>
       </div>
     </div>
@@ -85,7 +85,9 @@ export default function AcceptedWorkshops() {
         <h2 id="list-of-workshops">List of Workshops</h2>
         <ul className="mb-8">
           {ACCEPTED_WORKSHOPS.map((w, i) => (
-            <li key={`workshop-li-${i}`}><Link href={`#${makeAttributeSafe(w.title)}`}>{w.title}</Link></li>
+            <li key={`workshop-li-${i}`}>
+              <Link href={`#${makeAttributeSafe(w.title)}`}>{w.title}</Link>
+            </li>
           ))}
         </ul>
         {ACCEPTED_WORKSHOPS.map((w, i) => (
