@@ -14,6 +14,6 @@ export function SortNameAlphabetically(a, b) {
  * @returns {String} text, with the spaces escaped with `-`
  */
 export function makeAttributeSafe(text) {
-  const escapeExpression = new RegExp(/( )/g);
+  const escapeExpression = new RegExp(/( |\:|,)/g);
   return text.replace(escapeExpression, "-").toLowerCase();
 }
