@@ -9,6 +9,8 @@ import {
 } from "@/app/lib/config/importantdates.config";
 import { DateList } from "@/app/lib/components/DateList";
 import Alert from "@/app/lib/components/Alert";
+import Persona from "@/app/lib/components/Persona";
+import { DC_MENTORS } from "@/app/lib/config/dc.config";
 
 export const metadata = createMetadata({ title: "Doctoral Consortium" });
 export default function WorkshopProposals() {
@@ -73,7 +75,12 @@ export default function WorkshopProposals() {
           isNotice
           body={`All deadlines are 11:59 P.M. Anywhere on Earth (UTC -12:00).`}
         /> */}
-        <DateList dates={DOCTORAL_CONSORTIUM_DATES} notice={'All deadlines are 11:59 P.M. Anywhere on Earth (UTC -12:00).'} />
+        <DateList
+          dates={DOCTORAL_CONSORTIUM_DATES}
+          notice={
+            "All deadlines are 11:59 P.M. Anywhere on Earth (UTC -12:00)."
+          }
+        />
         <p>
           Each Doctoral Consortium applicant must submit a package of
           application materials and also request a letter of recommendation from
@@ -253,11 +260,12 @@ export default function WorkshopProposals() {
         </p>
       </Section>
       <Section title={"Mentors"} spacing={"bottom-only"}>
-        <p>{`The mentors for the Doctoral Consortium will be:`}</p>
-        <ul>
-          <li><strong>{`Foad Hamidi,`}</strong><em>{` UMBC, USA`}</em></li>
-          <li><strong>{`Megan Hofmann,`}</strong><em>{` Northeastern University, USA`}</em></li>
-        </ul>
+        {/* <p>{`The mentors for the Doctoral Consortium will be:`}</p> */}
+        <div className=" min-w-full w-full flex flex-col gap-4">
+          {DC_MENTORS.map((member) => (
+            <Persona wide key={`${member.name}-persona-bio`} {...member} />
+          ))}
+        </div>
       </Section>
     </Subpage>
   );
