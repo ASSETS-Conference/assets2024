@@ -6,8 +6,9 @@ import { createMetadata } from "@/app/lib/utils/createMetadata";
 import Persona from "@/app/lib/components/Persona";
 import { KEYNOTE_SPEAKERS } from "@/app/lib/config/keynote.config";
 import { makeAttributeSafe } from "@/app/lib/utils/basics";
+import Image from "@/app/lib/components/primitives/Image";
 
-export const metadata = createMetadata({ title: "Keynote Speakers" });
+export const metadata = createMetadata({ title: "Keynote Speaker - Dr. Chieko Asakawa" });
 const excludeSpecialChars = new RegExp('[^"“]');
 
 export default function AcceptedPapers() {
@@ -30,8 +31,14 @@ export default function AcceptedPapers() {
       the accessibility of media and services to people with disabilities.`}
       </p>
       <Section title={"Dr. Chieko Asakawa"}>
-        <div className="mb-8">
-          <Persona wide {...KEYNOTE_SPEAKERS[0]} />
+        <div className="mb-8 flex lg:flex-row flex-col ">
+          <div className="mt-0">
+            <Persona {...KEYNOTE_SPEAKERS[0]} />
+          </div>
+          <div className="lg:ml-8 lg:mt-0 ml-0 mt-4">
+            <h2 className="mt-0" id="biography">Biography</h2>
+            <p className="whitespace-pre-line">{KEYNOTE_SPEAKERS[0].bio}</p>
+          </div>
         </div>
         <h2
           id={makeAttributeSafe(
