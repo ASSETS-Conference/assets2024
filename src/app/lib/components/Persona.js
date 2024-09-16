@@ -60,9 +60,9 @@ export default function Persona({
   ) : (
     <div
       id="persona"
-      className="bg-theme-dark text-theme-off-white w-full flex flex-col md:flex-row min-w-full"
+      className={`bg-theme-dark text-theme-off-white w-full flex flex-col lg:flex-row min-w-full`}
     >
-      <div className={`min-w-fill ${!picture ? "h-0" : ""}`}>
+      <div className={`min-w-[30%] ${!picture ? "h-0" : ""}`}>
         {picture ? (
           <Image
             src={`${picture}`}
@@ -76,7 +76,6 @@ export default function Persona({
       <div className="ml-4 mt-4 flex flex-col gap-2 mb-8 mr-4 md:mr-8">
         <p className="font-bold text-2xl mb-1">{name}</p>
         <p className="text-sm mb-1 max-w-3xl whitespace-pre-line">{`${bio}`}</p>
-
       </div>
     </div>
   );

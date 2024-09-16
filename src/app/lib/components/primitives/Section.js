@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { FaArrowRight } from 'react-icons/fa';
+import { makeAttributeSafe } from '../../utils/basics';
 
 /**
  * 
@@ -13,7 +14,7 @@ import { FaArrowRight } from 'react-icons/fa';
 export default function Section({ title, children, className, spacing, id, invertColours}) {
 
   const generateID = () => {
-    return title.replace(/\s/g, '-').toLowerCase();
+    return makeAttributeSafe(title).toLowerCase();
   }
   const evalSpacing = () => {
     let setSpacing = 'py-16 md:py-20';
