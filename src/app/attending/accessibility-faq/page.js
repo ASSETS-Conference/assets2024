@@ -5,9 +5,9 @@ import Link from "@/app/lib/components/primitives/Link";
 import Alert from "@/app/lib/components/Alert";
 import { createMetadata } from "@/app/lib/utils/createMetadata";
 
-export const metadata = createMetadata({ title: "Registration" });
+export const metadata = createMetadata({ title: "Accessibility FAQ" });
 
-export default function Registration() {
+export default function AccessibilityFAQ() {
     return (
         <Subpage
             noTOC={false}
@@ -168,7 +168,7 @@ export default function Registration() {
                 spacing={"bottom-only"}
             >
                 <p>
-                    {`The restrooms just outside the ballroom, in the ballroom’s main spillover area, are large and accessible with an automatic door and wide stalls. The ballroom’s spillover area will have water and places to sit. Attendees who are not staying at the hotel and who will require use of a guest room restroom are asked to let the Accessibility Chair know as soon as possible, and no later than one week before the start of the conference.`}
+                    {`The restrooms just outside the ballroom, in the ballroom’s main spillover area, are large and accessible with an automatic door, wide stalls, and hand railings. The ballroom’s spillover area will have water and places to sit. Attendees who are not staying at the hotel and who will require use of a guest room restroom are asked to let the Accessibility Chair know as soon as possible, and no later than one week before the start of the conference.`}
                 </p>
             </Section>
             <Section
@@ -184,6 +184,7 @@ export default function Registration() {
                     >{`access-assets24@acm.org`}</Link>
                     {`.`}
                 </p>
+                <p>{`The stage is large enough to accommodate multiple ways to present. There will be good sit-down and wheelchair accessible options for presenters, including a ramp for access to the raised stage. Should it be necessary, an alternative location for presentation will be made ready in advance.`}</p>
                 <p>
                     {`If you would like a student volunteer to operate slides or guide you onto and off the stage or have other accessibility requests, please contact Accessibility Chairs at `}
                     <Link
@@ -297,6 +298,16 @@ export default function Registration() {
             >
                 <p>{`In case of emergency, call 911 for an ambulance. If you require non-urgent medical care, please contact Accessibility chairs or ask any student volunteer. They will work with you to provide information about local doctors, specialists, chiropractors, etc. For non-resident attendees, buying travel insurance that covers medical expenses is strongly recommended as fees for emergency treatment can be very high. `}</p>
                 <p>{`Please check back later for the location of the nearest hospital.`}</p>
+            </Section>
+            <Section spacing={'bottom-only'} title={'Where can I rent mobility products like walkers and rollators for the conference?'}>
+            <p>{`Please contact the Accessibility Chairs at `}<Link href={"access-assets24@acm.org"}>{`access-assets24@acm.org`}</Link>{` as early as possible if you have any requests about renting mobility products. Attendees can rent mobility products from the following local vendor: `}</p>
+            <div className="whitespace-pre-line border-l-4 border-theme-dark ml-2 pl-2 mt-4">
+                <p>{`Eastern Medical Supplies.\nMilitary Road.\n St John's, NL\n A1C 2E1\n\n 709-754-7711`}</p>
+                <br/>
+                <Link href={'mailto:sales@easternmedicalsupplies.ca'}>{`sales@easternmedicalsupplies.ca`}</Link>
+            </div>
+            <p>{`They are located within walking distance to the conference venue Sheraton hotel, and also offer free delivery to the Sheraton as well.`}</p>
+            <p>{`The rental is 40.00 per month (minimum period), a credit card is required, but no deposit is required, and they need 2 or 3 days’ notice.`}</p>
             </Section>
             {/* Pending 2024 update
                 <Section
