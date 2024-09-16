@@ -43,7 +43,12 @@ export default function AttendingOverview() {
         <p>
           {`We encourage attendees to stay at the conference hotel for greater networking opportunities, and it is also a big help to the conference to have our room block filled.`}
         </p>
-        <Alert type="changes" className={"mt-4"} heading="The Last day to book is: Wednesday, September 25, 2024." raw={true}>
+        <Alert
+          type="changes"
+          className={"mt-4"}
+          heading="The Last day to book is: Wednesday, September 25, 2024."
+          raw={true}
+        >
           <p className="!m-0 p-0">
             {`Please book using this booking link: `}
             <Link
@@ -119,9 +124,14 @@ export default function AttendingOverview() {
       </Section>
       <Section title={`Transportation Overview`} spacing={"bottom-only"}>
         <p>
-          {`From mainland North America, St. John’s, Newfoundland and Labrador, is typically accessed by air travel to `} <strong>{`St. John's International Airport `}<em>{`(YYT)`}</em>{`.`}</strong>
+          {`From mainland North America, St. John’s, Newfoundland and Labrador, is typically accessed by air travel to `}{" "}
+          <strong>
+            {`St. John's International Airport `}
+            <em>{`(YYT)`}</em>
+            {`.`}
+          </strong>
         </p>
-        <Alert type="warning" heading="Important Note:" raw className={'mt-4'}>
+        <Alert type="warning" heading="Important Note:" raw className={"mt-4"}>
           <p>
             {`This should not be confused with Saint John Airport (YSJ), which is located in the province of New Brunswick NOT Newfoundland and Labrador.`}
           </p>
@@ -216,6 +226,23 @@ export default function AttendingOverview() {
         <p>
           <strong>{`Ethiopian Cuisine Plus`}</strong>
           {`, located on the foot of Signal Hill and at the intersection where Duckworth Street becomes Signal Hill Road. This location is not wheelchair accessible, but has very nice injera!`}
+        </p>
+      </Section>
+      <Section title={"Virtual Attendance"} spacing={"bottom-only"}>
+        <p>
+          {`This year ASSETS will provide both synchronous and asynchronous access
+          to conference content. Keynote and paper sessions will be live
+          streamed on Zoom, and remote attendees will be able to participate in
+          Q&A sessions. All attendees will also have access to Discord,
+          similarly to past ASSETS hybrid conferences. Using Discord attendees
+          will be able to watch pre-recorded video presentations at their own
+          pace and ask authors questions in session-specific Discord channels.
+          Poster presentations will not be live streamed, but all poster authors
+          will be assigned a dedicated time to respond to online attendees’
+          Discord questions (similarly to a scheduled Reddit AMA). Hybrid and
+          virtual social/networking events will also be announced in the weeks
+          leading up to the conference. If any author (across all tracks) needs
+          to present remotely, they should reach out to their track chairs`}
         </p>
       </Section>
     </Subpage>
