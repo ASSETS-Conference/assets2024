@@ -43,6 +43,7 @@ const MENU_DATA = [
         title: "Program",
         href: null,
         children: [
+            { title: "Keynote Speaker", href: "/program/keynote-speaker/" },
             { title: "Accepted Papers", href: "/program/accepted-papers/" },
             { title: "Accepted Workshops", href: "/program/accepted-workshops/" },
         ],
