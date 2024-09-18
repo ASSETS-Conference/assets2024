@@ -160,7 +160,7 @@ export default function Nav() {
                                     tabIndex="0"
                                     className={`flex gap-2 items-center underline hoctive:decoration-4 cursor-pointer ${
                                         pathname.includes(
-                                            data.title.toLowerCase()
+                                            data?.basePath
                                         )
                                             ? "decoration-4"
                                             : ""

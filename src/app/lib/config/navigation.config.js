@@ -3,6 +3,7 @@ const MENU_DATA = [
     {
         title: "Authors",
         href: null,
+        basePath: "/authors/",
         children: [
             { title: "Call for Papers", href: "/authors/call-for-papers/" },
             {
@@ -29,6 +30,7 @@ const MENU_DATA = [
     {
         title: "Attending",
         href: null,
+        basePath: "/attending/",
         children: [
             { title: "Overview", href: "/attending/overview/" },
             { title: "Registration", href: "/attending/registration/" },
@@ -42,6 +44,7 @@ const MENU_DATA = [
     {
         title: "Program",
         href: null,
+        basePath: "/program/",
         children: [
             { title: "Keynote Speaker", href: "/program/keynote-speaker/" },
             { title: "Accepted Papers", href: "/program/accepted-papers/" },
@@ -51,6 +54,7 @@ const MENU_DATA = [
     {
         title: "Additional Resources",
         href: null,
+        basePath: "/resources/",
         children: [
             {
                 title: "Creating Accessible ACM Conference Papers",
@@ -78,6 +82,7 @@ const MENU_DATA = [
     {
         title: "Committees",
         href: null,
+        basePath: "/committees/",
         children: [
             {
                 title: "Organizing Committee",
@@ -93,6 +98,7 @@ const MENU_DATA = [
     {
         title: "Sponsors",
         href: null,
+        basePath: "/sponsors/",
         children: [
             {
                 title: "Sponsors",
