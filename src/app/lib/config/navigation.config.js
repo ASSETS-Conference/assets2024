@@ -3,11 +3,12 @@ const MENU_DATA = [
     {
         title: "Authors",
         href: null,
+        basePath: "/authors/",
         children: [
             { title: "Call for Papers", href: "/authors/call-for-papers/" },
             {
                 title: "Technical Papers",
-                href: "/authors/call-for-papers/technical-papers",
+                href: "/authors/call-for-papers/technical-papers/",
             },
             { title: "Posters and Demos", href: "/authors/posters-and-demos/" },
             {
@@ -17,18 +18,19 @@ const MENU_DATA = [
             { title: "Workshop Proposals", href: "/authors/workshops/" },
             {
                 title: "Experience Reports",
-                href: "/authors/experience-reports",
+                href: "/authors/experience-reports/",
             },
             {
                 title: "Student Research Competition",
-                href: "/authors/student-research-competition",
+                href: "/authors/student-research-competition/",
             },
-            { title: "Mentoring", href: "/authors/mentoring" },
+            { title: "Mentoring", href: "/authors/mentoring/" },
         ],
     },
     {
         title: "Attending",
         href: null,
+        basePath: "/attending/",
         children: [
             { title: "Overview", href: "/attending/overview/" },
             { title: "Registration", href: "/attending/registration/" },
@@ -42,6 +44,7 @@ const MENU_DATA = [
     {
         title: "Program",
         href: null,
+        basePath: "/program/",
         children: [
             { title: "Keynote Speaker", href: "/program/keynote-speaker/" },
             { title: "Accepted Papers", href: "/program/accepted-papers/" },
@@ -51,18 +54,19 @@ const MENU_DATA = [
     {
         title: "Additional Resources",
         href: null,
+        basePath: "/resources/",
         children: [
             {
                 title: "Creating Accessible ACM Conference Papers",
-                href: "/resources/creating-a11y-papers",
+                href: "/resources/creating-a11y-papers/",
             },
             {
                 title: "Creating Accessible ACM Conference Video Presentations",
-                href: "/resources/creating-a11y-papers#video-presentation-creation-guidelines",
+                href: "/resources/creating-a11y-papers/#video-presentation-creation-guidelines",
             },
             {
                 title: "Submission Templates",
-                href: "/resources/submission-templates",
+                href: "/resources/submission-templates/",
             },
             // { title: "Workshop Proposals", href: "/authors/workshops/" },
         ],
@@ -78,21 +82,23 @@ const MENU_DATA = [
     {
         title: "Committees",
         href: null,
+        basePath: "/committees/",
         children: [
             {
                 title: "Organizing Committee",
                 href: "/committees/organizing/",
             },
             { title: "Program Committee", href: "/committees/program/" },
-            // {
-            //     title: "Policy on Program Committee",
-            //     href: "/committees/policy/",
-            // },
+            {
+                title: "Policy on Program Committee",
+                href: "/committees/policy/program/",
+            },
         ],
     },
     {
         title: "Sponsors",
         href: null,
+        basePath: "/sponsors/",
         children: [
             {
                 title: "Sponsors",

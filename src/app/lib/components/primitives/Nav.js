@@ -34,8 +34,8 @@ export default function Nav() {
      * @param {Number} i The current nav item's number
      */
     const handleNavMouseEnter = (i) => {
-        // hover events only applicable for desktop menu (window width is >= 768px)
-        if (window.innerWidth < 768) return;
+        // hover events only applicable for desktop menu (window width is >= 1024px)
+        if (window.innerWidth < 1024) return;
 
         setDropdownsVisible(
             dropdownsVisible.map((_, idx) => (idx === i ? true : false))
@@ -43,8 +43,8 @@ export default function Nav() {
     };
 
     const handleNavMouseLeave = () => {
-        // hover events only applicable for desktop menu (window width is >= 768px)
-        if (window.innerWidth < 768) return;
+        // hover events only applicable for desktop menu (window width is >= 1024px)
+        if (window.innerWidth < 1024) return;
         setDropdownsVisible(Array(MENU_DATA.length).fill(false));
     };
 
@@ -52,8 +52,8 @@ export default function Nav() {
      * @param {Number} i The current nav item's number
      */
     const handleNavClick = (i) => {
-        // click events only applicable for mobile menu (window width is < 768px)
-        if (window.innerWidth >= 768) return;
+        // click events only applicable for mobile menu (window width is < 1024px)
+        if (window.innerWidth >= 1024) return;
 
         if (dropdownsVisible[i] === true) {
             // setDropdownsVisible(Array(MENU_DATA.length).fill(false));
@@ -109,13 +109,13 @@ export default function Nav() {
     return (
         <nav
             aria-description="Menu"
-            className={`min-w-full md:px-6 md:py-2 p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
+            className={`min-w-full lg:px-6 lg:py-2 p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
                 backgroundVisible || mobileViewVisible ? "bg-theme-dark" : ""
             } ${mobileViewVisible ? "h-screen overflow-y-scroll" : ""}`}
         >
             <div
                 onClick={() => setMobileViewVisible(!mobileViewVisible)}
-                className="md:hidden w-full flex justify-between items-center"
+                className="lg:hidden w-full flex justify-between items-center"
             >
                 <Image
                     unoptimized
@@ -137,7 +137,7 @@ export default function Nav() {
                 )}
             </div>
             <ul
-                className={`min-h-full min-w-full md:flex md:flex-row flex-col md:justify-center md:items-center lg:gap-16 md:gap-6 lg:text-md md:text-sm sm:text-xl text-lg md:opacity-100 md:mt-0 mt-6 md:[&>*]:border-none [&>*]:border-b-[1px] [&>*]:border-white/25 cursor-pointer ${
+                className={`min-h-full min-w-full lg:flex lg:flex-row flex-col lg:justify-center lg:items-center xl:gap-16 lg:gap-6 xl:text-md lg:text-sm sm:text-xl text-lg lg:opacity-100 lg:mt-0 mt-6 lg:[&>*]:border-none [&>*]:border-b-[1px] [&>*]:border-white/25 cursor-pointer ${
                     mobileViewVisible ? "opacity-100 flex" : "opacity-0 hidden"
                 }`}
             >
@@ -146,7 +146,7 @@ export default function Nav() {
                         return (
                             <ul
                                 key={`nav-top-${i}`}
-                                className="relative md:py-6 py-6 cursor-pointer"
+                                className="relative lg:py-6 py-6 cursor-pointer"
                                 role="button"
                                 onMouseEnter={() => handleNavMouseEnter(i)}
                                 onMouseLeave={handleNavMouseLeave}
@@ -159,9 +159,7 @@ export default function Nav() {
                                 <li
                                     tabIndex="0"
                                     className={`flex gap-2 items-center underline hoctive:decoration-4 cursor-pointer ${
-                                        pathname.includes(
-                                            data.title.toLowerCase()
-                                        )
+                                        pathname.split("/")[1].includes(data?.basePath.split("/")[1])
                                             ? "decoration-4"
                                             : ""
                                     }`}
@@ -180,7 +178,7 @@ export default function Nav() {
                         );
                     } else {
                         return (
-                            <li key={`menu_item-${i}`} className="md:py-6 py-6">
+                            <li key={`menu_item-${i}`} className="lg:py-6 py-6">
                                 <Link
                                     className={`underline hoctive:decoration-4 ${
                                         pathname === data.href
