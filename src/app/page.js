@@ -99,7 +99,7 @@ export default function Home() {
               }}
             />
           </Section>
-          <Section title="ASSETS at a Glance" spacing="both">
+          <Section title="ASSETS at a Glance">
             <p className="h3">{`The 26th International ACM SIGACCESS Conference on Computers and Accessibility.`}</p>
             <p>{`The ASSETS conference is the premier forum for presenting research on the design, evaluation, use, and education related to computing for people with disabilities and older adults. For those in Europe and Oceania, ASSETS is rated as Core A — a designation for the top academic conferences that are "highly respected in a discipline area" (Core A; Top 16%).`}</p>
             <p>
