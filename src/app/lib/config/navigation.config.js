@@ -84,10 +84,10 @@ const MENU_DATA = [
                 href: "/committees/organizing/",
             },
             { title: "Program Committee", href: "/committees/program/" },
-            // {
-            //     title: "Policy on Program Committee",
-            //     href: "/committees/policy/",
-            // },
+            {
+                title: "Policy on Program Committee",
+                href: "/committees/policy/program",
+            },
         ],
     },
     {
