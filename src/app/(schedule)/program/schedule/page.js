@@ -25,7 +25,6 @@ export default function SchedulePage() {
         <Section
           spacing="bottom-only"
           title="Detailed Program"
-          ignoreBorder
           className={""}
         >
           <Schedule events={SCHEDULE} />

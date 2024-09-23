@@ -8,9 +8,9 @@ export const Schedule = ({ events }) => {
     <div className="absolute left-0 w-[100vw] min-w-[100vw] ">
       {events.map((day, i) => {
         return (
-          <div className={` py-4 ${determineBackground(i)}`}>
-            <Container>
-              <ScheduleSection day={day} background={determineBackground(i)} />
+          <div className={` py-4 ${determineBackground(i)}`} key={'div-sch-'+i}>
+            <Container key={'container-s'+i}>
+              <ScheduleSection key={'scs-'+i} day={day} background={determineBackground(i)} />
             </Container>
           </div>
         );
