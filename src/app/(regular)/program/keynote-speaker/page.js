@@ -13,7 +13,7 @@ const excludeSpecialChars = new RegExp('[^"“]');
 
 export default function AcceptedPapers() {
   return (
-    <Subpage title={"Keynote Speaker"} noTOC={false}>
+    <Subpage title={"Keynote Speaker"} altBg={true} noTOC={false}>
       <p className="-mb-12">
         {`We are delighted to announce that this year's keynote address will be
       given by Dr. Chieko Asakawa, recipient of the `}

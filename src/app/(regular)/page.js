@@ -1,9 +1,9 @@
 import Image from "@/app/lib/components/primitives/Image";
-import { DateList } from "../lib/components/DateList";
-import Hero from "../lib/components/Hero";
-import Container from "../lib/components/primitives/Container";
-import Link from "../lib/components/primitives/Link";
-import Section from "../lib/components/primitives/Section";
+import { DateList } from "@/app/lib/components/DateList";
+import Hero from "@/app/lib/components/Hero";
+import Container from "@/app/lib/components/primitives/Container";
+import Link from "@/app/lib/components/primitives/Link";
+import Section from "@/app/lib/components/primitives/Section";
 import {
   DOCTORAL_CONSORTIUM_DATES,
   EXPERIENCE_REPORTS_DATES,
@@ -12,10 +12,10 @@ import {
   MAIN_DEADLINES,
   TECHNICAL_PAPERS_SUBPAGE_DEADLINES,
   WORKSHOP_PROPOSAL_DATES,
-} from "../lib/config/importantdates.config";
-import { createMetadata } from "../lib/utils/createMetadata";
-import Alert from "../lib/components/Alert";
-import { mergeDates } from "../lib/utils/mergeDates";
+} from "@/app/lib/config/importantdates.config";
+import { createMetadata } from "@/app/lib/utils/createMetadata";
+import Alert from "@/app/lib/components/Alert";
+import { mergeDates } from "@/app/lib/utils/mergeDates";
 
 export const metadata = createMetadata({ title: "Home" });
 export default function Home() {

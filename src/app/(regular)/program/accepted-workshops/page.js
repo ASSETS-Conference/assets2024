@@ -63,7 +63,7 @@ function WorkshopSection({
 }
 export default function AcceptedWorkshops() {
   return (
-    <Subpage title={"Accepted Workshops"}>
+    <Subpage title={"Accepted Workshops"} altBg={true}>
       <p className="mb-4">
         {`To host a workshop at ASSETS, workshop organizers submitted a proposal
           following the Workshop Proposal CFP in July, 2024. These proposals
