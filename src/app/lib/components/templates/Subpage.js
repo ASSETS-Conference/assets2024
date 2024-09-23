@@ -9,10 +9,11 @@ function Subpage({
   children,
   noTOC,
   overrideTOC = undefined,
+  altBg,
 }) {
   return (
     <main id="content">
-      <Banner heading={title} subheading={subheading} />
+      <Banner heading={title} subheading={subheading} altBg={altBg} />
       <Container className={"pt-16 md:pt-20"}>
         {overrideTOC ? <div className="pb-6">{overrideTOC}</div> : null}
         {noTOC ? (

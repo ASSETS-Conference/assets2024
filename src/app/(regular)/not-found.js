@@ -1,5 +1,5 @@
-import Banner from "./lib/components/Banner";
-import Link from "./lib/components/primitives/Link";
+import Banner from "@/app/lib/components/Banner";
+import Link from "@/app/lib/components/primitives/Link";
 
 export default function NotFound() {
     return (

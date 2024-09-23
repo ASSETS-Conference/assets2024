@@ -1,4 +1,4 @@
-import './globals.css'
+import '@/app/globals.css'
 import Template from '@/app/lib/components/Template'
  
 
