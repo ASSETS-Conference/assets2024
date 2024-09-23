@@ -21,5 +21,5 @@ export const Schedule = ({ events }) => {
 };
 
 const determineBackground = (i) => {
-  return i % 2 === 0 ? "bg-theme-off-white/20" : "bg-theme-off-white/30";
+  return i % 2 === 0 ? "bg-[#F6F6F6]" : "bg-[#F2F2F2]";
 };
