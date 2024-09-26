@@ -127,7 +127,7 @@ const SCHEDULE = [
                 title:
                   "Informing Accessible Design of AI Literacy Apps through Practices of Blind Parents Reading with Sighted Children",
                 author:
-                  "sabela Figueira (University of California, Irvine), Josahandi M Cisneros (University of California Irvine), Molly Leachman (University of California, Irvine), Elizabeth D Pena (University of California, Irvine), Stacy Branham (University of California, Irvine)",
+                  "Sabela Figueira (University of California, Irvine), Josahandi M Cisneros (University of California Irvine), Molly Leachman (University of California, Irvine), Elizabeth D Pena (University of California, Irvine), Stacy Branham (University of California, Irvine)",
               },
               {
                 title:
@@ -200,52 +200,57 @@ const SCHEDULE = [
         dualTrack: false,
         content: [
           {
-            title:
-              "Guidelines for Designing Social Networking Sites for Older Adults: a Systematic Review with Thematic Synthesis",
-            author:
-              "Amira Ghenai (Toronto Metropolitan University), Philips Ayeni (McGill University), Jing Yu (McGill University), Robin Cohen (University of Waterloo), Karyn Moffatt (McGill University)",
-          },
-          {
-            title:
-              "Supporting Social Inclusion with DIY-ATs: Perspectives of Kenyan Caregivers of Children with Cognitive Disabilities",
-            author:
-              "Foad Hamidi (UMBC), Tsion Kidane (Kidane), Patrick Owur (Pamoja Community-Based Organization), Michaela Hynie (York University), Melanie Baljko (York University)",
-          },
-          {
-            title:
-              '"Why are there so many steps?": Improving Access to Blind and Low Vision Music Learning Through Personal Adaptations and Future Design Ideas',
-            author:
-              "Leon Lu (Carleton University), Karen Cochrane (University of Waterloo), Jin Kang (Carleton University), Audrey Girouard (Carleton University)",
-          },
-          {
-            title:
-              "Measuring the Accuracy of Automatic Speech Recognition Solutions",
-            author:
-              "Korbinian Kuhn (Stuttgart Media University,), Verena Kersken (Stuttgart Media University,), Benedikt Reuter (Stuttgart Media University), Niklas Egger (Stuttgart Media University), Gottfried Zimmermann (Stuttgart Media University",
-          },
-          {
-            title:
-              "Invisible, Unreadable, and Inaudible Cookie Notices: An Evaluation of Cookie Notices for Users with Visual Impairments",
-            author:
-              "James Clarke (University of Surrey), Maryam Mehrnezhad (Royal Holloway), Ehsan Toreini (University of Surrey)",
-          },
-          {
-            title:
-              "Health Data Visualization Literacy Skills of Young Adults with Down Syndrome and the Barriers to Inference-making",
-            author:
-              "Rachel Wood (University of Maryland), Jinjuan Feng (Towson University), Jonathan Lazar (University of Maryland)",
-          },
-          {
-            title:
-              "A3C: An Image-Association-Based Computing Device Authentication Framework for People with Upper Extremity Impairments",
-            author:
-              "Krishna Venkatasubramanian (The University of Rhode Island), Brittany Lewis (The University of Rhode Island), Priyankan Kirupaharan (Independent Scholar), Tina-Marie Ranalli (The University of Rhode Island)",
-          },
-          {
-            title:
-              "Navigating the Cyborg Classroom: Telepresence Robots, Accessibility Challenges, and Inclusivity in the Classroom",
-            author:
-              "Houda Elmimouni (University of Manitoba), Selma Šabanović (Indiana University), Jennifer Rode (University College London)",
+            title: null,
+            items: [
+              {
+                title:
+                  "Guidelines for Designing Social Networking Sites for Older Adults: a Systematic Review with Thematic Synthesis",
+                author:
+                  "Amira Ghenai (Toronto Metropolitan University), Philips Ayeni (McGill University), Jing Yu (McGill University), Robin Cohen (University of Waterloo), Karyn Moffatt (McGill University)",
+              },
+              {
+                title:
+                  "Supporting Social Inclusion with DIY-ATs: Perspectives of Kenyan Caregivers of Children with Cognitive Disabilities",
+                author:
+                  "Foad Hamidi (UMBC), Tsion Kidane (Kidane), Patrick Owur (Pamoja Community-Based Organization), Michaela Hynie (York University), Melanie Baljko (York University)",
+              },
+              {
+                title:
+                  '"Why are there so many steps?": Improving Access to Blind and Low Vision Music Learning Through Personal Adaptations and Future Design Ideas',
+                author:
+                  "Leon Lu (Carleton University), Karen Cochrane (University of Waterloo), Jin Kang (Carleton University), Audrey Girouard (Carleton University)",
+              },
+              {
+                title:
+                  "Measuring the Accuracy of Automatic Speech Recognition Solutions",
+                author:
+                  "Korbinian Kuhn (Stuttgart Media University,), Verena Kersken (Stuttgart Media University,), Benedikt Reuter (Stuttgart Media University), Niklas Egger (Stuttgart Media University), Gottfried Zimmermann (Stuttgart Media University",
+              },
+              {
+                title:
+                  "Invisible, Unreadable, and Inaudible Cookie Notices: An Evaluation of Cookie Notices for Users with Visual Impairments",
+                author:
+                  "James Clarke (University of Surrey), Maryam Mehrnezhad (Royal Holloway), Ehsan Toreini (University of Surrey)",
+              },
+              {
+                title:
+                  "Health Data Visualization Literacy Skills of Young Adults with Down Syndrome and the Barriers to Inference-making",
+                author:
+                  "Rachel Wood (University of Maryland), Jinjuan Feng (Towson University), Jonathan Lazar (University of Maryland)",
+              },
+              {
+                title:
+                  "A3C: An Image-Association-Based Computing Device Authentication Framework for People with Upper Extremity Impairments",
+                author:
+                  "Krishna Venkatasubramanian (The University of Rhode Island), Brittany Lewis (The University of Rhode Island), Priyankan Kirupaharan (Independent Scholar), Tina-Marie Ranalli (The University of Rhode Island)",
+              },
+              {
+                title:
+                  "Navigating the Cyborg Classroom: Telepresence Robots, Accessibility Challenges, and Inclusivity in the Classroom",
+                author:
+                  "Houda Elmimouni (University of Manitoba), Selma Šabanović (Indiana University), Jennifer Rode (University College London)",
+              },
+            ],
           },
         ],
       },
