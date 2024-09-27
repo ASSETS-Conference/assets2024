@@ -13,9 +13,9 @@ export const ScheduleEvent = ({
   return (
     <div className="pb-4">
       <div
-        className={`sticky top-24 py-2 -translate-y-4 ${background} z-20 flex flex-row gap-8 content-center md:justify-normal justify-between`}
+        className={`sticky top-24 py-2 -translate-y-4 ${background} z-20 flex flex-row gap-8 items-center md:justify-normal justify-between`}
       >
-        <h3 className="font-semibold md:text-xl mt-2 mb-2 pt-0">
+        <h3 className="font-semibold md:text-xl mt-2 mb-2 pt-0 md:w-auto w-20">
           {startTime} &ndash; {endTime}
         </h3>
         <h4 className="font-light md:text-xl mt-2 mb-2 p-0 md:text-left text-right">
