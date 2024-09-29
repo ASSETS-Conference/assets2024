@@ -21,8 +21,9 @@ const CreateRow = (row) => {
 
     return (
         <tr className="border-none">
-            {row.map((event) => (
+            {row.map((event, idx) => (
                 <td
+                    key={"glance-row-" + { idx }}
                     className={`!border-x !border-y-0 text-sm ${
                         event?.title === "Lunch"
                             ? "bg-theme-dark text-theme-off-white"
