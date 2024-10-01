@@ -14,15 +14,15 @@ export default function DualTrack({ content }) {
         open
         detailsParentClass="flex-1 "
         summary={content.items[0].room}
-        className="sticky top-[8.5rem] md:top-[8.75rem] z-10 h-[5.5rem] md:h-auto"
+        className="sticky top-[8.5rem] md:top-[8.75rem] z-10 "
       >
         {createRow(content.items[0])}
       </Details>
       <Details
         open
-        detailsParentClass="flex-1"
+        detailsParentClass="flex-1 border-l-2"
         summary={content.items[1].room}
-        className="sticky top-[8.5rem] md:top-[8.75rem] z-10 h-[5.5rem] md:h-auto"
+        className="sticky top-[8.5rem] md:top-[8.75rem] z-10 text-sm"
       >
         {createRow(content.items[1])}
       </Details>
@@ -47,16 +47,16 @@ export default function DualTrack({ content }) {
 
 function createRow(track, altColour) {
   return (
-    <ul className="">
+    <ul className="px-2">
       {track.content.map((item, i) => {
         return (
-          <li key={`dt-row-${i}`}>
-            <p className="text-sm md:text-base font-semibold p-0 -mb-2">
+          <li key={`dt-row-${i}`} className="list-none ml-0 md:list-disc md:ml-8 ">
+            <p className="text-xs md:text-base font-semibold p-0 -mb-2">
               {item.isSpecial ? <i className="text-theme-blue font-normal not-italic">{`[${item.isSpecial}] `}</i> : null}
               {item.title}
               {item.isBestPaperNom ? <i className="text-theme-orange flex items-center gap-1 not-italic mt-1"><FaAward aria-hidden/>{` Best Paper Nominee`}</i> : null}
             </p>
-            <p className="text-xs md:text-sm leading-loose italic p-0 -mt-4">
+            <p className="text-[0.65rem] md:text-sm md:leading-loose leading-relaxed italic p-0 -mt-4">
               {item.author}
             </p>
           </li>

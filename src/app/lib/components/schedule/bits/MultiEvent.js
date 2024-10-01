@@ -16,10 +16,10 @@ const MultiEvent = ({ content }) => {
           <ul className=" mb-4">
             {content.items.map((item, key) => (
               <li key={`me-li-${key}`}>
-                <p className="text-sm md:text-base font-semibold p-0 -mb-2">
+                <p className="text-xs md:text-base font-semibold p-0 -mb-2">
                   {item.title}
                 </p>
-                <p className="text-xs md:text-sm leading-loose italic p-0 -mt-4">
+                <p className="text-[0.65rem] md:text-sm leading-relaxed italic p-0 -mt-4">
                   {item.author}
                 </p>
               </li>
