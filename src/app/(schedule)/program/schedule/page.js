@@ -20,7 +20,7 @@ export default function SchedulePage() {
         noTOC={true}
       >
         <Section spacing={"bottom-only"} title="ASSETS 2024 at a Glance">
-          <div className="flex flex-col items-center overflow-y-auto">
+          <div className="md:flex flex-col items-center overflow-y-auto">
             <ScheduleGlance />
           </div>
           <div
