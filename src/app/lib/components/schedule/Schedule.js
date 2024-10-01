@@ -15,6 +15,14 @@ export const Schedule = ({ events }) => {
           </div>
         );
       })}
+      <Container className={`${determineBackground(1)} w-full min-w-full`}>
+        <div className="pt-4 pb-12 flex flex-col items-center align-middle justify-center w-full min-w-full">
+          <p className="font-light text-sm md:text-xl  p-0 text-black/50">{`— End —`}</p>
+          <p className="font-light text-xs md:text-base  p-0 text-black/50">{`See You Next Year! 👋`}</p>
+          
+
+        </div>
+      </Container>
       <Footer />
     </div>
   );
