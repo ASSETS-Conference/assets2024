@@ -1,6 +1,7 @@
 import React from "react";
-import MultiEvent from "./ScheduleBits/MultiEvent";
-import SingleEvent from "./ScheduleBits/SingleEvent";
+import MultiEvent from "./bits/MultiEvent";
+import SingleEvent from "./bits/SingleEvent";
+import DualTrack from "./bits/DualTrack";
 
 export const ScheduleEvent = ({
   background,
@@ -23,27 +24,35 @@ export const ScheduleEvent = ({
         </h4>
       </div>
       <div>
-        {content?.map((content) => determineContentType(content, dualTrack))}
+        {content?.map((content, key) =>
+          determineContentType(content, dualTrack, key)
+        )}
       </div>
       <hr className="border-t-2" />
     </div>
   );
 };
 
-function determineContentType(content, isDualTrack) {
+function determineContentType(content, isDualTrack, key) {
   if (!isDualTrack) {
     if (content.title) {
-      return <MultiEvent content={content} />;
+      return <MultiEvent content={content} key={"me-" + key} />;
     } else if (content.title === null) {
       return (
         <div>
           <ul className="border-x-2 border-y-2 px-2 bg-white mb-4 py-4">
             {content.items.map((items) => (
-              <SingleEvent content={items} />
+              <SingleEvent content={items} key={`se-` + key} />
             ))}
           </ul>
         </div>
       );
     }
+  } else {
+    return (
+      <div>
+        <DualTrack content={content} key={`dt-${key}`} />
+      </div>
+    );
   }
 }
