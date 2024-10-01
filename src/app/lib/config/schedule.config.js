@@ -537,7 +537,7 @@ const SCHEDULE = [
     ],
   },
   {
-    date: "Tueday, October 29th 2024",
+    date: "Tuesday, October 29th 2024",
     events: [
       {
         startTime: "08:00",
@@ -945,9 +945,9 @@ const SCHEDULE = [
                       "Leya Breanna (University of California, Santa Cruz), Baltaxe-Admony, Jared Duval (Northern Arizona University), Kathryn E. Ringland (University of California Santa Cruz)",
                   },
                   {
-                    title: '"I Am Human, Just Like You": What Intersectional, Neurodivergent Lived Experiences Bring to Accessibility Research',
-                    author:
-                      "Lindy Le (Microsoft)",
+                    title:
+                      '"I Am Human, Just Like You": What Intersectional, Neurodivergent Lived Experiences Bring to Accessibility Research',
+                    author: "Lindy Le (Microsoft)",
                   },
                   {
                     title:
@@ -956,7 +956,8 @@ const SCHEDULE = [
                       "Erin Higgins (University of Maryland, Baltimore County), Marie E. Sakowicz (University of Maryland, Baltimore County), Foad Hamidi (University of Maryland, Baltimore County)",
                   },
                   {
-                    title:"Ethical Concerns when Working with Mixed-Ability Groups of Children",
+                    title:
+                      "Ethical Concerns when Working with Mixed-Ability Groups of Children",
                     author:
                       "Ana O. Henriques (University of Lisbon), Patricia Piedade (University of Lisbon), Filipa Rocha (University of Lisbon), Isabel Neto (University of Lisbon), Hugo Nicolau (University of Lisbon)",
                     isSpecial: "Short Paper",
@@ -992,7 +993,7 @@ const SCHEDULE = [
                   },
                   {
                     title:
-                     "Our Stories, Our Data: Co-designing Visualizations with People with Intellectual and Developmental Disabilities",
+                      "Our Stories, Our Data: Co-designing Visualizations with People with Intellectual and Developmental Disabilities",
                     author:
                       "Keke Wu (University of North Carolina at Chapel Hill), Ghulam Jilani Quadri (University of Oklahoma), Arran Zeyu Wang (University of North Carolina at Chapel Hill), David Kwame Osei-Tutu (University of North Carolina at Chapel Hill), Emma Petersen (University of Colorado Boulder), Varsha Koushik (Colorado Springs), Danielle Albers Szafir  (University of North Carolina at Chapel Hill)",
                   },
@@ -1193,6 +1194,460 @@ const SCHEDULE = [
         startTime: "18:30",
         endTime: "17:30",
         title: "The Google Reception at The Rooms",
+        dualTrack: false,
+        content: null,
+      },
+    ],
+  },
+  {
+    date: "Wednesday, October 30, 2024",
+    events: [
+      {
+        startTime: "09:00",
+        endTime: "10:00",
+        title: "Session 7: Student Research Competition",
+        dualTrack: false,
+        content: [
+          {
+            title: "Undergraduate Student Category",
+            items: [
+              {
+                title:
+                  "Echolocation as an Accessible Navigation Tool in a Virtual 3D Environment",
+                author:
+                  "Mai Ricaplaza Thøgersen (Aarhus University), Rasmus Jens Frølich Kjeldsen (Aarhus University)",
+              },
+              {
+                title:
+                  '"I\'m treating it kind of like a diary": Characterizing How Users with Disabilities Use AI Chatbots',
+                author:
+                  "Kayla Mullen (Wellesley College), Wenhan Xue (Wellesley College), Manasa Kudumu (Wellesley College)",
+              },
+            ],
+          },
+          {
+            title: "Graduate Student Category",
+            items: [
+              {
+                title:
+                  "Echolocation as an Accessible Navigation Tool in a Virtual 3D Environment",
+                author:
+                  "Mai Ricaplaza Thøgersen (Aarhus University), Rasmus Jens Frølich Kjeldsen (Aarhus University)",
+              },
+              {
+                title: "Accessible Bus Stop Preview for Visually Impaired",
+                author: "Mahmut Erdemli (Carleton University)",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        startTime: "10:00",
+        endTime: "10:45",
+        title: "Posters/Demos and Coffee Break",
+        dualTrack: false,
+        content: [
+          {
+            title: "Travel Awardees",
+            items: [
+              {
+                title:
+                  "Creative Computing for Low Vision and Blind Students Leveraging Large Language Models",
+                author: "Pearl Zhang (Kapor Center)",
+              },
+              {
+                title:
+                  "Refining User Experience: Defining Default Settings for Visual Impairment Smart Glasses",
+                author: "Martin Lettry (Università della Svizzera Italiana)",
+              },
+            ],
+          },
+          {
+            title: "Demos",
+            items: [
+              {
+                title:
+                  "Record, Transcribe, Share: An Accessible Open-Source Video Platform for Deaf and Hard of Hearing Viewers",
+                author:
+                  "Korbinian Kuhn (Stuttgart Media University), Benedikt Reuter (Stuttgart Media University), Niklas Egger (Hochschule der Medien), Gottfried Zimmermann (Stuttgart Media University)",
+              },
+              {
+                title:
+                  "Pose-aware Large Language Model Interface for Providing Feedback to Sign Language Learners",
+                author:
+                  "Vaclav Knapp (Smíchovská střední průmyslová škola a gymnázium), Matyas Bohacek (Stanford University)",
+              },
+              {
+                title:
+                  "Enhancing Accessibility in Collaborative Digital Whiteboards: A Demonstration of Innovative Features for Inclusive Real-Time Collaboration",
+                author: "Philip Strain (Miro), Stefano Baldan (Miro)",
+              },
+            ],
+          },
+          {
+            title: "Posters",
+            items: [
+              {
+                title:
+                  "Towards Fine-Grained Sidewalk Accessibility Assessment with Deep Learning: Initial Benchmarks and an Open Dataset",
+                author:
+                  "Xinlei Liu (University of Washington), Kevin Wu (University of Washington), Minchu Kulkarni (University of Washington), Michael Saugstad (University of Washington), Peyton Anton Rapo (University of Washington), Jeremy Freiburger (University of Washington), Maryam Hosseini (Massachusetts Institute of Technology ), Chu Li (University of Washington), Jon E. Froehlich (University of Washington)",
+              },
+              {
+                title:
+                  "The Looking-Glass Avatar: Representing Chronic Pain through Social Virtual Reality Avatar Movement",
+                author:
+                  "Ria J. Gualano (Cornell University), Cole Leonard (Cornell University), Yahui Zhang (Cornell University), Zina Trost (Texas A&M University), Shiri Azenkot (Cornell Tech), Andrea Stevenson Won (Cornell University)",
+              },
+              {
+                title:
+                  "A Preliminary Analysis of Older Adults’ Reactions to Design Concepts for Physical Activity Support",
+                author:
+                  "Muhe Yang (McGill University), Karyn Moffatt (McGill University)",
+              },
+              {
+                title:
+                  "Tab to Autocomplete: The Effects of AI Coding Assistants on Web Accessibility",
+                author:
+                  "Peya Mowar (Carnegie Mellon University), Yi-Hao Peng (Carnegie Mellon University), Aaron Steinfeld (Carnegie Mellon University), Jeffrey P Bigham (Carnegie Mellon University)",
+              },
+              {
+                title:
+                  "Exploring the Accessibility of Social Virtual Reality for People with ADHD and Autism: Preliminary Insights",
+                author:
+                  "Jazmin Collins (Cornell University), Woojin Ko (Cornell Tech), Tanisha Shende (Oberlin College), Sharon Y Lin (Cornell University), Lucy Jiang (Cornell University), Andrea Stevenson Won (Cornell University), Shiri Azenkot (Cornell Tech)",
+              },
+              {
+                title:
+                  "Insights from Immersive Learning: Using Sentiment Analysis and Real-time Narration to Refine ASL Instruction in Virtual Reality",
+                author:
+                  "Md Shahinur Alam (Gallaudet University), Joseph Palagano (Gallaudet University ), Lorna C Quandt (Gallaudet University)",
+              },
+              {
+                title:
+                  "Exploring the Potential of Generative AI in DIY Assistive Technology Design by Occupational Therapists",
+                author:
+                  "Mixuan Li (Georgia Institute of Technology), Leila Aflatoony (Georgia Institute of Technology)",
+              },
+              {
+                title:
+                  "Speed-of-Light VR for Blind People: Conveying the Location of Arm-Reach Targets",
+                author:
+                  "Diogo Lança (Faculdade de Ciências, Universidade de Lisboa), Manuel Piçarra (Faculdade de Ciências, Universidade de Lisboa), Inês Gonçalves (Faculdade de Ciências, Universidade de Lisboa), Uran Oh (Ewha Womans University), André Rodrigues (Universidade de Lisboa), João Guerreiro (Universidade de Lisboa)",
+              },
+              {
+                title:
+                  "Understanding the Visualization and Analytics Needs of Blind and Low-Vision Professionals",
+                author:
+                  "Pramod Chundury (University of Maryland), Urja Thakkar (University of Maryland), Yasmin Reyazuddin (National Federation of the Blind), J. Bern Jordan (University of Maryland), Niklas Elmqvist (Aarhus University), Jonathan Lazar (University of Maryland)",
+              },
+              {
+                title:
+                  "Building Collaborative Art Creation Environment for People with Intellectual Disabilities through Adaptive Fabric Art Workshops",
+                author:
+                  "Qianrong Fu (Keio University), Giulia Barbareschi (Keio University), Chihiro Sato (Keio University)",
+              },
+              {
+                title:
+                  "A Place to Charge Your Wheels: Re-imagining the urban landscape for electric-wheelchair users through Design Fiction",
+                author:
+                  "Patricia Piedade (University of Lisbon), Hope Jang (Purdue University), Joe Maddux (Purdue University), Stewart Chappell (Skills for People), Jacqui Maher (Skills for People), Andy Dow (Northumbria University), Lynne R. Conniss (Northumbria University), Richard A Kotter (Northumbria University), Matteo Conti (Northumbria University), Marco Zilvetti (Northumbria University), Suzanne Nicolson (Northumbria University), Ayman Rizwan (Northumbria University), Vincent Barrioz (Northumbria University)",
+              },
+              {
+                title:
+                  "Crip Material Exploration as an Assistive Technology Research Framework: Situating Interdependence in Empowered Disabled Making",
+                author:
+                  "Alexander S.W. Parent (Steinhardt School of Culture, Education and Human DevelopmentFaculty of Information)",
+              },
+              {
+                title:
+                  "Drones for all: Creating an Authentic Programming Experience for Students with Visual Impairments",
+                author:
+                  "Yize Wei (National University of Singapore), Maëlle Dubucq (CNRS), Malsha Eliyadura Kalani de Zoysa (National University of Singapore), Christophe Jouffrais (CNRSCNRS), Suranga Nanayakkara (Department of Information Systems and Analytics, National University of Singapore), Wei Tsang Ooi (National University of Singapore)",
+              },
+              {
+                title:
+                  "How Proficiency and Feelings impact the Preference and Perception of Mobile Technology Support in Older Adults",
+                author:
+                  "Nina Sakhnini (University of Illinois at Chicago), Hasti Sharifi (University of Illinois at Chicago), Debaleena Chattopadhyay (University of Illinois at Chicago)",
+              },
+              {
+                title:
+                  "Establishing a Community-Driven Digital Library for the Visually Impaired",
+                author:
+                  "Tomoya Matsumura (Tsukuba University of TechnologyUniversity of Tsukuba), Ryo Iijima (University of Tsukuba), Takahiro Miura (National Institute of Advanced Industrial Science and Technology (AIST)), Masaki MATSUO (Tsukuba University of Technology), Yoichi Ochiai (University of Tsukuba)",
+              },
+              {
+                title:
+                  "Investigating the Efficacy of Conference Room Webcams for Remote Group Sign Language Interpretation Sessions",
+                author:
+                  "Roshan Mathew (Rochester Institute of Technology), Wendy Dannels (Rochester Institute of Technology)",
+              },
+              {
+                title:
+                  "Toward Closed-Domain Conversational Item Listing Assistant for Improvement of Experiences of Older Adults in Customer-to-Customer (C2C) Marketplaces",
+                author:
+                  "Subin Park (Kyung Hee University), Hyunggu Jung (Seoul National University), Bektur Ryskeldiev (Mercari R4D), Jihyun Lee (KyungHee University), Gwanhee Lee (University of Seoul), Hyeonhak Jeong (University of Seoul), Minki Chun (University of Seoul), Kentaro Teramoto (Mercari R4D)",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        startTime: "10:45",
+        endTime: "12:30",
+        title: "Papers",
+        dualTrack: false,
+        content: [
+          {
+            title: "Session 8: AI and Errors",
+            items: [
+              {
+                title:
+                  "AccessShare: Co-designing Data Access and Sharing with Blind People",
+                author:
+                  "Rie Kamikubo (University of Maryland, College Park), Farnaz Zamiri Zeraati (University of Maryland, College Park), Kyungjun Lee (University of Maryland, College Park), Hernisa Kacorri (University of Maryland, College Park)",
+              },
+              {
+                title:
+                  "Misfitting With AI: How Blind People Verify and Contest AI Errors",
+                author:
+                  "Rahaf Alharbi (University of Michigan), Pa Lor (University of Michigan), Jaylin Herskovitz (University of Michigan), Sarita Schoenebeck (University of Michigan), Robin N. Brewer (University of Michigan)",
+              },
+              {
+                title: "Context-Aware Image Descriptions",
+                author:
+                  "Ananya Gubbi Mohanbabu (University of Texas, Austin), Amy Pavel (University of Texas, Austin)",
+              },
+              {
+                title:
+                  "Understanding Blind User's Strategies and Challenges in Handling Errors in Object Recognition",
+                author:
+                  "Jonggi Hong (Stevens Institute of Technology), Hernisa Kacorri (University of Maryland, College Park)",
+              },
+              {
+                title:
+                  '"I look at it as the king of knowledge": How Blind People Use and Understand Generative AI Tools',
+                author:
+                  "Rudaiba Adnin (Northeastern University), Maitraye Das (Northeastern University)",
+              },
+              {
+                title:
+                  "EditScribe: Non-Visual Image Editing with Natural Language Verification Loops",
+                author:
+                  "Ruei-Che Chang (University of Michigan), Yuxuan Liu (University of Michigan), Lotus Zhang (University of Michigan), Anhong Guo (University of Michigan)",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        startTime: "12:30",
+        endTime: "14:00",
+        title: "Lunch",
+        dualTrack: false,
+        content: null,
+      },
+      {
+        startTime: "14:00",
+        endTime: "15:30",
+        title: "Papers",
+        dualTrack: false,
+        content: [
+          {
+            title: "Session 9: Creating and Consuming Content",
+            items: [
+              {
+                title:
+                  "Breaking the News Barrier: Towards Understanding News Consumption Practices among BVI Individuals in India",
+                author:
+                  "Peya Mowar (Carnegie Mellon University), Meghna Gupta (University of Washington), Mohit Jain (Microsoft Research)",
+              },
+              {
+                title:
+                  '"Not Only Annoying but Dangerous": devising an ecology of protections for photosensitive social media users',
+                author:
+                  "Rua Mae Williams (Purdue University), Chorong Park (Purdue University), Laila Sameer Dodhy (Purdue University), Monaami Pal (Purdue University), Atharva Anand Dnyanmote (Purdue University), Angel Lam (Purdue University), Sean Joo (Purdue University)",
+              },
+              {
+                title:
+                  "Design considerations for photosensitivity warnings in visual media",
+                author:
+                  "Laura South (Northeastern University), Caglar Yildirim (Northeastern University), Amy Pavel (University of Texas, Austin), Michelle A. Borkin (Northeastern University)",
+              },
+              {
+                title:
+                  "Exploring how People with Spinal Cord Injuries Seek Support on Social Media",
+                author:
+                  "Tamanna Motahar (University of Utah), Sara Nurollahian (University of Utah), YeonJae Kim (University of Utah), Marina Kogan (University of Utah), Jason Wiese (University of Utah)",
+              },
+              {
+                title:
+                  "AltCanvas: A Tile-Based Editor for Visual Content Creation with Generative AI for Blind or Vision Impaired People",
+                author:
+                  "Seonghee Lee (Stanford University), Maho Kohga (Stanford University), Steve Landau (TouchGraphics), Sile O'Modhrain (University of Michigan), Hariharan Subramonyam (Stanford University)",
+              },
+              {
+                title:
+                  '"It\'s like Goldilocks": Bespoke Slides for Fluctuating Audience Access Needs',
+                author:
+                  "Kelly Avery Mack (University of Washington), Kate S. Glazko (University of Washington), Jamil Islam (University of Washington), Megan Hofmann (Northeastern University), Jennifer Mankoff (University of Washington)",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        startTime: "15:30",
+        endTime: "16:15",
+        title: "Posters",
+        dualTrack: false,
+        content: [
+          {
+            title: "Posters",
+            items: [
+              {
+                title:
+                  "Towards Fine-Grained Sidewalk Accessibility Assessment with Deep Learning: Initial Benchmarks and an Open Dataset",
+                author:
+                  "Xinlei Liu (University of Washington), Kevin Wu (University of Washington), Minchu Kulkarni (University of Washington), Michael Saugstad (University of Washington), Peyton Anton Rapo (University of Washington), Jeremy Freiburger (University of Washington), Maryam Hosseini (Massachusetts Institute of Technology ), Chu Li (University of Washington), Jon E. Froehlich (University of Washington)",
+              },
+              {
+                title:
+                  "The Looking-Glass Avatar: Representing Chronic Pain through Social Virtual Reality Avatar Movement",
+                author:
+                  "Ria J. Gualano (Cornell University), Cole Leonard (Cornell University), Yahui Zhang (Cornell University), Zina Trost (Texas A&M University), Shiri Azenkot (Cornell Tech), Andrea Stevenson Won (Cornell University)",
+              },
+              {
+                title:
+                  "A Preliminary Analysis of Older Adults’ Reactions to Design Concepts for Physical Activity Support",
+                author:
+                  "Muhe Yang (McGill University), Karyn Moffatt (McGill University)",
+              },
+              {
+                title:
+                  "Tab to Autocomplete: The Effects of AI Coding Assistants on Web Accessibility",
+                author:
+                  "Peya Mowar (Carnegie Mellon University), Yi-Hao Peng (Carnegie Mellon University), Aaron Steinfeld (Carnegie Mellon University), Jeffrey P Bigham (Carnegie Mellon University)",
+              },
+              {
+                title:
+                  "Exploring the Accessibility of Social Virtual Reality for People with ADHD and Autism: Preliminary Insights",
+                author:
+                  "Jazmin Collins (Cornell University), Woojin Ko (Cornell Tech), Tanisha Shende (Oberlin College), Sharon Y Lin (Cornell University), Lucy Jiang (Cornell University), Andrea Stevenson Won (Cornell University), Shiri Azenkot (Cornell Tech)",
+              },
+              {
+                title:
+                  "Insights from Immersive Learning: Using Sentiment Analysis and Real-time Narration to Refine ASL Instruction in Virtual Reality",
+                author:
+                  "Md Shahinur Alam (Gallaudet University), Joseph Palagano (Gallaudet University ), Lorna C Quandt (Gallaudet University)",
+              },
+              {
+                title:
+                  "Exploring the Potential of Generative AI in DIY Assistive Technology Design by Occupational Therapists",
+                author:
+                  "Mixuan Li (Georgia Institute of Technology), Leila Aflatoony (Georgia Institute of Technology)",
+              },
+              {
+                title:
+                  "Speed-of-Light VR for Blind People: Conveying the Location of Arm-Reach Targets",
+                author:
+                  "Diogo Lança (Faculdade de Ciências, Universidade de Lisboa), Manuel Piçarra (Faculdade de Ciências, Universidade de Lisboa), Inês Gonçalves (Faculdade de Ciências, Universidade de Lisboa), Uran Oh (Ewha Womans University), André Rodrigues (Universidade de Lisboa), João Guerreiro (Universidade de Lisboa)",
+              },
+              {
+                title:
+                  "Understanding the Visualization and Analytics Needs of Blind and Low-Vision Professionals",
+                author:
+                  "Pramod Chundury (University of Maryland), Urja Thakkar (University of Maryland), Yasmin Reyazuddin (National Federation of the Blind), J. Bern Jordan (University of Maryland), Niklas Elmqvist (Aarhus University), Jonathan Lazar (University of Maryland)",
+              },
+              {
+                title:
+                  "Building Collaborative Art Creation Environment for People with Intellectual Disabilities through Adaptive Fabric Art Workshops",
+                author:
+                  "Qianrong Fu (Keio University), Giulia Barbareschi (Keio University), Chihiro Sato (Keio University)",
+              },
+              {
+                title:
+                  "A Place to Charge Your Wheels: Re-imagining the urban landscape for electric-wheelchair users through Design Fiction",
+                author:
+                  "Patricia Piedade (University of Lisbon), Hope Jang (Purdue University), Joe Maddux (Purdue University), Stewart Chappell (Skills for People), Jacqui Maher (Skills for People), Andy Dow (Northumbria University), Lynne R. Conniss (Northumbria University), Richard A Kotter (Northumbria University), Matteo Conti (Northumbria University), Marco Zilvetti (Northumbria University), Suzanne Nicolson (Northumbria University), Ayman Rizwan (Northumbria University), Vincent Barrioz (Northumbria University)",
+              },
+              {
+                title:
+                  "Crip Material Exploration as an Assistive Technology Research Framework: Situating Interdependence in Empowered Disabled Making",
+                author:
+                  "Alexander S.W. Parent (Steinhardt School of Culture, Education and Human DevelopmentFaculty of Information)",
+              },
+              {
+                title:
+                  "Drones for all: Creating an Authentic Programming Experience for Students with Visual Impairments",
+                author:
+                  "Yize Wei (National University of Singapore), Maëlle Dubucq (CNRS), Malsha Eliyadura Kalani de Zoysa (National University of Singapore), Christophe Jouffrais (CNRSCNRS), Suranga Nanayakkara (Department of Information Systems and Analytics, National University of Singapore), Wei Tsang Ooi (National University of Singapore)",
+              },
+              {
+                title:
+                  "How Proficiency and Feelings impact the Preference and Perception of Mobile Technology Support in Older Adults",
+                author:
+                  "Nina Sakhnini (University of Illinois at Chicago), Hasti Sharifi (University of Illinois at Chicago), Debaleena Chattopadhyay (University of Illinois at Chicago)",
+              },
+              {
+                title:
+                  "Establishing a Community-Driven Digital Library for the Visually Impaired",
+                author:
+                  "Tomoya Matsumura (Tsukuba University of TechnologyUniversity of Tsukuba), Ryo Iijima (University of Tsukuba), Takahiro Miura (National Institute of Advanced Industrial Science and Technology (AIST)), Masaki MATSUO (Tsukuba University of Technology), Yoichi Ochiai (University of Tsukuba)",
+              },
+              {
+                title:
+                  "Investigating the Efficacy of Conference Room Webcams for Remote Group Sign Language Interpretation Sessions",
+                author:
+                  "Roshan Mathew (Rochester Institute of Technology), Wendy Dannels (Rochester Institute of Technology)",
+              },
+              {
+                title:
+                  "Toward Closed-Domain Conversational Item Listing Assistant for Improvement of Experiences of Older Adults in Customer-to-Customer (C2C) Marketplaces",
+                author:
+                  "Subin Park (Kyung Hee University), Hyunggu Jung (Seoul National University), Bektur Ryskeldiev (Mercari R4D), Jihyun Lee (KyungHee University), Gwanhee Lee (University of Seoul), Hyeonhak Jeong (University of Seoul), Minki Chun (University of Seoul), Kentaro Teramoto (Mercari R4D)",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        startTime: "16:15",
+        endTime: "17:15",
+        title: "Papers",
+        dualTrack: false,
+        content: [
+          {
+            title: "Session 10: Representation and Evaluation",
+            items: [
+              {
+                title:
+                  '"I Try to Represent Myself as I Am": Self-Presentation Preferences of People with Invisible Disabilities through Embodied Social VR Avatars',
+                author:
+                  "Ria J. Gualano (Cornell University), Lucy Jiang (Cornell University), Kexin Zhang (University of Wisconsin-Madison), Tanisha Shende (Oberlin College), Andrea Stevenson Won (Cornell University), Shiri Azenkot (Cornell Tech)",
+              },
+              {
+                title:
+                  "Enabling Uniform Computer Interaction Experience for Blind Users through Large Language Models",
+                author:
+                  "Satwik Ram Kodandaram (Stony Brook University), Utku Uckun (Stony Brook University), Xiaojun Bi (Stony Brook University), IV Ramakrishnan (Stony Brook University), Vikas Ashok (Old Dominion University)",
+              },
+              {
+                title:
+                  "Development and Evaluation of the Mobile Tech Support Questionnaire for Older Adults (MTSQ)",
+                author:
+                  "Hasti Sharifi (University of Illinois at Chicago), Joseph E. Michaelis (University of Illinois at Chicago), Debaleena Chattopadhyay (University of Illinois at Chicago)",
+              },
+            ],
+          },
+        ],
+      },
+      {
+        startTime: "17:15",
+        endTime: "17:45",
+        title: "Closing Remarks, Awards, and ASSETS'25 Announcement",
         dualTrack: false,
         content: null,
       },
