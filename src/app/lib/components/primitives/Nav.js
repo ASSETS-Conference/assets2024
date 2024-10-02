@@ -9,7 +9,7 @@ import NavDropdown from "./NavDropdown";
 import Image from "@/app/lib/components/primitives/Image";
 import Link from "./Link";
 
-export default function Nav() {
+export default function Nav({noStickyMenu}) {
     const pathname = usePathname();
     const [backgroundVisible, setBackgroundVisible] = useState(false);
     const [mobileViewVisible, setMobileViewVisible] = useState(false);
@@ -109,7 +109,7 @@ export default function Nav() {
     return (
         <nav
             aria-description="Menu"
-            className={`min-w-full lg:px-6 lg:py-2 p-6 fixed top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
+            className={`min-w-full lg:px-6 lg:py-2 p-6 ${noStickyMenu ? 'absolute' : 'fixed'} top-0 z-[998] text-theme-off-white transition-all ease-in-out duration-300 ${
                 backgroundVisible || mobileViewVisible ? "bg-theme-dark" : ""
             } ${mobileViewVisible ? "h-screen overflow-y-scroll" : ""}`}
         >

@@ -29,7 +29,7 @@ function AcceptedPaper({ title, authors }) {
 
 export default function AcceptedPapers() {
   return (
-    <Subpage title={"Accepted Papers"} noTOC={true}>
+    <Subpage title={"Accepted Papers"} noTOC={true} altBg={true}>
       <Section title={"Accepted Papers"} spacing={"bottom-only"}>
         <p className="mb-6">
           {`We are pleased to share the titles and authors of accepted technical papers (in alphabetical order). More information regarding the program will be made available in September.`}

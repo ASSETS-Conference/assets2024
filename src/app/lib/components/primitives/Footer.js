@@ -15,14 +15,14 @@ export default function Footer() {
             <div className="mt-8 max-w-[100%] xl:max-w-[60%]">
               <p className="font-light">
                 Please contact the{" "}
-                <Link href="mailto:generalchair-assets24@acm.org">
+                <Link className={'text-theme-off-white'} href="mailto:generalchair-assets24@acm.org">
                   General Chair
                 </Link>{" "}
                 for more information about the conference.
               </p>
               <p className="mt-4">
                 Please contact the{" "}
-                <Link href="mailto:web-assets24@acm.org">
+                <Link className={'text-theme-off-white'} href="mailto:web-assets24@acm.org">
                   Web and Graphics Design Chairs
                 </Link>{" "}
                 for website feedback and/or feature requests.

@@ -1,8 +1,8 @@
 import Container from "@/app/lib/components/primitives/Container";
 import Section from "@/app/lib/components/primitives/Section";
 import Subpage from "@/app/lib/components/templates/Subpage";
-import { createMetadata } from "../lib/utils/createMetadata";
-import Link from "../lib/components/primitives/Link";
+import { createMetadata } from "@/app/lib/utils/createMetadata";
+import Link from "@/app/lib/components/primitives/Link";
 
 export const metadata = createMetadata({ title: "Code of Conduct" });
 
