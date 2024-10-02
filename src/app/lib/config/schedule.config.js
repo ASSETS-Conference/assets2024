@@ -127,7 +127,7 @@ const SCHEDULE = [
                 title:
                   "Informing Accessible Design of AI Literacy Apps through Practices of Blind Parents Reading with Sighted Children",
                 author:
-                  "Sabela Figueira (University of California, Irvine), Josahandi M Cisneros (University of California Irvine), Molly Leachman (University of California, Irvine), Elizabeth D Pena (University of California, Irvine), Stacy Branham (University of California, Irvine)",
+                  "Isabela Figueira (University of California, Irvine), Josahandi M Cisneros (University of California Irvine), Molly Leachman (University of California, Irvine), Elizabeth D Pena (University of California, Irvine), Stacy Branham (University of California, Irvine)",
               },
               {
                 title:
@@ -224,7 +224,7 @@ const SCHEDULE = [
                 title:
                   "Measuring the Accuracy of Automatic Speech Recognition Solutions",
                 author:
-                  "Korbinian Kuhn (Stuttgart Media University,), Verena Kersken (Stuttgart Media University,), Benedikt Reuter (Stuttgart Media University), Niklas Egger (Stuttgart Media University), Gottfried Zimmermann (Stuttgart Media University",
+                  "Korbinian Kuhn (Stuttgart Media University), Verena Kersken (Stuttgart Media University), Benedikt Reuter (Stuttgart Media University), Niklas Egger (Stuttgart Media University), Gottfried Zimmermann (Stuttgart Media University",
               },
               {
                 title:
@@ -618,12 +618,6 @@ const SCHEDULE = [
                       "Xinyun Cao (University of Michigan), Dhruv Jain (University of Michigan)",
                   },
                   {
-                    title:
-                      "TwIPS: A Large Language Model Powered Texting Application to Simplify Conversational Nuances for Autistic Users",
-                    author:
-                      "Rukhshan Haroon (Tufts University), Fahad Dogar (Tufts University)",
-                  },
-                  {
                     isSpecial: "Experience Report",
                     title:
                       '"Seven Stitches Later": A Technologically Interdependent Travel Experience From The Perspective Of A Visually Impaired Individual',
@@ -766,7 +760,7 @@ const SCHEDULE = [
               },
               {
                 title:
-                  '"Exploring the “Freedom to be Me" through Design Sprints with Neurodiverse Scholars',
+                  'Exploring the "Freedom to be Me" through Design Sprints with Neurodiverse Scholars',
                 author:
                   "LouAnne Boyd (Chapman University), Annuska Zolyomi (University of Washington), Saad Hassan (Tulane University), Seray B Ibrahim (King’s College London), Guande Wu (New York University), Kay Kender (TU Wien)",
               },
@@ -842,7 +836,7 @@ const SCHEDULE = [
                   {
                     title: "Audio Description Customization",
                     author:
-                      "Ruei-Che Chang (University of Michigan), Smitha Sheshadri (Singapore Management University), Anhong Guo (University of Michigan), Kotaro Hara (Singapore Management University)",
+                      "Rosiana Natalie (Singapore Management University), Ruei-Che Chang (University of Michigan), Smitha Sheshadri (Singapore Management University), Anhong Guo (University of Michigan), Kotaro Hara (Singapore Management University)",
                   },
                   {
                     title:
@@ -1027,7 +1021,7 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "I’m treating it kind of like a diary”: Characterizing How Users with Disabilities Use AI Chatbots",
+                  '"I’m treating it kind of like a diary": Characterizing How Users with Disabilities Use AI Chatbots',
                 author:
                   "Kayla Mullen (Wellesley College), Wenhan Xue (Wellesley College), Manasa Kudumu (Wellesley College)",
               },
@@ -1229,12 +1223,6 @@ const SCHEDULE = [
           {
             title: "Graduate Student Category",
             items: [
-              {
-                title:
-                  "Echolocation as an Accessible Navigation Tool in a Virtual 3D Environment",
-                author:
-                  "Mai Ricaplaza Thøgersen (Aarhus University), Rasmus Jens Frølich Kjeldsen (Aarhus University)",
-              },
               {
                 title: "Accessible Bus Stop Preview for Visually Impaired",
                 author: "Mahmut Erdemli (Carleton University)",
