@@ -101,12 +101,12 @@ const SCHEDULE = [
                 author:
                   "Khang Dang (New Jersey Institute of Technology), Sooyeon Lee (New Jersey Institute of Technology)",
               },
-              {
-                title:
-                  "Multi-Sensory Tactile Books for Supporting Literacy and Engaging Storytelling for Blind and Visually Impaired Children",
-                author:
-                  "Margaret Ellen Seehorn (Grinnell College), Nupur Gorkar (University of Washington), Emily White (University of Washington), Kate S Glazko (University of Washington), Jennifer Mankoff (University of Washington)",
-              },
+              // {
+              //   title:
+              //     "Multi-Sensory Tactile Books for Supporting Literacy and Engaging Storytelling for Blind and Visually Impaired Children",
+              //   author:
+              //     "Margaret Ellen Seehorn (Grinnell College), Nupur Gorkar (University of Washington), Emily White (University of Washington), Kate S Glazko (University of Washington), Jennifer Mankoff (University of Washington)",
+              // },
               {
                 title: "StereoMath: An Accessible and Musical Equation Editor",
                 author:
@@ -196,7 +196,7 @@ const SCHEDULE = [
       {
         startTime: "11:00",
         endTime: "12:30",
-        title: "Session 1: TACCESS Papers",
+        title: "TACCESS Papers",
         dualTrack: false,
         content: [
           {
@@ -271,7 +271,7 @@ const SCHEDULE = [
             title: "Dual Track Session",
             items: [
               {
-                room: "Session 2A: Creativity",
+                room: "Session 1A: Creativity",
                 content: [
                   {
                     title:
@@ -313,7 +313,7 @@ const SCHEDULE = [
                 ],
               },
               {
-                room: "Session 2B: Movement",
+                room: "Session 1B: Movement",
                 content: [
                   {
                     title:
@@ -365,13 +365,92 @@ const SCHEDULE = [
         dualTrack: false,
         content: [
           {
+            title: "Doctoral Consortium",
+            items: [
+              {
+                title:
+                  "Co-Imagining Privacy Futures With Blind People: The Case of Visual Assistance Technologies",
+                author: "Rahaf Alharbi (University of Michigan, USA)",
+              },
+              {
+                title:
+                  "Access and Intimacy: Co-Designing Assistive Technologies to Support Visually Impaired Parents in Co-Reading",
+                author:
+                  "Cameron Cassidy (University of California, Irvine, USA)",
+              },
+              {
+                title:
+                  "Accessible Tools for Digital Visual Artists with Upper Limb Motor Impairments",
+                author: "Rodolfo Cossovich (Carleton University, Canada)",
+              },
+              {
+                title: "Technology Supports for Adults with Down Syndrome",
+                author: "Hailey Johnson (University of Wisconsin-Madison, USA)",
+              },
+              {
+                title:
+                  "Co-Designing Inclusive eMaking Experiences with People with Intellectual Disabilities",
+                author: "Jacqueline Johnstone (Monash University, Australia)",
+              },
+              {
+                title:
+                  "Neuroqueer(ing) Public Space: A Community-led Approach to Designing Playful Urban Technologies with and for Neurodiversity",
+                author: "Patricia Piedade (University of Lisbon, Portugal)",
+              },
+              {
+                title:
+                  "Context-Driven Multimodal Tools for Engaging DHH Children at Home",
+                author: "James Spann (University of Rochester, USA)",
+              },
+              {
+                title:
+                  "SoftBox: Generating interactive mockups from software demonstrations to enable safe hands-on practice for older adult software learners",
+                author:
+                  "Teerapaun Tanprasert (University of British Columbia, Canada)",
+              },
+              {
+                title:
+                  "Enhancing Music Accessibility for and with d/Deaf individuals",
+                author: "Suhyeon Yoo (University of Toronto, Canada)",
+              },
+            ],
+          },
+          {
+            title: "Demos",
+            items: [
+              {
+                title:
+                  "Musical Performances in Virtual Reality with Spatial and View-Dependent Audio Descriptions for Blind and Low-Vision Users",
+                author:
+                  "Khang Dang (New Jersey Institute of Technology), Sooyeon Lee (New Jersey Institute of Technology)",
+              },
+              // {
+              //   title:
+              //     "Multi-Sensory Tactile Books for Supporting Literacy and Engaging Storytelling for Blind and Visually Impaired Children",
+              //   author:
+              //     "Margaret Ellen Seehorn (Grinnell College), Nupur Gorkar (University of Washington), Emily White (University of Washington), Kate S Glazko (University of Washington), Jennifer Mankoff (University of Washington)",
+              // },
+              {
+                title: "StereoMath: An Accessible and Musical Equation Editor",
+                author:
+                  "Kenneth Ge (Carnegie Mellon), JooYoung Seo (University of Illinois at Urbana-Champaign)",
+              },
+              {
+                title:
+                  "An AI Guide to Enhance Accessibility of Social Virtual Reality for Blind People",
+                author:
+                  "Jazmin Collins (Cornell University), Kaylah Myranda Nicholson (Cornell University), Yusuf Khadir (Cornell University), Andrea Stevenson Won (Cornell University), Shiri Azenkot (Cornell Tech)",
+              },
+            ],
+          },
+          {
             title: "Posters",
             items: [
               {
                 title:
                   "Informing Accessible Design of AI Literacy Apps through Practices of Blind Parents Reading with Sighted Children",
                 author:
-                  "sabela Figueira (University of California, Irvine), Josahandi M Cisneros (University of California Irvine), Molly Leachman (University of California, Irvine), Elizabeth D Pena (University of California, Irvine), Stacy Branham (University of California, Irvine)",
+                  "Isabela Figueira (University of California, Irvine), Josahandi M Cisneros (University of California Irvine), Molly Leachman (University of California, Irvine), Elizabeth D Pena (University of California, Irvine), Stacy Branham (University of California, Irvine)",
               },
               {
                 title:
@@ -447,7 +526,7 @@ const SCHEDULE = [
             title: "Dual Track Session",
             items: [
               {
-                room: "Session 3A: Sports, Play, and Interaction",
+                room: "Session 2A: Sports, Play, and Interaction",
                 content: [
                   {
                     title:
@@ -490,7 +569,7 @@ const SCHEDULE = [
                 ],
               },
               {
-                room: "Session 3B: Chatbots and Conversation",
+                room: "Session 2B: Chatbots and Conversation",
                 content: [
                   {
                     title:
@@ -556,7 +635,7 @@ const SCHEDULE = [
             title: "Dual Track Session",
             items: [
               {
-                room: "Session 4A: Learning, Literacy, and Community",
+                room: "Session 3A: Learning, Literacy, and Community",
                 content: [
                   {
                     title:
@@ -591,7 +670,7 @@ const SCHEDULE = [
                 ],
               },
               {
-                room: "Session 4B: Sounds Around Us",
+                room: "Session 3B: Sounds Around Us",
                 content: [
                   {
                     title:
@@ -750,7 +829,7 @@ const SCHEDULE = [
                 title:
                   "Predictive Anchoring: A Novel Interaction to Support Contextualized Suggestions for Grid Displays",
                 author:
-                  "Cynthia Zastudil (Temple University), Christine Holyfield (University of Arkansas), June A Smith (Berea College ), Hannah Vy Nguyen (Temple University), Stephen MacNeil (Temple University)",
+                  "Cynthia Zastudil (Temple University), Christine Holyfield (University of Arkansas), June A Smith (Berea College), Hannah Vy Nguyen (Temple University), Stephen MacNeil (Temple University)",
               },
               {
                 title:
@@ -813,7 +892,7 @@ const SCHEDULE = [
             title: "Dual Track Session",
             items: [
               {
-                room: "Session 5A: Web Accessibility",
+                room: "Session 4A: Web Accessibility",
                 content: [
                   {
                     title:
@@ -854,7 +933,7 @@ const SCHEDULE = [
                 ],
               },
               {
-                room: "Session 5B: Media and Devices",
+                room: "Session 4B: Media and Devices",
                 content: [
                   {
                     title:
@@ -918,7 +997,7 @@ const SCHEDULE = [
             title: "Dual Track Session",
             items: [
               {
-                room: "Session 6A: Theory, Laws, and Ethics",
+                room: "Session 5A: Theory, Laws, and Ethics",
                 content: [
                   {
                     title:
@@ -959,7 +1038,7 @@ const SCHEDULE = [
                 ],
               },
               {
-                room: "Session 6B: Visualizations and Virtual Reality",
+                room: "Session 5B: Visualizations and Virtual Reality",
                 content: [
                   {
                     title:
@@ -1124,7 +1203,7 @@ const SCHEDULE = [
                 title:
                   "Predictive Anchoring: A Novel Interaction to Support Contextualized Suggestions for Grid Displays",
                 author:
-                  "Cynthia Zastudil (Temple University), Christine Holyfield (University of Arkansas), June A Smith (Berea College ), Hannah Vy Nguyen (Temple University), Stephen MacNeil (Temple University)",
+                  "Cynthia Zastudil (Temple University), Christine Holyfield (University of Arkansas), June A Smith (Berea College), Hannah Vy Nguyen (Temple University), Stephen MacNeil (Temple University)",
               },
               {
                 title:
@@ -1200,7 +1279,7 @@ const SCHEDULE = [
       {
         startTime: "09:00",
         endTime: "10:00",
-        title: "Session 7: Student Research Competition",
+        title: "Student Research Competition",
         dualTrack: false,
         content: [
           {
@@ -1390,7 +1469,7 @@ const SCHEDULE = [
         dualTrack: false,
         content: [
           {
-            title: "Session 8: AI and Errors",
+            title: "Session 6: AI and Errors",
             items: [
               {
                 title:
@@ -1445,7 +1524,7 @@ const SCHEDULE = [
         dualTrack: false,
         content: [
           {
-            title: "Session 9: Creating and Consuming Content",
+            title: "Session 7: Creating and Consuming Content",
             items: [
               {
                 title:
@@ -1493,6 +1572,43 @@ const SCHEDULE = [
         title: "Posters",
         dualTrack: false,
         content: [
+          {
+            title: "Travel Awardees",
+            items: [
+              {
+                title:
+                  "Creative Computing for Low Vision and Blind Students Leveraging Large Language Models",
+                author: "Pearl Zhang (Kapor Center)",
+              },
+              {
+                title:
+                  "Refining User Experience: Defining Default Settings for Visual Impairment Smart Glasses",
+                author: "Martin Lettry (Università della Svizzera Italiana)",
+              },
+            ],
+          },
+          {
+            title: "Demos",
+            items: [
+              {
+                title:
+                  "Record, Transcribe, Share: An Accessible Open-Source Video Platform for Deaf and Hard of Hearing Viewers",
+                author:
+                  "Korbinian Kuhn (Stuttgart Media University), Benedikt Reuter (Stuttgart Media University), Niklas Egger (Hochschule der Medien), Gottfried Zimmermann (Stuttgart Media University)",
+              },
+              {
+                title:
+                  "Pose-aware Large Language Model Interface for Providing Feedback to Sign Language Learners",
+                author:
+                  "Vaclav Knapp (Smíchovská střední průmyslová škola a gymnázium), Matyas Bohacek (Stanford University)",
+              },
+              {
+                title:
+                  "Enhancing Accessibility in Collaborative Digital Whiteboards: A Demonstration of Innovative Features for Inclusive Real-Time Collaboration",
+                author: "Philip Strain (Miro), Stefano Baldan (Miro)",
+              },
+            ],
+          },
           {
             title: "Posters",
             items: [
@@ -1609,7 +1725,7 @@ const SCHEDULE = [
         dualTrack: false,
         content: [
           {
-            title: "Session 10: Representation and Evaluation",
+            title: "Session 8: Representation and Evaluation",
             items: [
               {
                 title:
