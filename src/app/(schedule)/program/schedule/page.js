@@ -7,6 +7,7 @@ import { SCHEDULE } from "@/app/lib/config/schedule.config";
 import { ScheduleGlance } from "@/app/lib/components/schedule/ScheduleGlance";
 import { GoArrowLeft } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
+import Alert from "@/app/lib/components/Alert";
 
 export const metadata = createMetadata({ title: "Program & Schedule" });
 
@@ -19,6 +20,11 @@ export default function SchedulePage() {
         altBg
         noTOC={true}
       >
+        <Alert
+          heading="All conference events will follow Newfoundland Time (UTC-2:30)"
+          type="notice"
+          className={"mb-12 -mt-4"}
+        />
         <Section spacing={"bottom-only"} title="ASSETS 2024 at a Glance">
           <div className="md:flex flex-col items-center overflow-y-auto">
             <ScheduleGlance />
