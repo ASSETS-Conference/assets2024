@@ -108,6 +108,12 @@ const SCHEDULE = [
               //     "Margaret Ellen Seehorn (Grinnell College), Nupur Gorkar (University of Washington), Emily White (University of Washington), Kate S Glazko (University of Washington), Jennifer Mankoff (University of Washington)",
               // },
               {
+                title:
+                  "Touchpad Mapper: Examining Information Consumption From 2D Digital Content Using Touchpads by Screen-Reader Users",
+                author:
+                  "Ather Sharif (University of Washington), Venkatesh Potluri (University of Washington), Jazz Rui Xia Ang (University of Washington), Jacob O. Wobbrock (University of Washington), Jennifer Mankoff (University of Washington)",
+              },
+              {
                 title: "StereoMath: An Accessible and Musical Equation Editor",
                 author:
                   "Kenneth Ge (Carnegie Mellon), JooYoung Seo (University of Illinois at Urbana-Champaign)",
@@ -430,6 +436,12 @@ const SCHEDULE = [
               //   author:
               //     "Margaret Ellen Seehorn (Grinnell College), Nupur Gorkar (University of Washington), Emily White (University of Washington), Kate S Glazko (University of Washington), Jennifer Mankoff (University of Washington)",
               // },
+              {
+                title:
+                  "Touchpad Mapper: Examining Information Consumption From 2D Digital Content Using Touchpads by Screen-Reader Users",
+                author:
+                  "Ather Sharif (University of Washington), Venkatesh Potluri (University of Washington), Jazz Rui Xia Ang (University of Washington), Jacob O. Wobbrock (University of Washington), Jennifer Mankoff (University of Washington)",
+              },
               {
                 title: "StereoMath: An Accessible and Musical Equation Editor",
                 author:
@@ -755,12 +767,6 @@ const SCHEDULE = [
                   "Towards an Editor for Feature-Rich Closed-Captioning Files",
                 author:
                   "Lloyd May (Stanford University), Alex Williams (Southern New Hampshire University), Saad Hassan (Tulane University), Mark Cartwright (New Jersey Institute of Technology), Sooyeon Lee (New Jersey Institute of Technology)",
-              },
-              {
-                title:
-                  "Touchpad Mapper: Examining Information Consumption From 2D Digital Content Using Touchpads by Screen-Reader Users",
-                author:
-                  "Ather Sharif (University of Washington), Venkatesh Potluri (University of Washington), Jazz Rui Xia Ang (University of Washington), Jacob O. Wobbrock (University of Washington), Jennifer Mankoff (University of Washington)",
               },
               {
                 title:
@@ -1129,12 +1135,6 @@ const SCHEDULE = [
                   "Towards an Editor for Feature-Rich Closed-Captioning Files",
                 author:
                   "Lloyd May (Stanford University), Alex Williams (Southern New Hampshire University), Saad Hassan (Tulane University), Mark Cartwright (New Jersey Institute of Technology), Sooyeon Lee (New Jersey Institute of Technology)",
-              },
-              {
-                title:
-                  "Touchpad Mapper: Examining Information Consumption From 2D Digital Content Using Touchpads by Screen-Reader Users",
-                author:
-                  "Ather Sharif (University of Washington), Venkatesh Potluri (University of Washington), Jazz Rui Xia Ang (University of Washington), Jacob O. Wobbrock (University of Washington), Jennifer Mankoff (University of Washington)",
               },
               {
                 title:
