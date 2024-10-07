@@ -367,7 +367,7 @@ const SCHEDULE = [
       {
         startTime: "15:30",
         endTime: "16:15",
-        title: "Posters + Coffee Break",
+        title: "Posters and Coffee Break",
         dualTrack: false,
         content: [
           {
@@ -1569,7 +1569,7 @@ const SCHEDULE = [
       {
         startTime: "15:30",
         endTime: "16:15",
-        title: "Posters",
+        title: "Posters and Coffee Break",
         dualTrack: false,
         content: [
           {
