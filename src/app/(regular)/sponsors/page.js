@@ -36,8 +36,11 @@ export default function TechnicalPapers() {
             }}
           />
         </div>
-        {/* <h2>Silver Level Sponsors</h2>
-      <h2>Bronze Level Sponsors</h2> */}
+        {/* <h2>Silver Level Sponsors</h2>*/}
+        <h2>Bronze Level Sponsors</h2>
+        <div className="my-8">
+          <p className="md:text-xl text-lg">{`Intuit`}</p>
+        </div>
         <h2>Sponsoring Organizations</h2>
         <div className="flex flex-col gap-8 mt-8 mb-8 md:flex-row">
           <Image
