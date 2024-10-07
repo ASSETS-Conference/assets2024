@@ -34,6 +34,7 @@ const MENU_DATA = [
         children: [
             { title: "Overview", href: "/attending/overview/" },
             { title: "Registration", href: "/attending/registration/" },
+            { title: "Workshop Registration", href: "/attending/registration/#workshop-registration" },
             { title: "Scholarships", href: "/attending/scholarships/" },
             {
                 title: "Student Volunteers",

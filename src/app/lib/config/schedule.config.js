@@ -108,6 +108,12 @@ const SCHEDULE = [
               //     "Margaret Ellen Seehorn (Grinnell College), Nupur Gorkar (University of Washington), Emily White (University of Washington), Kate S Glazko (University of Washington), Jennifer Mankoff (University of Washington)",
               // },
               {
+                title:
+                  "Touchpad Mapper: Examining Information Consumption From 2D Digital Content Using Touchpads by Screen-Reader Users",
+                author:
+                  "Ather Sharif (University of Washington), Venkatesh Potluri (University of Washington), Jazz Rui Xia Ang (University of Washington), Jacob O. Wobbrock (University of Washington), Jennifer Mankoff (University of Washington)",
+              },
+              {
                 title: "StereoMath: An Accessible and Musical Equation Editor",
                 author:
                   "Kenneth Ge (Carnegie Mellon), JooYoung Seo (University of Illinois at Urbana-Champaign)",
@@ -300,7 +306,7 @@ const SCHEDULE = [
                   },
                   {
                     title:
-                      "Towards Accessible Musical Performances in Virtual Reality: Designing a Conceptual Framework to Deliver Audio Descriptions",
+                      "Towards Accessible Musical Performances in Virtual Reality: Designing a Conceptual Framework for Omnidirectional Audio Descriptions",
                     author:
                       "Khang Dang (New Jersey Institute of Technology), Grace Burke (New Jersey Institute of Technology), Hamdi Korreshi (New Jersey Institute of Technology), Sooyeon Lee (New Jersey Institute of Technology)",
                   },
@@ -361,7 +367,7 @@ const SCHEDULE = [
       {
         startTime: "15:30",
         endTime: "16:15",
-        title: "Posters + Coffee Break",
+        title: "Posters and Coffee Break",
         dualTrack: false,
         content: [
           {
@@ -430,6 +436,12 @@ const SCHEDULE = [
               //   author:
               //     "Margaret Ellen Seehorn (Grinnell College), Nupur Gorkar (University of Washington), Emily White (University of Washington), Kate S Glazko (University of Washington), Jennifer Mankoff (University of Washington)",
               // },
+              {
+                title:
+                  "Touchpad Mapper: Examining Information Consumption From 2D Digital Content Using Touchpads by Screen-Reader Users",
+                author:
+                  "Ather Sharif (University of Washington), Venkatesh Potluri (University of Washington), Jazz Rui Xia Ang (University of Washington), Jacob O. Wobbrock (University of Washington), Jennifer Mankoff (University of Washington)",
+              },
               {
                 title: "StereoMath: An Accessible and Musical Equation Editor",
                 author:
@@ -758,12 +770,6 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "Touchpad Mapper: Examining Information Consumption From 2D Digital Content Using Touchpads by Screen-Reader Users",
-                author:
-                  "Ather Sharif (University of Washington), Venkatesh Potluri (University of Washington), Jazz Rui Xia Ang (University of Washington), Jacob O. Wobbrock (University of Washington), Jennifer Mankoff (University of Washington)",
-              },
-              {
-                title:
                   "Making 3D Printer Accessible for People with Visual Impairments by Reading Scrolling Text and Menus",
                 author:
                   "Naoto Tagawa (Osaka Metropolitan University), Masakazu Iwamura (Osaka Metropolitan University), Kazunori Minatani (National Center for University Entrance Examinations), Koichi Kise (Osaka Metropolitan University)",
@@ -965,7 +971,7 @@ const SCHEDULE = [
                     title:
                       '"I Wish You Could Make the Camera Stand Still": Envisioning Media Accessibility Interventions with People with Aphasia',
                     author:
-                      "Alexandre Nevsky (King's College London), Filip Bircanin (King's College London), Madeline N. Cruice (King's College London), Stephanie Wilson (King's College London), Elena Simperl (King's College London), Timothy Neate (King's College London)",
+                      "Alexandre Nevsky (King's College London), Filip Bircanin (King's College London), Madeline N. Cruice (University of London), Stephanie Wilson (University of London), Elena Simperl (King's College London), Timothy Neate (King's College London)",
                   },
                   {
                     isSpecial: "Experience Report",
@@ -1056,7 +1062,7 @@ const SCHEDULE = [
                     title:
                       "Understanding and Reducing the Challenges Faced by Creators of Accessible Online Data Visualizations",
                     author:
-                      "Jonggi Hong (Stevens Institute of Technology), Hernisa Kacorri (University of Maryland, College Park)",
+                      "Ather Sharif (University of Washington), Joo Gyeong Kim (University of Washington), Jessie Zijia Xu (University of Washington), Jacob O. Wobbrock (University of Washington)",
                   },
                   {
                     title:
@@ -1129,12 +1135,6 @@ const SCHEDULE = [
                   "Towards an Editor for Feature-Rich Closed-Captioning Files",
                 author:
                   "Lloyd May (Stanford University), Alex Williams (Southern New Hampshire University), Saad Hassan (Tulane University), Mark Cartwright (New Jersey Institute of Technology), Sooyeon Lee (New Jersey Institute of Technology)",
-              },
-              {
-                title:
-                  "Touchpad Mapper: Examining Information Consumption From 2D Digital Content Using Touchpads by Screen-Reader Users",
-                author:
-                  "Ather Sharif (University of Washington), Venkatesh Potluri (University of Washington), Jazz Rui Xia Ang (University of Washington), Jacob O. Wobbrock (University of Washington), Jennifer Mankoff (University of Washington)",
               },
               {
                 title:
@@ -1569,7 +1569,7 @@ const SCHEDULE = [
       {
         startTime: "15:30",
         endTime: "16:15",
-        title: "Posters",
+        title: "Posters and Coffee Break",
         dualTrack: false,
         content: [
           {
