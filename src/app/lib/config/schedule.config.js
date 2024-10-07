@@ -306,7 +306,7 @@ const SCHEDULE = [
                   },
                   {
                     title:
-                      "Towards Accessible Musical Performances in Virtual Reality: Designing a Conceptual Framework to Deliver Audio Descriptions",
+                      "Towards Accessible Musical Performances in Virtual Reality: Designing a Conceptual Framework for Omnidirectional Audio Descriptions",
                     author:
                       "Khang Dang (New Jersey Institute of Technology), Grace Burke (New Jersey Institute of Technology), Hamdi Korreshi (New Jersey Institute of Technology), Sooyeon Lee (New Jersey Institute of Technology)",
                   },
@@ -971,7 +971,7 @@ const SCHEDULE = [
                     title:
                       '"I Wish You Could Make the Camera Stand Still": Envisioning Media Accessibility Interventions with People with Aphasia',
                     author:
-                      "Alexandre Nevsky (King's College London), Filip Bircanin (King's College London), Madeline N. Cruice (King's College London), Stephanie Wilson (King's College London), Elena Simperl (King's College London), Timothy Neate (King's College London)",
+                      "Alexandre Nevsky (King's College London), Filip Bircanin (King's College London), Madeline N. Cruice (University of London), Stephanie Wilson (University of London), Elena Simperl (King's College London), Timothy Neate (King's College London)",
                   },
                   {
                     isSpecial: "Experience Report",
@@ -1062,7 +1062,7 @@ const SCHEDULE = [
                     title:
                       "Understanding and Reducing the Challenges Faced by Creators of Accessible Online Data Visualizations",
                     author:
-                      "Jonggi Hong (Stevens Institute of Technology), Hernisa Kacorri (University of Maryland, College Park)",
+                      "Ather Sharif (University of Washington), Joo Gyeong Kim (University of Washington), Jessie Zijia Xu (University of Washington), Jacob O. Wobbrock (University of Washington)",
                   },
                   {
                     title:
