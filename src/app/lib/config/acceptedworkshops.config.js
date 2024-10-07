@@ -67,7 +67,7 @@ export const ACCEPTED_WORKSHOPS = [
       "Celine Latulipe",
     ],
     website: "https://accessfintechworkshop.github.io",
-    deadline: "Friday, Sep 20, 2024 (11:59 PM AOE)",
+    deadline: "October 7th, 2024 (11:59PM AoE)",
     placeDetails:
       "Workshop Day 1: Monday, Oct 21, 60min+90min sync sessions; Workshop Day 2: Wednesday, Oct 23, 90min sync session; Workshop Day 3: Friday, Oct 25, 60min sync session",
     placeLink: null,
