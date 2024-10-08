@@ -179,7 +179,7 @@ const SCHEDULE_GLANCE = [
         {
             startTime: "16:00",
             endTime: "19:00",
-            title: "Registration (TBD)",
+            title: "Registration",
         },
         {
             startTime: "16:15",
