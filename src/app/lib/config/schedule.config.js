@@ -5,7 +5,7 @@ const SCHEDULE = [
       {
         startTime: "16:00",
         endTime: "19:00",
-        title: "Registration (TBD)",
+        title: "Registration",
         dualTrack: false,
         content: null,
       },
