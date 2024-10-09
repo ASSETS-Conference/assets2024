@@ -295,7 +295,7 @@ const SCHEDULE = [
       {
         startTime: "14:00",
         endTime: "15:30",
-        title: "Papers",
+        title: "Papers (Dual Track Session)",
         dualTrack: true,
         content: [
           {
@@ -581,7 +581,7 @@ const SCHEDULE = [
       {
         startTime: "16:15",
         endTime: "17:45",
-        title: "Papers",
+        title: "Papers (Dual Track Session)",
         dualTrack: true,
         content: [
           {
@@ -690,7 +690,7 @@ const SCHEDULE = [
       {
         startTime: "09:00",
         endTime: "10:15",
-        title: "Papers",
+        title: "Papers (Dual Track Session)",
         dualTrack: true,
         content: [
           {
@@ -954,7 +954,7 @@ const SCHEDULE = [
       {
         startTime: "11:00",
         endTime: "12:30",
-        title: "Papers",
+        title: "Papers (Dual Track Session)",
         dualTrack: true,
         content: [
           {
@@ -1059,7 +1059,7 @@ const SCHEDULE = [
       {
         startTime: "14:00",
         endTime: "15:30",
-        title: "Papers",
+        title: "Papers (Dual Track Session)",
         dualTrack: true,
         content: [
           {
