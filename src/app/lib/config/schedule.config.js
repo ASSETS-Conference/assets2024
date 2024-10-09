@@ -39,7 +39,7 @@ const SCHEDULE = [
         startTime: "10:15",
         endTime: "11:00",
         title: "Posters/Demos and Coffee Break",
-        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
+        note: "The ID Number listed next to each Demo and Poster entry below is to be used to vote for Best Poster and Demo during the conference.",
         dualTrack: false,
         content: [
           {
@@ -295,7 +295,7 @@ const SCHEDULE = [
       {
         startTime: "14:00",
         endTime: "15:30",
-        title: "Papers",
+        title: "Papers (Dual Track Session)",
         dualTrack: true,
         content: [
           {
@@ -393,7 +393,7 @@ const SCHEDULE = [
         startTime: "15:30",
         endTime: "16:15",
         title: "Posters and Coffee Break",
-        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
+        note: "The ID Number listed next to each Demo and Poster entry below is to be used to vote for Best Poster and Demo during the conference.",
         dualTrack: false,
         content: [
           {
@@ -581,7 +581,7 @@ const SCHEDULE = [
       {
         startTime: "16:15",
         endTime: "17:45",
-        title: "Papers",
+        title: "Papers (Dual Track Session)",
         dualTrack: true,
         content: [
           {
@@ -690,7 +690,7 @@ const SCHEDULE = [
       {
         startTime: "09:00",
         endTime: "10:15",
-        title: "Papers",
+        title: "Papers (Dual Track Session)",
         dualTrack: true,
         content: [
           {
@@ -775,7 +775,7 @@ const SCHEDULE = [
         startTime: "10:15",
         endTime: "11:00",
         title: "Posters/Demos and Coffee Break",
-        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
+        note: "The ID Number listed next to each Demo and Poster entry below is to be used to vote for Best Poster and Demo during the conference.",
         dualTrack: false,
         content: [
           {
@@ -954,7 +954,7 @@ const SCHEDULE = [
       {
         startTime: "11:00",
         endTime: "12:30",
-        title: "Papers",
+        title: "Papers (Dual Track Session)",
         dualTrack: true,
         content: [
           {
@@ -1059,7 +1059,7 @@ const SCHEDULE = [
       {
         startTime: "14:00",
         endTime: "15:30",
-        title: "Papers",
+        title: "Papers (Dual Track Session)",
         dualTrack: true,
         content: [
           {
@@ -1156,7 +1156,7 @@ const SCHEDULE = [
         startTime: "15:30",
         endTime: "16:15",
         title: "Posters/Demos and Coffee Break",
-        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
+        note: "The ID Number listed next to each Demo and Poster entry below is to be used to vote for Best Poster and Demo during the conference.",
         dualTrack: false,
         content: [
           {
@@ -1390,7 +1390,7 @@ const SCHEDULE = [
         startTime: "10:00",
         endTime: "10:45",
         title: "Posters/Demos and Coffee Break",
-        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
+        note: "The ID Number listed next to each Demo and Poster entry below is to be used to vote for Best Poster and Demo during the conference.",
         dualTrack: false,
         content: [
           {
@@ -1629,7 +1629,7 @@ const SCHEDULE = [
         startTime: "15:30",
         endTime: "16:15",
         title: "Posters and Coffee Break",
-        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
+        note: "The ID Number listed next to each Demo and Poster entry below is to be used to vote for Best Poster and Demo during the conference.",
         dualTrack: false,
         content: [
           {

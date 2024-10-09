@@ -172,7 +172,7 @@ const SCHEDULE_GLANCE = [
         {
             startTime: "15:30",
             endTime: "16:15",
-            title: "Posters (same as morning session)",
+            title: "Posters + Coffee Break (same as morning session)",
         },
     ],
     [

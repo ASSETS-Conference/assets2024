@@ -15,7 +15,10 @@ const MultiEvent = ({ content }) => {
         >
           {content.isNumbered ? (
             // In this case, we have a list in-which the elements are numbered (voting IDs for example)
-            <ol className="mb-4 list-decimal marker:md:text-base marker:text-xs" start={content.startsFrom ?? 0}>
+            <ol
+              className="mb-4 list-decimal marker:md:text-base marker:text-xs"
+              start={content.startsFrom ?? 0}
+            >
               {content.items.map((item, key) => (
                 <ListItem item={item} key={key} />
               ))}
@@ -23,7 +26,7 @@ const MultiEvent = ({ content }) => {
           ) : (
             <ul className="mb-4">
               {content.items.map((item, key) => (
-                <ListItem item={item} key={key} />
+                <ListItem item={item} key={`me-li-${key}`} />
               ))}
             </ul>
           )}
@@ -33,9 +36,9 @@ const MultiEvent = ({ content }) => {
   );
 };
 
-const ListItem = ({ item, key }) => {
+const ListItem = ({ item }) => {
   return (
-    <li key={`me-li-${key}`}>
+    <li>
       <p className="text-xs md:text-base font-semibold p-0 -mb-2">
         {item.title}
       </p>
