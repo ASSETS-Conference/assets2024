@@ -14,6 +14,7 @@ export const ScheduleSection = ({ day, background }) => {
               background={`${background}`}
               key={"se-" + i}
               title={event.title}
+              note={event.note ?? null}
               link={event.link ?? null}
               startTime={event.startTime}
               endTime={event.endTime}

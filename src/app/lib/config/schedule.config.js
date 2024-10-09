@@ -5,7 +5,7 @@ const SCHEDULE = [
       {
         startTime: "16:00",
         endTime: "19:00",
-        title: "Registration (TBD)",
+        title: "Registration",
         dualTrack: false,
         content: null,
       },
@@ -39,10 +39,13 @@ const SCHEDULE = [
         startTime: "10:15",
         endTime: "11:00",
         title: "Posters/Demos and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {
             title: "Doctoral Consortium",
+            isNumbered: true,
+            startsFrom: 1,
             items: [
               {
                 title:
@@ -94,6 +97,8 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true, 
+            startsFrom: 10,
             items: [
               {
                 title:
@@ -124,10 +129,24 @@ const SCHEDULE = [
                 author:
                   "Jazmin Collins (Cornell University), Kaylah Myranda Nicholson (Cornell University), Yusuf Khadir (Cornell University), Andrea Stevenson Won (Cornell University), Shiri Azenkot (Cornell Tech)",
               },
+              {
+                title:
+                  "Record, Transcribe, Share: An Accessible Open-Source Video Platform for Deaf and Hard of Hearing Viewers",
+                author:
+                  "Korbinian Kuhn (Stuttgart Media University), Benedikt Reuter (Stuttgart Media University), Niklas Egger (Hochschule der Medien), Gottfried Zimmermann (Stuttgart Media University)",
+              },
+              {
+                title:
+                  "Pose-aware Large Language Model Interface for Providing Feedback to Sign Language Learners",
+                author:
+                  "Vaclav Knapp (Smíchovská střední průmyslová škola a gymnázium), Matyas Bohacek (Stanford University)",
+              },
             ],
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 16,
             items: [
               {
                 title:
@@ -173,27 +192,33 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "ZINinNGT: A Mobile Tool to Support Hearing Parents in Learning Sign Language of the Netherlands",
+                  "How Proficiency and Feelings impact the Preference and Perception of Mobile Technology Support in Older Adults",
                 author:
-                  "Jos Ritmeester (University of Amsterdam), Beyza Sumer (University of Amsterdam), Marije Boonstra (Royal Auris Group), Maartje De Meulder (HU - University of Applied Sciences), Belinda van der Aa (Royal Auris Group), Floris Roelofsen (University of Amsterdam)",
+                  "Nina Sakhnini (University of Illinois at Chicago), Hasti Sharifi (University of Illinois at Chicago), Debaleena Chattopadhyay (University of Illinois at Chicago)",
               },
               {
                 title:
-                  "Experiencing Deaf Tech: A Deep Dive into the Concept of DeafWatch",
+                  "Establishing a Community-Driven Digital Library for the Visually Impaired",
                 author:
-                  "Robin Angelini (TU Wien), Katta Spiel (TU Wien), Maartje De Meulder (HU - University of Applied Sciences)",
+                  "Tomoya Matsumura (Tsukuba University of TechnologyUniversity of Tsukuba), Ryo Iijima (University of Tsukuba), Takahiro Miura (National Institute of Advanced Industrial Science and Technology (AIST)), Masaki MATSUO (Tsukuba University of Technology), Yoichi Ochiai (University of Tsukuba)",
               },
               {
                 title:
-                  "Designing HMI for BVI Users in Fully Automated Vehicles: A Participatory and In-the-field Approach",
+                  "Investigating the Efficacy of Conference Room Webcams for Remote Group Sign Language Interpretation Sessions",
                 author:
-                  "Zhengtao Ma (Queensland University of Technology), Ronald Schroeter (Queensland University of Technology (QUT)), Rafael Gomez (Queensland University of Technology)",
+                  "Roshan Mathew (Rochester Institute of Technology), Wendy Dannels (Rochester Institute of Technology)",
               },
               {
                 title:
-                  "Exploring Conversations between a Practitioner and a Person with Dementia",
+                  "Toward Closed-Domain Conversational Item Listing Assistant for Improvement of Experiences of Older Adults in Customer-to-Customer (C2C) Marketplaces",
                 author:
-                  "Kotaro Hara (Singapore Management University), Rosiana Natalie (Singapore Management University), Wei Soon Cheong (Singapore Management University), Jingjing Gu (Singapore Management University), Qianli Xu (Institute for Infocomm Research, ASTAR)",
+                  "Subin Park (Kyung Hee University), Hyunggu Jung (Seoul National University), Bektur Ryskeldiev (Mercari R4D), Jihyun Lee (KyungHee University), Gwanhee Lee (University of Seoul), Hyeonhak Jeong (University of Seoul), Minki Chun (University of Seoul), Kentaro Teramoto (Mercari R4D)",
+              },
+              {
+                title:
+                  "Designing a Safe Auditory-Cued Archery Exertion Game for the Visually Impaired and Sighted to Enjoy Together",
+                author:
+                  "Shan Luo (China Academy of Art), Jianan Johanna Liu (China Academy of Art), Botao Amber Hu (Reality Design Lab)",
               },
             ],
           },
@@ -368,10 +393,13 @@ const SCHEDULE = [
         startTime: "15:30",
         endTime: "16:15",
         title: "Posters and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {
             title: "Doctoral Consortium",
+            isNumbered: true,
+            startsFrom: 1,
             items: [
               {
                 title:
@@ -423,6 +451,8 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true,
+            startsFrom: 10,
             items: [
               {
                 title:
@@ -453,10 +483,24 @@ const SCHEDULE = [
                 author:
                   "Jazmin Collins (Cornell University), Kaylah Myranda Nicholson (Cornell University), Yusuf Khadir (Cornell University), Andrea Stevenson Won (Cornell University), Shiri Azenkot (Cornell Tech)",
               },
+              {
+                title:
+                  "Record, Transcribe, Share: An Accessible Open-Source Video Platform for Deaf and Hard of Hearing Viewers",
+                author:
+                  "Korbinian Kuhn (Stuttgart Media University), Benedikt Reuter (Stuttgart Media University), Niklas Egger (Hochschule der Medien), Gottfried Zimmermann (Stuttgart Media University)",
+              },
+              {
+                title:
+                  "Pose-aware Large Language Model Interface for Providing Feedback to Sign Language Learners",
+                author:
+                  "Vaclav Knapp (Smíchovská střední průmyslová škola a gymnázium), Matyas Bohacek (Stanford University)",
+              },
             ],
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 16,
             items: [
               {
                 title:
@@ -502,27 +546,33 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "ZINinNGT: A Mobile Tool to Support Hearing Parents in Learning Sign Language of the Netherlands",
+                  "How Proficiency and Feelings impact the Preference and Perception of Mobile Technology Support in Older Adults",
                 author:
-                  "Jos Ritmeester (University of Amsterdam), Beyza Sumer (University of Amsterdam), Marije Boonstra (Royal Auris Group), Maartje De Meulder (HU - University of Applied Sciences), Belinda van der Aa (Royal Auris Group), Floris Roelofsen (University of Amsterdam)",
+                  "Nina Sakhnini (University of Illinois at Chicago), Hasti Sharifi (University of Illinois at Chicago), Debaleena Chattopadhyay (University of Illinois at Chicago)",
               },
               {
                 title:
-                  "Experiencing Deaf Tech: A Deep Dive into the Concept of DeafWatch",
+                  "Establishing a Community-Driven Digital Library for the Visually Impaired",
                 author:
-                  "Robin Angelini (TU Wien), Katta Spiel (TU Wien), Maartje De Meulder (HU - University of Applied Sciences)",
+                  "Tomoya Matsumura (Tsukuba University of TechnologyUniversity of Tsukuba), Ryo Iijima (University of Tsukuba), Takahiro Miura (National Institute of Advanced Industrial Science and Technology (AIST)), Masaki MATSUO (Tsukuba University of Technology), Yoichi Ochiai (University of Tsukuba)",
               },
               {
                 title:
-                  "Designing HMI for BVI Users in Fully Automated Vehicles: A Participatory and In-the-field Approach",
+                  "Investigating the Efficacy of Conference Room Webcams for Remote Group Sign Language Interpretation Sessions",
                 author:
-                  "Zhengtao Ma (Queensland University of Technology), Ronald Schroeter (Queensland University of Technology (QUT)), Rafael Gomez (Queensland University of Technology)",
+                  "Roshan Mathew (Rochester Institute of Technology), Wendy Dannels (Rochester Institute of Technology)",
               },
               {
                 title:
-                  "Exploring Conversations between a Practitioner and a Person with Dementia",
+                  "Toward Closed-Domain Conversational Item Listing Assistant for Improvement of Experiences of Older Adults in Customer-to-Customer (C2C) Marketplaces",
                 author:
-                  "Kotaro Hara (Singapore Management University), Rosiana Natalie (Singapore Management University), Wei Soon Cheong (Singapore Management University), Jingjing Gu (Singapore Management University), Qianli Xu (Institute for Infocomm Research, ASTAR)",
+                  "Subin Park (Kyung Hee University), Hyunggu Jung (Seoul National University), Bektur Ryskeldiev (Mercari R4D), Jihyun Lee (KyungHee University), Gwanhee Lee (University of Seoul), Hyeonhak Jeong (University of Seoul), Minki Chun (University of Seoul), Kentaro Teramoto (Mercari R4D)",
+              },
+              {
+                title:
+                  "Designing a Safe Auditory-Cued Archery Exertion Game for the Visually Impaired and Sighted to Enjoy Together",
+                author:
+                  "Shan Luo (China Academy of Art), Jianan Johanna Liu (China Academy of Art), Botao Amber Hu (Reality Design Lab)",
               },
             ],
           },
@@ -725,10 +775,13 @@ const SCHEDULE = [
         startTime: "10:15",
         endTime: "11:00",
         title: "Posters/Demos and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {
             title: "Student Research Competition",
+            isNumbered: true,
+            startsFrom: 28,
             items: [
               {
                 title:
@@ -750,17 +803,14 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true,
+            startsFrom: 31,
             items: [
               {
                 title:
                   "Demonstration of CameraMouseAI: A Head-Based Mouse-Control System for People with Severe Motor Disabilities",
                 author:
                   "Farid Karimli (Boston University), Hao Yu (Boston University), Srishti Jain (Boston University), Emmanuel Sarpong Akosah (Boston University), Margrit Betke (Boston University), Wenxin Feng (Google)",
-              },
-              {
-                title: "Screen Reading Enabled by Large Language Models",
-                author:
-                  "Anujay Ghosh (Stony Brook University), Monalika Padma Reddy (Stony Brook University), Satwik Ram Kodandaram (Stony Brook University), Utku Uckun (Stony Brook University), Vikas Ashok (Old Dominion University), Xiaojun Bi (Stony Brook University), IV Ramakrishnan (Stony Brook University)",
               },
               {
                 title:
@@ -780,10 +830,17 @@ const SCHEDULE = [
                 author:
                   "Xinyun Cao (University of Michigan), Dhruv Jain (University of Michigan)",
               },
+              {
+                title:
+                  "Enhancing Accessibility in Collaborative Digital Whiteboards: A Demonstration of Innovative Features for Inclusive Real-Time Collaboration",
+                author: "Philip Strain (Miro), Stefano Baldan (Miro)",
+              },
             ],
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 36,
             items: [
               {
                 title:
@@ -839,12 +896,6 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "Exploring the use of Generative AI to Support Automated Just-in-Time Programming for Visual Scene Displays",
-                author:
-                  "Cynthia Zastudil (Temple University), Christine Holyfield (University of Arkansas), Christine Kapp (Temple University), Xandria Crosland (Western Governors University), Elizabeth R. Lorah (University of Arkansas), Tara Zimmerman (University of Arkansas), Stephen MacNeil (Temple University)",
-              },
-              {
-                title:
                   'Exploring the "Freedom to be Me" through Design Sprints with Neurodiverse Scholars',
                 author:
                   "LouAnne Boyd (Chapman University), Annuska Zolyomi (University of Washington), Saad Hassan (Tulane University), Seray B Ibrahim (King’s College London), Guande Wu (New York University), Kay Kender (TU Wien)",
@@ -874,15 +925,27 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "Self-supervised learning using unlabeled speech with multiple types of speech disorder for disordered speech recognition",
+                  "ZINinNGT: A Mobile Tool to Support Hearing Parents in Learning Sign Language of the Netherlands",
                 author:
-                  "Ryoichi Takashima (Graduate School of System Informatics), Takeru Otani (Faculty of Engineering), Ryo Aihara (Information Technology R&D Center), Tetsuya Takiguchi (Kobe University), Shinya Taguchi (Information Technology R&D Center)",
+                  "Jos Ritmeester (University of Amsterdam), Beyza Sumer (University of Amsterdam), Marije Boonstra (Royal Auris Group), Maartje De Meulder (HU - University of Applied Sciences), Belinda van der Aa (Royal Auris Group), Floris Roelofsen (University of Amsterdam)",
               },
               {
                 title:
-                  "Designing a Safe Auditory-Cued Archery Exertion Game for the Visually Impaired and Sighted to Enjoy Together",
+                  "Experiencing Deaf Tech: A Deep Dive into the Concept of DeafWatch",
                 author:
-                  "Shan Luo (China Academy of Art), Jianan Johanna Liu (China Academy of Art), Botao Amber Hu (Reality Design Lab)",
+                  "Robin Angelini (TU Wien), Katta Spiel (TU Wien), Maartje De Meulder (HU - University of Applied Sciences)",
+              },
+              {
+                title:
+                  "Designing HMI for BVI Users in Fully Automated Vehicles: A Participatory and In-the-field Approach",
+                author:
+                  "Zhengtao Ma (Queensland University of Technology), Ronald Schroeter (Queensland University of Technology (QUT)), Rafael Gomez (Queensland University of Technology)",
+              },
+              {
+                title:
+                  "Exploring Conversations between a Practitioner and a Person with Dementia",
+                author:
+                  "Kotaro Hara (Singapore Management University), Rosiana Natalie (Singapore Management University), Wei Soon Cheong (Singapore Management University), Jingjing Gu (Singapore Management University), Qianli Xu (Institute for Infocomm Research, ASTAR)",
               },
             ],
           },
@@ -1093,10 +1156,13 @@ const SCHEDULE = [
         startTime: "15:30",
         endTime: "16:15",
         title: "Posters/Demos and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {
             title: "Student Research Competition",
+            isNumbered: true,
+            startsFrom: 28,
             items: [
               {
                 title:
@@ -1118,17 +1184,14 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true,
+            startsFrom: 31,
             items: [
               {
                 title:
                   "Demonstration of CameraMouseAI: A Head-Based Mouse-Control System for People with Severe Motor Disabilities",
                 author:
                   "Farid Karimli (Boston University), Hao Yu (Boston University), Srishti Jain (Boston University), Emmanuel Sarpong Akosah (Boston University), Margrit Betke (Boston University), Wenxin Feng (Google)",
-              },
-              {
-                title: "Screen Reading Enabled by Large Language Models",
-                author:
-                  "Anujay Ghosh (Stony Brook University), Monalika Padma Reddy (Stony Brook University), Satwik Ram Kodandaram (Stony Brook University), Utku Uckun (Stony Brook University), Vikas Ashok (Old Dominion University), Xiaojun Bi (Stony Brook University), IV Ramakrishnan (Stony Brook University)",
               },
               {
                 title:
@@ -1148,10 +1211,17 @@ const SCHEDULE = [
                 author:
                   "Xinyun Cao (University of Michigan), Dhruv Jain (University of Michigan)",
               },
+              {
+                title:
+                  "Enhancing Accessibility in Collaborative Digital Whiteboards: A Demonstration of Innovative Features for Inclusive Real-Time Collaboration",
+                author: "Philip Strain (Miro), Stefano Baldan (Miro)",
+              },
             ],
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 36,
             items: [
               {
                 title:
@@ -1207,13 +1277,7 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "Exploring the use of Generative AI to Support Automated Just-in-Time Programming for Visual Scene Displays",
-                author:
-                  "Cynthia Zastudil (Temple University), Christine Holyfield (University of Arkansas), Christine Kapp (Temple University), Xandria Crosland (Western Governors University), Elizabeth R. Lorah (University of Arkansas), Tara Zimmerman (University of Arkansas), Stephen MacNeil (Temple University)",
-              },
-              {
-                title:
-                  '"Exploring the “Freedom to be Me" through Design Sprints with Neurodiverse Scholars',
+                  'Exploring the “Freedom to be Me" through Design Sprints with Neurodiverse Scholars',
                 author:
                   "LouAnne Boyd (Chapman University), Annuska Zolyomi (University of Washington), Saad Hassan (Tulane University), Seray B Ibrahim (King’s College London), Guande Wu (New York University), Kay Kender (TU Wien)",
               },
@@ -1242,15 +1306,27 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "Self-supervised learning using unlabeled speech with multiple types of speech disorder for disordered speech recognition",
+                  "ZINinNGT: A Mobile Tool to Support Hearing Parents in Learning Sign Language of the Netherlands",
                 author:
-                  "Ryoichi Takashima (Graduate School of System Informatics), Takeru Otani (Faculty of Engineering), Ryo Aihara (Information Technology R&D Center), Tetsuya Takiguchi (Kobe University), Shinya Taguchi (Information Technology R&D Center)",
+                  "Jos Ritmeester (University of Amsterdam), Beyza Sumer (University of Amsterdam), Marije Boonstra (Royal Auris Group), Maartje De Meulder (HU - University of Applied Sciences), Belinda van der Aa (Royal Auris Group), Floris Roelofsen (University of Amsterdam)",
               },
               {
                 title:
-                  "Designing a Safe Auditory-Cued Archery Exertion Game for the Visually Impaired and Sighted to Enjoy Together",
+                  "Experiencing Deaf Tech: A Deep Dive into the Concept of DeafWatch",
                 author:
-                  "Shan Luo (China Academy of Art), Jianan Johanna Liu (China Academy of Art), Botao Amber Hu (Reality Design Lab)",
+                  "Robin Angelini (TU Wien), Katta Spiel (TU Wien), Maartje De Meulder (HU - University of Applied Sciences)",
+              },
+              {
+                title:
+                  "Designing HMI for BVI Users in Fully Automated Vehicles: A Participatory and In-the-field Approach",
+                author:
+                  "Zhengtao Ma (Queensland University of Technology), Ronald Schroeter (Queensland University of Technology (QUT)), Rafael Gomez (Queensland University of Technology)",
+              },
+              {
+                title:
+                  "Exploring Conversations between a Practitioner and a Person with Dementia",
+                author:
+                  "Kotaro Hara (Singapore Management University), Rosiana Natalie (Singapore Management University), Wei Soon Cheong (Singapore Management University), Jingjing Gu (Singapore Management University), Qianli Xu (Institute for Infocomm Research, ASTAR)",
               },
             ],
           },
@@ -1314,10 +1390,13 @@ const SCHEDULE = [
         startTime: "10:00",
         endTime: "10:45",
         title: "Posters/Demos and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {
             title: "Travel Awardees",
+            isNumbered: true,
+            startsFrom: 54,
             items: [
               {
                 title:
@@ -1333,28 +1412,20 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true,
+            startsFrom: 56,
             items: [
               {
-                title:
-                  "Record, Transcribe, Share: An Accessible Open-Source Video Platform for Deaf and Hard of Hearing Viewers",
+                title: "Screen Reading Enabled by Large Language Models",
                 author:
-                  "Korbinian Kuhn (Stuttgart Media University), Benedikt Reuter (Stuttgart Media University), Niklas Egger (Hochschule der Medien), Gottfried Zimmermann (Stuttgart Media University)",
-              },
-              {
-                title:
-                  "Pose-aware Large Language Model Interface for Providing Feedback to Sign Language Learners",
-                author:
-                  "Vaclav Knapp (Smíchovská střední průmyslová škola a gymnázium), Matyas Bohacek (Stanford University)",
-              },
-              {
-                title:
-                  "Enhancing Accessibility in Collaborative Digital Whiteboards: A Demonstration of Innovative Features for Inclusive Real-Time Collaboration",
-                author: "Philip Strain (Miro), Stefano Baldan (Miro)",
+                  "Anujay Ghosh (Stony Brook University), Monalika Padma Reddy (Stony Brook University), Satwik Ram Kodandaram (Stony Brook University), Utku Uckun (Stony Brook University), Vikas Ashok (Old Dominion University), Xiaojun Bi (Stony Brook University), IV Ramakrishnan (Stony Brook University)",
               },
             ],
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 57,
             items: [
               {
                 title:
@@ -1436,27 +1507,15 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "How Proficiency and Feelings impact the Preference and Perception of Mobile Technology Support in Older Adults",
+                  "Exploring the use of Generative AI to Support Automated Just-in-Time Programming for Visual Scene Displays",
                 author:
-                  "Nina Sakhnini (University of Illinois at Chicago), Hasti Sharifi (University of Illinois at Chicago), Debaleena Chattopadhyay (University of Illinois at Chicago)",
+                  "Cynthia Zastudil (Temple University), Christine Holyfield (University of Arkansas), Christine Kapp (Temple University), Xandria Crosland (Western Governors University), Elizabeth R. Lorah (University of Arkansas), Tara Zimmerman (University of Arkansas), Stephen MacNeil (Temple University)",
               },
               {
                 title:
-                  "Establishing a Community-Driven Digital Library for the Visually Impaired",
+                  "Self-supervised learning using unlabeled speech with multiple types of speech disorder for disordered speech recognition",
                 author:
-                  "Tomoya Matsumura (Tsukuba University of TechnologyUniversity of Tsukuba), Ryo Iijima (University of Tsukuba), Takahiro Miura (National Institute of Advanced Industrial Science and Technology (AIST)), Masaki MATSUO (Tsukuba University of Technology), Yoichi Ochiai (University of Tsukuba)",
-              },
-              {
-                title:
-                  "Investigating the Efficacy of Conference Room Webcams for Remote Group Sign Language Interpretation Sessions",
-                author:
-                  "Roshan Mathew (Rochester Institute of Technology), Wendy Dannels (Rochester Institute of Technology)",
-              },
-              {
-                title:
-                  "Toward Closed-Domain Conversational Item Listing Assistant for Improvement of Experiences of Older Adults in Customer-to-Customer (C2C) Marketplaces",
-                author:
-                  "Subin Park (Kyung Hee University), Hyunggu Jung (Seoul National University), Bektur Ryskeldiev (Mercari R4D), Jihyun Lee (KyungHee University), Gwanhee Lee (University of Seoul), Hyeonhak Jeong (University of Seoul), Minki Chun (University of Seoul), Kentaro Teramoto (Mercari R4D)",
+                  "Ryoichi Takashima (Graduate School of System Informatics), Takeru Otani (Faculty of Engineering), Ryo Aihara (Information Technology R&D Center), Tetsuya Takiguchi (Kobe University), Shinya Taguchi (Information Technology R&D Center)",
               },
             ],
           },
@@ -1570,10 +1629,13 @@ const SCHEDULE = [
         startTime: "15:30",
         endTime: "16:15",
         title: "Posters and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule is to be used to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {
             title: "Travel Awardees",
+            isNumbered: true,
+            startsFrom: 54,
             items: [
               {
                 title:
@@ -1589,28 +1651,20 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true,
+            startsFrom: 56,
             items: [
               {
-                title:
-                  "Record, Transcribe, Share: An Accessible Open-Source Video Platform for Deaf and Hard of Hearing Viewers",
+                title: "Screen Reading Enabled by Large Language Models",
                 author:
-                  "Korbinian Kuhn (Stuttgart Media University), Benedikt Reuter (Stuttgart Media University), Niklas Egger (Hochschule der Medien), Gottfried Zimmermann (Stuttgart Media University)",
-              },
-              {
-                title:
-                  "Pose-aware Large Language Model Interface for Providing Feedback to Sign Language Learners",
-                author:
-                  "Vaclav Knapp (Smíchovská střední průmyslová škola a gymnázium), Matyas Bohacek (Stanford University)",
-              },
-              {
-                title:
-                  "Enhancing Accessibility in Collaborative Digital Whiteboards: A Demonstration of Innovative Features for Inclusive Real-Time Collaboration",
-                author: "Philip Strain (Miro), Stefano Baldan (Miro)",
+                  "Anujay Ghosh (Stony Brook University), Monalika Padma Reddy (Stony Brook University), Satwik Ram Kodandaram (Stony Brook University), Utku Uckun (Stony Brook University), Vikas Ashok (Old Dominion University), Xiaojun Bi (Stony Brook University), IV Ramakrishnan (Stony Brook University)",
               },
             ],
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 57,
             items: [
               {
                 title:
@@ -1692,27 +1746,15 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "How Proficiency and Feelings impact the Preference and Perception of Mobile Technology Support in Older Adults",
+                  "Exploring the use of Generative AI to Support Automated Just-in-Time Programming for Visual Scene Displays",
                 author:
-                  "Nina Sakhnini (University of Illinois at Chicago), Hasti Sharifi (University of Illinois at Chicago), Debaleena Chattopadhyay (University of Illinois at Chicago)",
+                  "Cynthia Zastudil (Temple University), Christine Holyfield (University of Arkansas), Christine Kapp (Temple University), Xandria Crosland (Western Governors University), Elizabeth R. Lorah (University of Arkansas), Tara Zimmerman (University of Arkansas), Stephen MacNeil (Temple University)",
               },
               {
                 title:
-                  "Establishing a Community-Driven Digital Library for the Visually Impaired",
+                  "Self-supervised learning using unlabeled speech with multiple types of speech disorder for disordered speech recognition",
                 author:
-                  "Tomoya Matsumura (Tsukuba University of TechnologyUniversity of Tsukuba), Ryo Iijima (University of Tsukuba), Takahiro Miura (National Institute of Advanced Industrial Science and Technology (AIST)), Masaki MATSUO (Tsukuba University of Technology), Yoichi Ochiai (University of Tsukuba)",
-              },
-              {
-                title:
-                  "Investigating the Efficacy of Conference Room Webcams for Remote Group Sign Language Interpretation Sessions",
-                author:
-                  "Roshan Mathew (Rochester Institute of Technology), Wendy Dannels (Rochester Institute of Technology)",
-              },
-              {
-                title:
-                  "Toward Closed-Domain Conversational Item Listing Assistant for Improvement of Experiences of Older Adults in Customer-to-Customer (C2C) Marketplaces",
-                author:
-                  "Subin Park (Kyung Hee University), Hyunggu Jung (Seoul National University), Bektur Ryskeldiev (Mercari R4D), Jihyun Lee (KyungHee University), Gwanhee Lee (University of Seoul), Hyeonhak Jeong (University of Seoul), Minki Chun (University of Seoul), Kentaro Teramoto (Mercari R4D)",
+                  "Ryoichi Takashima (Graduate School of System Informatics), Takeru Otani (Faculty of Engineering), Ryo Aihara (Information Technology R&D Center), Tetsuya Takiguchi (Kobe University), Shinya Taguchi (Information Technology R&D Center)",
               },
             ],
           },
