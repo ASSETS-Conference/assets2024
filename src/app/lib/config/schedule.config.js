@@ -1340,7 +1340,7 @@ const SCHEDULE = [
         content: null,
       },
       {
-        startTime: "17:30",
+        startTime: "18:30",
         endTime: "22:30",
         title: "The Google Reception at",
         link: { href: "https://www.therooms.ca/", text: "The Rooms" },
