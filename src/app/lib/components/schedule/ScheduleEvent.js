@@ -4,6 +4,7 @@ import SingleEvent from "./bits/SingleEvent";
 import DualTrack from "./bits/DualTrack";
 import Link from "../primitives/Link";
 import { BsInfoCircleFill } from "react-icons/bs";
+import { makeAttributeSafe } from "../../utils/basics";
 
 export const ScheduleEvent = ({
   background,
@@ -23,7 +24,7 @@ export const ScheduleEvent = ({
         <h3 className="font-semibold text-sm md:text-xl mt-2 mb-2 pt-0 md:w-auto w-20">
           {startTime} &ndash; {endTime}
         </h3>
-        <h4 className="font-light text-sm md:text-xl mt-2 mb-2 p-0 md:text-left text-right flex md:flex-row flex-col md:gap-2">
+        <h4 id={makeAttributeSafe(`${title}-${startTime}-${endTime}`)} className="font-light text-sm md:text-xl mt-2 mb-2 p-0 md:text-left text-right flex md:flex-row flex-col md:gap-2">
           {title}
           {link ? (
             <Link className={"text-black"} href={link.href}>

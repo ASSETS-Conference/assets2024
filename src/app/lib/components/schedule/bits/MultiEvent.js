@@ -23,7 +23,7 @@ const MultiEvent = ({ content }) => {
           ) : (
             <ul className="mb-4">
               {content.items.map((item, key) => (
-                <ListItem item={item} key={key} />
+                <ListItem item={item} generatedKey={key} />
               ))}
             </ul>
           )}
@@ -33,9 +33,9 @@ const MultiEvent = ({ content }) => {
   );
 };
 
-const ListItem = ({ item, key }) => {
+const ListItem = ({ item, generatedKey }) => {
   return (
-    <li key={`me-li-${key}`}>
+    <li key={`me-li-${generatedKey}`}>
       <p className="text-xs md:text-base font-semibold p-0 -mb-2">
         {item.title}
       </p>
