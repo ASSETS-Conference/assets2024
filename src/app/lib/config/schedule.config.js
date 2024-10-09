@@ -43,6 +43,8 @@ const SCHEDULE = [
         content: [
           {
             title: "Doctoral Consortium",
+            isNumbered: true,
+            startsFrom: 1,
             items: [
               {
                 title:
@@ -94,6 +96,8 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true, 
+            startsFrom: 10,
             items: [
               {
                 title:
@@ -140,6 +144,8 @@ const SCHEDULE = [
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 16,
             items: [
               {
                 title:
@@ -390,6 +396,8 @@ const SCHEDULE = [
         content: [
           {
             title: "Doctoral Consortium",
+            isNumbered: true,
+            startsFrom: 1,
             items: [
               {
                 title:
@@ -441,6 +449,8 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true,
+            startsFrom: 10,
             items: [
               {
                 title:
@@ -487,6 +497,8 @@ const SCHEDULE = [
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 16,
             items: [
               {
                 title:
@@ -765,6 +777,8 @@ const SCHEDULE = [
         content: [
           {
             title: "Student Research Competition",
+            isNumbered: true,
+            startsFrom: 28,
             items: [
               {
                 title:
@@ -786,6 +800,8 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true,
+            startsFrom: 31,
             items: [
               {
                 title:
@@ -820,6 +836,8 @@ const SCHEDULE = [
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 36,
             items: [
               {
                 title:
@@ -1139,6 +1157,8 @@ const SCHEDULE = [
         content: [
           {
             title: "Student Research Competition",
+            isNumbered: true,
+            startsFrom: 28,
             items: [
               {
                 title:
@@ -1160,6 +1180,8 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true,
+            startsFrom: 31,
             items: [
               {
                 title:
@@ -1194,6 +1216,8 @@ const SCHEDULE = [
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 36,
             items: [
               {
                 title:
@@ -1366,6 +1390,8 @@ const SCHEDULE = [
         content: [
           {
             title: "Travel Awardees",
+            isNumbered: true,
+            startsFrom: 54,
             items: [
               {
                 title:
@@ -1381,6 +1407,8 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true,
+            startsFrom: 56,
             items: [
               {
                 title: "Screen Reading Enabled by Large Language Models",
@@ -1391,6 +1419,8 @@ const SCHEDULE = [
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 57,
             items: [
               {
                 title:
@@ -1598,6 +1628,8 @@ const SCHEDULE = [
         content: [
           {
             title: "Travel Awardees",
+            isNumbered: true,
+            startsFrom: 54,
             items: [
               {
                 title:
@@ -1613,6 +1645,8 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
+            isNumbered: true,
+            startsFrom: 56,
             items: [
               {
                 title: "Screen Reading Enabled by Large Language Models",
@@ -1623,6 +1657,8 @@ const SCHEDULE = [
           },
           {
             title: "Posters",
+            isNumbered: true,
+            startsFrom: 57,
             items: [
               {
                 title:
