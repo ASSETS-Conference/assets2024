@@ -39,6 +39,7 @@ const SCHEDULE = [
         startTime: "10:15",
         endTime: "11:00",
         title: "Posters/Demos and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {
@@ -392,6 +393,7 @@ const SCHEDULE = [
         startTime: "15:30",
         endTime: "16:15",
         title: "Posters and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {
@@ -773,6 +775,7 @@ const SCHEDULE = [
         startTime: "10:15",
         endTime: "11:00",
         title: "Posters/Demos and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {
@@ -1153,6 +1156,7 @@ const SCHEDULE = [
         startTime: "15:30",
         endTime: "16:15",
         title: "Posters/Demos and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {
@@ -1386,6 +1390,7 @@ const SCHEDULE = [
         startTime: "10:00",
         endTime: "10:45",
         title: "Posters/Demos and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {
@@ -1624,6 +1629,7 @@ const SCHEDULE = [
         startTime: "15:30",
         endTime: "16:15",
         title: "Posters and Coffee Break",
+        note: "The ID Number listed next to each item below in the schedule to vote for Best Poster during the conference.",
         dualTrack: false,
         content: [
           {

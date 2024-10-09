@@ -3,12 +3,14 @@ import MultiEvent from "./bits/MultiEvent";
 import SingleEvent from "./bits/SingleEvent";
 import DualTrack from "./bits/DualTrack";
 import Link from "../primitives/Link";
+import { BsInfoCircleFill } from "react-icons/bs";
 
 export const ScheduleEvent = ({
   background,
   startTime,
   endTime,
   title,
+  note,
   link,
   dualTrack,
   content,
@@ -23,10 +25,15 @@ export const ScheduleEvent = ({
         </h3>
         <h4 className="font-light text-sm md:text-xl mt-2 mb-2 p-0 md:text-left text-right flex md:flex-row flex-col md:gap-2">
           {title}
-          {link ? <Link className={'text-black'} href={link.href}>{link.text}</Link> : null}
+          {link ? (
+            <Link className={"text-black"} href={link.href}>
+              {link.text}
+            </Link>
+          ) : null}
         </h4>
       </div>
       <div>
+        {note ? <ScheduleNote note={note} /> : null}
         {content?.map((content, key) =>
           determineContentType(content, dualTrack, key)
         )}
@@ -59,3 +66,15 @@ function determineContentType(content, isDualTrack, key) {
     );
   }
 }
+
+const ScheduleNote = ({ note }) => {
+  return (
+    <div className="border-theme-off-white border-0 mb-4 mt-8 md:mb-6 md:mt-0 bg-theme-off-white text-theme-dark rounded-md flex flex-col xl:flex-row xl:items-center xl:content-center gap-2 md:gap-1 px-4 xl:pt-1 pt-4 pb-4">
+      <p className="p-0 m-0 text-xs md:text-sm lg:text-base -mb-4 flex flex-row gap-2 items-center font-bold">
+        <BsInfoCircleFill aria-hidden={true} />
+        {`Please Note:`}
+      </p>
+      <p className="p-0 m-0 text-xs md:text-sm lg:text-base">{note}</p>
+    </div>
+  );
+};
