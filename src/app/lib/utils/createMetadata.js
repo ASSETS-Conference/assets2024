@@ -51,7 +51,14 @@ const createMetadata = ({ title }) => {
  * @param {'Event'} params.type The type of JSON+LD type.
  * @see https://schema.org/
  */
-const createJSON_LD = ({ type, name, alternateName, image, url, typeSpecific }) => {
+const createJSON_LD = ({
+  type,
+  name,
+  alternateName,
+  image,
+  url,
+  typeSpecific,
+}) => {
   let JSONLD = {};
 
   if (type === "Event") {
@@ -61,18 +68,27 @@ const createJSON_LD = ({ type, name, alternateName, image, url, typeSpecific }) 
       name: name,
       alternateName: alternateName,
       startDate: typeSpecific.startDate,
-      location: {
-        "@type": "Place",
-        name: typeSpecific.location.name,
-        address: {
-          "@type": "PostalAddress",
-          streetAddress: typeSpecific.location.streetAddress,
-          addressLocality: typeSpecific.location.locality,
-          addressRegion: typeSpecific.location.region,
-          addressCountry: typeSpecific.location.country,
-          postalCode: typeSpecific.location.postalCode,
+      endDate: typeSpecific.endDate,
+      eventAttendanceMode: typeSpecific.eventAttendanceMode,
+      eventStatus: typeSpecific.eventStatus,
+      location: [
+        {
+          "@type": "VirtualLocation",
+          url: typeSpecific.location.virtualLocationURL,
         },
-      },
+        {
+          "@type": "Place",
+          name: typeSpecific.location.name,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: typeSpecific.location.streetAddress,
+            addressLocality: typeSpecific.location.locality,
+            addressRegion: typeSpecific.location.region,
+            addressCountry: typeSpecific.location.country,
+            postalCode: typeSpecific.location.postalCode,
+          },
+        },
+      ],
       image: image,
       url: url,
     };

@@ -38,9 +38,13 @@ export default function Home() {
         image: "https://assets24.sigaccess.org/ogp/opengraph2.jpg",
         url: "https://assets24.sigaccess.org/",
         typeSpecific: {
-          startDate: '2024-10-28',
-          endDate: '2024-10-30',
+          startDate: "2024-10-28",
+          endDate: "2024-10-30",
+          eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+          eventStatus: "https://schema.org/EventScheduled",
           location: {
+            virtualLocationURL:
+              "https://assets24.sigaccess.org/attending/registration/#virtual-attendance-option",
             name: "Sheraton Hotel Newfoundland",
             streetAddress: "115 Cavendish Square",
             locality: "St. John's",
