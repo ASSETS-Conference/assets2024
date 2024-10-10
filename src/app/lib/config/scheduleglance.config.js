@@ -57,7 +57,7 @@ const SCHEDULE_GLANCE = [
         {
             startTime: "09:00",
             endTime: "10:15",
-            title: "Papers",
+            title: "Papers (Dual Track Session)",
         },
         {
             startTime: "09:00",
@@ -101,7 +101,7 @@ const SCHEDULE_GLANCE = [
         {
             startTime: "11:00",
             endTime: "12:30",
-            title: "Papers",
+            title: "Papers (Dual Track Session)",
         },
         {
             startTime: "10:45",
@@ -140,12 +140,12 @@ const SCHEDULE_GLANCE = [
         {
             startTime: "14:00",
             endTime: "15:30",
-            title: "Papers",
+            title: "Papers (Dual Track Session)",
         },
         {
             startTime: "14:00",
             endTime: "15:30",
-            title: "Papers",
+            title: "Papers (Dual Track Session)",
         },
         {
             startTime: "14:00",
@@ -184,7 +184,7 @@ const SCHEDULE_GLANCE = [
         {
             startTime: "16:15",
             endTime: "17:45",
-            title: "Papers",
+            title: "Papers (Dual Track Session)",
         },
         {
             startTime: "16:15",
