@@ -32,7 +32,7 @@ export default function Home() {
     <>
       {createJSON_LD({
         type: "Event",
-        name: "ASSETS '24",
+        name: "ASSETS '24 Conference",
         alternateName:
           "The 26th International ACM SIGACCESS Conference on Computers and Accessibility",
         image: "https://assets24.sigaccess.org/ogp/opengraph2.jpg",
