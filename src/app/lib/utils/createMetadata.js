@@ -3,7 +3,6 @@
  * @returns {import('next').Metadata} Metadata to be used by `page.js` elements.
  */
 const createMetadata = ({ title }) => {
-
   /** @type {import('next').Metadata} */
   let md = {
     title: `ASSETS '24 | ${title}`,
@@ -46,4 +45,61 @@ const createMetadata = ({ title }) => {
   return md;
 };
 
-export { createMetadata };
+/**
+ * Generate validated schemas for rich search results.
+ * @param {Object} params The configuration parameters
+ * @param {'Event'} params.type The type of JSON+LD type.
+ * @see https://schema.org/
+ */
+const createJSON_LD = ({
+  type,
+  name,
+  alternateName,
+  image,
+  url,
+  typeSpecific,
+}) => {
+  let JSONLD = {};
+
+  if (type === "Event") {
+    JSONLD = {
+      "@context": "http://schema.org",
+      "@type": "Event",
+      name: name,
+      alternateName: alternateName,
+      startDate: typeSpecific.startDate,
+      endDate: typeSpecific.endDate,
+      eventAttendanceMode: typeSpecific.eventAttendanceMode,
+      eventStatus: typeSpecific.eventStatus,
+      location: [
+        {
+          "@type": "VirtualLocation",
+          url: typeSpecific.location.virtualLocationURL,
+        },
+        {
+          "@type": "Place",
+          name: typeSpecific.location.name,
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: typeSpecific.location.streetAddress,
+            addressLocality: typeSpecific.location.locality,
+            addressRegion: typeSpecific.location.region,
+            addressCountry: typeSpecific.location.country,
+            postalCode: typeSpecific.location.postalCode,
+          },
+        },
+      ],
+      image: image,
+      url: url,
+    };
+  }
+
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(JSONLD) }}
+    />
+  );
+};
+
+export { createMetadata, createJSON_LD };

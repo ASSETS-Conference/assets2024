@@ -13,7 +13,7 @@ import {
   TECHNICAL_PAPERS_SUBPAGE_DEADLINES,
   WORKSHOP_PROPOSAL_DATES,
 } from "@/app/lib/config/importantdates.config";
-import { createMetadata } from "@/app/lib/utils/createMetadata";
+import { createJSON_LD, createMetadata } from "@/app/lib/utils/createMetadata";
 import Alert from "@/app/lib/components/Alert";
 import { mergeDates } from "@/app/lib/utils/mergeDates";
 
@@ -55,38 +55,38 @@ export default function Home() {
               heading={"Hotel booking is Live"}
             >
               {/* <div className=""> */}
-                <p className="text-white break-words">
-                  {`The hotel is offering ASSETS attendees a group rate of CAD$199 per night. Please use the `}
-                  <Link
-                    href="https://www.marriott.com/events/start.mi?id=1716409363485&key=GRP"
-                    target="_blank"
-                    colour={"secondary"}
-                    className={"text-white"}
-                  >
-                    {`ASSETS'24 Sheraton Hotel Newfoundland booking link`}
-                  </Link>
-                  {` to make your reservation.`}
-                </p>
-                <p className="text-white mt-4">
-                  {` If you find that the booking link says there is no availability
+              <p className="text-white break-words">
+                {`The hotel is offering ASSETS attendees a group rate of CAD$199 per night. Please use the `}
+                <Link
+                  href="https://www.marriott.com/events/start.mi?id=1716409363485&key=GRP"
+                  target="_blank"
+                  colour={"secondary"}
+                  className={"text-white"}
+                >
+                  {`ASSETS'24 Sheraton Hotel Newfoundland booking link`}
+                </Link>
+                {` to make your reservation.`}
+              </p>
+              <p className="text-white mt-4">
+                {` If you find that the booking link says there is no availability
                 for your desired dates, we recommend emailing `}
-                  <Link
-                    className={'break-words'}
-                    href={"mailto:reservations@sheratonhotelnewfoundland.com"}
-                  >
-                    reservations@sheratonhotelnewfoundland.com
-                  </Link>
-                  {` to ask their help with checking availability and assisting with
+                <Link
+                  className={"break-words"}
+                  href={"mailto:reservations@sheratonhotelnewfoundland.com"}
+                >
+                  reservations@sheratonhotelnewfoundland.com
+                </Link>
+                {` to ask their help with checking availability and assisting with
                 the booking. Please tell them that you are booking for
                 ASSETS'24.`}
-                </p>
-                <p className="text-white mt-4">
-                  {`For more information, please see the `}
-                  <Link
-                    href={"/attending/overview/"}
-                  >{`Attending Overview`}</Link>
-                  {` page.`}
-                </p>
+              </p>
+              <p className="text-white mt-4">
+                {`For more information, please see the `}
+                <Link
+                  href={"/attending/overview/"}
+                >{`Attending Overview`}</Link>
+                {` page.`}
+              </p>
               {/* </div> */}
             </Alert>
           </div>
@@ -156,6 +156,30 @@ export default function Home() {
           </Container>
         </div>
       </main>
+      {createJSON_LD({
+        type: "Event",
+        name: "ASSETS '24 Conference",
+        alternateName:
+          "The 26th International ACM SIGACCESS Conference on Computers and Accessibility",
+        image: "https://assets24.sigaccess.org/ogp/opengraph2.jpg",
+        url: "https://assets24.sigaccess.org/",
+        typeSpecific: {
+          startDate: "2024-10-27T16:00-02:30",
+          endDate: "2024-10-30T17:45-02:30",
+          eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+          eventStatus: "https://schema.org/EventScheduled",
+          location: {
+            virtualLocationURL:
+              "https://assets24.sigaccess.org/attending/registration/#virtual-attendance-option",
+            name: "Sheraton Hotel Newfoundland",
+            streetAddress: "115 Cavendish Square",
+            locality: "St. John's",
+            region: "Newfoundland and Labrador",
+            country: "Canada",
+            postalCode: "A1C 3K2",
+          },
+        },
+      })}
     </>
   );
 }
