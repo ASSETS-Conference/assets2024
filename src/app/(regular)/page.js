@@ -30,30 +30,6 @@ export default function Home() {
 
   return (
     <>
-      {createJSON_LD({
-        type: "Event",
-        name: "ASSETS '24 Conference",
-        alternateName:
-          "The 26th International ACM SIGACCESS Conference on Computers and Accessibility",
-        image: "https://assets24.sigaccess.org/ogp/opengraph2.jpg",
-        url: "https://assets24.sigaccess.org/",
-        typeSpecific: {
-          startDate: "2024-10-27T16:00",
-          endDate: "2024-10-30T17:45",
-          eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
-          eventStatus: "https://schema.org/EventScheduled",
-          location: {
-            virtualLocationURL:
-              "https://assets24.sigaccess.org/attending/registration/#virtual-attendance-option",
-            name: "Sheraton Hotel Newfoundland",
-            streetAddress: "115 Cavendish Square",
-            locality: "St. John's",
-            region: "Newfoundland and Labrador",
-            country: "Canada",
-            postalCode: "A1C 3K2",
-          },
-        },
-      })}
       <main id="">
         <Hero />
         <Container id="content">
@@ -180,6 +156,30 @@ export default function Home() {
           </Container>
         </div>
       </main>
+      {createJSON_LD({
+        type: "Event",
+        name: "ASSETS '24 Conference",
+        alternateName:
+          "The 26th International ACM SIGACCESS Conference on Computers and Accessibility",
+        image: "https://assets24.sigaccess.org/ogp/opengraph2.jpg",
+        url: "https://assets24.sigaccess.org/",
+        typeSpecific: {
+          startDate: "2024-10-27T16:00",
+          endDate: "2024-10-30T17:45",
+          eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
+          eventStatus: "https://schema.org/EventScheduled",
+          location: {
+            virtualLocationURL:
+              "https://assets24.sigaccess.org/attending/registration/#virtual-attendance-option",
+            name: "Sheraton Hotel Newfoundland",
+            streetAddress: "115 Cavendish Square",
+            locality: "St. John's",
+            region: "Newfoundland and Labrador",
+            country: "Canada",
+            postalCode: "A1C 3K2",
+          },
+        },
+      })}
     </>
   );
 }
