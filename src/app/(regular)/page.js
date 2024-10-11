@@ -38,8 +38,8 @@ export default function Home() {
         image: "https://assets24.sigaccess.org/ogp/opengraph2.jpg",
         url: "https://assets24.sigaccess.org/",
         typeSpecific: {
-          startDate: "2024-10-28T16:00-02:30",
-          endDate: "2024-10-30T17:45-02:30",
+          startDate: "2024-10-27T16:00",
+          endDate: "2024-10-30T17:45",
           eventAttendanceMode: "https://schema.org/MixedEventAttendanceMode",
           eventStatus: "https://schema.org/EventScheduled",
           location: {
