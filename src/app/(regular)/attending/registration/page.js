@@ -13,20 +13,37 @@ export default function Registration() {
       noTOC={false}
       title={"Registration"}
       overrideTOC={
-        <Alert
-          className={"mb-5"}
-          raw={true}
-          type={"changes"}
-          heading={"Registration Now Open"}
-        >
-          <p>
-            {`We have opened registration on the `}
-            <Link href={`https://cvent.me/45nlmw`}>
-              CVENT Registration Site
-            </Link>
-            {` to support attendees who may need additional time to make plans (e.g., travel, visa). Full details of our in-person and virtual conference experiences will be published as they continue to become available.`}
-          </p>
-        </Alert>
+        <>
+          <Alert
+            className={"mb-5"}
+            type={"changes"}
+            heading="Workshops Registration Now Open"
+            raw
+          >
+            <p>
+              {`Workshop registration is now open, please take a look at the
+                registration instructions under `}
+              <Link href={"#workshop-registration"}>
+                {`Workshop Registration`}
+              </Link>
+              {` below.`}
+            </p>
+          </Alert>
+          <Alert
+            className={"mb-5"}
+            raw={true}
+            type={"info"}
+            heading={"General Registration Open"}
+          >
+            <p>
+              {`We have opened registration on the `}
+              <Link href={`https://cvent.me/45nlmw`}>
+                CVENT Registration Site
+              </Link>
+              {` to support attendees who may need additional time to make plans (e.g., travel, visa). Full details of our in-person and virtual conference experiences will be published as they continue to become available.`}
+            </p>
+          </Alert>
+        </>
       }
       // subheading={"Behind the Scenes"}
     >
@@ -178,7 +195,9 @@ export default function Registration() {
         <p>{`Cancellation policy: virtual workshop registrations are non-refundable.`}</p>
       </Section>
       <Section title={"Workshop Registration"}>
-        <p><strong>{`If you have already registered for the ASSETS conference:`}</strong></p>
+        <p>
+          <strong>{`If you have already registered for the ASSETS conference:`}</strong>
+        </p>
         <ol>
           <li>{`Find your original registration confirmation email.`}</li>
           <li>{`Click Modify Registration`}</li>
@@ -187,7 +206,9 @@ export default function Registration() {
           <li>{`Select the desired workshop(s). Each workshop title is associated with a quantity field where you can indicate that you need to purchase 1 workshop registration for each respective workshop you intend to register for.`}</li>
           <li>{`Advance to the payment page and pay for the workshop registration.`}</li>
         </ol>
-        <p><strong>{`If you have not registered for the ASSETS conference (and do not intend to):`}</strong></p>
+        <p>
+          <strong>{`If you have not registered for the ASSETS conference (and do not intend to):`}</strong>
+        </p>
         <ol>
           <li>
             {`Open the `}{" "}

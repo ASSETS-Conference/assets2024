@@ -36,8 +36,26 @@ export default function Home() {
           <div className="pt-16 md:pt-18 pb-4">
             <Alert
               className={"mb-5"}
+              type={"changes"}
+              heading="Workshops Registration Now Open"
+              raw
+            >
+              <p>
+                {`Workshop registration is now open, please take a look at the
+                registration instructions here: `}
+                <Link
+                  href={
+                    "https://assets24.sigaccess.org/attending/registration/#workshop-registration"
+                  }
+                >
+                  {`https://assets24.sigaccess.org/attending/registration/#workshop-registration`}
+                </Link>
+              </p>
+            </Alert>
+            <Alert
+              className={"mb-5"}
               raw={true}
-              heading={"Registration is Open"}
+              heading={"General Registration Open"}
             >
               <p className="text-md text-white">
                 {`We have opened registration on the `}
@@ -49,10 +67,10 @@ export default function Home() {
               </p>
             </Alert>
             <Alert
-              type={"changes"}
+              type={"info"}
               className={"mb-5"}
               raw={true}
-              heading={"Hotel booking is Live"}
+              heading={"Hotel Booking Portal Live"}
             >
               {/* <div className=""> */}
               <p className="text-white break-words">
