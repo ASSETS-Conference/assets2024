@@ -11,7 +11,7 @@ export const ACCEPTED_WORKSHOPS = [
     ],
     website: "https://accessiblecities.github.io/UrbanAccess2024/",
     deadline: "Sept 20, 2024",
-    placeDetails: "Week of Oct 21 via zoom (exact date TBD)",
+    placeDetails: "Oct 24th, 2024 starting at 7AM Pacific (GMT -7) / 3PM London (GMT +1)",
     placeLink: null,
     abstract:
       "We have entered a new era of computing—one where AI permeates every aspect of society from education to healthcare. In this workshop, we examine the emerging role of AI in the design of equitable and accessible cities, transportation systems, and interactive tools for mapping and navigation. We will solicit short papers around key Urban AI + disability themes, including autonomous vehicles, intelligent wheelchairs, assistive human-robotic interaction, assessing and navigating pedestrian pathways, indoor accessibility, and overarching challenges related to ethics, bias, and data privacy and security. We invite both traditional HCI and accessibility researchers as well as scholars and practitioners from other disciplines relevant to this workshop, including disability studies, gerontology, social work, community psychology, and law. Our overarching goal is to identify open challenges, share current work across disciplines, and spur new collaborations related to AI and urban accessibility.",
