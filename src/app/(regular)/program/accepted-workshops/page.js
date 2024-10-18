@@ -7,6 +7,7 @@ import { ACCEPTED_PAPERS } from "@/app/lib/config/acceptedpapers.config";
 import Letter from "@/app/lib/components/lists/Letter";
 import { makeAttributeSafe } from "@/app/lib/utils/basics";
 import { ACCEPTED_WORKSHOPS } from "@/app/lib/config/acceptedworkshops.config";
+import Alert from "@/app/lib/components/Alert";
 
 export const metadata = createMetadata({ title: "Accepted Workshops" });
 
@@ -63,7 +64,30 @@ function WorkshopSection({
 }
 export default function AcceptedWorkshops() {
   return (
-    <Subpage title={"Accepted Workshops"} altBg={true}>
+    <Subpage
+      title={"Accepted Workshops"}
+      altBg={true}
+      overrideTOC={
+        <Alert
+          className={"mb-5"}
+          type={"changes"}
+          heading="Workshops Registration Now Open"
+          raw
+        >
+          <p>
+            {`Workshop registration is now open, please take a look at the
+        registration instructions here: `}
+            <Link
+              href={
+                "https://assets24.sigaccess.org/attending/registration/#workshop-registration"
+              }
+            >
+              {`https://assets24.sigaccess.org/attending/registration/#workshop-registration`}
+            </Link>
+          </p>
+        </Alert>
+      }
+    >
       <p className="mb-4">
         {`To host a workshop at ASSETS, workshop organizers submitted a proposal
           following the Workshop Proposal CFP in July, 2024. These proposals
