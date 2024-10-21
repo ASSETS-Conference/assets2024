@@ -19,13 +19,14 @@ export default function TechnicalPapers() {
         <div className="flex flex-col gap-8 mb-8 md:flex-row">
           <Image
             src={"/sponsors/google.png"}
+            className="my-12"
             alt="Logo of Google Inc."
-            height={300}
-            width={400}
+            height={400}
+            width={500}
           />
         </div>
         <h2>Gold Level Sponsors</h2>
-        <div className="flex flex-col gap-8 mt-8 mb-8 md:flex-row">
+        <div className="flex flex-col gap-8 mt-8 mb-8">
           <Image
             src={"/sponsors/apple.png"}
             alt="Logo of Apple Inc."
@@ -34,6 +35,13 @@ export default function TechnicalPapers() {
             style={{
               padding: "48px 56px 56px 0px",
             }}
+          />
+          <Image
+            src={"/sponsors/meta_lockup_primary.png"}
+            alt="Logo of Meta Platforms, Inc."
+            height={150}
+            width={300}
+            className="py-6 pl-0 -ml-10"
           />
         </div>
         {/* <h2>Silver Level Sponsors</h2>*/}
