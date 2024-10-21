@@ -37,7 +37,7 @@ export default function TechnicalPapers() {
             }}
           />
           <Image
-            src={"/sponsors/meta_lockup_primary.png"}
+            src={"/sponsors/meta_lockup_primary.svg"}
             alt="Logo of Meta Platforms, Inc."
             height={150}
             width={300}
