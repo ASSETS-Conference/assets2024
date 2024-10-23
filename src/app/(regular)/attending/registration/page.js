@@ -36,11 +36,11 @@ export default function Registration() {
             heading={"General Registration Open"}
           >
             <p>
-              {`We have opened registration on the `}
+              {`Registration is open, please register on the `}
               <Link href={`https://cvent.me/45nlmw`}>
                 CVENT Registration Site
               </Link>
-              {` to support attendees who may need additional time to make plans (e.g., travel, visa). Full details of our in-person and virtual conference experiences will be published as they continue to become available.`}
+              {`.`}
             </p>
           </Alert>
         </>

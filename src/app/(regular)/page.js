@@ -58,54 +58,12 @@ export default function Home() {
               heading={"General Registration Open"}
             >
               <p className="text-md text-white">
-                {`We have opened registration on the `}
+                {`Registration is open, please register on the `}
                 <Link className={"text-white"} href={"https://cvent.me/45nlmw"}>
                   CVENT Registration Site
                 </Link>
-
-                {` to support attendees who may need additional time to make plans (e.g., travel, visa). Full details of our in-person and virtual conference experiences will be published as they continue to become available.`}
+                {`.`}
               </p>
-            </Alert>
-            <Alert
-              type={"info"}
-              className={"mb-5"}
-              raw={true}
-              heading={"Hotel Booking Portal Live"}
-            >
-              {/* <div className=""> */}
-              <p className="text-white break-words">
-                {`The hotel is offering ASSETS attendees a group rate of CAD$199 per night. Please use the `}
-                <Link
-                  href="https://www.marriott.com/events/start.mi?id=1716409363485&key=GRP"
-                  target="_blank"
-                  colour={"secondary"}
-                  className={"text-white"}
-                >
-                  {`ASSETS'24 Sheraton Hotel Newfoundland booking link`}
-                </Link>
-                {` to make your reservation.`}
-              </p>
-              <p className="text-white mt-4">
-                {` If you find that the booking link says there is no availability
-                for your desired dates, we recommend emailing `}
-                <Link
-                  className={"break-words"}
-                  href={"mailto:reservations@sheratonhotelnewfoundland.com"}
-                >
-                  reservations@sheratonhotelnewfoundland.com
-                </Link>
-                {` to ask their help with checking availability and assisting with
-                the booking. Please tell them that you are booking for
-                ASSETS'24.`}
-              </p>
-              <p className="text-white mt-4">
-                {`For more information, please see the `}
-                <Link
-                  href={"/attending/overview/"}
-                >{`Attending Overview`}</Link>
-                {` page.`}
-              </p>
-              {/* </div> */}
             </Alert>
           </div>
           <Section title="Important Dates" spacing={"none"}>
