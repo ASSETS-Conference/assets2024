@@ -5,9 +5,13 @@ const SCHEDULE = [
       {
         startTime: "16:00",
         endTime: "19:00",
-        title: "Registration",
+        title: "Registration with Coffee and Cookies",
         dualTrack: false,
-        content: null,
+        content: [
+          {
+            note: "Registration will be open in the Sheraton Lobby. Coffee and cookies will be available.",
+          },
+        ],
       },
     ],
   },
@@ -97,7 +101,7 @@ const SCHEDULE = [
           },
           {
             title: "Demos",
-            isNumbered: true, 
+            isNumbered: true,
             startsFrom: 10,
             items: [
               {
@@ -672,6 +676,17 @@ const SCHEDULE = [
                 ],
               },
             ],
+          },
+        ],
+      },
+      {
+        startTime: "18:30",
+        endTime: "20:00",
+        title: "Welcome Reception in Sheraton Court Garden",
+        dualTrack: false,
+        content: [
+          {
+            note: "For in-person attendees, please join us in the Sheraton Court Garden for an hors d'oeuvres reception.",
           },
         ],
       },
@@ -1345,7 +1360,11 @@ const SCHEDULE = [
         title: "The Google Reception at",
         link: { href: "https://www.therooms.ca/", text: "The Rooms" },
         dualTrack: false,
-        content: null,
+        content: [
+          {
+            note: "Busses will depart from the main entrance of the Sheraton starting at 18:00 and bring us back at the end of the evening. For those who may enjoy a walk, it takes approximately 20-30 minutes to walk from the Sheraton to the Rooms, but do be aware that it is hilly in parts.",
+          },
+        ],
       },
     ],
   },
