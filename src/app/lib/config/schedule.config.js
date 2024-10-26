@@ -839,7 +839,7 @@ const SCHEDULE = [
                 title:
                   "Making 3D Printer Accessible for People with Visual Impairments by Reading Scrolling Text and Menus",
                 author:
-                  "Naoto Tagawa (Osaka Metropolitan University), Masakazu Iwamura (Osaka Metropolitan University), Kazunori Minatani (National Center for University Entrance Examinations), Koichi Kise (Osaka Metropolitan University)",
+                  "Naoya Tagawa (Osaka Metropolitan University), Masakazu Iwamura (Osaka Metropolitan University), Kazunori Minatani (National Center for University Entrance Examinations), Koichi Kise (Osaka Metropolitan University)",
               },
               {
                 title:
@@ -852,12 +852,18 @@ const SCHEDULE = [
                   "Enhancing Accessibility in Collaborative Digital Whiteboards: A Demonstration of Innovative Features for Inclusive Real-Time Collaboration",
                 author: "Philip Strain (Miro), Stefano Baldan (Miro)",
               },
+              {
+                title:
+                  "ZINinNGT: A Mobile Tool to Support Hearing Parents in Learning Sign Language of the Netherlands",
+                author:
+                  "Jos Ritmeester (University of Amsterdam), Beyza Sumer (University of Amsterdam), Marije Boonstra (Royal Auris Group), Maartje De Meulder (HU - University of Applied Sciences), Belinda van der Aa (Royal Auris Group), Floris Roelofsen (University of Amsterdam)",
+              },
             ],
           },
           {
             title: "Posters",
             isNumbered: true,
-            startsFrom: 36,
+            startsFrom: 37,
             items: [
               {
                 title:
@@ -942,12 +948,6 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "ZINinNGT: A Mobile Tool to Support Hearing Parents in Learning Sign Language of the Netherlands",
-                author:
-                  "Jos Ritmeester (University of Amsterdam), Beyza Sumer (University of Amsterdam), Marije Boonstra (Royal Auris Group), Maartje De Meulder (HU - University of Applied Sciences), Belinda van der Aa (Royal Auris Group), Floris Roelofsen (University of Amsterdam)",
-              },
-              {
-                title:
                   "Experiencing Deaf Tech: A Deep Dive into the Concept of DeafWatch",
                 author:
                   "Robin Angelini (TU Wien), Katta Spiel (TU Wien), Maartje De Meulder (HU - University of Applied Sciences)",
@@ -963,6 +963,18 @@ const SCHEDULE = [
                   "Exploring Conversations between a Practitioner and a Person with Dementia",
                 author:
                   "Kotaro Hara (Singapore Management University), Rosiana Natalie (Singapore Management University), Wei Soon Cheong (Singapore Management University), Jingjing Gu (Singapore Management University), Qianli Xu (Institute for Infocomm Research, ASTAR)",
+              },
+              {
+                title:
+                  "Self-supervised learning using unlabeled speech with multiple types of speech disorder for disordered speech recognition",
+                author:
+                  "Ryoichi Takashima (Graduate School of System Informatics), Takeru Otani (Faculty of Engineering), Ryo Aihara (Information Technology R&D Center), Tetsuya Takiguchi (Kobe University), Shinya Taguchi (Information Technology R&D Center)",
+              },
+              {
+                title:
+                  "Crip Material Exploration as an Assistive Technology Research Framework: Situating Interdependence in Empowered Disabled Making",
+                author:
+                  "Alexander S.W. Parent (Steinhardt School of Culture, Education and Human DevelopmentFaculty of Information)",
               },
             ],
           },
@@ -1220,7 +1232,7 @@ const SCHEDULE = [
                 title:
                   "Making 3D Printer Accessible for People with Visual Impairments by Reading Scrolling Text and Menus",
                 author:
-                  "Naoto Tagawa (Osaka Metropolitan University), Masakazu Iwamura (Osaka Metropolitan University), Kazunori Minatani (National Center for University Entrance Examinations), Koichi Kise (Osaka Metropolitan University)",
+                  "Naoya Tagawa (Osaka Metropolitan University), Masakazu Iwamura (Osaka Metropolitan University), Kazunori Minatani (National Center for University Entrance Examinations), Koichi Kise (Osaka Metropolitan University)",
               },
               {
                 title:
@@ -1233,12 +1245,18 @@ const SCHEDULE = [
                   "Enhancing Accessibility in Collaborative Digital Whiteboards: A Demonstration of Innovative Features for Inclusive Real-Time Collaboration",
                 author: "Philip Strain (Miro), Stefano Baldan (Miro)",
               },
+              {
+                title:
+                  "ZINinNGT: A Mobile Tool to Support Hearing Parents in Learning Sign Language of the Netherlands",
+                author:
+                  "Jos Ritmeester (University of Amsterdam), Beyza Sumer (University of Amsterdam), Marije Boonstra (Royal Auris Group), Maartje De Meulder (HU - University of Applied Sciences), Belinda van der Aa (Royal Auris Group), Floris Roelofsen (University of Amsterdam)",
+              },
             ],
           },
           {
             title: "Posters",
             isNumbered: true,
-            startsFrom: 36,
+            startsFrom: 37,
             items: [
               {
                 title:
@@ -1323,12 +1341,6 @@ const SCHEDULE = [
               },
               {
                 title:
-                  "ZINinNGT: A Mobile Tool to Support Hearing Parents in Learning Sign Language of the Netherlands",
-                author:
-                  "Jos Ritmeester (University of Amsterdam), Beyza Sumer (University of Amsterdam), Marije Boonstra (Royal Auris Group), Maartje De Meulder (HU - University of Applied Sciences), Belinda van der Aa (Royal Auris Group), Floris Roelofsen (University of Amsterdam)",
-              },
-              {
-                title:
                   "Experiencing Deaf Tech: A Deep Dive into the Concept of DeafWatch",
                 author:
                   "Robin Angelini (TU Wien), Katta Spiel (TU Wien), Maartje De Meulder (HU - University of Applied Sciences)",
@@ -1344,6 +1356,18 @@ const SCHEDULE = [
                   "Exploring Conversations between a Practitioner and a Person with Dementia",
                 author:
                   "Kotaro Hara (Singapore Management University), Rosiana Natalie (Singapore Management University), Wei Soon Cheong (Singapore Management University), Jingjing Gu (Singapore Management University), Qianli Xu (Institute for Infocomm Research, ASTAR)",
+              },
+              {
+                title:
+                  "Self-supervised learning using unlabeled speech with multiple types of speech disorder for disordered speech recognition",
+                author:
+                  "Ryoichi Takashima (Graduate School of System Informatics), Takeru Otani (Faculty of Engineering), Ryo Aihara (Information Technology R&D Center), Tetsuya Takiguchi (Kobe University), Shinya Taguchi (Information Technology R&D Center)",
+              },
+              {
+                title:
+                  "Crip Material Exploration as an Assistive Technology Research Framework: Situating Interdependence in Empowered Disabled Making",
+                author:
+                  "Alexander S.W. Parent (Steinhardt School of Culture, Education and Human DevelopmentFaculty of Information)",
               },
             ],
           },
@@ -1520,13 +1544,7 @@ const SCHEDULE = [
                 title:
                   "A Place to Charge Your Wheels: Re-imagining the urban landscape for electric-wheelchair users through Design Fiction",
                 author:
-                  "Patricia Piedade (University of Lisbon), Hope Jang (Purdue University), Joe Maddux (Purdue University), Stewart Chappell (Skills for People), Jacqui Maher (Skills for People), Andy Dow (Northumbria University), Lynne R. Conniss (Northumbria University), Richard A Kotter (Northumbria University), Matteo Conti (Northumbria University), Marco Zilvetti (Northumbria University), Suzanne Nicolson (Northumbria University), Ayman Rizwan (Northumbria University), Vincent Barrioz (Northumbria University)",
-              },
-              {
-                title:
-                  "Crip Material Exploration as an Assistive Technology Research Framework: Situating Interdependence in Empowered Disabled Making",
-                author:
-                  "Alexander S.W. Parent (Steinhardt School of Culture, Education and Human DevelopmentFaculty of Information)",
+                  "Patricia Piedade (University of Lisbon), Hope Jang (Purdue University), Joe Maddux (Purdue University), Stewart Chappell (Skills for People), Jacqui Maher (Skills for People), Andy Dow (Northumbria University), Lynne R. Conniss (Northumbria University), Richard A Kotter (Northumbria University), Matteo Conti (Northumbria University), Marco Zilvetti (Northumbria University), Suzanne Nicolson (Northumbria University), Ayman Rizwan (Northumbria University), Vincent Barrioz (Northumbria University), Estelle Louise Farrell (ex-Newcastle University)",
               },
               {
                 title:
@@ -1539,12 +1557,6 @@ const SCHEDULE = [
                   "Exploring the use of Generative AI to Support Automated Just-in-Time Programming for Visual Scene Displays",
                 author:
                   "Cynthia Zastudil (Temple University), Christine Holyfield (University of Arkansas), Christine Kapp (Temple University), Xandria Crosland (Western Governors University), Elizabeth R. Lorah (University of Arkansas), Tara Zimmerman (University of Arkansas), Stephen MacNeil (Temple University)",
-              },
-              {
-                title:
-                  "Self-supervised learning using unlabeled speech with multiple types of speech disorder for disordered speech recognition",
-                author:
-                  "Ryoichi Takashima (Graduate School of System Informatics), Takeru Otani (Faculty of Engineering), Ryo Aihara (Information Technology R&D Center), Tetsuya Takiguchi (Kobe University), Shinya Taguchi (Information Technology R&D Center)",
               },
             ],
           },
@@ -1759,13 +1771,7 @@ const SCHEDULE = [
                 title:
                   "A Place to Charge Your Wheels: Re-imagining the urban landscape for electric-wheelchair users through Design Fiction",
                 author:
-                  "Patricia Piedade (University of Lisbon), Hope Jang (Purdue University), Joe Maddux (Purdue University), Stewart Chappell (Skills for People), Jacqui Maher (Skills for People), Andy Dow (Northumbria University), Lynne R. Conniss (Northumbria University), Richard A Kotter (Northumbria University), Matteo Conti (Northumbria University), Marco Zilvetti (Northumbria University), Suzanne Nicolson (Northumbria University), Ayman Rizwan (Northumbria University), Vincent Barrioz (Northumbria University)",
-              },
-              {
-                title:
-                  "Crip Material Exploration as an Assistive Technology Research Framework: Situating Interdependence in Empowered Disabled Making",
-                author:
-                  "Alexander S.W. Parent (Steinhardt School of Culture, Education and Human DevelopmentFaculty of Information)",
+                  "Patricia Piedade (University of Lisbon), Hope Jang (Purdue University), Joe Maddux (Purdue University), Stewart Chappell (Skills for People), Jacqui Maher (Skills for People), Andy Dow (Northumbria University), Lynne R. Conniss (Northumbria University), Richard A Kotter (Northumbria University), Matteo Conti (Northumbria University), Marco Zilvetti (Northumbria University), Suzanne Nicolson (Northumbria University), Ayman Rizwan (Northumbria University), Vincent Barrioz (Northumbria University), Estelle Louise Farrell (ex-Newcastle University)",
               },
               {
                 title:
@@ -1778,12 +1784,6 @@ const SCHEDULE = [
                   "Exploring the use of Generative AI to Support Automated Just-in-Time Programming for Visual Scene Displays",
                 author:
                   "Cynthia Zastudil (Temple University), Christine Holyfield (University of Arkansas), Christine Kapp (Temple University), Xandria Crosland (Western Governors University), Elizabeth R. Lorah (University of Arkansas), Tara Zimmerman (University of Arkansas), Stephen MacNeil (Temple University)",
-              },
-              {
-                title:
-                  "Self-supervised learning using unlabeled speech with multiple types of speech disorder for disordered speech recognition",
-                author:
-                  "Ryoichi Takashima (Graduate School of System Informatics), Takeru Otani (Faculty of Engineering), Ryo Aihara (Information Technology R&D Center), Tetsuya Takiguchi (Kobe University), Shinya Taguchi (Information Technology R&D Center)",
               },
             ],
           },
