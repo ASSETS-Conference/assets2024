@@ -179,7 +179,7 @@ const SCHEDULE_GLANCE = [
         {
             startTime: "16:00",
             endTime: "19:00",
-            title: "Registration",
+            title: "Registration + Coffee & Cookies",
         },
         {
             startTime: "16:15",
@@ -226,9 +226,9 @@ const SCHEDULE_GLANCE = [
             title: undefined,
         },
         {
-            startTime: undefined,
+            startTime: "18:30",
             endTime: undefined,
-            title: undefined,
+            title: "Welcome Reception in the Sheraton Court Garden",
         },
         {
             startTime: "18:30",
