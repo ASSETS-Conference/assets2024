@@ -1,3 +1,5 @@
+import Link from "../components/primitives/Link";
+
 const SCHEDULE = [
   {
     date: "Sunday, October 27th 2024",
@@ -1352,7 +1354,15 @@ const SCHEDULE = [
         endTime: "17:30",
         title: "SIGACCESS Business Meeting",
         dualTrack: false,
-        content: null,
+        content: [
+          {
+            note: [
+              `All conference attendees are warmly invited to attend this meeting to learn more about the recent activities and upcoming plans of the `, 
+              <Link href={"https://www.sigaccess.org/"}>ACM Special Interest Group on Accessible Computing</Link>, 
+              ` and to discuss matters of importance to the research community.`
+            ]
+          }
+        ],
       },
       {
         startTime: "18:30",
@@ -1362,7 +1372,7 @@ const SCHEDULE = [
         dualTrack: false,
         content: [
           {
-            note: "Busses will depart from the main entrance of the Sheraton starting at 18:00 and bring us back at the end of the evening. For those who may enjoy a walk, it takes approximately 20-30 minutes to walk from the Sheraton to the Rooms, but do be aware that it is hilly in parts.",
+            note: [`Busses will depart from the main entrance of the Sheraton starting at 18:00 and bring us back at the end of the evening. For those who may enjoy a walk, it takes approximately 20-30 minutes to walk from the Sheraton to the Rooms, but do be aware that it is hilly in parts.`],
           },
         ],
       },
