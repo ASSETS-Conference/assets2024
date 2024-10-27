@@ -688,7 +688,7 @@ const SCHEDULE = [
         dualTrack: false,
         content: [
           {
-            note: ["For in-person attendees, please join us in the Sheraton Court Garden for an hors d'oeuvres reception."],
+            note: ["For in-person attendees, please join us in the Sheraton Court Garden for a reception with hors d'oeuvres and a medley of live music by the Mary Barry Trio."],
           },
         ],
       },
@@ -1396,7 +1396,7 @@ const SCHEDULE = [
         dualTrack: false,
         content: [
           {
-            note: [`Busses will depart from the main entrance of the Sheraton starting at 18:00 and bring us back at the end of the evening. For those who may enjoy a walk, it takes approximately 20-30 minutes to walk from the Sheraton to the Rooms, but do be aware that it is hilly in parts.`],
+            note: [`Busses will depart from the main entrance of the Sheraton starting at 18:00 and bring us back at the end of the evening. For those who like to walk, it's a lovely walk up Military Road first past Bannerman Park and then past the Basilica. Turn right at Bonaventure and The Rooms is on the left at the top of the hill. You cannot miss it. While lovely, the walk has an uphill grade and a short steep incline at the end.`],
           },
         ],
       },
