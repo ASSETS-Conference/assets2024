@@ -24,7 +24,10 @@ export const ScheduleEvent = ({
         <h3 className="font-semibold text-sm md:text-xl mt-2 mb-2 pt-0 md:w-auto w-20">
           {startTime} &ndash; {endTime}
         </h3>
-        <h4 id={makeAttributeSafe(`${title}-${startTime}-${endTime}`)} className="font-light text-sm md:text-xl mt-2 mb-2 p-0 md:text-left text-right flex md:flex-row flex-col md:gap-2">
+        <h4
+          id={makeAttributeSafe(`${title}-${startTime}-${endTime}`)}
+          className="font-light text-sm md:text-xl mt-2 mb-2 p-0 md:text-left text-right flex md:flex-row flex-col md:gap-2"
+        >
           {title}
           {link ? (
             <Link className={"text-black"} href={link.href}>
@@ -58,6 +61,9 @@ function determineContentType(content, isDualTrack, key) {
           </ul>
         </div>
       );
+    } else if (content.note) {
+      return <p className="md:pr-4 text-xs md:text-base font-light italic p-0 my-4 md:mb-8 md:-mt-2 leading-relaxed">{content.note.map((item, index) => (
+        <span key={`${content.title}-note-${index}`}>{item}</span>))}</p>
     }
   } else {
     return (
