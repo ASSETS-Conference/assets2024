@@ -62,7 +62,8 @@ function determineContentType(content, isDualTrack, key) {
         </div>
       );
     } else if (content.note) {
-      return <p className="md:pr-4 text-xs md:text-base font-light italic p-0 my-4 md:mb-8 md:-mt-2 leading-relaxed">{content.note}</p>;
+      return <p className="md:pr-4 text-xs md:text-base font-light italic p-0 my-4 md:mb-8 md:-mt-2 leading-relaxed">{content.note.map((item, index) => (
+        <span key={`${content.title}-note-${index}`}>{item}</span>))}</p>
     }
   } else {
     return (

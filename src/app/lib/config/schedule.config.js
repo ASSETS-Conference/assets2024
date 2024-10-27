@@ -11,7 +11,7 @@ const SCHEDULE = [
         dualTrack: false,
         content: [
           {
-            note: "Registration will be open in the Sheraton Lobby. Coffee and cookies will be available.",
+            note: ["Registration will be open in the Sheraton Lobby. Coffee and cookies will be available."],
           },
         ],
       },
@@ -688,7 +688,7 @@ const SCHEDULE = [
         dualTrack: false,
         content: [
           {
-            note: "For in-person attendees, please join us in the Sheraton Court Garden for an hors d'oeuvres reception.",
+            note: ["For in-person attendees, please join us in the Sheraton Court Garden for an hors d'oeuvres reception."],
           },
         ],
       },
@@ -1382,7 +1382,7 @@ const SCHEDULE = [
           {
             note: [
               `All conference attendees are warmly invited to attend this meeting to learn more about the recent activities and upcoming plans of the `, 
-              <Link href={"https://www.sigaccess.org/"}>ACM Special Interest Group on Accessible Computing</Link>, 
+              <Link href={"https://www.sigaccess.org/"} key={"ACM Special Interest Group on Accessible Computing"}>ACM Special Interest Group on Accessible Computing</Link>, 
               ` and to discuss matters of importance to the research community.`
             ]
           }
