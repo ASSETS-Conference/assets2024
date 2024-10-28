@@ -10,7 +10,7 @@ export const Schedule = ({ events }) => {
         return (
           <div className={` py-4 ${determineBackground(i)}`} key={'div-sch-'+i}>
             <Container key={'container-s'+i}>
-              <ScheduleSection key={'scs-'+i} day={day} background={determineBackground(i)} />
+              <ScheduleSection key={'scs-'+i} day={day} dayIdx={i} background={determineBackground(i)} />
             </Container>
           </div>
         );

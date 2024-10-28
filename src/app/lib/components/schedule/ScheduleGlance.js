@@ -23,7 +23,7 @@ const CreateRow = (row) => {
         <tr className="border-none">
             {row.map((event, idx) => (
                 <td
-                    key={"glance-row-" +  idx }
+                    key={"glance-row-" + idx}
                     className={`!border-x !border-y-0 text-sm ${
                         event?.title === "Lunch"
                             ? "bg-theme-dark text-theme-off-white"
@@ -45,8 +45,11 @@ const CreateRow = (row) => {
                             {event.startTime ? event.startTime : ""}
                             {event.endTime ? " - " + event.endTime : ""}
                         </strong>
-                        {/* TODO: add hrefs to detailed program sections */}
-                        {event?.title}
+                        {event.href ? (
+                            <Link href={event.href}>{event?.title}</Link>
+                        ) : (
+                            <>{event?.title}</>
+                        )}
                     </div>
                 </td>
             ))}
