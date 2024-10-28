@@ -61,7 +61,7 @@ const SCHEDULE_GLANCE = [
         },
         {
             startTime: "09:00",
-            endTime: "10:15",
+            endTime: "10:00",
             title: "Student Research Competition",
         },
     ],
