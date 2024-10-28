@@ -42,13 +42,13 @@ export default function Home() {
             >
               <p>
                 {`Workshop registration is now open, please take a look at the
-                registration instructions here: `}
+                registration instructions `}
                 <Link
                   href={
                     "https://assets24.sigaccess.org/attending/registration/#workshop-registration"
                   }
                 >
-                  {`https://assets24.sigaccess.org/attending/registration/#workshop-registration`}
+                  {`here on the Registration information page.`}
                 </Link>
               </p>
             </Alert>
