@@ -49,6 +49,17 @@ export default function TechnicalPapers() {
         <div className="my-8">
           <p className="md:text-xl text-lg">{`Intuit`}</p>
         </div>
+        <h2>Doctoral Consortium</h2>
+        <div className="flex flex-col gap-8 mt-8 mb-8 md:flex-row">
+          <Image
+            src={"/sponsors/nsf_logo.png"}
+            alt="Logo of the National Science Foundation."
+            height={100}
+            width={200}
+          />
+        </div>
+        {/* </Section> */}
+      </div>
         <h2>Sponsoring Organizations</h2>
         <div className="flex flex-col gap-8 mt-8 mb-8 md:flex-row">
           <Image
