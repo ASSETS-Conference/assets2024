@@ -53,9 +53,10 @@ export default function TechnicalPapers() {
         <div className="flex flex-col gap-8 mt-8 mb-8 md:flex-row">
           <Image
             src={"/sponsors/nsf_logo.png"}
+            className="-ml-4"
             alt="Logo of the National Science Foundation."
             height={100}
-            width={200}
+            width={100}
           />
         {/* </Section> */}
       </div>
