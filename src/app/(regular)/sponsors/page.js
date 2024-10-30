@@ -57,7 +57,6 @@ export default function TechnicalPapers() {
             height={100}
             width={200}
           />
-        </div>
         {/* </Section> */}
       </div>
         <h2>Sponsoring Organizations</h2>
